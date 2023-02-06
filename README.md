@@ -1,2 +1,1 @@
-# Google Launcher Shortcuts
- WIP
+WIP
