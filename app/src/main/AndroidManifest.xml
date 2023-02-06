@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wstxda.gls">
+    package="com.wstxda.gsl">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Transparent">
         <activity
-            android:name="com.wstxda.gls.MusicSearchActivity"
+            android:name="com.wstxda.gsl.MusicSearchActivity"
+            android:icon="@mipmap/ic_launcher_music"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
@@ -24,9 +25,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.wstxda.gls.WeatherActivity"
+            android:name="com.wstxda.gsl.WeatherActivity"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@mipmap/ic_launcher_weather"
             android:label="@string/weather"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
@@ -35,9 +36,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.wstxda.gls.PasswordManagerActivity"
+            android:name="com.wstxda.gsl.PasswordManagerActivity"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher"
+            android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
@@ -47,7 +48,7 @@
         </activity>
 
         <service
-            android:name="com.wstxda.gls.MusicSearchQuickSettings"
+            android:name="com.wstxda.gsl.MusicSearchQuickSettings"
             android:exported="true"
             android:icon="@drawable/ic_qs_music_search"
             android:label="@string/music_search_quick_settings"
