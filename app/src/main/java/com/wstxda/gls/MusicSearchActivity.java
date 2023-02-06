@@ -17,8 +17,8 @@ public class MusicSearchActivity extends Activity {
         try {
             startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            Log.e(TAG, "Could not start " + intent, e);
-            Toast.makeText(getApplicationContext(), "Activity not found. Please install or enable Google App", 1).show();
+            Log.e(TAG, getString(R.string.unable_start) + intent, e);
+            Toast.makeText(getApplicationContext(), R.string.activity_not_found, 1).show();
         }
         finish();
     }

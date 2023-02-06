@@ -18,7 +18,7 @@ public class WeatherActivity extends Activity {
             startActivity(intent);
             finish();
         } catch (Exception unused) {
-            Toast.makeText(getApplicationContext(), "Activity not found. Please install or enable Google App", 1).show();
+            Toast.makeText(getApplicationContext(), R.string.activity_not_found, 1).show();
         }
     }
 }
