@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GLS</string>
+    <string name="music_search_tile">Music search</string>
+    <string name="password">Passwords</string>
+    <string name="music_search">Search</string>
+    <string name="weather">Weather</string>
+</resources>
