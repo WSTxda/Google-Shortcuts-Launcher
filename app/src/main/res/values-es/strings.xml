@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Atajos de Google</string>
-    <string name="music_search_quick_settings">búsqueda de música</string>
+    <string name="music_search_quick_settings">Búsqueda de música</string>
     <string name="password">Contraseñas</string>
     <string name="music_search">Buscar</string>
     <string name="weather">Clima</string>
