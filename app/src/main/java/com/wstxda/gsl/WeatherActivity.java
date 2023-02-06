@@ -6,6 +6,8 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.widget.Toast;
 
+import com.wstxda.gls.R;
+
 @SuppressLint({"Registered"})
 public class WeatherActivity extends Activity {
     @Override // android.app.Activity

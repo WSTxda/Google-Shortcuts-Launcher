@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.wstxda.gls.R;
+
 public class MusicSearchActivity extends Activity {
     private static final String TAG = "MainActivity";
 
