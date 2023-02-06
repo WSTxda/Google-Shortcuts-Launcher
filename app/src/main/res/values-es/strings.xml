@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Atajos de Google</string>
+    <string name="music_search_quick_settings">búsqueda de música</string>
+    <string name="password">Contraseñas</string>
+    <string name="music_search">Buscar</string>
+    <string name="weather">Clima</string>
+    <string name="activity_not_found">Actividad no encontrada. Instale o habilite la aplicación de Google</string>
+    <string name="unable_start">No se puede iniciar, inténtalo de nuevo</string>
+</resources>
