@@ -7,6 +7,6 @@ public class MusicSearchQuickSettings extends TileService {
     @Override // android.service.quicksettings.TileService
     public void onClick() {
         super.onClick();
-        startActivityAndCollapse(new Intent("com.google.android.googlequicksearchbox.MUSIC_SEARCH").setFlags(268435456));
+        startActivityAndCollapse(new Intent("com.google.android.googlequicksearchbox.MUSIC_SEARCH").setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
     }
 }

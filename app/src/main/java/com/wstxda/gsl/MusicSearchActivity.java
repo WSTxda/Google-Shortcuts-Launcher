@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.wstxda.gls.R;
-
 public class MusicSearchActivity extends Activity {
     private static final String TAG = "MainActivity";
 
@@ -20,7 +18,7 @@ public class MusicSearchActivity extends Activity {
             startActivity(intent);
         } catch (ActivityNotFoundException e) {
             Log.e(TAG, getString(R.string.unable_start) + intent, e);
-            Toast.makeText(getApplicationContext(), R.string.activity_not_found, 1).show();
+            Toast.makeText(getApplicationContext(), R.string.activity_not_found, Toast.LENGTH_LONG).show();
         }
         finish();
     }

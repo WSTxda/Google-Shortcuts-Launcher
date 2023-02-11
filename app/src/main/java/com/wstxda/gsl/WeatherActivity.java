@@ -6,8 +6,6 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.widget.Toast;
 
-import com.wstxda.gls.R;
-
 @SuppressLint({"Registered"})
 public class WeatherActivity extends Activity {
     @Override // android.app.Activity
@@ -20,7 +18,7 @@ public class WeatherActivity extends Activity {
             startActivity(intent);
             finish();
         } catch (Exception unused) {
-            Toast.makeText(getApplicationContext(), R.string.activity_not_found, 1).show();
+            Toast.makeText(getApplicationContext(), R.string.activity_not_found, Toast.LENGTH_SHORT).show();
         }
     }
 }

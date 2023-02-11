@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.wstxda.gls'
+    namespace 'com.wstxda.gsl'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.wstxda.gls"
+        applicationId "com.wstxda.gsl"
         minSdk 24
         targetSdk 33
         versionCode 100
