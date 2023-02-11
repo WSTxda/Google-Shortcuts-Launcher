@@ -10,10 +10,10 @@
         android:theme="@style/Theme.Transparent">
         <activity
             android:name="com.wstxda.gsl.MusicSearchActivity"
-            android:icon="@mipmap/ic_launcher_music"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
+            android:icon="@mipmap/ic_launcher_music"
             android:label="@string/music_search"
             android:noHistory="true"
             android:theme="@style/Theme.Transparent">
@@ -26,7 +26,9 @@
         </activity>
         <activity
             android:name="com.wstxda.gsl.WeatherActivity"
+            android:excludeFromRecents="true"
             android:exported="true"
+            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_weather"
             android:label="@string/weather"
             android:theme="@style/Theme.Transparent">
@@ -37,7 +39,9 @@
         </activity>
         <activity
             android:name="com.wstxda.gsl.PasswordManagerActivity"
+            android:excludeFromRecents="true"
             android:exported="true"
+            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
             android:theme="@style/Theme.Transparent">
