@@ -8,8 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 
 class PasswordManagerActivity : Activity() {
-    private val buttonOpenlink: Button? = null
-    private val textOpenlink: TextView? = null
 
     // android.app.Activity
     override fun onCreate(bundle: Bundle?) {
