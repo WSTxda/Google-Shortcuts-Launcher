@@ -6,4 +6,5 @@
     <string name="weather">Clima</string>
     <string name="activity_not_found">Actividad no encontrada. Instale o habilite la aplicación de Google</string>
     <string name="unable_start">No se puede iniciar, inténtalo de nuevo</string>
+    <string name="activity_not_supported">La actividad que redirige esta aplicación no es compatible con este dispositivo</string>
 </resources>
