@@ -15,7 +15,7 @@ class PasswordManagerActivity : Activity() {
             Toast.makeText(
                 applicationContext,
                 getString(R.string.activity_not_supported),
-                1
+                Toast.LENGTH_LONG
             ).show()
         }
     }
