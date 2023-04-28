@@ -2,16 +2,21 @@ package com.wstxda.gsl
 
 import android.app.Activity
 import android.content.Intent
-import android.net.Uri
-import android.os.Bundle
+import android.widget.Toast
+
 
 class PasswordManagerActivity : Activity() {
-
-    // android.app.Activity
-    override fun onCreate(bundle: Bundle?) {
-        super.onCreate(bundle)
-        val intent = Intent("android.intent.action.VIEW")
-        intent.data = Uri.parse("https://passwords.google.com")
-        startActivity(intent)
+    public override fun onResume() {
+        super.onResume()
+        try {
+            startActivity(Intent("android.settings.SYNC_SETTINGS"))
+            finish()
+        } catch (unused: Exception) {
+            Toast.makeText(
+                applicationContext,
+                getString(R.string.activity_not_supported),
+                1
+            ).show()
+        }
     }
 }

@@ -22,9 +22,7 @@
         </activity>
         <activity
             android:name="com.wstxda.gsl.PasswordManagerActivity"
-            android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
             android:theme="@style/Theme.Transparent">
