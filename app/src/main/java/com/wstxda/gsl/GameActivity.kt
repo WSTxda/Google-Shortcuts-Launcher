@@ -21,7 +21,11 @@ class GameActivity : Activity() {
             startActivity(intent)
             finish()
         } catch (unused: Exception) {
-            Toast.makeText(applicationContext, R.string.activity_not_found_games, Toast.LENGTH_SHORT)
+            Toast.makeText(
+                applicationContext,
+                R.string.activity_not_found_games,
+                Toast.LENGTH_SHORT
+            )
                 .show()
         }
     }

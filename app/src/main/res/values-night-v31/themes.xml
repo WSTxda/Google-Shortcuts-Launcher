@@ -1,8 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="Theme.Splashscreen.Password" parent="@android:style/Theme.Material">
         <item name="android:windowSplashScreenBackground">@android:color/system_neutral1_900</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_password_splash</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_password_splash
+        </item>
         <item name="android:windowSplashScreenAnimationDuration">1000</item>
-        <item name="android:windowSplashScreenIconBackgroundColor">@android:color/system_neutral1_900</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">
+            @android:color/system_neutral1_900
+        </item>
     </style>
 </resources>
