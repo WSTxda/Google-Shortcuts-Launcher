@@ -32,6 +32,19 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.wstxda.gsl.GameActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:icon="@mipmap/ic_launcher_game"
+            android:label="@string/game"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.wstxda.gsl.MusicSearchActivity"
             android:excludeFromRecents="true"
             android:exported="true"
