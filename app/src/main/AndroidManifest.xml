@@ -25,7 +25,7 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
-            android:theme="@style/Theme.Transparent">
+            android:theme="@style/Theme.Splashscreen.Password">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

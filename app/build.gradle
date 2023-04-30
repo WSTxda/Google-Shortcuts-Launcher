@@ -11,8 +11,8 @@ android {
         applicationId "com.wstxda.gsl"
         minSdk 24
         targetSdk 33
-        versionCode 200
-        versionName "2.0"
+        versionCode 300
+        versionName "3.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
