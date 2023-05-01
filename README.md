@@ -13,7 +13,9 @@ Google app features shortcuts in your launcher
 
 - Weather (Get real-time information on local weather and weekly forecasts)
 
-*Need Google app and Play Services app installed*
+- Games (A paste with all your installed games and other games from Google Play Games)
+
+*Need Google, Google Play Games and Play Services apps installed*
 
 **Download**
 
