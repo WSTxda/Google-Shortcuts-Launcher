@@ -4,7 +4,7 @@
     <string name="password">Senhas</string>
     <string name="music_search">Pesquisar</string>
     <string name="weather">Clima</string>
-    <string name="game">Games</string>
+    <string name="game">Jogos</string>
     <string name="unable_start">Não foi possível iniciar, tente novamente</string>
     <string name="activity_not_found">Atividade não encontrada. Instale ou ative o Google App</string>
     <string name="activity_not_found_games">Atividade não encontrada. Instale ou ative o Google Play Games</string>
