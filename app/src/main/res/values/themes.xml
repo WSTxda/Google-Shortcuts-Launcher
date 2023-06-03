@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="Theme.Transparent" parent="@android:style/Theme">
+    <style name="Theme.Transparent" parent="@android:style/Theme.Material">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
