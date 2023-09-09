@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -13,8 +14,10 @@
             android:exported="true"
             android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_weather"
+            android:enableOnBackInvokedCallback="true"
             android:label="@string/weather"
-            android:theme="@style/Theme.Transparent">
+            android:theme="@style/Theme.Transparent"
+            tools:targetApi="tiramisu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -25,9 +28,11 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
+            android:enableOnBackInvokedCallback="true"
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
-            android:theme="@style/Theme.Transparent">
+            android:theme="@style/Theme.Transparent"
+            tools:targetApi="tiramisu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -38,9 +43,11 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
+            android:enableOnBackInvokedCallback="true"
             android:icon="@mipmap/ic_launcher_game"
             android:label="@string/game"
-            android:theme="@style/Theme.Transparent">
+            android:theme="@style/Theme.Transparent"
+            tools:targetApi="tiramisu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -51,10 +58,12 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
+            android:enableOnBackInvokedCallback="true"
             android:icon="@mipmap/ic_launcher_music"
             android:label="@string/music_search"
             android:noHistory="true"
-            android:theme="@style/Theme.Transparent">
+            android:theme="@style/Theme.Transparent"
+            tools:targetApi="tiramisu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.ASSIST" />
