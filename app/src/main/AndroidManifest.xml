@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -10,11 +10,11 @@
         android:theme="@style/Theme.Transparent">
         <activity
             android:name="com.wstxda.gsl.WeatherActivity"
+            android:enableOnBackInvokedCallback="true"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_weather"
-            android:enableOnBackInvokedCallback="true"
             android:label="@string/weather"
             android:theme="@style/Theme.Transparent"
             tools:targetApi="tiramisu">
@@ -25,10 +25,10 @@
         </activity>
         <activity
             android:name="com.wstxda.gsl.PasswordManagerActivity"
+            android:enableOnBackInvokedCallback="true"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
-            android:enableOnBackInvokedCallback="true"
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
             android:theme="@style/Theme.Transparent"
@@ -40,10 +40,10 @@
         </activity>
         <activity
             android:name="com.wstxda.gsl.GameActivity"
+            android:enableOnBackInvokedCallback="true"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
-            android:enableOnBackInvokedCallback="true"
             android:icon="@mipmap/ic_launcher_game"
             android:label="@string/game"
             android:theme="@style/Theme.Transparent"
@@ -55,10 +55,10 @@
         </activity>
         <activity
             android:name="com.wstxda.gsl.MusicSearchActivity"
+            android:enableOnBackInvokedCallback="true"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
-            android:enableOnBackInvokedCallback="true"
             android:icon="@mipmap/ic_launcher_music"
             android:label="@string/music_search"
             android:noHistory="true"
