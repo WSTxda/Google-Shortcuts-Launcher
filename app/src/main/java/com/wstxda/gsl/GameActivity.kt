@@ -22,11 +22,8 @@ class GameActivity : Activity() {
             finish()
         } catch (unused: Exception) {
             Toast.makeText(
-                applicationContext,
-                R.string.activity_not_found_games,
-                Toast.LENGTH_SHORT
-            )
-                .show()
+                applicationContext, R.string.play_games_not_found, Toast.LENGTH_SHORT
+            ).show()
         }
     }
 }

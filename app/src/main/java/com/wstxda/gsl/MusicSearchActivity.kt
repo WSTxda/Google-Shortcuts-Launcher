@@ -16,7 +16,7 @@ class MusicSearchActivity : Activity() {
             startActivity(intent)
         } catch (e: ActivityNotFoundException) {
             Log.e(TAG, getString(R.string.unable_start) + intent, e)
-            Toast.makeText(applicationContext, R.string.activity_not_found, Toast.LENGTH_LONG)
+            Toast.makeText(applicationContext, R.string.google_not_found, Toast.LENGTH_LONG)
                 .show()
         }
         finish()
