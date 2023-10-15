@@ -2,8 +2,10 @@ package com.wstxda.gsl
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Intent
+import android.net.Uri
 import android.widget.Toast
 
 @SuppressLint("Registered")
@@ -20,8 +22,19 @@ class WeatherActivity : Activity() {
             )
             startActivity(intent)
             finish()
-        } catch (unused: Exception) {
-            Toast.makeText(applicationContext, R.string.activity_not_found, Toast.LENGTH_SHORT)
+        } catch (unused: ActivityNotFoundException) {
+            openWeatherInBrowser()
+        }
+    }
+
+    private fun openWeatherInBrowser() {
+        val weatherUrl = "https://www.google.com/search?q=weather"
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(weatherUrl))
+        try {
+            startActivity(browserIntent)
+            finish()
+        } catch (e: ActivityNotFoundException) {
+            Toast.makeText(applicationContext, R.string.browser_not_found, Toast.LENGTH_SHORT)
                 .show()
         }
     }
