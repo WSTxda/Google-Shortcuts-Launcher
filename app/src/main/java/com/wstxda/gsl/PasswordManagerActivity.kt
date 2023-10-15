@@ -7,20 +7,19 @@ import android.os.Bundle
 import android.widget.Toast
 
 class PasswordManagerActivity : Activity() {
-    // android.app.Activity
     override fun onCreate(bundle: Bundle?) {
         super.onCreate(bundle)
 
         val url = getString(R.string.password_url)
 
-        val intent = Intent(Intent.ACTION_VIEW)
-        intent.data = Uri.parse(url)
-
-        if (intent.resolveActivity(packageManager) != null) {
+        try {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
             startActivity(intent)
-        } else {
-            val message = getString(R.string.browser_not_found)
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        } catch (e: Exception) {
+            val errorMessage = getString(R.string.browser_not_found)
+            Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
         }
+
+        finish()
     }
 }
