@@ -3,6 +3,7 @@
     <string name="music_search_quick_settings">Music search</string>
     <string name="password">Passwords</string>
     <string name="password_url" translatable="false">https://passwords.google.com</string>
+    <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>
     <string name="music_search">Search</string>
     <string name="weather">Weather</string>
     <string name="games">Games</string>

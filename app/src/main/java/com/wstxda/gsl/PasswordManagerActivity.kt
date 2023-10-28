@@ -11,15 +11,20 @@ class PasswordManagerActivity : Activity() {
         super.onCreate(bundle)
 
         val url = getString(R.string.password_url)
+        openWebPage(url)
+        finish()
+    }
 
+    private fun openWebPage(url: String) {
         try {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
             startActivity(intent)
         } catch (e: Exception) {
-            val errorMessage = getString(R.string.browser_not_found)
-            Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
+            showError(R.string.browser_not_found)
         }
+    }
 
-        finish()
+    private fun showError(messageResId: Int) {
+        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show()
     }
 }

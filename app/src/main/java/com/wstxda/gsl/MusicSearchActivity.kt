@@ -8,21 +8,29 @@ import android.util.Log
 import android.widget.Toast
 
 class MusicSearchActivity : Activity() {
-    // android.app.Activity
-    public override fun onCreate(bundle: Bundle?) {
+    companion object {
+        private const val TAG = "MusicSearchActivity"
+    }
+
+    override fun onCreate(bundle: Bundle?) {
         super.onCreate(bundle)
+
         val intent = Intent("com.google.android.googlequicksearchbox.MUSIC_SEARCH")
         try {
             startActivity(intent)
         } catch (e: ActivityNotFoundException) {
-            Log.e(TAG, getString(R.string.unable_start) + intent, e)
-            Toast.makeText(applicationContext, R.string.google_not_found, Toast.LENGTH_LONG)
-                .show()
+            handleMusicSearchNotFound(e)
         }
         finish()
     }
 
-    companion object {
-        private const val TAG = "MainActivity"
+    private fun handleMusicSearchNotFound(e: ActivityNotFoundException) {
+        Log.e(TAG, "Unable to start music search intent", e)
+        showToast(R.string.google_not_found, Toast.LENGTH_LONG)
+        finish()
+    }
+
+    private fun showToast(resId: Int, duration: Int) {
+        Toast.makeText(applicationContext, resId, duration).show()
     }
 }
