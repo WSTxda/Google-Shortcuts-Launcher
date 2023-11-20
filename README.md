@@ -15,6 +15,8 @@ Google app features shortcuts in your launcher
 
 - Games (A paste with all your installed games and other games from Google Play Games)
 
+- Bard (A conversational AI tool by Google)
+
 *Need Google, Google Play Games and Play Services apps installed*
 
 **Download**
