@@ -11,8 +11,8 @@ android {
         applicationId "com.wstxda.gsl"
         minSdk 24
         targetSdk 34
-        versionCode 330
-        versionName "3.3"
+        versionCode 340
+        versionName "3.4"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -24,12 +24,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = 11
+        jvmTarget = 17
     }
 }
 
