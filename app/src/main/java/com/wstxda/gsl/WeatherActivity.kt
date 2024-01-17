@@ -53,4 +53,3 @@ class WeatherActivity : Activity() {
         Toast.makeText(applicationContext, messageResId, Toast.LENGTH_SHORT).show()
     }
 }
-
