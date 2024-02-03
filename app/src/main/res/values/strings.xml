@@ -7,7 +7,6 @@
     <string name="music_search">Search</string>
     <string name="weather">Weather</string>
     <string name="games">Games</string>
-    <string name="unable_start">Unable to start, please try again</string>
     <string name="google_not_found">Activity not found. Please install or enable Google App</string>
     <string name="play_games_not_found">Activity not found. Please install or enable Google Play Games</string>
     <string name="browser_not_found">No browser found, Please install or enable your browser</string>

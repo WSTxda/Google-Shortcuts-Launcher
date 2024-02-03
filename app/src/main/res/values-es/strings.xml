@@ -5,7 +5,6 @@
     <string name="music_search">Buscar</string>
     <string name="weather">Clima</string>
     <string name="games">Juegos</string>
-    <string name="unable_start">No se puede iniciar, inténtalo de nuevo</string>
     <string name="google_not_found">Actividad no encontrada. Instale o habilite la aplicación de Google</string>
     <string name="play_games_not_found">Actividad no encontrada. Instale o habilite la aplicación de Google Play Games</string>
     <string name="browser_not_found">No se encontró ningún navegador. Instale o habilite su navegador.</string>
