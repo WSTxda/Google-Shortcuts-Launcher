@@ -11,6 +11,6 @@
 
     <string name="assistant_dialog_title">Ativar atalhos do assistente?</string>
     <string name="assistant_dialog_summary">Use atalhos do assistente para abrir seus jogos com botões e gestos neste dispositivo\n\nSelecione Atalhos do Google como assistente padrão para ativar</string>
-    <string name="assistant_dialog_setup">Ativar assistante</string>
+    <string name="assistant_dialog_setup">Ativar assistente</string>
     <string name="assistant_dialog_cancel">Cancelar</string>
 </resources>
