@@ -1,8 +1,8 @@
 <resources>
 
-    <style name="Theme.Transparent" parent="@android:style/Theme.Material.Light">
-        <item name="android:colorAccent">@color/color_accent_light</item>
-        <item name="android:colorBackgroundFloating">@color/color_floating_light</item>
+    <style name="Theme.Transparent" parent="@android:style/Theme.Material">
+        <item name="android:colorAccent">@color/color_accent_dark</item>
+        <item name="android:colorBackgroundFloating">@color/color_floating_dark</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowBackground">@android:color/transparent</item>

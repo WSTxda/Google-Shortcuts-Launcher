@@ -2,4 +2,9 @@
 <resources>
     <color name="ic_launcher_background">#ffffff</color>
     <color name="ic_launcher_background_game">#1a8039</color>
+
+    <color name="color_accent_light">#1a73e8</color>
+    <color name="color_accent_dark">#8ab4f8</color>
+    <color name="color_floating_light">#fafafa</color>
+    <color name="color_floating_dark">#303134</color>
 </resources>

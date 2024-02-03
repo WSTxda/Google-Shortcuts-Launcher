@@ -10,4 +10,9 @@
     <string name="google_not_found">Activity not found. Please install or enable Google App</string>
     <string name="play_games_not_found">Activity not found. Please install or enable Google Play Games</string>
     <string name="browser_not_found">No browser found, Please install or enable your browser</string>
+
+    <string name="assistant_dialog_title">Enable assistant shortcuts?</string>
+    <string name="assistant_dialog_summary">Use assistant shortcuts to open your games with buttons and gestures on this device\n\nSelect Google Shortcuts Launcher as default assistant to enable</string>
+    <string name="assistant_dialog_setup">Enable assistant</string>
+    <string name="assistant_dialog_cancel">Cancel</string>
 </resources>

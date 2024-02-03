@@ -8,4 +8,9 @@
     <string name="google_not_found">Actividad no encontrada. Instale o habilite la aplicación de Google</string>
     <string name="play_games_not_found">Actividad no encontrada. Instale o habilite la aplicación de Google Play Games</string>
     <string name="browser_not_found">No se encontró ningún navegador. Instale o habilite su navegador.</string>
+
+    <string name="assistant_dialog_title">¿Habilitar atajos del Asistente?</string>
+    <string name="assistant_dialog_summary">Usa los atajos del asistente para abrir tus juegos con botones y gestos en este dispositivo\n\nSelecciona Atajos de Google como el asistente predeterminado para activar</string>
+    <string name="assistant_dialog_setup">Activar asistente</string>
+    <string name="assistant_dialog_cancel">Cancelar</string>
 </resources>
