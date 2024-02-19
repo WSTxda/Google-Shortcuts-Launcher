@@ -1,7 +1,7 @@
 # Google Shortcuts Launcher
-Google app features shortcuts in your launcher
+Google apps features shortcuts in your apps list in launcher
 
-[![Android](https://img.shields.io/badge/Platform-Android-green.svg?style=flat-square)](https://www.android.com) [![API](https://img.shields.io/badge/API-21%2B-orange.svg?logo=android&style=flat-square)](https://developer.android.com/studio/releases/platforms) [![Release](https://img.shields.io/github/v/release/WSTxda/Google-Shortcuts-Launcher?color=blue&label=Release&style=flat-square)](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases) [![Release](https://img.shields.io/github/downloads/WSTxda/Google-Shortcuts-Launcher/total?color=brightgrey&style=flat-square)](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases)
+[![Platform](https://img.shields.io/badge/android-platform?style=for-the-badge&label=platform&labelColor=21262d&color=6e7681)](https://www.android.com) [![API](https://img.shields.io/badge/24%2B-level?style=for-the-badge&logo=android&logoColor=3cd382&label=API&labelColor=21262d&color=ff663b)](https://developer.android.com/studio/releases/platforms) [![Release](https://img.shields.io/github/v/release/WSTxda/Google-Shortcuts-Launcher?display_name=tag&style=for-the-badge&logo=github&labelColor=21262d&color=1f6feb)](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest) [![Downloads](https://img.shields.io/github/downloads/WSTxda/Google-Shortcuts-Launcher/total?style=for-the-badge&labelColor=21262d&color=238636)](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases)
 
 ![alt text](https://raw.githubusercontent.com/WSTxda/Google-Shortcuts-Launcher/main/images/Banner.svg)
 
@@ -13,9 +13,13 @@ Google app features shortcuts in your launcher
 
 - Weather (Get real-time information on local weather and weekly forecasts)
 
+- Game Turbo (Its interface and gaming tools in MIUI and HyperOS)
+
 - Games (A paste with all your installed games and other games from Google Play Games)
 
->Need Google, Google Play Games and Play Services apps installed
+>Need Google, Google Play Games and Play Services apps installed.
+
+>Game Turbo need running MIUI or HyperOS with Security app installed.
 
 **Download**
 
