@@ -3,8 +3,9 @@
 
     <!--icons background-->
 
-    <color name="ic_launcher_background">#ffffff</color>
-    <color name="ic_launcher_background_game">#1a8039</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="ic_launcher_background_game">#1A8039</color>
+    <color name="ic_launcher_background_settings">#5F6368</color>
 
     <!--material colors-->
 
