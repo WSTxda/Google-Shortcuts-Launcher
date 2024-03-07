@@ -1,10 +1,24 @@
 <resources>
     <string name="app_name">Atalhos do Google</string>
+    <string name="app_settings">Configurações</string>
+
+    <string name="pref_category_shortcuts_manager">Gerenciar atalhos</string>
+    <string name="pref_category_other">Outros</string>
+    <string name="pref_category_about">Sobre</string>
+
+    <string name="pref_version">Versão</string>
+    <string name="pref_developer">Desenvolvedor</string>
+    <string name="pref_source_code">Repositório com o código fonte</string>
+    <string name="pref_hide_settings">Ocultar configurações do launcher</string>
+    <string name="pref_shortcut_enabled">Atalho no launcher ativado</string>
+    <string name="pref_shortcut_disabled">Atalho no launcher desativado</string>
+
     <string name="music_search_quick_settings">Pesquisar música</string>
     <string name="password">Senhas</string>
     <string name="music_search">Pesquisar</string>
     <string name="weather">Clima</string>
     <string name="games">Jogos</string>
+
     <string name="google_not_found">Atividade não encontrada. Instale ou ative o Google App</string>
     <string name="play_games_not_found">Atividade não encontrada. Instale ou ative o Google Play Games</string>
     <string name="browser_not_found">Nenhum navegador encontrado. Instale ou ative seu navegador</string>
