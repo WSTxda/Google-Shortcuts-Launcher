@@ -8,13 +8,12 @@ import android.net.Uri
 import android.widget.Toast
 
 class WeatherActivity : Activity() {
+
     override fun onResume() {
         super.onResume()
-
         if (openWeatherInQuickSearch()) {
             return
         }
-
         openWeatherInBrowser()
     }
 
@@ -45,11 +44,11 @@ class WeatherActivity : Activity() {
             startActivity(browserIntent)
             finish()
         } catch (e: ActivityNotFoundException) {
-            showError(R.string.browser_not_found)
+            showError(getString(R.string.browser_not_found))
         }
     }
 
-    private fun showError(messageResId: Int) {
-        Toast.makeText(applicationContext, messageResId, Toast.LENGTH_SHORT).show()
+    private fun showError(message: String) {
+        Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
     }
 }

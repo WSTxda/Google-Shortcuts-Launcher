@@ -15,8 +15,8 @@ class MusicSearchActivity : Activity() {
     override fun onCreate(bundle: Bundle?) {
         super.onCreate(bundle)
 
-        val intent = Intent("com.google.android.googlequicksearchbox.MUSIC_SEARCH")
         try {
+            val intent = Intent("com.google.android.googlequicksearchbox.MUSIC_SEARCH")
             startActivity(intent)
         } catch (e: ActivityNotFoundException) {
             handleMusicSearchNotFound(e)

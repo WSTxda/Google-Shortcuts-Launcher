@@ -2,6 +2,7 @@ package com.wstxda.gsl
 
 import android.app.Activity
 import android.app.AlertDialog
+import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
@@ -39,9 +40,10 @@ class GameActivity : Activity() {
     }
 
     private fun showAssistantDialog() {
-        AlertDialog.Builder(this).setTitle(R.string.assistant_dialog_title)
-            .setMessage(R.string.assistant_dialog_summary)
-            .setPositiveButton(R.string.assistant_dialog_setup) { _, _ ->
+        AlertDialog.Builder(this).apply {
+            setTitle(R.string.assistant_dialog_title)
+            setMessage(R.string.assistant_dialog_summary)
+            setPositiveButton(R.string.assistant_dialog_setup) { _, _ ->
                 openAssistantSettings()
                 dialogHide()
                 finish()
@@ -51,6 +53,7 @@ class GameActivity : Activity() {
             }.setOnCancelListener {
                 finish()
             }.show()
+        }
     }
 
     private fun dialogHideHandle() {
@@ -74,7 +77,7 @@ class GameActivity : Activity() {
                 component = ComponentName(packageName, className)
             })
             true
-        } catch (e: Exception) {
+        } catch (e: ActivityNotFoundException) {
             false
         }
     }
@@ -90,18 +93,16 @@ class GameActivity : Activity() {
             component = ComponentName(playGamesPackageName, playGamesClassName)
         }
 
-        if (tryStartActivity(playGamesIntent)) {
-            return
+        if (!tryStartActivity(playGamesIntent)) {
+            showPlayGamesNotFoundMessage()
         }
-
-        showPlayGamesNotFoundMessage()
     }
 
     private fun tryStartActivity(intent: Intent): Boolean {
         return try {
             startActivity(intent)
             true
-        } catch (e: Exception) {
+        } catch (e: ActivityNotFoundException) {
             false
         }
     }
