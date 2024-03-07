@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Base" parent="@style/Theme.Material3.DynamicColors.Light">
+        <!--attributes colors-->
+        <item name="android:colorAccent">?colorPrimary</item>
+        <!--components theme-->
+        <item name="alertDialogTheme">@style/Theme.AlertDialog</item>
+        <item name="switchPreferenceCompatStyle">@style/Theme.SwitchPreferenceCompat</item>
+        <!--app bars colors-->
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <!--hide actionbar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--dynamic colors-->
+        <item name="isMaterial3DynamicColorApplied">true</item>
+    </style>
+</resources>

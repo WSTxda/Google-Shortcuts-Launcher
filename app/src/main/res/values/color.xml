@@ -8,7 +8,7 @@
 
     <!--material colors-->
 
-    <color name="seed">#1a73e8</color>
+    <color name="accent">#1a73e8</color>
     <color name="md_theme_light_primary">#005BC0</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>
     <color name="md_theme_light_primaryContainer">#D8E2FF</color>
