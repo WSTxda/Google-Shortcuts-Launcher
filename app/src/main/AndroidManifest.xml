@@ -20,11 +20,11 @@
 
         <activity-alias
             android:name="com.wstxda.gsl.SettingsActivityLauncher"
+            android:exported="true"
             android:icon="@mipmap/ic_launcher_settings"
             android:label="@string/app_settings"
             android:process=":ui"
-            android:targetActivity="com.wstxda.gsl.SettingsActivity"
-            android:exported="true">
+            android:targetActivity="com.wstxda.gsl.SettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />

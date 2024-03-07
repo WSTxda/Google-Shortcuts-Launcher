@@ -69,9 +69,9 @@
 
     <Preference
         android:key="version"
-        android:title="@string/pref_version"
         android:selectable="false"
         android:summary="@string/pref_version_number"
+        android:title="@string/pref_version"
         app:iconSpaceReserved="false" />
 
 </androidx.preference.PreferenceScreen>

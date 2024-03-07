@@ -1,31 +1,31 @@
 <resources>
-        <string name="app_name">Atajos de Google</string>
-        <string name="app_settings">Ajustes</string>
+    <string name="app_name">Atajos de Google</string>
+    <string name="app_settings">Ajustes</string>
 
-        <string name="pref_category_shortcuts_manager">Gestionar atajos</string>
-        <string name="pref_category_other">Otros</string>
-        <string name="pref_category_about">Acerca de</string>
+    <string name="pref_category_shortcuts_manager">Gestionar atajos</string>
+    <string name="pref_category_other">Otros</string>
+    <string name="pref_category_about">Acerca de</string>
 
-        <string name="pref_version">Versión</string>
-        <string name="pref_developer">Desarrollador</string>
-        <string name="pref_source_code">Repositorio con el código fuente</string>
-        <string name="pref_hide_settings">Ocultar ajustes del lanzador</string>
-        <string name="pref_shortcut_enabled">Atajo en el lanzador activado</string>
-        <string name="pref_shortcut_disabled">Atajo en el lanzador desactivado</string>
-        <string name="pref_hide_settings_summary">Para acceder a la configuración cuando esté oculta, presione el acceso directo de <b>Buscar música</b> en el panel de configuración rápida</string>
+    <string name="pref_version">Versión</string>
+    <string name="pref_developer">Desarrollador</string>
+    <string name="pref_source_code">Repositorio con el código fuente</string>
+    <string name="pref_hide_settings">Ocultar ajustes del lanzador</string>
+    <string name="pref_shortcut_enabled">Atajo en el lanzador activado</string>
+    <string name="pref_shortcut_disabled">Atajo en el lanzador desactivado</string>
+    <string name="pref_hide_settings_summary">Para acceder a la configuración cuando esté oculta, presione el acceso directo de <b>Buscar música</b> en el panel de configuración rápida</string>
 
-        <string name="music_search_quick_settings">Buscar música</string>
-        <string name="password">Contraseñas</string>
-        <string name="music_search">Buscar</string>
-        <string name="weather">Tiempo</string>
-        <string name="games">Juegos</string>
+    <string name="music_search_quick_settings">Buscar música</string>
+    <string name="password">Contraseñas</string>
+    <string name="music_search">Buscar</string>
+    <string name="weather">Tiempo</string>
+    <string name="games">Juegos</string>
 
-        <string name="google_not_found">Actividad no encontrada. Instale o active Google App</string>
-        <string name="play_games_not_found">Actividad no encontrada. Instale o active Google Play Games</string>
-        <string name="browser_not_found">Navegador no encontrado. Instale o active su navegador</string>
+    <string name="google_not_found">Actividad no encontrada. Instale o active Google App</string>
+    <string name="play_games_not_found">Actividad no encontrada. Instale o active Google Play Games</string>
+    <string name="browser_not_found">Navegador no encontrado. Instale o active su navegador</string>
 
-        <string name="assistant_dialog_title">¿Activar atajos del asistente?</string>
-        <string name="assistant_dialog_summary">Use atajos del asistente para abrir sus juegos con botones y gestos en este dispositivo\n\nSeleccione Atajos de Google como asistente predeterminado para activar</string>
-        <string name="assistant_dialog_setup">Activar asistente</string>
-        <string name="assistant_dialog_cancel">Cancelar</string>
+    <string name="assistant_dialog_title">¿Activar atajos del asistente?</string>
+    <string name="assistant_dialog_summary">Use atajos del asistente para abrir sus juegos con botones y gestos en este dispositivo\n\nSeleccione Atajos de Google como asistente predeterminado para activar</string>
+    <string name="assistant_dialog_setup">Activar asistente</string>
+    <string name="assistant_dialog_cancel">Cancelar</string>
 </resources>
