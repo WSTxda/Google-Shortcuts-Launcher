@@ -9,7 +9,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.wstxda.gsl.SettingsActivity"
             android:exported="true"
             android:label="@string/app_settings">
             <intent-filter>
@@ -17,6 +17,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity-alias
+            android:name="com.wstxda.gsl.SettingsActivityLauncher"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_settings"
+            android:process=":ui"
+            android:targetActivity="com.wstxda.gsl.SettingsActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity-alias>
 
         <activity
             android:name="com.wstxda.gsl.WeatherActivity"

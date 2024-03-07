@@ -14,6 +14,7 @@
     <string name="pref_hide_settings">Hide settings in launcher</string>
     <string name="pref_shortcut_enabled">Shortcut launcher enabled</string>
     <string name="pref_shortcut_disabled">Shortcut launcher disabled</string>
+    <string name="pref_hide_settings_summary">To access settings when hidden, press the <b>Music search</b> qs tile in quick settings panel</string>
 
     <string name="pref_version_number" translatable="false">%s</string>
 

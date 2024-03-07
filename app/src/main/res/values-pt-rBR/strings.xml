@@ -12,6 +12,7 @@
     <string name="pref_hide_settings">Ocultar configurações do launcher</string>
     <string name="pref_shortcut_enabled">Atalho no launcher ativado</string>
     <string name="pref_shortcut_disabled">Atalho no launcher desativado</string>
+    <string name="pref_hide_settings_summary">Para acessar as configurações quando estiver oculta, pressione o atalho de <b>Pesquisar música</b> no painel de configurações rápidas</string>
 
     <string name="music_search_quick_settings">Pesquisar música</string>
     <string name="password">Senhas</string>
