@@ -15,6 +15,8 @@
     <string name="pref_shortcut_enabled">Shortcut launcher enabled</string>
     <string name="pref_shortcut_disabled">Shortcut launcher disabled</string>
 
+    <string name="pref_version_number" translatable="false">%s</string>
+
     <string name="music_search_quick_settings">Music search</string>
     <string name="password">Passwords</string>
     <string name="music_search">Search</string>

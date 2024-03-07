@@ -50,18 +50,22 @@
         app:iconSpaceReserved="false" />
 
     <Preference
+        android:key="developer"
         android:summary="@string/pref_developer"
         android:title="@string/pref_wstxda"
         app:iconSpaceReserved="false" />
 
     <Preference
+        android:key="github_repository"
         android:summary="@string/pref_source_code"
         android:title="@string/pref_github"
         app:iconSpaceReserved="false" />
 
     <Preference
-        android:key="pref_version"
+        android:key="version"
         android:title="@string/pref_version"
+        android:selectable="false"
+        android:summary="@string/pref_version_number"
         app:iconSpaceReserved="false" />
 
 </androidx.preference.PreferenceScreen>
