@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/pref_category_shortcuts_manager"
+        app:iconSpaceReserved="false" />
+
+    <SwitchPreferenceCompat
+        android:icon="@mipmap/ic_launcher_weather"
+        android:key="weather_activity"
+        android:summaryOff="@string/pref_shortcut_enabled"
+        android:summaryOn="@string/pref_shortcut_disabled"
+        android:title="@string/weather" />
+
+    <SwitchPreferenceCompat
+        android:icon="@mipmap/ic_launcher_password"
+        android:key="password_manager_activity"
+        android:summaryOff="@string/pref_shortcut_enabled"
+        android:summaryOn="@string/pref_shortcut_disabled"
+        android:title="@string/password" />
+
+    <SwitchPreferenceCompat
+        android:icon="@mipmap/ic_launcher_game"
+        android:key="game_activity"
+        android:summaryOff="@string/pref_shortcut_enabled"
+        android:summaryOn="@string/pref_shortcut_disabled"
+        android:title="@string/games" />
+
+    <SwitchPreferenceCompat
+        android:icon="@mipmap/ic_launcher_music"
+        android:key="music_search_activity"
+        android:summaryOff="@string/pref_shortcut_enabled"
+        android:summaryOn="@string/pref_shortcut_disabled"
+        android:title="@string/music_search_quick_settings" />
+
+    <PreferenceCategory
+        android:title="@string/pref_category_other"
+        app:allowDividerAbove="false"
+        app:iconSpaceReserved="false" />
+
+    <SwitchPreferenceCompat
+        android:key="settings_activity"
+        android:title="@string/pref_hide_settings"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceCategory
+        android:title="@string/pref_category_about"
+        app:allowDividerAbove="false"
+        app:iconSpaceReserved="false" />
+
+    <Preference
+        android:summary="@string/pref_developer"
+        android:title="@string/pref_wstxda"
+        app:iconSpaceReserved="false" />
+
+    <Preference
+        android:summary="@string/pref_source_code"
+        android:title="@string/pref_github"
+        app:iconSpaceReserved="false" />
+
+    <Preference
+        android:key="pref_version"
+        android:title="@string/pref_version"
+        app:iconSpaceReserved="false" />
+
+</androidx.preference.PreferenceScreen>
