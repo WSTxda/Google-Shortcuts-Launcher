@@ -9,7 +9,7 @@
     <string name="pref_version">Versión</string>
     <string name="pref_developer">Desarrollador</string>
     <string name="pref_source_code">Repositorio con el código fuente</string>
-    <string name="pref_hide_settings">Ocultar ajustes del lanzador</string>
+    <string name="pref_show_settings">Mostrar ajustes en lanzador</string>
     <string name="pref_shortcut_enabled">Atajo en el lanzador activado</string>
     <string name="pref_shortcut_disabled">Atajo en el lanzador desactivado</string>
     <string name="pref_hide_settings_summary">Para acceder a la configuración cuando esté oculta, presione el acceso directo de <b>Buscar música</b> en el panel de configuración rápida</string>

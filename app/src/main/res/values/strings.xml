@@ -11,7 +11,7 @@
     <string name="pref_version">Version</string>
     <string name="pref_developer">Developer</string>
     <string name="pref_source_code">Source code repository</string>
-    <string name="pref_hide_settings">Hide settings in launcher</string>
+    <string name="pref_show_settings">Show settings in launcher</string>
     <string name="pref_shortcut_enabled">Shortcut launcher enabled</string>
     <string name="pref_shortcut_disabled">Shortcut launcher disabled</string>
     <string name="pref_hide_settings_summary">To access settings when hidden, press the <b>Music search</b> qs tile in quick settings panel</string>

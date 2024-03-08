@@ -39,18 +39,18 @@ class SettingsActivity : AppCompatActivity() {
         private fun setupPreference(key: String, activityClass: Class<*>) {
             val preference = findPreference<SwitchPreferenceCompat>(key)
             preference?.setOnPreferenceChangeListener { _, newValue ->
-                val hideActivity = newValue as? Boolean ?: false
-                toggleActivityVisibility(activityClass, hideActivity)
+                val showActivity = newValue as? Boolean ?: false
+                toggleActivityVisibility(activityClass, showActivity)
                 true
             }
         }
 
-        private fun toggleActivityVisibility(activityClass: Class<*>, hideActivity: Boolean) {
+        private fun toggleActivityVisibility(activityClass: Class<*>, showActivity: Boolean) {
             val packageManager = requireActivity().packageManager
             val componentName = ComponentName(requireContext(), activityClass)
 
-            val newState = if (hideActivity) PackageManager.COMPONENT_ENABLED_STATE_DISABLED
-            else PackageManager.COMPONENT_ENABLED_STATE_ENABLED
+            val newState = if (showActivity) PackageManager.COMPONENT_ENABLED_STATE_ENABLED
+            else PackageManager.COMPONENT_ENABLED_STATE_DISABLED
 
             packageManager.setComponentEnabledSetting(
                 componentName, newState, PackageManager.DONT_KILL_APP

@@ -7,35 +7,35 @@
         app:iconSpaceReserved="false" />
 
     <SwitchPreferenceCompat
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_weather"
         android:key="weather_activity"
-        android:summaryOff="@string/pref_shortcut_enabled"
-        android:summaryOn="@string/pref_shortcut_disabled"
+        android:summaryOff="@string/pref_shortcut_disabled"
+        android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/weather" />
 
     <SwitchPreferenceCompat
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_password"
         android:key="password_manager_activity"
-        android:summaryOff="@string/pref_shortcut_enabled"
-        android:summaryOn="@string/pref_shortcut_disabled"
+        android:summaryOff="@string/pref_shortcut_disabled"
+        android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/password" />
 
     <SwitchPreferenceCompat
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_game"
         android:key="game_activity"
-        android:summaryOff="@string/pref_shortcut_enabled"
-        android:summaryOn="@string/pref_shortcut_disabled"
+        android:summaryOff="@string/pref_shortcut_disabled"
+        android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/games" />
 
     <SwitchPreferenceCompat
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_music"
         android:key="music_search_activity"
-        android:summaryOff="@string/pref_shortcut_enabled"
-        android:summaryOn="@string/pref_shortcut_disabled"
+        android:summaryOff="@string/pref_shortcut_disabled"
+        android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/music_search_quick_settings" />
 
     <PreferenceCategory
@@ -44,10 +44,10 @@
         app:iconSpaceReserved="false" />
 
     <SwitchPreferenceCompat
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:key="settings_activity"
         android:summary="@string/pref_hide_settings_summary"
-        android:title="@string/pref_hide_settings"
+        android:title="@string/pref_show_settings"
         app:iconSpaceReserved="false" />
 
     <PreferenceCategory
