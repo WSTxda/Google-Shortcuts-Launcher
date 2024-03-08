@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!--app shortcuts theme transparent-->
+
+    <style name="Theme.Transparent" parent="@style/Theme.Material3.DynamicColors.DayNight">
+        <!--app bars colors-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!--components theme-->
+        <item name="alertDialogTheme">@style/Theme.AlertDialog</item>
+        <!--window transparent-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--dynamic colors-->
+        <item name="isMaterial3DynamicColorApplied">true</item>
+    </style>
+
+    <!--app theme base-->
+
     <style name="AppTheme.Base" parent="@style/Theme.Material3.DynamicColors.Light">
         <!--attributes colors-->
         <item name="android:colorAccent">?colorPrimary</item>
