@@ -25,6 +25,7 @@ class SettingsActivity : AppCompatActivity() {
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
             setPreferencesFromResource(R.xml.preferences, rootKey)
 
+            setupPreference("assistant_activity", AssistantActivity::class.java)
             setupPreference("weather_activity", WeatherActivity::class.java)
             setupPreference("password_manager_activity", PasswordManagerActivity::class.java)
             setupPreference("game_activity", GameActivity::class.java)

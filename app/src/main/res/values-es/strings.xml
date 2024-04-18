@@ -19,6 +19,7 @@
     <string name="music_search">Buscar</string>
     <string name="weather">Tiempo</string>
     <string name="games">Juegos</string>
+    <string name="assistant">Asistente</string>
 
     <string name="google_not_found">Actividad no encontrada. Instale o active Google App</string>
     <string name="play_games_not_found">Actividad no encontrada. Instale o active Google Play Games</string>

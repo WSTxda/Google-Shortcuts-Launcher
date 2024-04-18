@@ -43,6 +43,20 @@
         </activity>
 
         <activity
+            android:name="com.wstxda.gsl.AssistantActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:icon="@mipmap/ic_launcher_assistant"
+            android:label="@string/assistant"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name="com.wstxda.gsl.PasswordManagerActivity"
             android:excludeFromRecents="true"
             android:exported="true"

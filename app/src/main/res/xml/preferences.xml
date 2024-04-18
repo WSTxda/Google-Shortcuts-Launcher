@@ -8,6 +8,14 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
+        android:icon="@mipmap/ic_launcher_assistant"
+        android:key="assistant_activity"
+        android:summaryOff="@string/pref_shortcut_disabled"
+        android:summaryOn="@string/pref_shortcut_enabled"
+        android:title="@string/assistant" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_weather"
         android:key="weather_activity"
         android:summaryOff="@string/pref_shortcut_disabled"
