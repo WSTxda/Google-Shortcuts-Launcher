@@ -30,11 +30,10 @@
 
         <activity
             android:name="com.wstxda.gsl.WeatherActivity"
-            android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_weather"
             android:label="@string/weather"
+            android:noHistory="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,11 +43,10 @@
 
         <activity
             android:name="com.wstxda.gsl.AssistantActivity"
-            android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_assistant"
             android:label="@string/assistant"
+            android:noHistory="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,9 +56,7 @@
 
         <activity
             android:name="com.wstxda.gsl.PasswordManagerActivity"
-            android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
             android:noHistory="true"
@@ -73,11 +69,10 @@
 
         <activity
             android:name="com.wstxda.gsl.GameActivity"
-            android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_game"
             android:label="@string/games"
+            android:noHistory="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -91,9 +86,7 @@
 
         <activity
             android:name="com.wstxda.gsl.MusicSearchActivity"
-            android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_music"
             android:label="@string/music_search"
             android:noHistory="true"
