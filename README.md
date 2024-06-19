@@ -1,5 +1,5 @@
 # Google Shortcuts Launcher
-Google apps features shortcuts in your apps list in launcher
+Get Google apps features shortcuts in your launcher app drawer
 
 [![Platform](https://img.shields.io/badge/android-platform?style=for-the-badge&label=platform&labelColor=21262d&color=6e7681)](https://www.android.com) [![API](https://img.shields.io/badge/24%2B-level?style=for-the-badge&logo=android&logoColor=3cd382&label=API&labelColor=21262d&color=ff663b)](https://developer.android.com/studio/releases/platforms) [![Release](https://img.shields.io/github/v/release/WSTxda/Google-Shortcuts-Launcher?display_name=tag&style=for-the-badge&logo=github&labelColor=21262d&color=1f6feb)](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest) [![Downloads](https://img.shields.io/github/downloads/WSTxda/Google-Shortcuts-Launcher/total?style=for-the-badge&labelColor=21262d&color=238636)](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases)
 
