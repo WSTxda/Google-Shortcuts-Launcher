@@ -25,16 +25,16 @@ class GameActivity : Activity() {
         if (!dialogShown) {
             showAssistantDialog()
         } else {
-            handleActivityFlow()
+            startGameTurbo()
         }
     }
 
-    private fun handleActivityFlow() {
-        if (!tryOpenActivity(
+    private fun startGameTurbo() {
+        if (!tryStartActivityIntent(
                 "com.miui.securitycenter", "com.miui.gamebooster.ui.GameBoosterMainActivity"
             )
         ) {
-            openPlayGames()
+            startPlayGames()
         }
         finish()
     }
@@ -45,10 +45,10 @@ class GameActivity : Activity() {
             setMessage(R.string.assistant_dialog_summary)
             setPositiveButton(R.string.assistant_dialog_setup) { _, _ ->
                 openAssistantSettings()
-                dialogHide()
+                markDialogAsShown()
                 finish()
             }.setNegativeButton(R.string.assistant_dialog_cancel) { _, _ ->
-                dialogHideHandle()
+                markDialogAsShown()
                 finish()
             }.setOnCancelListener {
                 finish()
@@ -56,33 +56,25 @@ class GameActivity : Activity() {
         }
     }
 
-    private fun dialogHideHandle() {
+    private fun markDialogAsShown() {
         getSharedPreferences(prefsName, 0).edit().putBoolean(prefsKeyDialogShown, true).apply()
-        handleActivityFlow()
-    }
-
-    private fun dialogHide() {
-        getSharedPreferences(prefsName, 0).edit().putBoolean(prefsKeyDialogShown, true).apply()
+        startGameTurbo()
     }
 
     private fun openAssistantSettings() {
         startActivity(Intent(Settings.ACTION_VOICE_INPUT_SETTINGS))
     }
 
-    private fun tryOpenActivity(packageName: String, className: String): Boolean {
-        return try {
-            startActivity(Intent().apply {
-                action = Intent.ACTION_MAIN
-                addCategory(Intent.CATEGORY_LAUNCHER)
-                component = ComponentName(packageName, className)
-            })
-            true
-        } catch (e: ActivityNotFoundException) {
-            false
+    private fun tryStartActivityIntent(packageName: String, className: String): Boolean {
+        val intent = Intent().apply {
+            action = Intent.ACTION_MAIN
+            addCategory(Intent.CATEGORY_LAUNCHER)
+            component = ComponentName(packageName, className)
         }
+        return tryStartActivity(intent)
     }
 
-    private fun openPlayGames() {
+    private fun startPlayGames() {
         val playGamesPackageName = "com.google.android.play.games"
         val playGamesClassName =
             "com.google.android.apps.play.games.features.gamefolder.GameFolderTrampolineActivity"

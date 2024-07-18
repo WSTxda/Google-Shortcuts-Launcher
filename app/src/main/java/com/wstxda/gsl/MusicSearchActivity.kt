@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 
 class MusicSearchActivity : Activity() {
@@ -19,18 +18,17 @@ class MusicSearchActivity : Activity() {
             val intent = Intent("com.google.android.googlequicksearchbox.MUSIC_SEARCH")
             startActivity(intent)
         } catch (e: ActivityNotFoundException) {
-            handleMusicSearchNotFound(e)
+            handleMusicSearchNotFound()
+        } finally {
+            finish()
         }
-        finish()
     }
 
-    private fun handleMusicSearchNotFound(e: ActivityNotFoundException) {
-        Log.e(TAG, "Unable to start music search intent", e)
-        showToast(R.string.google_not_found, Toast.LENGTH_LONG)
-        finish()
+    private fun handleMusicSearchNotFound() {
+        showToast(R.string.google_not_found)
     }
 
-    private fun showToast(resId: Int, duration: Int) {
-        Toast.makeText(applicationContext, resId, duration).show()
+    private fun showToast(resId: Int) {
+        Toast.makeText(applicationContext, resId, Toast.LENGTH_LONG).show()
     }
 }
