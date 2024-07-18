@@ -21,6 +21,10 @@
     <string name="games">Juegos</string>
     <string name="assistant">Asistente</string>
 
+    <string name="pref_password_manager_root">Administrador de Contraseñas (root)</string>
+    <string name="pref_password_manager_root_summary">Use el método root para abrir la actividad del administrador de contraseñas en los Google Play Services</string>
+    <string name="password_manager_root_error">Concede primero los permisos de root</string>
+
     <string name="google_not_found">Actividad no encontrada. Instale o active Google App</string>
     <string name="play_games_not_found">Actividad no encontrada. Instale o active Google Play Games</string>
     <string name="browser_not_found">Navegador no encontrado. Instale o active su navegador</string>

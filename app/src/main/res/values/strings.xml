@@ -25,6 +25,10 @@
     <string name="games">Games</string>
     <string name="assistant">Assistant</string>
 
+    <string name="pref_password_manager_root">Password Manager (root)</string>
+    <string name="pref_password_manager_root_summary">Use root method to open password manager activity in Google Play Services</string>
+    <string name="password_manager_root_error">Grant root permission first</string>
+
     <string name="google_not_found">Activity not found. Please install or enable Google App</string>
     <string name="play_games_not_found">Activity not found. Please install or enable Google Play Games</string>
     <string name="browser_not_found">No browser found, Please install or enable your browser</string>

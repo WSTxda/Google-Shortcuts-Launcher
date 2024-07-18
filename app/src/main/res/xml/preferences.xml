@@ -52,6 +52,14 @@
         app:iconSpaceReserved="false" />
 
     <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:dependency="password_manager_activity"
+        android:key="password_manager_root"
+        android:summary="@string/pref_password_manager_root_summary"
+        android:title="@string/pref_password_manager_root"
+        app:iconSpaceReserved="false" />
+
+    <SwitchPreferenceCompat
         android:defaultValue="true"
         android:key="settings_activity"
         android:summary="@string/pref_hide_settings_summary"
