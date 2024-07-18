@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme.Base" parent="@style/Theme.Material3.Dark">
+    <style name="AppTheme.Base" parent="@style/Theme.Material3.Dark.NoActionBar">
         <!--attributes colors-->
         <item name="android:colorAccent">?colorPrimary</item>
         <!--components theme-->
         <item name="alertDialogTheme">@style/Theme.AlertDialog</item>
         <item name="switchPreferenceCompatStyle">@style/Theme.SwitchPreferenceCompat</item>
         <!--app bars colors-->
-        <item name="android:statusBarColor">?android:colorBackground</item>
-        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
-        <!--hide actionbar-->
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
         <!--material colors-->
         <item name="colorPrimary">@color/md_theme_dark_primary</item>
         <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
