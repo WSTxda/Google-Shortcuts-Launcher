@@ -58,7 +58,6 @@ class GameActivity : Activity() {
 
     private fun markDialogAsShown() {
         getSharedPreferences(prefsName, 0).edit().putBoolean(prefsKeyDialogShown, true).apply()
-        startGameTurbo()
     }
 
     private fun openAssistantSettings() {
