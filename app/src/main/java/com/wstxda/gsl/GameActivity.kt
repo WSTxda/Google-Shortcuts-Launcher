@@ -6,24 +6,26 @@ import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
+import android.widget.Button
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class GameActivity : Activity() {
 
     private val prefsName = "MyPrefsFile"
-    private val prefsKeyDialogShown = "dialogShown"
+    private val prefsKeySheetShown = "sheetShown"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        checkAndHandleDialog()
+        checkAndHandleBottomSheetDialog()
     }
 
-    private fun checkAndHandleDialog() {
-        val dialogShown = getSharedPreferences(prefsName, 0).getBoolean(prefsKeyDialogShown, false)
+    private fun checkAndHandleBottomSheetDialog() {
+        val bottomSheetShown =
+            getSharedPreferences(prefsName, 0).getBoolean(prefsKeySheetShown, false)
 
-        if (!dialogShown) {
-            showAssistantDialog()
+        if (!bottomSheetShown) {
+            showAssistantBottomSheet()
         } else {
             startGameTurbo()
         }
@@ -39,25 +41,34 @@ class GameActivity : Activity() {
         finish()
     }
 
-    private fun showAssistantDialog() {
-        AlertDialog.Builder(this).apply {
-            setTitle(R.string.assistant_dialog_title)
-            setMessage(R.string.assistant_dialog_summary)
-            setPositiveButton(R.string.assistant_dialog_setup) { _, _ ->
-                openAssistantSettings()
-                markDialogAsShown()
-                finish()
-            }.setNegativeButton(R.string.assistant_dialog_cancel) { _, _ ->
-                markDialogAsShown()
-                finish()
-            }.setOnCancelListener {
-                finish()
-            }.show()
+    private fun showAssistantBottomSheet() {
+        val bottomSheetView = layoutInflater.inflate(R.layout.bottom_sheet_assistant, null, false)
+
+        val bottomSheetDialog = BottomSheetDialog(this)
+        bottomSheetDialog.setContentView(bottomSheetView)
+
+        bottomSheetView.findViewById<Button>(R.id.setup_button).setOnClickListener {
+            openAssistantSettings()
+            markDialogAsShown()
+            bottomSheetDialog.dismiss()
+            finish()
         }
+
+        bottomSheetView.findViewById<Button>(R.id.cancel_button).setOnClickListener {
+            markDialogAsShown()
+            bottomSheetDialog.dismiss()
+            finish()
+        }
+
+        bottomSheetDialog.setOnCancelListener {
+            finish()
+        }
+
+        bottomSheetDialog.show()
     }
 
     private fun markDialogAsShown() {
-        getSharedPreferences(prefsName, 0).edit().putBoolean(prefsKeyDialogShown, true).apply()
+        getSharedPreferences(prefsName, 0).edit().putBoolean(prefsKeySheetShown, true).apply()
     }
 
     private fun openAssistantSettings() {

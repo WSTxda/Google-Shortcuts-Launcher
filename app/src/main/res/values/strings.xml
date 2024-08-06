@@ -36,8 +36,8 @@
     <string name="password_url" translatable="false">https://passwords.google.com</string>
     <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>
 
-    <string name="assistant_dialog_title">Enable assistant shortcuts?</string>
-    <string name="assistant_dialog_summary">Use assistant shortcuts to open your games with buttons and gestures on this device\n\nSelect Google Shortcuts Launcher as default assistant to enable</string>
-    <string name="assistant_dialog_setup">Enable assistant</string>
-    <string name="assistant_dialog_cancel">Cancel</string>
+    <string name="assistant_game_title">Enable assistant shortcuts?</string>
+    <string name="assistant_game_summary">Use assistant shortcuts to open your games with buttons and gestures on this device\n\nSelect <b>Google Shortcuts Launcher</b> as default assistant to enable</string>
+    <string name="assistant_setup_button">Enable assistant</string>
+    <string name="assistant_cancel_button">Cancel</string>
 </resources>
