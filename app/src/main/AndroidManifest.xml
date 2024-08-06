@@ -13,6 +13,8 @@
         <activity
             android:name="com.wstxda.gsl.SettingsActivity"
             android:exported="true"
+            android:icon="@mipmap/ic_launcher_settings"
+            android:label="@string/app_settings"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
