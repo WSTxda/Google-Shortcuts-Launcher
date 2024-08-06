@@ -21,7 +21,7 @@
     <string name="games">Juegos</string>
     <string name="assistant">Asistente</string>
 
-    <string name="pref_password_manager_root">Administrador de Contraseñas (root)</string>
+    <string name="pref_password_manager_root">Administrador de contraseñas (root)</string>
     <string name="pref_password_manager_root_summary">Use el método root para abrir la actividad del administrador de contraseñas en los Google Play Services</string>
     <string name="password_manager_root_error">Concede primero los permisos de root</string>
 

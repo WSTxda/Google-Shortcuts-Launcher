@@ -25,7 +25,7 @@
     <string name="games">Games</string>
     <string name="assistant">Assistant</string>
 
-    <string name="pref_password_manager_root">Password Manager (root)</string>
+    <string name="pref_password_manager_root">Password manager (root)</string>
     <string name="pref_password_manager_root_summary">Use root method to open password manager activity in Google Play Services</string>
     <string name="password_manager_root_error">Grant root permission first</string>
 

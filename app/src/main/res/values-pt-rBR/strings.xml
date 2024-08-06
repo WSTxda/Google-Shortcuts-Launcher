@@ -21,7 +21,7 @@
     <string name="games">Jogos</string>
     <string name="assistant">Assistente</string>
 
-    <string name="pref_password_manager_root">Gerenciador de Senhas (root)</string>
+    <string name="pref_password_manager_root">Gerenciador de senhas (root)</string>
     <string name="pref_password_manager_root_summary">Use o método de root para abrir a atividade do gerenciador de senhas no Google Play Services</string>
     <string name="password_manager_root_error">Conceda autorização de root primeiro</string>
 
