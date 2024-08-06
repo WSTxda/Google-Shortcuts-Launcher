@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Google Shortcuts Launcher</string>
+    <string name="app_name_launcher" translatable="false">GSL</string>
     <string name="app_settings">Settings</string>
 
     <string name="pref_category_shortcuts_manager">Shortcuts manager</string>
@@ -26,7 +27,7 @@
     <string name="assistant">Assistant</string>
 
     <string name="pref_password_manager_root">Password manager (root)</string>
-    <string name="pref_password_manager_root_summary">Use root method to open password manager activity in Google Play Services</string>
+    <string name="pref_password_manager_root_summary">Use root access to open password manager activity in Google Play Services</string>
     <string name="password_manager_root_error">Grant root permission first</string>
 
     <string name="google_not_found">Activity not found. Please install or enable Google App</string>

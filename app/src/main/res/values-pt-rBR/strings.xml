@@ -22,8 +22,8 @@
     <string name="assistant">Assistente</string>
 
     <string name="pref_password_manager_root">Gerenciador de senhas (root)</string>
-    <string name="pref_password_manager_root_summary">Use o método de root para abrir a atividade do gerenciador de senhas no Google Play Services</string>
-    <string name="password_manager_root_error">Conceda autorização de root primeiro</string>
+    <string name="pref_password_manager_root_summary">Use o acesso root para abrir a atividade do gerenciador de senhas no Google Play Services</string>
+    <string name="password_manager_root_error">Conceda acesso root primeiro</string>
 
     <string name="google_not_found">Atividade não encontrada. Instale ou ative o Google App</string>
     <string name="play_games_not_found">Atividade não encontrada. Instale ou ative o Google Play Games</string>
