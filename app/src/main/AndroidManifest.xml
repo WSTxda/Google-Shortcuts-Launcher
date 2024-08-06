@@ -12,7 +12,8 @@
 
         <activity
             android:name="com.wstxda.gsl.SettingsActivity"
-            android:exported="true">
+            android:exported="true"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -22,7 +23,7 @@
         <activity-alias
             android:name="com.wstxda.gsl.SettingsActivityLauncher"
             android:exported="true"
-            android:label="@string/app_settings"
+            android:noHistory="true"
             android:process=":ui"
             android:targetActivity="com.wstxda.gsl.SettingsActivity">
             <intent-filter>
@@ -37,6 +38,8 @@
             android:icon="@mipmap/ic_launcher_weather"
             android:label="@string/weather"
             android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,6 +53,8 @@
             android:icon="@mipmap/ic_launcher_assistant"
             android:label="@string/assistant"
             android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,6 +68,8 @@
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
             android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -77,6 +84,8 @@
             android:icon="@mipmap/ic_launcher_game"
             android:label="@string/games"
             android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent"
             tools:targetApi="tiramisu">
             <intent-filter>
@@ -95,6 +104,8 @@
             android:icon="@mipmap/ic_launcher_music"
             android:label="@string/music_search"
             android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
