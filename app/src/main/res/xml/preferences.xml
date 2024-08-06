@@ -10,6 +10,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_assistant"
         android:key="assistant_activity"
+        android:layout="@layout/preference_app_icon_switch"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/assistant" />
@@ -18,6 +19,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_weather"
         android:key="weather_activity"
+        android:layout="@layout/preference_app_icon_switch"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/weather" />
@@ -26,6 +28,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_password"
         android:key="password_manager_activity"
+        android:layout="@layout/preference_app_icon_switch"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/password" />
@@ -34,6 +37,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_game"
         android:key="game_activity"
+        android:layout="@layout/preference_app_icon_switch"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/games" />
@@ -42,6 +46,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_music"
         android:key="music_search_activity"
+        android:layout="@layout/preference_app_icon_switch"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/music_search_quick_settings" />
