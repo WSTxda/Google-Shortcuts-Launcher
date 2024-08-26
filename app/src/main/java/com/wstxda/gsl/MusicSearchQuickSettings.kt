@@ -4,8 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.service.quicksettings.TileService
 
+@Suppress("DEPRECATION")
 class MusicSearchQuickSettings : TileService() {
-    // android.service.quicksettings.TileService
     @SuppressLint("StartActivityAndCollapseDeprecated")
     override fun onClick() {
         super.onClick()

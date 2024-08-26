@@ -26,13 +26,17 @@
     <string name="games">Games</string>
     <string name="assistant">Assistant</string>
 
+    <string name="pref_device_game_manager">Use device game manager</string>
+    <string name="pref_device_game_manager_summary">Use device game manager for launching games instead of Google Play Games</string>
+
     <string name="pref_password_manager_root">Password manager (root)</string>
     <string name="pref_password_manager_root_summary">Use root access to open password manager activity in Google Play Services</string>
-    <string name="password_manager_root_error">Grant root permission first</string>
 
     <string name="google_not_found">Activity not found. Please install or enable Google App</string>
     <string name="play_games_not_found">Activity not found. Please install or enable Google Play Games</string>
     <string name="browser_not_found">No browser found, Please install or enable your browser</string>
+    <string name="game_manager_not_found">Game manager not supported in this device</string>
+    <string name="password_manager_root_error">Grant root permission first</string>
 
     <string name="password_url" translatable="false">https://passwords.google.com</string>
     <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>

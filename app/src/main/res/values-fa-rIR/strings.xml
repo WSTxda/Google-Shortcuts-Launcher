@@ -21,13 +21,17 @@
     <string name="games">بازی‌ها</string>
     <string name="assistant">دستیار</string>
 
+    <string name="pref_device_game_manager">از مدیر بازی های دستگاه استفاده کنید</string>
+    <string name="pref_device_game_manager_summary">از مدیر بازی دستگاه برای راه اندازی بازی ها به جای بازی های Google Play استفاده کنید</string>
+
     <string name="pref_password_manager_root">مدیریت گذرواژه (ریشه)</string>
     <string name="pref_password_manager_root_summary">از دسترسی ریشه برای باز کردن فعالیت مدیریت گذرواژه در خدمات گوگل پلی استفاده کنید</string>
-    <string name="password_manager_root_error">ابتدا مجوز ریشه را اعطا کنید</string>
 
     <string name="google_not_found">فعالیت یافت نشد. لطفاً برنامه گوگل را نصب یا فعال کنید</string>
     <string name="play_games_not_found">فعالیت یافت نشد. لطفاً بازی‌های گوگل پلی را نصب یا فعال کنید</string>
     <string name="browser_not_found">مرورگری پیدا نشد، لطفا مرورگر خود را نصب یا فعال کنید</string>
+    <string name="game_manager_not_found">مدیر بازی در این دستگاه پشتیبانی نمی شود</string>
+    <string name="password_manager_root_error">ابتدا مجوز ریشه را اعطا کنید</string>
 
     <string name="assistant_game_title">فعال‌کردن دستیار میانبرها؟</string>
     <string name="assistant_game_summary">از میانبرهای دستیار برای بازکردن بازی‌های خود با دکمه‌ها و اشاره‌ها در این دستگاه استفاده کنید\n\nبرای فعال کردن، <b>راه‌انداز میانبرهای گوگل</b> را به عنوان دستیار پیش‌فرض انتخاب کنید</string>

@@ -21,13 +21,17 @@
     <string name="games">Juegos</string>
     <string name="assistant">Asistente</string>
 
+    <string name="pref_device_game_manager">Utilizar el administrador de juegos del dispositivo</string>
+    <string name="pref_device_game_manager_summary">Utilizar el administrador de juegos del dispositivo para iniciar juegos en lugar de Google Play Games</string>
+
     <string name="pref_password_manager_root">Administrador de contraseñas (root)</string>
     <string name="pref_password_manager_root_summary">Use acesso root para abrir la actividad del administrador de contraseñas en los Google Play Services</string>
-    <string name="password_manager_root_error">Concede primero los acesso root</string>
 
     <string name="google_not_found">Actividad no encontrada. Instale o active Google App</string>
     <string name="play_games_not_found">Actividad no encontrada. Instale o active Google Play Games</string>
     <string name="browser_not_found">Navegador no encontrado. Instale o active su navegador</string>
+    <string name="game_manager_not_found">El administrador de juegos no es compatible con este dispositivo</string>
+    <string name="password_manager_root_error">Conceder primero el permiso de root</string>
 
     <string name="assistant_game_title">¿Activar atajos del asistente?</string>
     <string name="assistant_game_summary">Use atajos del asistente para abrir sus juegos con botones y gestos en este dispositivo\n\nSeleccione <b>Atajos de Google</b> como asistente predeterminado para activar</string>
