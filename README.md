@@ -7,19 +7,18 @@ Get Google apps features shortcuts in your launcher app drawer
 
 **Shortcuts available**
 
-- Music search (Discover the music being played in any environment)
+- Assistant: Quick invoke device voice assistant like Gemini, Google Assistant or others
 
-- Password manager (Google saved password manager)
+- Music search: Discover the music being played in any environment (Quick Settings Tile Available)
 
-- Weather (Get real-time information on local weather and weekly forecasts)
+- Password manager: Open Google saved password manager in browser (ROOT: Open Google password manager in Google Play Services)
 
-- Game Turbo (Its interface and gaming tools in MIUI and HyperOS)
+- Weather: Get real-time information on local weather and weekly forecasts
 
-- Games (A paste with all your installed games and other games from Google Play Games)
+- Games: A paste with all your installed games and others games from Google Play Games (Also can launch game manager from diferents brands, like, Xiaomi, Oppo, Samsung, Nubia, Asus, etc.)
 
->Need Google, Google Play Games and Play Services apps installed.
-
->Game Turbo need running MIUI or HyperOS with Security app installed.
+> [!NOTE]
+> Need Google, Google Play Services, Google Play Games apps installed in device to work shortcurts.
 
 **Download**
 
