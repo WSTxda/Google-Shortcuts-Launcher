@@ -11,8 +11,8 @@ android {
         applicationId = "com.wstxda.gsl"
         minSdk = 24
         targetSdk = 33
-        versionCode = 440
-        versionName = "4.4"
+        versionCode = 450
+        versionName = "4.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
