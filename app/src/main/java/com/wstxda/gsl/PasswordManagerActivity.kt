@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.wstxda.gsl
 
 import android.app.Activity
