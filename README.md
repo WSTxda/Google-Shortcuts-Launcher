@@ -5,22 +5,30 @@ Get Google apps features shortcuts in your launcher app drawer
 
 ![alt text](https://raw.githubusercontent.com/WSTxda/Google-Shortcuts-Launcher/main/images/Banner.svg)
 
-**Shortcuts available**
+### Shortcuts available
 
-- Assistant: Quick invoke device voice assistant like Gemini, Google Assistant or others
+**Assistant** Quick invoke device voice assistant like Gemini, Google Assistant or others...
 
-- Music search: Discover the music being played in any environment (Quick Settings Tile Available)
+**Music Search** Discover the music being played in any environment.
 
-- Password manager: Open Google saved password manager in browser (ROOT: Open Google password manager in Google Play Services)
+> Music Search quick settings tile also available.
 
-- Weather: Get real-time information on local weather and weekly forecasts
+**Password Manager** Open Google saved password manager in browser. 
 
-- Games: A paste with all your installed games and others games from Google Play Games (Also can launch game manager from diferents brands, like, Xiaomi, Oppo, Samsung, Nubia, Asus, etc.)
+> `ROOT` Open Google Play Services password manager instead of using browser.
+
+**Games** A paste with all your installed games and others games from Google Play Games.
+
+> Also can use game manager from diferents brands, like: Xiaomi, Oppo, Samsung, Nubia, Asus, and more...
+
+**Weather** Get real-time information on local weather and weekly forecasts.
+
+> If the Google app is not available, it will open weather information in browser.
 
 > [!NOTE]
 > Need Google, Google Play Services, Google Play Games apps installed in device to work shortcurts.
 
-**Download**
+### Download
 
 [<img src="https://raw.githubusercontent.com/WSTxda/QP-Gallery-Releases/master/Images/GitHub.svg"
       alt='Get it on GitHub'
@@ -28,7 +36,7 @@ Get Google apps features shortcuts in your launcher app drawer
       alt='Get it on Telegram'
       height="80">](https://t.me/WSTprojects)
 
-**Donate**
+### Donate
 
 [<img src="https://raw.githubusercontent.com/WSTxda/QP-Gallery-Releases/master/Images/PayPal.svg"
       alt='Donate with PayPal'
