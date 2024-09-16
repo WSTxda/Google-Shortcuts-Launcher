@@ -7,9 +7,6 @@ import android.os.Bundle
 import android.widget.Toast
 
 class MusicSearchActivity : Activity() {
-    companion object {
-        private const val TAG = "MusicSearchActivity"
-    }
 
     override fun onCreate(bundle: Bundle?) {
         super.onCreate(bundle)

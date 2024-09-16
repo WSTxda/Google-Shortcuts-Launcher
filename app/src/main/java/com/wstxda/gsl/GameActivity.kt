@@ -1,6 +1,5 @@
 package com.wstxda.gsl
 
-import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Intent
@@ -71,9 +70,10 @@ class GameActivity : AppCompatActivity() {
         }
     }
 
-    @SuppressLint("InflateParams")
     private fun showAssistantBottomSheet() {
-        val bottomSheetView = layoutInflater.inflate(R.layout.bottom_sheet_assistant, null, false)
+        val bottomSheetView = layoutInflater.inflate(
+            R.layout.bottom_sheet_assistant, findViewById(android.R.id.content), false
+        )
 
         val bottomSheetDialog = BottomSheetDialog(this)
         bottomSheetDialog.setContentView(bottomSheetView)
