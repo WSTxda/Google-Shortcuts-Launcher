@@ -1,11 +1,11 @@
-package com.wstxda.gsl
+package com.wstxda.gsl.shortcut.utils
 
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 
-class GameManagerBrands(private val context: Context) {
+class GamePackagesBrands(private val context: Context) {
 
     private val gameManagerIntents = listOf(
 

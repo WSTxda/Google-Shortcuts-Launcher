@@ -1,4 +1,4 @@
-package com.wstxda.gsl
+package com.wstxda.gsl.shortcut
 
 import android.app.Activity
 import android.content.ActivityNotFoundException

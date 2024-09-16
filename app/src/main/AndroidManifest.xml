@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:enableOnBackInvokedCallback="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:enableOnBackInvokedCallback="true"
         android:theme="@style/AppTheme"
         tools:targetApi="tiramisu">
 
@@ -36,13 +36,13 @@
         </activity-alias>
 
         <activity
-            android:name="com.wstxda.gsl.WeatherActivity"
+            android:name="com.wstxda.gsl.shortcut.WeatherActivity"
+            android:excludeFromRecents="true"
             android:exported="true"
+            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_weather"
             android:label="@string/weather"
             android:noHistory="true"
-            android:excludeFromRecents="true"
-            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,13 +51,13 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.AssistantActivity"
+            android:name="com.wstxda.gsl.shortcut.AssistantActivity"
+            android:excludeFromRecents="true"
             android:exported="true"
+            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_assistant"
             android:label="@string/assistant"
             android:noHistory="true"
-            android:excludeFromRecents="true"
-            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,13 +66,13 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.PasswordManagerActivity"
+            android:name="com.wstxda.gsl.shortcut.PasswordManagerActivity"
+            android:excludeFromRecents="true"
             android:exported="true"
+            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
             android:noHistory="true"
-            android:excludeFromRecents="true"
-            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -81,14 +81,14 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.GameActivity"
-            android:exported="true"
+            android:name="com.wstxda.gsl.shortcut.GameActivity"
             android:enableOnBackInvokedCallback="true"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_game"
             android:label="@string/games"
             android:noHistory="true"
-            android:excludeFromRecents="true"
-            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent"
             tools:targetApi="tiramisu">
             <intent-filter>
@@ -102,13 +102,13 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.MusicSearchActivity"
+            android:name="com.wstxda.gsl.shortcut.MusicSearchActivity"
+            android:excludeFromRecents="true"
             android:exported="true"
+            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_music"
             android:label="@string/music_search"
             android:noHistory="true"
-            android:excludeFromRecents="true"
-            android:finishOnTaskLaunch="true"
             android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

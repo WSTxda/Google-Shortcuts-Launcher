@@ -1,4 +1,4 @@
-package com.wstxda.gsl
+package com.wstxda.gsl.shortcut
 
 import android.content.ActivityNotFoundException
 import android.content.ComponentName
@@ -9,6 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.wstxda.gsl.shortcut.utils.GamePackagesBrands
+import com.wstxda.gsl.R
 
 class GameActivity : AppCompatActivity() {
 
@@ -39,7 +41,7 @@ class GameActivity : AppCompatActivity() {
         val useGameManager = sharedPreferences.getBoolean(GAME_MANAGER_PREF_KEY, false)
 
         if (useGameManager) {
-            val gameManager = GameManagerBrands(this)
+            val gameManager = GamePackagesBrands(this)
             if (!gameManager.launchGameManager()) {
                 showGameManagerNotFoundMessage()
             }

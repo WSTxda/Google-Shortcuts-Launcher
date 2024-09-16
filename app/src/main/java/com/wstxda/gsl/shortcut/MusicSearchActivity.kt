@@ -1,10 +1,11 @@
-package com.wstxda.gsl
+package com.wstxda.gsl.shortcut
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import com.wstxda.gsl.R
 
 class MusicSearchActivity : Activity() {
 

@@ -1,4 +1,4 @@
-package com.wstxda.gsl
+package com.wstxda.gsl.shortcut
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
@@ -8,6 +8,7 @@ import android.os.Bundle
 import androidx.preference.PreferenceManager
 import android.widget.Toast
 import androidx.annotation.StringRes
+import com.wstxda.gsl.R
 
 class PasswordManagerActivity : Activity() {
 
