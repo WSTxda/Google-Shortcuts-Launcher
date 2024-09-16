@@ -8,9 +8,9 @@
         android:id="@+id/standard_bottom_sheet"
         style="@style/Widget.Material3.BottomSheet"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:paddingBottom="20dp">
 
         <com.google.android.material.bottomsheet.BottomSheetDragHandleView
@@ -25,7 +25,7 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:gravity="center"
             android:text="@string/assistant_game_title"
             android:textAppearance="?attr/textAppearanceTitleLarge"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
             android:id="@+id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:text="@string/assistant_game_summary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -45,9 +45,9 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/setup_button"
             style="@style/Widget.Material3.Button"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="18dp"
             android:text="@string/assistant_setup_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/cancel_button"
             style="@style/Widget.Material3.Button.TonalButton"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/assistant_cancel_button"
