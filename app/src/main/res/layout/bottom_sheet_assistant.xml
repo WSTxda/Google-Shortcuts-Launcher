@@ -5,8 +5,6 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/standard_bottom_sheet"
-        style="@style/Widget.Material3.BottomSheet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="20dp"
