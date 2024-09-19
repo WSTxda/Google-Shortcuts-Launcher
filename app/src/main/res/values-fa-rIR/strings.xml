@@ -34,7 +34,7 @@
     <string name="password_manager_root_error">ابتدا مجوز ریشه را اعطا کنید</string>
 
     <string name="assistant_game_title">آیا میانبرهای دستیار صوتی را فعال کنیم؟</string>
-    <string name="assistant_game_summary">از میانبرهای دستیار صوتی برای باز کردن بازی‌های خود با دکمه‌ها و حرکات روی این دستگاه استفاده کنید. <b>Google Shortcuts Launcher</b> را به عنوان دستیار پیش‌فرض انتخاب کنید تا این ویژگی فعال شود</string>
+    <string name="assistant_game_summary">از میانبرهای دستیار صوتی برای باز کردن بازی‌های خود با دکمه‌ها و حرکات روی این دستگاه استفاده کنید. <b>راه‌انداز میانبرهای گوگل</b> را به عنوان دستیار پیش‌فرض انتخاب کنید تا این ویژگی فعال شود</string>
     <string name="assistant_setup_button">فعال‌سازی دستیار</string>
     <string name="assistant_cancel_button">لغو</string>
 </resources>
