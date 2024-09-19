@@ -67,7 +67,7 @@
         android:defaultValue="false"
         android:dependency="game_activity"
         android:icon="@drawable/ic_games"
-        android:key="use_game_manager"
+        android:key="device_game_manager"
         android:summary="@string/pref_device_game_manager_summary"
         android:title="@string/pref_device_game_manager"
         app:singleLineTitle="false" />

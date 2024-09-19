@@ -21,8 +21,8 @@
     <string name="games">بازی‌ها</string>
     <string name="assistant">دستیار</string>
 
-    <string name="pref_device_game_manager">از مدیر بازی های دستگاه استفاده کنید</string>
-    <string name="pref_device_game_manager_summary">از مدیر بازی دستگاه برای راه اندازی بازی ها به جای بازی های Google Play استفاده کنید</string>
+    <string name="pref_device_game_manager">مدیر بازی دستگاه</string>
+    <string name="pref_device_game_manager_summary">برای راه‌اندازی بازی‌ها از مدیر بازی دستگاه به جای پوشه Google Play Games استفاده کنید</string>
 
     <string name="pref_password_manager_root">مدیریت گذرواژه (ریشه)</string>
     <string name="pref_password_manager_root_summary">از دسترسی ریشه برای باز کردن فعالیت مدیریت گذرواژه در خدمات گوگل پلی استفاده کنید</string>
@@ -33,8 +33,8 @@
     <string name="game_manager_not_found">مدیر بازی در این دستگاه پشتیبانی نمی شود</string>
     <string name="password_manager_root_error">ابتدا مجوز ریشه را اعطا کنید</string>
 
-    <string name="assistant_game_title">فعال‌کردن دستیار میانبرها؟</string>
-    <string name="assistant_game_summary">از میانبرهای دستیار برای بازکردن بازی‌های خود با دکمه‌ها و اشاره‌ها در این دستگاه استفاده کنید\n\nبرای فعال کردن، <b>راه‌انداز میانبرهای گوگل</b> را به عنوان دستیار پیش‌فرض انتخاب کنید</string>
-    <string name="assistant_setup_button">فعال‌کردن دستیار</string>
-    <string name="assistant_cancel_button">لغوکردن</string>
+    <string name="assistant_game_title">آیا میانبرهای دستیار صوتی را فعال کنیم؟</string>
+    <string name="assistant_game_summary">از میانبرهای دستیار صوتی برای باز کردن بازی‌های خود با دکمه‌ها و حرکات روی این دستگاه استفاده کنید. <b>Google Shortcuts Launcher</b> را به عنوان دستیار پیش‌فرض انتخاب کنید تا این ویژگی فعال شود</string>
+    <string name="assistant_setup_button">فعال‌سازی دستیار</string>
+    <string name="assistant_cancel_button">لغو</string>
 </resources>

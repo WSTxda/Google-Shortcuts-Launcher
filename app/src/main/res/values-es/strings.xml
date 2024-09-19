@@ -21,8 +21,8 @@
     <string name="games">Juegos</string>
     <string name="assistant">Asistente</string>
 
-    <string name="pref_device_game_manager">Utilizar el administrador de juegos del dispositivo</string>
-    <string name="pref_device_game_manager_summary">Utilizar el administrador de juegos del dispositivo para iniciar juegos en lugar de Google Play Games</string>
+    <string name="pref_device_game_manager">Administrador de juegos del dispositivo</string>
+    <string name="pref_device_game_manager_summary">Utiliza el administrador de juegos del dispositivo para iniciar juegos en lugar de la carpeta de Google Play Games</string>
 
     <string name="pref_password_manager_root">Administrador de contraseñas (root)</string>
     <string name="pref_password_manager_root_summary">Use acesso root para abrir la actividad del administrador de contraseñas en los Google Play Services</string>
@@ -33,8 +33,8 @@
     <string name="game_manager_not_found">El administrador de juegos no es compatible con este dispositivo</string>
     <string name="password_manager_root_error">Conceder primero el permiso de root</string>
 
-    <string name="assistant_game_title">¿Activar atajos del asistente?</string>
-    <string name="assistant_game_summary">Use atajos del asistente para abrir sus juegos con botones y gestos en este dispositivo\n\nSeleccione <b>Atajos de Google</b> como asistente predeterminado para activar</string>
-    <string name="assistant_setup_button">Activar asistente</string>
+    <string name="assistant_game_title">¿Activar accesos directos del asistente por voz?</string>
+    <string name="assistant_game_summary">Usa accesos directos del asistente por voz para abrir tus juegos con botones y gestos en este dispositivo. Selecciona <b>Google Shortcuts Launcher</b> como asistente predeterminado para habilitar esta función</string>
+    <string name="assistant_setup_button">Activar Asistente</string>
     <string name="assistant_cancel_button">Cancelar</string>
 </resources>
