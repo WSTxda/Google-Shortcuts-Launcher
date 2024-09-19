@@ -9,34 +9,37 @@ import android.os.Bundle
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
-import com.wstxda.gsl.shortcut.AssistantActivity
-import com.wstxda.gsl.shortcut.GamesActivity
-import com.wstxda.gsl.shortcut.MusicSearchActivity
-import com.wstxda.gsl.shortcut.PasswordManagerActivity
 import com.wstxda.gsl.R
 import com.wstxda.gsl.SettingsActivity
-import com.wstxda.gsl.shortcut.WeatherActivity
+import com.wstxda.gsl.shortcut.*
 
 class SettingsPreferenceFragment : PreferenceFragmentCompat() {
+
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
 
-        setupPreference("assistant_activity", AssistantActivity::class.java)
-        setupPreference("weather_activity", WeatherActivity::class.java)
-        setupPreference("password_manager_activity", PasswordManagerActivity::class.java)
-        setupPreference("game_activity", GamesActivity::class.java)
-        setupPreference("music_search_activity", MusicSearchActivity::class.java)
-        setupPreference("settings_activity", SettingsActivity::class.java)
-        setupLinkPreference("developer", "https://github.com/WSTxda")
-        setupLinkPreference(
-            "github_repository", "https://github.com/WSTxda/Google-Shortcuts-Launcher"
+        setupActivityPreferences()
+        setupLinkPreferences()
+        updateVersionSummary()
+    }
+
+    private fun setupActivityPreferences() {
+        val preferences = mapOf(
+            "assistant_activity" to AssistantActivity::class.java,
+            "weather_activity" to WeatherActivity::class.java,
+            "password_manager_activity" to PasswordManagerActivity::class.java,
+            "game_activity" to GamesActivity::class.java,
+            "music_search_activity" to MusicSearchActivity::class.java,
+            "settings_activity" to SettingsActivity::class.java
         )
-        findPreference<Preference>("version")?.summary = getVersionName()
+
+        preferences.forEach { (key, activityClass) ->
+            setupPreference(key, activityClass)
+        }
     }
 
     private fun setupPreference(key: String, activityClass: Class<*>) {
-        val preference = findPreference<SwitchPreferenceCompat>(key)
-        preference?.setOnPreferenceChangeListener { _, newValue ->
+        findPreference<SwitchPreferenceCompat>(key)?.setOnPreferenceChangeListener { _, newValue ->
             val showActivity = newValue as? Boolean ?: false
             toggleActivityVisibility(activityClass, showActivity)
             true
@@ -55,6 +58,10 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         )
     }
 
+    private fun updateVersionSummary() {
+        findPreference<Preference>("version")?.summary = getVersionName()
+    }
+
     private fun getVersionName(): String {
         return try {
             val packageInfo: PackageInfo =
@@ -65,9 +72,19 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         }
     }
 
+    private fun setupLinkPreferences() {
+        val links = mapOf(
+            "developer" to "https://github.com/WSTxda",
+            "github_repository" to "https://github.com/WSTxda/Google-Shortcuts-Launcher"
+        )
+
+        links.forEach { (key, url) ->
+            setupLinkPreference(key, url)
+        }
+    }
+
     private fun setupLinkPreference(key: String, url: String) {
-        val preference = findPreference<Preference>(key)
-        preference?.setOnPreferenceClickListener {
+        findPreference<Preference>(key)?.setOnPreferenceClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
             startActivity(intent)
             true
