@@ -59,7 +59,7 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         return try {
             val packageInfo: PackageInfo =
                 requireContext().packageManager.getPackageInfo(requireContext().packageName, 0)
-            packageInfo.versionName
+            packageInfo.versionName ?: "N/A"
         } catch (e: PackageManager.NameNotFoundException) {
             "N/A"
         }
