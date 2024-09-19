@@ -10,7 +10,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.shortcut.AssistantActivity
-import com.wstxda.gsl.shortcut.GameActivity
+import com.wstxda.gsl.shortcut.GamesActivity
 import com.wstxda.gsl.shortcut.MusicSearchActivity
 import com.wstxda.gsl.shortcut.PasswordManagerActivity
 import com.wstxda.gsl.R
@@ -24,7 +24,7 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         setupPreference("assistant_activity", AssistantActivity::class.java)
         setupPreference("weather_activity", WeatherActivity::class.java)
         setupPreference("password_manager_activity", PasswordManagerActivity::class.java)
-        setupPreference("game_activity", GameActivity::class.java)
+        setupPreference("game_activity", GamesActivity::class.java)
         setupPreference("music_search_activity", MusicSearchActivity::class.java)
         setupPreference("settings_activity", SettingsActivity::class.java)
         setupLinkPreference("developer", "https://github.com/WSTxda")

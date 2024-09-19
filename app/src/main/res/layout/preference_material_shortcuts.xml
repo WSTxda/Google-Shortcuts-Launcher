@@ -1,55 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:gravity="center_vertical"
-    android:clipToPadding="false"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:baselineAligned="false"
+    android:clipToPadding="false"
+    android:gravity="center_vertical"
     android:minHeight="?android:listPreferredItemHeightSmall"
     android:paddingStart="?android:listPreferredItemPaddingStart"
     android:paddingEnd="?android:listPreferredItemPaddingEnd">
 
     <ImageView
-        android:layout_gravity="center"
         android:id="@android:id/icon"
         android:layout_width="38dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="18dp" />
+        android:layout_gravity="center"
+        android:layout_marginEnd="18dp"
+        android:importantForAccessibility="no" />
 
     <RelativeLayout
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
 
         <TextView
-            android:textAppearance="?textAppearanceListItem"
-            android:ellipsize="marquee"
-            android:layout_gravity="start"
             android:id="@android:id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:ellipsize="marquee"
             android:maxLines="2"
-            android:textAlignment="viewStart" />
+            android:textAlignment="viewStart"
+            android:textAppearance="?textAppearanceListItem" />
 
         <TextView
             android:id="@android:id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLines="10"
             android:layout_below="@android:id/title"
-            android:textAlignment="viewStart"
-            android:layout_alignStart="@android:id/title" />
+            android:layout_alignStart="@android:id/title"
+            android:maxLines="10"
+            android:textAlignment="viewStart" />
     </RelativeLayout>
 
     <LinearLayout
-        android:gravity="end|center"
-        android:orientation="vertical"
         android:id="@android:id/widget_frame"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:paddingStart="18dp" />
-
+        android:layout_marginStart="18dp"
+        android:gravity="end|center"
+        android:orientation="vertical" />
 </LinearLayout>

@@ -5,7 +5,7 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 
-class GamePackagesBrands(private val context: Context) {
+class GamesBrandsPackages(private val context: Context) {
 
     private val gameManagerIntents = listOf(
 
@@ -73,7 +73,7 @@ class GamePackagesBrands(private val context: Context) {
         "com.sonymobile.gameenhancer" to "com.sonymobile.gameenhancer.GameManagerActivity",
 
         // Vivo
-        "com.vivo.game" to "com.vivo.game.GameActivity",
+        "com.vivo.game" to "com.vivo.game.GamesActivity",
         "com.vivo.gamespace" to "com.vivo.gamespace.ui.GameSpaceMainActivity",
         "com.vivo.game" to "com.vivo.game.GameManagerActivity",
 

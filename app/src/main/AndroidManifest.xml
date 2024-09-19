@@ -43,7 +43,7 @@
             android:icon="@mipmap/ic_launcher_weather"
             android:label="@string/weather"
             android:noHistory="true"
-            android:theme="@style/Theme.Transparent">
+            android:theme="@style/AppTheme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -58,7 +58,7 @@
             android:icon="@mipmap/ic_launcher_assistant"
             android:label="@string/assistant"
             android:noHistory="true"
-            android:theme="@style/Theme.Transparent">
+            android:theme="@style/AppTheme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -73,7 +73,7 @@
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
             android:noHistory="true"
-            android:theme="@style/Theme.Transparent">
+            android:theme="@style/AppTheme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -81,7 +81,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcut.GameActivity"
+            android:name="com.wstxda.gsl.shortcut.GamesActivity"
             android:enableOnBackInvokedCallback="true"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -89,7 +89,7 @@
             android:icon="@mipmap/ic_launcher_game"
             android:label="@string/games"
             android:noHistory="true"
-            android:theme="@style/Theme.Transparent"
+            android:theme="@style/AppTheme.Transparent"
             tools:targetApi="tiramisu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -109,7 +109,7 @@
             android:icon="@mipmap/ic_launcher_music"
             android:label="@string/music_search"
             android:noHistory="true"
-            android:theme="@style/Theme.Transparent">
+            android:theme="@style/AppTheme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

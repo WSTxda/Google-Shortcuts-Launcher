@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!--app theme-->
 
     <style name="AppTheme" parent="AppTheme.Base" />
 
-    <!--app shortcuts theme transparent-->
+    <!--app theme transparent-->
 
-    <style name="Theme.Transparent" parent="@style/AppTheme.Base">
+    <style name="AppTheme.Transparent" parent="@style/AppTheme.Base">
         <!--app bars colors-->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
@@ -79,7 +80,7 @@
         <item name="colorSurfaceContainer">@color/md_theme_surfaceContainer</item>
         <item name="colorSurfaceContainerHigh">@color/md_theme_surfaceContainerHigh</item>
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest</item>
-        <!-- Layout padding -->
+        <!-- layout padding -->
         <item name="android:listPreferredItemPaddingLeft">17dp</item>
         <item name="android:listPreferredItemPaddingRight">17dp</item>
         <item name="android:listPreferredItemPaddingStart">17dp</item>

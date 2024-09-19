@@ -9,10 +9,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.wstxda.gsl.shortcut.utils.GamePackagesBrands
+import com.wstxda.gsl.shortcut.utils.GamesBrandsPackages
 import com.wstxda.gsl.R
 
-class GameActivity : AppCompatActivity() {
+class GamesActivity : AppCompatActivity() {
 
     companion object {
         private const val GAME_MANAGER_PREF_KEY = "use_game_manager"
@@ -41,7 +41,7 @@ class GameActivity : AppCompatActivity() {
         val useGameManager = sharedPreferences.getBoolean(GAME_MANAGER_PREF_KEY, false)
 
         if (useGameManager) {
-            val gameManager = GamePackagesBrands(this)
+            val gameManager = GamesBrandsPackages(this)
             if (!gameManager.launchGameManager()) {
                 showGameManagerNotFoundMessage()
             }
