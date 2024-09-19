@@ -5,15 +5,15 @@ plugins {
 
 android {
     namespace = "com.wstxda.gsl"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.wstxda.gsl"
         minSdk = 24
         //noinspection OldTargetApi
         targetSdk = 33
-        versionCode = 450
-        versionName = "4.5"
+        versionCode = 460
+        versionName = "4.6"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -41,5 +41,5 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.preference:preference-ktx:1.2.1")
     implementation("com.google.android.material:material:1.12.0")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.0")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.1")
 }
