@@ -36,15 +36,15 @@ class GamesActivity : AppCompatActivity() {
         if (!sharedPreferences.getBoolean(SHEET_SHOWN_PREF_KEY, false)) {
             showAssistantBottomSheet()
         } else {
-            launchGameManagerBrands()
+            launchGamesActivity()
         }
     }
 
-    private fun launchGameManagerBrands() {
-        val useGameManager = sharedPreferences.getBoolean(GAME_MANAGER_PREF_KEY, false)
-        if (useGameManager) {
-            val gameManager = GamesBrandsPackages(this)
-            if (!gameManager.launchGameManager()) {
+    private fun launchGamesActivity() {
+        val useGameDeviceManager = sharedPreferences.getBoolean(GAME_MANAGER_PREF_KEY, false)
+        if (useGameDeviceManager) {
+            val launchDeviceGameManager = GamesBrandsPackages(this)
+            if (!launchDeviceGameManager.launchGameManager()) {
                 showMessage(R.string.game_manager_not_found)
             }
         } else {
@@ -93,6 +93,7 @@ class GamesActivity : AppCompatActivity() {
         bottomSheetView.findViewById<Button>(R.id.cancel_button).setOnClickListener {
             markDialogAsShown()
             bottomSheetDialog.dismiss()
+            launchGamesActivity()
             finishActivity()
         }
 
