@@ -13,7 +13,7 @@ import com.wstxda.gsl.R
 import com.wstxda.gsl.SettingsActivity
 import com.wstxda.gsl.shortcut.*
 
-class SettingsPreferenceFragment : PreferenceFragmentCompat() {
+class PreferenceFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
