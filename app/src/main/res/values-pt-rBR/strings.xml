@@ -32,9 +32,9 @@
     <string name="browser_not_found">Nenhum navegador encontrado. Instale ou ative seu navegador</string>
     <string name="game_manager_not_found">Gerenciador de jogos não suportado neste dispositivo</string>
     <string name="password_manager_root_error">Conceda acesso root primeiro</string>
-    
+
     <string name="assistant_game_title">Ativar atalhos assistente de voz?</string>
-    <string name="assistant_game_summary">Use atalhos do assistente de voz para abrir seus jogos com botões e gestos neste dispositivo. Selecione <b>Google Shortcuts Launcher</b> como assistente padrão para ativar esse recurso</string>
+    <string name="assistant_game_summary">Use atalhos do assistente de voz para abrir seus jogos com botões e gestos neste dispositivo. Selecione <b>Atalhos do Google</b> como assistente padrão para ativar esse recurso</string>
     <string name="assistant_setup_button">Ativar Assistente</string>
     <string name="assistant_cancel_button">Cancelar</string>
 </resources>

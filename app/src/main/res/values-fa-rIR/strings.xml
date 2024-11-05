@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">راه‌انداز میانبرهای گوگل</string>
     <string name="app_settings">تنظیمات</string>
-
+    
     <string name="pref_category_shortcuts_manager">مدیریت میانبرها</string>
     <string name="pref_category_other">دیگر</string>
     <string name="pref_category_about">درباره</string>

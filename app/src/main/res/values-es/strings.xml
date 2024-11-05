@@ -34,7 +34,7 @@
     <string name="password_manager_root_error">Conceder primero el permiso de root</string>
 
     <string name="assistant_game_title">¿Activar accesos directos del asistente por voz?</string>
-    <string name="assistant_game_summary">Usa accesos directos del asistente por voz para abrir tus juegos con botones y gestos en este dispositivo. Selecciona <b>Google Shortcuts Launcher</b> como asistente predeterminado para habilitar esta función</string>
+    <string name="assistant_game_summary">Usa accesos directos del asistente por voz para abrir tus juegos con botones y gestos en este dispositivo. Selecciona <b>Atajos de Google</b> como asistente predeterminado para habilitar esta función</string>
     <string name="assistant_setup_button">Activar Asistente</string>
     <string name="assistant_cancel_button">Cancelar</string>
 </resources>
