@@ -11,7 +11,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_assistant"
         android:key="assistant_activity"
-        android:layout="@layout/preference_material_shortcuts"
+        android:layout="@layout/preference_material_shortcuts_top"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/assistant"
@@ -21,7 +21,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_weather"
         android:key="weather_activity"
-        android:layout="@layout/preference_material_shortcuts"
+        android:layout="@layout/preference_material_shortcuts_center"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/weather"
@@ -31,7 +31,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_password"
         android:key="password_manager_activity"
-        android:layout="@layout/preference_material_shortcuts"
+        android:layout="@layout/preference_material_shortcuts_center"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/password"
@@ -41,7 +41,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_game"
         android:key="game_activity"
-        android:layout="@layout/preference_material_shortcuts"
+        android:layout="@layout/preference_material_shortcuts_center"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/games"
@@ -51,7 +51,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_music"
         android:key="music_search_activity"
-        android:layout="@layout/preference_material_shortcuts"
+        android:layout="@layout/preference_material_shortcuts_bottom"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/music_search_quick_settings"
@@ -68,6 +68,7 @@
         android:dependency="game_activity"
         android:icon="@drawable/ic_games"
         android:key="device_game_manager"
+        android:layout="@layout/preference_material_top"
         android:summary="@string/pref_device_game_manager_summary"
         android:title="@string/pref_device_game_manager"
         app:singleLineTitle="false" />
@@ -77,6 +78,7 @@
         android:dependency="password_manager_activity"
         android:icon="@drawable/ic_root"
         android:key="password_manager_root"
+        android:layout="@layout/preference_material_center"
         android:summary="@string/pref_password_manager_root_summary"
         android:title="@string/pref_password_manager_root"
         app:singleLineTitle="false" />
@@ -85,6 +87,7 @@
         android:defaultValue="true"
         android:icon="@drawable/ic_settings"
         android:key="settings_activity"
+        android:layout="@layout/preference_material_bottom"
         android:summary="@string/pref_hide_settings_summary"
         android:title="@string/pref_show_settings"
         app:singleLineTitle="false" />
@@ -98,6 +101,7 @@
     <Preference
         android:icon="@drawable/ic_developer"
         android:key="developer"
+        android:layout="@layout/preference_material_top"
         android:summary="@string/pref_developer"
         android:title="@string/pref_wstxda"
         app:singleLineTitle="false" />
@@ -105,6 +109,7 @@
     <Preference
         android:icon="@drawable/ic_github"
         android:key="github_repository"
+        android:layout="@layout/preference_material_center"
         android:summary="@string/pref_source_code"
         android:title="@string/pref_github"
         app:singleLineTitle="false" />
@@ -112,6 +117,7 @@
     <Preference
         android:icon="@drawable/ic_about"
         android:key="version"
+        android:layout="@layout/preference_material_bottom"
         android:selectable="false"
         android:summary="@string/pref_version_number"
         android:title="@string/pref_version"

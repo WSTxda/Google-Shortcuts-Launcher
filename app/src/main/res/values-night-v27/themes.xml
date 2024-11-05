@@ -4,6 +4,7 @@
     <style name="AppTheme.Base" parent="@style/Theme.Material3.Dark.NoActionBar">
         <!--attributes colors-->
         <item name="android:colorAccent">?colorPrimary</item>
+        <item name="android:colorBackground">@color/md_theme_surface</item>
         <!--components theme-->
         <item name="alertDialogTheme">@style/Theme.AlertDialog</item>
         <item name="switchPreferenceCompatStyle">@style/Theme.SwitchPreferenceCompat</item>
@@ -30,7 +31,6 @@
         <item name="colorOnError">@color/md_theme_onError</item>
         <item name="colorErrorContainer">@color/md_theme_errorContainer</item>
         <item name="colorOnErrorContainer">@color/md_theme_onErrorContainer</item>
-        <item name="android:colorBackground">@color/md_theme_background</item>
         <item name="colorOnBackground">@color/md_theme_onBackground</item>
         <item name="colorSurface">@color/md_theme_surface</item>
         <item name="colorOnSurface">@color/md_theme_onSurface</item>
@@ -61,9 +61,9 @@
         <item name="colorSurfaceContainerHigh">@color/md_theme_surfaceContainerHigh</item>
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest</item>
         <!-- layout padding -->
-        <item name="android:listPreferredItemPaddingLeft">17dp</item>
-        <item name="android:listPreferredItemPaddingRight">17dp</item>
-        <item name="android:listPreferredItemPaddingStart">17dp</item>
-        <item name="android:listPreferredItemPaddingEnd">17dp</item>
+        <item name="android:listPreferredItemPaddingLeft">28dp</item>
+        <item name="android:listPreferredItemPaddingRight">28dp</item>
+        <item name="android:listPreferredItemPaddingStart">28dp</item>
+        <item name="android:listPreferredItemPaddingEnd">28dp</item>
     </style>
 </resources>
