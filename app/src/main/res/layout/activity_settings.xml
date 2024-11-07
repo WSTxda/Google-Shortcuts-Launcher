@@ -16,8 +16,9 @@
             style="?attr/collapsingToolbarLayoutMediumStyle"
             android:layout_width="match_parent"
             android:layout_height="?attr/collapsingToolbarLayoutMediumSize"
-            android:background="?android:colorBackground"
-            app:contentScrim="?android:attr/colorBackground"
+            app:collapsedTitleGravity="center"
+            app:expandedTitleMarginEnd="22dp"
+            app:expandedTitleMarginStart="22dp"
             app:expandedTitleTextAppearance="?attr/textAppearanceHeadlineMedium"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 

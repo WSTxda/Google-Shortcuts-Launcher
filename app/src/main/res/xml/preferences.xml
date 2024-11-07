@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
+        android:layout="@layout/preference_material_category"
         android:title="@string/pref_category_shortcuts_manager"
-        app:iconSpaceReserved="false"
-        app:singleLineTitle="false" />
+        app:allowDividerAbove="false" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
@@ -14,38 +14,34 @@
         android:layout="@layout/preference_material_shortcuts_top"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/assistant"
-        app:singleLineTitle="false" />
+        android:title="@string/assistant" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_weather"
         android:key="weather_activity"
-        android:layout="@layout/preference_material_shortcuts_center"
+        android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/weather"
-        app:singleLineTitle="false" />
+        android:title="@string/weather" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_password"
         android:key="password_manager_activity"
-        android:layout="@layout/preference_material_shortcuts_center"
+        android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/password"
-        app:singleLineTitle="false" />
+        android:title="@string/password" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_game"
         android:key="game_activity"
-        android:layout="@layout/preference_material_shortcuts_center"
+        android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/games"
-        app:singleLineTitle="false" />
+        android:title="@string/games" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
@@ -54,14 +50,12 @@
         android:layout="@layout/preference_material_shortcuts_bottom"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/music_search_quick_settings"
-        app:singleLineTitle="false" />
+        android:title="@string/music_search_quick_settings" />
 
     <PreferenceCategory
+        android:layout="@layout/preference_material_category"
         android:title="@string/pref_category_other"
-        app:allowDividerAbove="false"
-        app:iconSpaceReserved="false"
-        app:singleLineTitle="false" />
+        app:allowDividerAbove="false" />
 
     <SwitchPreferenceCompat
         android:defaultValue="false"
@@ -70,18 +64,16 @@
         android:key="device_game_manager"
         android:layout="@layout/preference_material_top"
         android:summary="@string/pref_device_game_manager_summary"
-        android:title="@string/pref_device_game_manager"
-        app:singleLineTitle="false" />
+        android:title="@string/pref_device_game_manager" />
 
     <SwitchPreferenceCompat
         android:defaultValue="false"
         android:dependency="password_manager_activity"
         android:icon="@drawable/ic_root"
         android:key="password_manager_root"
-        android:layout="@layout/preference_material_center"
+        android:layout="@layout/preference_material_middle"
         android:summary="@string/pref_password_manager_root_summary"
-        android:title="@string/pref_password_manager_root"
-        app:singleLineTitle="false" />
+        android:title="@string/pref_password_manager_root" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
@@ -89,30 +81,26 @@
         android:key="settings_activity"
         android:layout="@layout/preference_material_bottom"
         android:summary="@string/pref_hide_settings_summary"
-        android:title="@string/pref_show_settings"
-        app:singleLineTitle="false" />
+        android:title="@string/pref_show_settings" />
 
     <PreferenceCategory
+        android:layout="@layout/preference_material_category"
         android:title="@string/pref_category_about"
-        app:allowDividerAbove="false"
-        app:iconSpaceReserved="false"
-        app:singleLineTitle="false" />
+        app:allowDividerAbove="false" />
 
     <Preference
         android:icon="@drawable/ic_developer"
         android:key="developer"
         android:layout="@layout/preference_material_top"
         android:summary="@string/pref_developer"
-        android:title="@string/pref_wstxda"
-        app:singleLineTitle="false" />
+        android:title="@string/pref_wstxda" />
 
     <Preference
         android:icon="@drawable/ic_github"
         android:key="github_repository"
-        android:layout="@layout/preference_material_center"
+        android:layout="@layout/preference_material_middle"
         android:summary="@string/pref_source_code"
-        android:title="@string/pref_github"
-        app:singleLineTitle="false" />
+        android:title="@string/pref_github" />
 
     <Preference
         android:icon="@drawable/ic_about"
@@ -120,7 +108,6 @@
         android:layout="@layout/preference_material_bottom"
         android:selectable="false"
         android:summary="@string/pref_version_number"
-        android:title="@string/pref_version"
-        app:singleLineTitle="false" />
+        android:title="@string/pref_version" />
 
 </androidx.preference.PreferenceScreen>

@@ -7,7 +7,7 @@
     android:layout_marginTop="4dp"
     android:layout_marginEnd="16dp"
     android:layout_marginBottom="4dp"
-    android:background="@drawable/preference_card_center"
+    android:background="@drawable/preference_background_middle"
     android:baselineAligned="false"
     android:clickable="true"
     android:focusable="true"
@@ -23,14 +23,15 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="20dp"
         android:importantForAccessibility="no"
-        app:tint="?attr/colorOnSurface" />
+        app:tint="?android:textColorPrimary" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -38,15 +39,14 @@
             android:id="@android:id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="?attr/colorOnSurface"
-            android:textSize="16sp" />
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceListItem" />
 
         <TextView
             android:id="@android:id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="?attr/colorOnSurfaceVariant"
-            android:textSize="14sp" />
+            android:maxLines="8" />
     </LinearLayout>
 
     <LinearLayout
