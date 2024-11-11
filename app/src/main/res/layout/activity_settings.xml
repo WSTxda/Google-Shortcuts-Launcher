@@ -19,7 +19,7 @@
             app:collapsedTitleGravity="center"
             app:expandedTitleMarginEnd="22dp"
             app:expandedTitleMarginStart="22dp"
-            app:expandedTitleTextAppearance="?attr/textAppearanceHeadlineMedium"
+            app:expandedTitleTextAppearance="?attr/textAppearanceDisplaySmall"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
             <com.google.android.material.appbar.MaterialToolbar
