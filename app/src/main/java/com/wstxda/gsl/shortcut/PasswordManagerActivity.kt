@@ -1,14 +1,13 @@
 package com.wstxda.gsl.shortcut
 
 import android.app.Activity
-import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.preference.PreferenceManager
-import android.widget.Toast
 import androidx.annotation.StringRes
 import com.wstxda.gsl.R
+import com.wstxda.gsl.utils.IntentHelper
 
 class PasswordManagerActivity : Activity() {
 
@@ -20,17 +19,34 @@ class PasswordManagerActivity : Activity() {
         private const val PASSWORD_URL_KEY = "password_manager_root"
     }
 
-    private fun isRootAvailable(): Boolean {
-        return try {
-            val process = ProcessBuilder(ROOT_COMMAND, ROOT_COMMAND_OPTIONS, "id").start()
-            process.waitFor() == 0
-        } catch (e: Exception) {
-            false
+    override fun onCreate(bundle: Bundle?) {
+        super.onCreate(bundle)
+
+        val useSuMode =
+            PreferenceManager.getDefaultSharedPreferences(this).getBoolean(PASSWORD_URL_KEY, false)
+
+        if (useSuMode) {
+            if (isRootAvailable()) {
+                launchPasswordManager()
+            } else {
+                showError(R.string.password_manager_root_error)
+            }
+        } else {
+            startPasswordManagerBrowser(getString(R.string.password_url))
         }
+
+        finish()
     }
 
-    private fun startPasswordManagerActivity() {
-        try {
+    private fun isRootAvailable() = try {
+        val process = ProcessBuilder(ROOT_COMMAND, ROOT_COMMAND_OPTIONS, "id").start()
+        process.waitFor() == 0
+    } catch (_: Exception) {
+        false
+    }
+
+    private fun launchPasswordManager() {
+        runCatching {
             ProcessBuilder(
                 ROOT_COMMAND,
                 ROOT_COMMAND_OPTIONS,
@@ -38,40 +54,17 @@ class PasswordManagerActivity : Activity() {
                 "start",
                 "$PASSWORD_MANAGER_PACKAGE/$PASSWORD_MANAGER_ACTIVITY"
             ).start()
-        } catch (e: Exception) {
-            showError(R.string.password_manager_root_error)
-        }
+        }.onFailure { showError(R.string.password_manager_root_error) }
     }
 
-    private fun startPasswordManagerLink(url: String) {
-        try {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-            startActivity(intent)
-        } catch (e: ActivityNotFoundException) {
+    private fun startPasswordManagerBrowser(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        if (!IntentHelper.tryStartActivity(this, intent)) {
             showError(R.string.browser_not_found)
         }
     }
 
     private fun showError(@StringRes messageResId: Int) {
-        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onCreate(bundle: Bundle?) {
-        super.onCreate(bundle)
-
-        val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
-        val useSuMode = sharedPreferences.getBoolean(PASSWORD_URL_KEY, false)
-
-        if (useSuMode) {
-            if (isRootAvailable()) {
-                startPasswordManagerActivity()
-            } else {
-                showError(R.string.password_manager_root_error)
-            }
-        } else {
-            val url = getString(R.string.password_url)
-            startPasswordManagerLink(url)
-        }
-        finish()
+        IntentHelper.showToast(this, messageResId)
     }
 }

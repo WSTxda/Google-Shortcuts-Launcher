@@ -1,35 +1,31 @@
 package com.wstxda.gsl.shortcut
 
 import android.app.Activity
-import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Intent
+import android.os.Bundle
+import com.wstxda.gsl.utils.IntentHelper
+import com.wstxda.gsl.R
 
 class LensActivity : Activity() {
 
-    override fun onResume() {
-        super.onResume()
-        if (launchGoogleLens()) {
-            return
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (!launchGoogleLens()) {
+            IntentHelper.showToast(this, R.string.google_not_found)
         }
+        finish()
     }
 
     private fun launchGoogleLens(): Boolean {
         val lensIntent = Intent().apply {
-            action = Intent.ACTION_MAIN
-            addFlags(Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY)
             component = ComponentName(
                 "com.google.android.googlequicksearchbox",
                 "com.google.android.apps.search.lens.LensExportedActivity"
             )
+            flags = Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY
         }
 
-        return try {
-            startActivity(lensIntent)
-            finish()
-            true
-        } catch (_: ActivityNotFoundException) {
-            false
-        }
+        return IntentHelper.tryStartActivity(this, lensIntent)
     }
 }

@@ -1,10 +1,9 @@
 package com.wstxda.gsl.shortcut
 
 import android.app.Activity
-import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
+import com.wstxda.gsl.utils.IntentHelper
 import com.wstxda.gsl.R
 
 class MusicSearchActivity : Activity() {
@@ -12,21 +11,10 @@ class MusicSearchActivity : Activity() {
     override fun onCreate(bundle: Bundle?) {
         super.onCreate(bundle)
 
-        try {
-            val intent = Intent("com.google.android.googlequicksearchbox.MUSIC_SEARCH")
-            startActivity(intent)
-        } catch (e: ActivityNotFoundException) {
-            handleMusicSearchNotFound()
-        } finally {
-            finish()
+        val musicSearchIntent = Intent("com.google.android.googlequicksearchbox.MUSIC_SEARCH")
+        if (!IntentHelper.tryStartActivity(this, musicSearchIntent)) {
+            IntentHelper.showToast(this, R.string.google_not_found)
         }
-    }
-
-    private fun handleMusicSearchNotFound() {
-        showToast(R.string.google_not_found)
-    }
-
-    private fun showToast(resId: Int) {
-        Toast.makeText(applicationContext, resId, Toast.LENGTH_LONG).show()
+        finish()
     }
 }

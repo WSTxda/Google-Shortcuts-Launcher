@@ -1,14 +1,7 @@
-package com.wstxda.gsl.shortcut.utils
+package com.wstxda.gsl.utils
 
-import android.content.ActivityNotFoundException
-import android.content.ComponentName
-import android.content.Context
-import android.content.Intent
-
-class GamesBrandsPackages(private val context: Context) {
-
-    private val gameManagerIntents = listOf(
-
+object GamesBrandsPackages {
+    val gamesLaunchersIntents = listOf(
         // ASUS
         "com.asus.gamecenter" to "com.asus.gamecenter.GameCenterActivity",
         "com.asus.game" to "com.asus.game.ui.GameLauncherActivity",
@@ -86,31 +79,4 @@ class GamesBrandsPackages(private val context: Context) {
         "com.zte.gamespace" to "com.zte.gamespace.ui.GameSpaceMainActivity",
         "com.zte.gamespace" to "com.zte.gamespace.ui.GameManagerActivity"
     )
-
-    fun launchGameManager(): Boolean {
-        for ((packageName, className) in gameManagerIntents) {
-            if (tryStartActivityIntent(packageName, className)) {
-                return true
-            }
-        }
-        return false
-    }
-
-    private fun tryStartActivityIntent(packageName: String, className: String): Boolean {
-        val intent = Intent().apply {
-            action = Intent.ACTION_MAIN
-            addCategory(Intent.CATEGORY_LAUNCHER)
-            component = ComponentName(packageName, className)
-        }
-        return tryStartActivity(intent)
-    }
-
-    private fun tryStartActivity(intent: Intent): Boolean {
-        return try {
-            context.startActivity(intent)
-            true
-        } catch (e: ActivityNotFoundException) {
-            false
-        }
-    }
 }

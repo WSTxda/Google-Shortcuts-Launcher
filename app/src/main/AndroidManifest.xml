@@ -11,7 +11,7 @@
         tools:targetApi="tiramisu">
 
         <activity
-            android:name="com.wstxda.gsl.SettingsActivity"
+            android:name="com.wstxda.gsl.ui.SettingsActivity"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_settings"
             android:label="@string/app_settings"
@@ -23,11 +23,11 @@
         </activity>
 
         <activity-alias
-            android:name="com.wstxda.gsl.SettingsActivityLauncher"
+            android:name="com.wstxda.gsl.ui.SettingsActivityLauncher"
             android:exported="true"
             android:noHistory="true"
             android:process=":ui"
-            android:targetActivity="com.wstxda.gsl.SettingsActivity">
+            android:targetActivity="com.wstxda.gsl.ui.SettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
@@ -58,7 +58,7 @@
             android:icon="@mipmap/ic_launcher_lens"
             android:label="@string/lens"
             android:noHistory="true"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -132,7 +132,7 @@
         </activity>
 
         <service
-            android:name="com.wstxda.gsl.MusicSearchQuickSettings"
+            android:name="com.wstxda.gsl.shortcut.MusicSearchQuickSettings"
             android:exported="true"
             android:icon="@drawable/ic_music_search_tile"
             android:label="@string/music_search_quick_settings"

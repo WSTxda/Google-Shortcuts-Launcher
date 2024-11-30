@@ -1,4 +1,4 @@
-package com.wstxda.gsl
+package com.wstxda.gsl.ui
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.appbar.CollapsingToolbarLayout
+import com.wstxda.gsl.R
 
 class SettingsActivity : AppCompatActivity() {
 

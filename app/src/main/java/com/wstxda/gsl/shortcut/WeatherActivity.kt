@@ -1,25 +1,25 @@
 package com.wstxda.gsl.shortcut
 
 import android.app.Activity
-import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Intent
 import android.net.Uri
-import android.widget.Toast
+import android.os.Bundle
 import com.wstxda.gsl.R
+import com.wstxda.gsl.utils.IntentHelper
 
 class WeatherActivity : Activity() {
 
-    override fun onResume() {
-        super.onResume()
-        if (openWeatherInQuickSearch()) {
-            return
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (!launchGoogleWeather()) {
+            launchWeatherInBrowser()
         }
-        openWeatherInBrowser()
+        finish()
     }
 
-    private fun openWeatherInQuickSearch(): Boolean {
-        val quickSearchIntent = Intent().apply {
+    private fun launchGoogleWeather(): Boolean {
+        val googleIntent = Intent().apply {
             action = Intent.ACTION_MAIN
             addCategory(Intent.CATEGORY_LAUNCHER)
             component = ComponentName(
@@ -28,28 +28,15 @@ class WeatherActivity : Activity() {
             )
         }
 
-        return try {
-            startActivity(quickSearchIntent)
-            finish()
-            true
-        } catch (e: ActivityNotFoundException) {
-            false
-        }
+        return IntentHelper.tryStartActivity(this, googleIntent)
     }
 
-    private fun openWeatherInBrowser() {
+    private fun launchWeatherInBrowser() {
         val weatherUrl = getString(R.string.weather_url)
         val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(weatherUrl))
 
-        try {
-            startActivity(browserIntent)
-            finish()
-        } catch (e: ActivityNotFoundException) {
-            showError(getString(R.string.browser_not_found))
+        if (!IntentHelper.tryStartActivity(this, browserIntent)) {
+            IntentHelper.showToast(this, R.string.browser_not_found)
         }
-    }
-
-    private fun showError(message: String) {
-        Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
     }
 }

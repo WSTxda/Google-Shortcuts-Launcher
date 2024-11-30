@@ -1,32 +1,25 @@
 package com.wstxda.gsl.shortcut
 
 import android.app.Activity
-import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.content.Intent.ACTION_VOICE_COMMAND
 import android.os.Bundle
-import android.util.Log
+import com.wstxda.gsl.utils.IntentHelper
+import com.wstxda.gsl.R
 
 class AssistantActivity : Activity() {
-
-    companion object {
-        private const val TAG = "AssistantActivity"
-        private const val VOICE_COMMAND_ACTION = Intent.ACTION_VOICE_COMMAND
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        try {
-            val intent = Intent(VOICE_COMMAND_ACTION)
-            startActivity(intent)
-        } catch (e: ActivityNotFoundException) {
-            handleAssistantNotFound(e)
-        } finally {
-            finish()
+        val intent = Intent(ACTION_VOICE_COMMAND)
+        if (!IntentHelper.tryStartActivity(this, intent)) {
+            assistantNotFound()
         }
+        finish()
     }
 
-    private fun handleAssistantNotFound(e: ActivityNotFoundException) {
-        Log.e(TAG, "Unable to start assistant intent", e)
+    private fun assistantNotFound() {
+        IntentHelper.showToast(this, R.string.google_not_found)
     }
 }
