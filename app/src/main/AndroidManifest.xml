@@ -36,21 +36,6 @@
         </activity-alias>
 
         <activity
-            android:name="com.wstxda.gsl.shortcut.WeatherActivity"
-            android:excludeFromRecents="true"
-            android:exported="true"
-            android:finishOnTaskLaunch="true"
-            android:icon="@mipmap/ic_launcher_weather"
-            android:label="@string/weather"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.Transparent">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name="com.wstxda.gsl.shortcut.AssistantActivity"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -66,14 +51,14 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcut.PasswordManagerActivity"
+            android:name="com.wstxda.gsl.shortcut.LensActivity"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
-            android:icon="@mipmap/ic_launcher_password"
-            android:label="@string/password"
+            android:icon="@mipmap/ic_launcher_lens"
+            android:label="@string/lens"
             android:noHistory="true"
-            android:theme="@style/AppTheme.Transparent">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -98,6 +83,36 @@
             <intent-filter>
                 <action android:name="android.intent.action.ASSIST" />
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.wstxda.gsl.shortcut.PasswordManagerActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:icon="@mipmap/ic_launcher_password"
+            android:label="@string/password"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.wstxda.gsl.shortcut.WeatherActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:icon="@mipmap/ic_launcher_weather"
+            android:label="@string/weather"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 

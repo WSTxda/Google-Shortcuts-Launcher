@@ -20,6 +20,7 @@
     <string name="weather">Clima</string>
     <string name="games">Jogos</string>
     <string name="assistant">Assistente</string>
+    <string name="lens">Lens</string>
 
     <string name="pref_device_game_manager">Gerenciador de jogos do dispositivo</string>
     <string name="pref_device_game_manager_summary">Use o gerenciador de jogos do dispositivo para iniciar jogos em vez da pasta Google Play Games</string>

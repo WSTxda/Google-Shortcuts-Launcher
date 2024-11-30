@@ -20,6 +20,7 @@
     <string name="weather">Tiempo</string>
     <string name="games">Juegos</string>
     <string name="assistant">Asistente</string>
+    <string name="lens">Lens</string>
 
     <string name="pref_device_game_manager">Administrador de juegos del dispositivo</string>
     <string name="pref_device_game_manager_summary">Utiliza el administrador de juegos del dispositivo para iniciar juegos en lugar de la carpeta de Google Play Games</string>

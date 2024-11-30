@@ -25,6 +25,7 @@
     <string name="weather">Weather</string>
     <string name="games">Games</string>
     <string name="assistant">Assistant</string>
+    <string name="lens">Lens</string>
 
     <string name="pref_device_game_manager">Device game manager</string>
     <string name="pref_device_game_manager_summary">Use the device game manager to launch games instead of the Google Play Games folder</string>

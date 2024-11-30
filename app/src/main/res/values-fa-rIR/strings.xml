@@ -20,6 +20,7 @@
     <string name="weather">آب‌وهوا</string>
     <string name="games">بازی‌ها</string>
     <string name="assistant">دستیار</string>
+    <string name="lens">Lens</string>
 
     <string name="pref_device_game_manager">مدیر بازی دستگاه</string>
     <string name="pref_device_game_manager_summary">برای راه‌اندازی بازی‌ها از مدیر بازی دستگاه به جای پوشه Google Play Games استفاده کنید</string>

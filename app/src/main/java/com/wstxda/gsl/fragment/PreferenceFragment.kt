@@ -25,12 +25,13 @@ class PreferenceFragment : PreferenceFragmentCompat() {
 
     private fun setupActivityPreferences() {
         val preferences = mapOf(
+            "lens_activity" to LensActivity::class.java,
             "assistant_activity" to AssistantActivity::class.java,
             "weather_activity" to WeatherActivity::class.java,
             "password_manager_activity" to PasswordManagerActivity::class.java,
             "game_activity" to GamesActivity::class.java,
             "music_search_activity" to MusicSearchActivity::class.java,
-            "settings_activity" to SettingsActivity::class.java
+            "settings_activity" to SettingsActivity::class.java,
         )
 
         preferences.forEach { (key, activityClass) ->
@@ -40,7 +41,7 @@ class PreferenceFragment : PreferenceFragmentCompat() {
 
     private fun setupPreference(key: String, activityClass: Class<*>) {
         findPreference<SwitchPreferenceCompat>(key)?.setOnPreferenceChangeListener { _, newValue ->
-            val showActivity = newValue as? Boolean ?: false
+            val showActivity = newValue as? Boolean == true
             toggleActivityVisibility(activityClass, showActivity)
             true
         }
@@ -67,7 +68,7 @@ class PreferenceFragment : PreferenceFragmentCompat() {
             val packageInfo: PackageInfo =
                 requireContext().packageManager.getPackageInfo(requireContext().packageName, 0)
             packageInfo.versionName ?: "N/A"
-        } catch (e: PackageManager.NameNotFoundException) {
+        } catch (_: PackageManager.NameNotFoundException) {
             "N/A"
         }
     }

@@ -18,12 +18,21 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_weather"
-        android:key="weather_activity"
+        android:icon="@mipmap/ic_launcher_lens"
+        android:key="lens_activity"
         android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/weather" />
+        android:title="@string/lens" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:icon="@mipmap/ic_launcher_game"
+        android:key="game_activity"
+        android:layout="@layout/preference_material_shortcuts_middle"
+        android:summaryOff="@string/pref_shortcut_disabled"
+        android:summaryOn="@string/pref_shortcut_enabled"
+        android:title="@string/games" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
@@ -36,12 +45,12 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_game"
-        android:key="game_activity"
+        android:icon="@mipmap/ic_launcher_weather"
+        android:key="weather_activity"
         android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/games" />
+        android:title="@string/weather" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
