@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Google ショートカットランチャー</string>
+    <string name="app_settings">設定</string>
+
+    <string name="pref_category_shortcuts_manager">ショートカットの管理</string>
+    <string name="pref_category_other">その他</string>
+    <string name="pref_category_about">アプリについて</string>
+
+    <string name="pref_version">バージョン</string>
+    <string name="pref_developer">開発者</string>
+    <string name="pref_source_code">ソースコードのリポジトリ</string>
+
+    <string name="pref_shortcut_enabled">ショートカットランチャーは有効化されています。</string>
+    <string name="pref_shortcut_disabled">ショートカットランチャーは無効化されています。</string>
+
+    <string name="pref_device_game_manager">デバイスのゲームマネージャー</string>
+    <string name="pref_device_game_manager_summary">Google ゲームフォルダの代わりにデバイス内のゲーム マネージャーを使用してゲームを起動します。</string>
+
+    <string name="pref_password_manager_root">パスワード マネージャー (root)</string>
+    <string name="pref_password_manager_root_summary">root 権限を使用して、Google Play 開発者サービスからパスワード マネージャーのアクティビティを開きます。</string>
+
+    <string name="pref_show_settings">ランチャーで設定を表示</string>
+    <string name="pref_show_settings_summary">非表示になっている設定にアクセスするには<b>音楽を検索</b>のクイック設定パネルからアクセスしてください。</string>
+
+    <string name="pref_add_music_search_quick_settings">音楽を検索のパネルをクイック設定に追加</string>
+
+    <string name="music_search_quick_settings">音楽を検索</string>
+    <string name="password">パスワード</string>
+    <string name="music_search">検索</string>
+    <string name="weather">天気</string>
+    <string name="games">ゲーム</string>
+    <string name="assistant">アシスタント</string>
+    <string name="lens">レンズ</string>
+
+    <string name="google_not_found">アクティビティが見つかりません。Google アプリをインストールするか有効化してください。</string>
+    <string name="play_games_not_found">アクティビティが見つかりません。Google Play Games をインストールするか有効化してください。</string>
+    <string name="browser_not_found">ブラウザが見つかりません。ブラウザをインストールするか有効化してください。</string>
+    <string name="game_manager_not_found">このデバイスではゲームマネージャーに非対応です。</string>
+    <string name="password_manager_root_error">最初に root 権限を許可してください</string>
+
+    <string name="assistant_game_title">音声アシスタントのショートカットを有効化しますか？</string>
+    <string name="assistant_game_summary">音声アシスタントのショートカットを使用して、このデバイスのボタンやジェスチャーでゲームを起動できます。この機能を有効化するには<b>Google ショートカットランチャー</b>をデフォルトのアシスタントとして設定してください。</string>
+    <string name="assistant_setup_button">アシスタントを有効化する</string>
+    <string name="assistant_cancel_button">キャンセル</string>
+
+    <string name="tile_added_success">追加に成功しました！</string>
+    <string name="tile_already_added">すでに追加されています</string>
+</resources>
