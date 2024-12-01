@@ -16,6 +16,5 @@
         android:textAllCaps="true"
         android:textAppearance="?attr/textAppearanceTitleSmall"
         android:textColor="?attr/colorOnSurfaceVariant"
-        android:textSize="12sp"
-        android:textStyle="bold" />
+        android:textSize="12sp" />
 </LinearLayout>
