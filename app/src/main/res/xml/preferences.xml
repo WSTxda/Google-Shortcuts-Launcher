@@ -111,7 +111,6 @@
         android:icon="@drawable/ic_about"
         android:key="version"
         android:layout="@layout/preference_material_bottom"
-        android:selectable="false"
         android:summary="@string/pref_version_number"
         android:title="@string/pref_version" />
 
