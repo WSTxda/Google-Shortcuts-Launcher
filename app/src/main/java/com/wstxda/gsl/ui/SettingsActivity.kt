@@ -27,13 +27,6 @@ class SettingsActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
-        toolbar.setContentInsetsRelative(0, 0)
-        toolbar.setContentInsetsAbsolute(0, 0)
-
-        val params = toolbar.layoutParams as CollapsingToolbarLayout.LayoutParams
-        params.marginStart = 0
-        toolbar.layoutParams = params
-
         if (savedInstanceState == null) {
             val navHostFragment =
                 supportFragmentManager.findFragmentById(R.id.nav_host_container) as NavHostFragment
@@ -48,7 +41,7 @@ class SettingsActivity : AppCompatActivity() {
         }
     }
 
-    fun enableEdgeToEdgeNoContrast() {
+    private fun enableEdgeToEdgeNoContrast() {
         enableEdgeToEdge(
             navigationBarStyle = SystemBarStyle.auto(
                 Color.TRANSPARENT, Color.TRANSPARENT
