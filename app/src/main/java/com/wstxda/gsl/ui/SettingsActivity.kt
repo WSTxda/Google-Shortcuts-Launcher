@@ -42,12 +42,12 @@ class SettingsActivity : AppCompatActivity() {
     }
 
     private fun enableEdgeToEdgeNoContrast() {
-        enableEdgeToEdge(
-            navigationBarStyle = SystemBarStyle.auto(
-                Color.TRANSPARENT, Color.TRANSPARENT
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            enableEdgeToEdge(
+                navigationBarStyle = SystemBarStyle.auto(
+                    Color.TRANSPARENT, Color.TRANSPARENT
+                )
             )
-        )
-        if (Build.VERSION.SDK_INT >= 29) {
             window.isNavigationBarContrastEnforced = false
         }
     }

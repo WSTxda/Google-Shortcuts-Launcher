@@ -24,9 +24,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -34,14 +34,18 @@
             android:id="@android:id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="marquee"
             android:maxLines="2"
-            android:textAppearance="?android:textAppearanceListItem" />
+            android:textAppearance="?attr/textAppearanceBodyLarge" />
 
         <TextView
             android:id="@android:id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLines="8" />
+            android:ellipsize="marquee"
+            android:maxLines="8"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant" />
     </LinearLayout>
 
     <LinearLayout

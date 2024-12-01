@@ -2,16 +2,16 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory
-        android:layout="@layout/preference_material_category"
-        android:title="@string/pref_category_shortcuts_manager"
-        app:allowDividerAbove="false" />
-
     <Preference
         android:icon="@drawable/ic_add"
         android:key="add_music_search_tile"
         android:layout="@layout/preference_material_shortcuts_tile"
         android:title="@string/pref_add_music_search_quick_settings" />
+
+    <PreferenceCategory
+        android:layout="@layout/preference_material_category"
+        android:title="@string/pref_category_shortcuts_manager"
+        app:allowDividerAbove="false" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
