@@ -9,10 +9,20 @@
     <string name="pref_version">Versión</string>
     <string name="pref_developer">Desarrollador</string>
     <string name="pref_source_code">Repositorio con el código fuente</string>
-    <string name="pref_show_settings">Mostrar ajustes en lanzador</string>
+
     <string name="pref_shortcut_enabled">Atajo en el lanzador activado</string>
     <string name="pref_shortcut_disabled">Atajo en el lanzador desactivado</string>
-    <string name="pref_hide_settings_summary">Para acceder a la configuración cuando esté oculta, presione el acceso directo de <b>Buscar música</b> en el panel de configuración rápida</string>
+
+    <string name="pref_device_game_manager">Administrador de juegos del dispositivo</string>
+    <string name="pref_device_game_manager_summary">Utiliza el administrador de juegos del dispositivo para iniciar juegos en lugar de la carpeta de Google Play Games</string>
+
+    <string name="pref_password_manager_root">Administrador de contraseñas (root)</string>
+    <string name="pref_password_manager_root_summary">Use acesso root para abrir la actividad del administrador de contraseñas en los Google Play Services</string>
+
+    <string name="pref_show_settings">Mostrar ajustes en lanzador</string>
+    <string name="pref_show_settings_summary">Para acceder a la configuración cuando esté oculta, presione el acceso directo de <b>Buscar música</b> en el panel de configuración rápida</string>
+
+    <string name="pref_add_music_search_quick_settings">Agregar buscar música en configuración rápida</string>
 
     <string name="music_search_quick_settings">Buscar música</string>
     <string name="password">Contraseñas</string>
@@ -21,12 +31,6 @@
     <string name="games">Juegos</string>
     <string name="assistant">Asistente</string>
     <string name="lens">Lens</string>
-
-    <string name="pref_device_game_manager">Administrador de juegos del dispositivo</string>
-    <string name="pref_device_game_manager_summary">Utiliza el administrador de juegos del dispositivo para iniciar juegos en lugar de la carpeta de Google Play Games</string>
-
-    <string name="pref_password_manager_root">Administrador de contraseñas (root)</string>
-    <string name="pref_password_manager_root_summary">Use acesso root para abrir la actividad del administrador de contraseñas en los Google Play Services</string>
 
     <string name="google_not_found">Actividad no encontrada. Instale o active Google App</string>
     <string name="play_games_not_found">Actividad no encontrada. Instale o active Google Play Games</string>
@@ -38,4 +42,7 @@
     <string name="assistant_game_summary">Usa accesos directos del asistente por voz para abrir tus juegos con botones y gestos en este dispositivo. Selecciona <b>Atajos de Google</b> como asistente predeterminado para habilitar esta función</string>
     <string name="assistant_setup_button">Activar Asistente</string>
     <string name="assistant_cancel_button">Cancelar</string>
+
+    <string name="tile_added_success">Añadido con éxito!</string>
+    <string name="tile_already_added">Ya añadido</string>
 </resources>

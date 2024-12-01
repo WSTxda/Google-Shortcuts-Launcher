@@ -9,10 +9,20 @@
     <string name="pref_version">Versão</string>
     <string name="pref_developer">Desenvolvedor</string>
     <string name="pref_source_code">Repositório com o código fonte</string>
-    <string name="pref_show_settings">Mostrar configurações no launcher</string>
+
     <string name="pref_shortcut_enabled">Atalho no launcher ativado</string>
     <string name="pref_shortcut_disabled">Atalho no launcher desativado</string>
-    <string name="pref_hide_settings_summary">Para acessar as configurações quando estiver oculta, pressione o atalho de <b>Pesquisar música</b> no painel de configurações rápidas</string>
+
+    <string name="pref_device_game_manager">Gerenciador de jogos do dispositivo</string>
+    <string name="pref_device_game_manager_summary">Use o gerenciador de jogos do dispositivo para iniciar jogos em vez da pasta Google Play Games</string>
+
+    <string name="pref_password_manager_root">Gerenciador de senhas (root)</string>
+    <string name="pref_password_manager_root_summary">Use o acesso root para abrir a atividade do gerenciador de senhas no Google Play Services</string>
+
+    <string name="pref_show_settings">Mostrar configurações no launcher</string>
+    <string name="pref_show_settings_summary">Para acessar as configurações quando estiver oculta, pressione o atalho de <b>Pesquisar música</b> no painel de configurações rápidas</string>
+
+    <string name="pref_add_music_search_quick_settings">Adicionar pesquisa de música nas configurações rápidas</string>
 
     <string name="music_search_quick_settings">Pesquisar música</string>
     <string name="password">Senhas</string>
@@ -21,12 +31,6 @@
     <string name="games">Jogos</string>
     <string name="assistant">Assistente</string>
     <string name="lens">Lens</string>
-
-    <string name="pref_device_game_manager">Gerenciador de jogos do dispositivo</string>
-    <string name="pref_device_game_manager_summary">Use o gerenciador de jogos do dispositivo para iniciar jogos em vez da pasta Google Play Games</string>
-
-    <string name="pref_password_manager_root">Gerenciador de senhas (root)</string>
-    <string name="pref_password_manager_root_summary">Use o acesso root para abrir a atividade do gerenciador de senhas no Google Play Services</string>
 
     <string name="google_not_found">Atividade não encontrada. Instale ou ative o Google App</string>
     <string name="play_games_not_found">Atividade não encontrada. Instale ou ative o Google Play Games</string>
@@ -38,4 +42,7 @@
     <string name="assistant_game_summary">Use atalhos do assistente de voz para abrir seus jogos com botões e gestos neste dispositivo. Selecione <b>Atalhos do Google</b> como assistente padrão para ativar esse recurso</string>
     <string name="assistant_setup_button">Ativar Assistente</string>
     <string name="assistant_cancel_button">Cancelar</string>
+
+    <string name="tile_added_success">Adicionado com sucesso!</string>
+    <string name="tile_already_added">Já adicionado</string>
 </resources>

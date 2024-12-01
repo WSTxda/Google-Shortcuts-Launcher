@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">راه‌انداز میانبرهای گوگل</string>
     <string name="app_settings">تنظیمات</string>
-    
+
     <string name="pref_category_shortcuts_manager">مدیریت میانبرها</string>
     <string name="pref_category_other">دیگر</string>
     <string name="pref_category_about">درباره</string>
@@ -9,10 +9,20 @@
     <string name="pref_version">نسخه</string>
     <string name="pref_developer">توسعه‌دهنده</string>
     <string name="pref_source_code">مخزن کد منبع</string>
-    <string name="pref_show_settings">نمایش تنظیمات در راه‌انداز</string>
+
     <string name="pref_shortcut_enabled">میانبر راه‌انداز فعال‌شد</string>
     <string name="pref_shortcut_disabled">میانبر راه‌انداز غیرفعال‌شد</string>
-    <string name="pref_hide_settings_summary">برای دسترسی به تنظیمات در صورتی که مخفی است، کاشی <b>جستجوی موسیقی</b> را در صفحه‌ی تنظیمات سریع بفشارید</string>
+
+    <string name="pref_device_game_manager">مدیر بازی دستگاه</string>
+    <string name="pref_device_game_manager_summary">برای راه‌اندازی بازی‌ها از مدیر بازی دستگاه به جای پوشه Google Play Games استفاده کنید</string>
+
+    <string name="pref_password_manager_root">مدیریت گذرواژه (ریشه)</string>
+    <string name="pref_password_manager_root_summary">از دسترسی ریشه برای باز کردن فعالیت مدیریت گذرواژه در خدمات گوگل پلی استفاده کنید</string>
+
+    <string name="pref_show_settings">نمایش تنظیمات در راه‌انداز</string>
+    <string name="pref_show_settings_summary">برای دسترسی به تنظیمات در صورتی که مخفی است، کاشی <b>جستجوی موسیقی</b> را در صفحه‌ی تنظیمات سریع بفشارید</string>
+
+    <string name="pref_add_music_search_quick_settings">اضافه کردن جستجوی موسیقی به پنل تنظیمات سریع</string>
 
     <string name="music_search_quick_settings">جستجوی موسیقی</string>
     <string name="password">گذرواژه‌ها</string>
@@ -21,12 +31,6 @@
     <string name="games">بازی‌ها</string>
     <string name="assistant">دستیار</string>
     <string name="lens">Lens</string>
-
-    <string name="pref_device_game_manager">مدیر بازی دستگاه</string>
-    <string name="pref_device_game_manager_summary">برای راه‌اندازی بازی‌ها از مدیر بازی دستگاه به جای پوشه Google Play Games استفاده کنید</string>
-
-    <string name="pref_password_manager_root">مدیریت گذرواژه (ریشه)</string>
-    <string name="pref_password_manager_root_summary">از دسترسی ریشه برای باز کردن فعالیت مدیریت گذرواژه در خدمات گوگل پلی استفاده کنید</string>
 
     <string name="google_not_found">فعالیت یافت نشد. لطفاً برنامه گوگل را نصب یا فعال کنید</string>
     <string name="play_games_not_found">فعالیت یافت نشد. لطفاً بازی‌های گوگل پلی را نصب یا فعال کنید</string>
@@ -38,4 +42,7 @@
     <string name="assistant_game_summary">از میانبرهای دستیار صوتی برای باز کردن بازی‌های خود با دکمه‌ها و حرکات روی این دستگاه استفاده کنید. <b>راه‌انداز میانبرهای گوگل</b> را به عنوان دستیار پیش‌فرض انتخاب کنید تا این ویژگی فعال شود</string>
     <string name="assistant_setup_button">فعال‌سازی دستیار</string>
     <string name="assistant_cancel_button">لغو</string>
+
+    <string name="tile_added_success">با موفقیت اضافه شد!</string>
+    <string name="tile_already_added">قبلاً اضافه شده است</string>
 </resources>
