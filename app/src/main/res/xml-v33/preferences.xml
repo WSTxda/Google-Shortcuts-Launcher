@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"
-        android:title="@string/pref_category_shortcuts_manager" />
+        android:title="@string/pref_category_shortcuts_manager"
+        app:allowDividerAbove="false" />
 
     <Preference
         android:icon="@drawable/ic_add"
@@ -67,7 +69,8 @@
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"
-        android:title="@string/pref_category_other" />
+        android:title="@string/pref_category_other"
+        app:allowDividerAbove="false" />
 
     <SwitchPreferenceCompat
         android:defaultValue="false"
@@ -97,7 +100,8 @@
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"
-        android:title="@string/pref_category_about" />
+        android:title="@string/pref_category_about"
+        app:allowDividerAbove="false" />
 
     <Preference
         android:icon="@drawable/ic_developer"
