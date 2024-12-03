@@ -1,32 +1,43 @@
-# Google Shortcuts Launcher
-Get Google apps features shortcuts in your launcher app drawer
+# Google Shortcuts Launcher  
+Easily access essential Google apps and features directly from your launcher app drawer.
+
+Google Shortcuts Launcher provides a seamless way to integrate powerful Google services into your daily workflow. With just a tap, you can quickly access a variety of shortcuts designed to enhance your daily device use and simplify your interactions with Google features.
 
 [![GitHub Actions Status](https://img.shields.io/github/actions/workflow/status/WSTxda/Google-Shortcuts-Launcher/.github%2Fworkflows%2Fandroid.yml?style=for-the-badge&logo=github-actions&labelColor=21262D&color=3FB950)](https://github.com/WSTxda/Google-Shortcuts-Launcher/actions) [![Platform](https://img.shields.io/badge/android-platform?style=for-the-badge&label=platform&labelColor=21262d&color=6e7681)](https://www.android.com) [![API](https://img.shields.io/badge/24%2B-level?style=for-the-badge&logo=android&logoColor=3cd382&label=API&labelColor=21262d&color=ff663b)](https://developer.android.com/studio/releases/platforms) [![Release](https://img.shields.io/github/v/release/WSTxda/Google-Shortcuts-Launcher?display_name=tag&style=for-the-badge&logo=github&labelColor=21262d&color=1f6feb)](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest) [![Downloads](https://img.shields.io/github/downloads/WSTxda/Google-Shortcuts-Launcher/total?style=for-the-badge&labelColor=21262d&color=238636)](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases)
 
 ![alt text](https://raw.githubusercontent.com/WSTxda/Google-Shortcuts-Launcher/main/images/Banner.svg)
 
-### Shortcuts available
+### Shortcuts Available
 
-**Assistant** Quick invoke device voice assistant like Gemini, Google Assistant or others...
+**Games Launcher**  
+A folder displaying all your installed games, along with recommendations from Google Play Games.  
 
-**Music Search** Discover the music being played in any environment.
+> Also integrates with game managers from various brands, such as Xiaomi, Oppo, Samsung, Nubia, Asus, and more.
 
-> Music Search quick settings tile also available.
+**Google Lens**  
+Use your camera to search for objects, translate text, scan QR codes, copy text, and explore much more with advanced visual recognition features.
 
-**Password Manager** Open Google saved password manager in browser. 
+**Google Music Search**  
+Identify songs playing in your environment with ease.  
 
-> `ROOT` Open Google Play Services password manager instead of using browser.
+> A Music Search quick settings tile is also available for faster access.
 
-**Games** A paste with all your installed games and others games from Google Play Games.
+**Google Password Manager**  
+Open Google Password Manager in your browser to securely manage your saved credentials.  
 
-> Also can use game manager from diferents brands, like: Xiaomi, Oppo, Samsung, Nubia, Asus, and more...
+> **Rooted Devices:** Access the Google Play Services Password Manager directly, bypassing the browser.
 
-**Weather** Get real-time information on local weather and weekly forecasts.
+**Google Weather**  
+Get real-time local weather updates and detailed weekly forecasts.  
 
-> If the Google app is not available, it will open weather information in browser.
+> If the Google app is unavailable, the weather information will open in your browser.
 
-> [!NOTE]
-> Need Google, Google Play Services, Google Play Games apps installed in device to work shortcurts.
+**Voice Assistant**  
+Quickly invoke your device's voice assistant, such as Gemini, Google Assistant, or others, to streamline tasks and access smart voice commands.
+
+> [!NOTE]  
+> **Required Apps:** Google, Google Play Services, and Google Play Games must be installed on your device for shortcuts to function properly.  
+> **Root Access:** Some features require a rooted device for full functionality.
 
 ### Download
 
