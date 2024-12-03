@@ -6,7 +6,8 @@ import android.content.ComponentName
 import android.content.Context
 import android.graphics.drawable.Icon
 import android.os.Build
-import android.widget.Toast
+import android.view.View
+import com.google.android.material.snackbar.Snackbar
 import com.wstxda.gsl.shortcut.MusicSearchQuickSettings
 import com.wstxda.gsl.R
 import java.util.concurrent.Executor
@@ -24,13 +25,16 @@ class TileManager(private val context: Context) {
             val executor: Executor = Executors.newSingleThreadExecutor()
 
             val resultCallback = Consumer<Int> { result: Int ->
-                when (result) {
-                    StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ADDED -> {
-                        showToast(context.getString(R.string.tile_added_success))
-                    }
+                val rootView = (context as? Activity)?.findViewById<View>(android.R.id.content)
+                rootView?.let {
+                    when (result) {
+                        StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ADDED -> {
+                            showSnackBar(it, context.getString(R.string.tile_added_success))
+                        }
 
-                    StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ALREADY_ADDED -> {
-                        showToast(context.getString(R.string.tile_already_added))
+                        StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ALREADY_ADDED -> {
+                            showSnackBar(it, context.getString(R.string.tile_already_added))
+                        }
                     }
                 }
             }
@@ -46,9 +50,7 @@ class TileManager(private val context: Context) {
         }
     }
 
-    private fun showToast(message: String) {
-        (context as? Activity)?.runOnUiThread {
-            Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
-        }
+    private fun showSnackBar(view: View, message: String) {
+        Snackbar.make(view, message, Snackbar.LENGTH_SHORT).show()
     }
 }

@@ -43,6 +43,6 @@
     <string name="assistant_setup_button">فعال‌سازی دستیار</string>
     <string name="assistant_cancel_button">لغو</string>
 
-    <string name="tile_added_success">با موفقیت اضافه شد!</string>
-    <string name="tile_already_added">قبلاً اضافه شده است</string>
+    <string name="tile_added_success">با موفقیت به تنظیمات سریع اضافه شد</string>
+    <string name="tile_already_added">قبلاً به تنظیمات سریع اضافه شده است</string>
 </resources>

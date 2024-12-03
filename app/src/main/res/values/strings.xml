@@ -47,8 +47,8 @@
     <string name="assistant_setup_button">Enable Assistant</string>
     <string name="assistant_cancel_button">Cancel</string>
 
-    <string name="tile_added_success">Added successfully!</string>
-    <string name="tile_already_added">Already added</string>
+    <string name="tile_added_success">Successfully added to quick settings</string>
+    <string name="tile_already_added">Already added to quick settings</string>
 
     <string name="password_url" translatable="false">https://passwords.google.com</string>
     <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>

@@ -27,6 +27,7 @@
         <!--attributes colors-->
         <item name="android:colorAccent">?colorPrimary</item>
         <!--components theme-->
+        <item name="snackbarStyle">@style/Theme.Snackbar</item>
         <item name="alertDialogTheme">@style/Theme.AlertDialog</item>
         <item name="switchPreferenceCompatStyle">@style/Theme.SwitchPreferenceCompat</item>
         <!--app bars colors-->
@@ -88,6 +89,10 @@
     </style>
 
     <!--app theme components-->
+
+    <style name="Theme.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="android:layout_margin">17dp</item>
+    </style>
 
     <style name="Theme.SwitchPreferenceCompat" parent="@style/Preference.SwitchPreferenceCompat.Material">
         <item name="widgetLayout">@layout/preference_material_switch</item>

@@ -43,6 +43,6 @@
     <string name="assistant_setup_button">Ativar Assistente</string>
     <string name="assistant_cancel_button">Cancelar</string>
 
-    <string name="tile_added_success">Adicionado com sucesso!</string>
-    <string name="tile_already_added">Já adicionado</string>
+    <string name="tile_added_success">Adicionado com sucesso às configurações rápidas</string>
+    <string name="tile_already_added">Já adicionado às configurações rápidas</string>
 </resources>

@@ -44,6 +44,6 @@
     <string name="assistant_setup_button">アシスタントを有効化する</string>
     <string name="assistant_cancel_button">キャンセル</string>
 
-    <string name="tile_added_success">追加に成功しました！</string>
-    <string name="tile_already_added">すでに追加されています</string>
+    <string name="tile_added_success">クイック設定に正常に追加されました</string>
+    <string name="tile_already_added">クイック設定にすでに追加されています</string>
 </resources>
