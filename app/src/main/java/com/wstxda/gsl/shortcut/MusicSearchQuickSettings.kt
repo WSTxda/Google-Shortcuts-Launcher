@@ -18,7 +18,9 @@ class MusicSearchQuickSettings : TileService() {
             IntentHelper.showToast(this, R.string.google_not_found)
         } else {
             startActivity(musicSearchIntent)
-            collapse()
+
+            val collapseIntent = Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS)
+            sendBroadcast(collapseIntent)
         }
     }
 }
