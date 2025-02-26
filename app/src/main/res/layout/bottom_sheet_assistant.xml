@@ -7,8 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
+        android:paddingHorizontal="16dp"
         android:paddingBottom="24dp">
 
         <com.google.android.material.bottomsheet.BottomSheetDragHandleView
@@ -21,7 +20,7 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/assistant_game_title"
@@ -30,16 +29,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/drag_handler" />
 
-        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/summary_card"
             style="?attr/materialCardViewFilledStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="8dp"
-            app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
+            app:cardBackgroundColor="?attr/colorSurfaceContainer"
+            app:contentPadding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title">
@@ -48,18 +45,16 @@
                 android:id="@+id/summary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:padding="16dp"
                 android:text="@string/assistant_game_summary"
                 android:textAppearance="?attr/textAppearanceBodyMedium" />
-        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+        </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/setup_button"
-            style="?attr/materialIconButtonFilledStyle"
+            style="@style/Widget.Material3.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="18dp"
             android:text="@string/assistant_setup_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,10 +62,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/cancel_button"
-            style="?attr/materialIconButtonFilledTonalStyle"
+            style="@style/Widget.Material3.Button.TonalButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="2dp"
             android:text="@string/assistant_cancel_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

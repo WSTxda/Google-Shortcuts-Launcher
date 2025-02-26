@@ -10,12 +10,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
-import com.wstxda.gsl.shortcuts.AssistantShortcut
-import com.wstxda.gsl.shortcuts.GamesShortcut
-import com.wstxda.gsl.shortcuts.LensShortcut
-import com.wstxda.gsl.shortcuts.MusicSearchShortcut
-import com.wstxda.gsl.shortcuts.PasswordManagerShortcut
-import com.wstxda.gsl.shortcuts.WeatherShortcut
+import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.ui.SettingsActivity
 import com.wstxda.gsl.utils.TileManager
 
