@@ -1,4 +1,4 @@
-package com.wstxda.gsl.fragment
+package com.wstxda.gsl.fragments
 
 import android.content.ComponentName
 import android.content.Intent
@@ -10,7 +10,12 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
-import com.wstxda.gsl.shortcut.*
+import com.wstxda.gsl.shortcuts.AssistantShortcut
+import com.wstxda.gsl.shortcuts.GamesShortcut
+import com.wstxda.gsl.shortcuts.LensShortcut
+import com.wstxda.gsl.shortcuts.MusicSearchShortcut
+import com.wstxda.gsl.shortcuts.PasswordManagerShortcut
+import com.wstxda.gsl.shortcuts.WeatherShortcut
 import com.wstxda.gsl.ui.SettingsActivity
 import com.wstxda.gsl.utils.TileManager
 
@@ -19,20 +24,20 @@ class PreferenceFragment : PreferenceFragmentCompat() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
 
-        setupActivityPreferences()
+        setupShortcutsActivityPreferences()
         setupTilePreference()
         setupLinkPreferences()
         updateVersionSummary()
     }
 
-    private fun setupActivityPreferences() {
+    private fun setupShortcutsActivityPreferences() {
         val preferences = mapOf(
-            "lens_activity" to LensActivity::class.java,
-            "assistant_activity" to AssistantActivity::class.java,
-            "weather_activity" to WeatherActivity::class.java,
-            "password_manager_activity" to PasswordManagerActivity::class.java,
-            "game_activity" to GamesActivity::class.java,
-            "music_search_activity" to MusicSearchActivity::class.java,
+            "lens_activity" to LensShortcut::class.java,
+            "assistant_activity" to AssistantShortcut::class.java,
+            "weather_activity" to WeatherShortcut::class.java,
+            "password_manager_activity" to PasswordManagerShortcut::class.java,
+            "game_activity" to GamesShortcut::class.java,
+            "music_search_activity" to MusicSearchShortcut::class.java,
             "settings_activity" to SettingsActivity::class.java,
         )
 

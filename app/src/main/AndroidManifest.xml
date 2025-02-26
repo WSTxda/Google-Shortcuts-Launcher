@@ -36,7 +36,7 @@
         </activity-alias>
 
         <activity
-            android:name="com.wstxda.gsl.shortcut.AssistantActivity"
+            android:name="com.wstxda.gsl.shortcuts.AssistantShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
@@ -51,7 +51,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcut.LensActivity"
+            android:name="com.wstxda.gsl.shortcuts.LensShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
@@ -66,7 +66,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcut.GamesActivity"
+            android:name="com.wstxda.gsl.shortcuts.GamesShortcut"
             android:enableOnBackInvokedCallback="true"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -87,7 +87,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcut.PasswordManagerActivity"
+            android:name="com.wstxda.gsl.shortcuts.PasswordManagerShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
@@ -102,7 +102,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcut.WeatherActivity"
+            android:name="com.wstxda.gsl.shortcuts.WeatherShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
@@ -117,7 +117,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcut.MusicSearchActivity"
+            android:name="com.wstxda.gsl.shortcuts.MusicSearchShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
@@ -132,7 +132,7 @@
         </activity>
 
         <service
-            android:name="com.wstxda.gsl.shortcut.MusicSearchQuickSettings"
+            android:name="com.wstxda.gsl.services.MusicSearchTileService"
             android:exported="true"
             android:icon="@drawable/ic_music_search_tile"
             android:label="@string/music_search_quick_settings"

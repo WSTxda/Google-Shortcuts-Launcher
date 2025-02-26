@@ -10,7 +10,7 @@
     <SwitchPreferenceCompat
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_assistant"
-        android:key="assistant_activity"
+        android:key="assistant_shortcut"
         android:layout="@layout/preference_material_shortcuts_top"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
@@ -19,7 +19,7 @@
     <SwitchPreferenceCompat
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_lens"
-        android:key="lens_activity"
+        android:key="lens_shortcut"
         android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
@@ -28,7 +28,7 @@
     <SwitchPreferenceCompat
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_game"
-        android:key="game_activity"
+        android:key="game_shortcut"
         android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
@@ -37,7 +37,7 @@
     <SwitchPreferenceCompat
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_password"
-        android:key="password_manager_activity"
+        android:key="password_manager_shortcut"
         android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
@@ -46,7 +46,7 @@
     <SwitchPreferenceCompat
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_weather"
-        android:key="weather_activity"
+        android:key="weather_shortcut"
         android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
@@ -55,7 +55,7 @@
     <SwitchPreferenceCompat
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_music"
-        android:key="music_search_activity"
+        android:key="music_search_shortcut"
         android:layout="@layout/preference_material_shortcuts_bottom"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
@@ -68,7 +68,7 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="false"
-        android:dependency="game_activity"
+        android:dependency="game_shortcut"
         android:icon="@drawable/ic_games"
         android:key="device_game_manager"
         android:layout="@layout/preference_material_top"
@@ -77,7 +77,7 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="false"
-        android:dependency="password_manager_activity"
+        android:dependency="password_manager_shortcut"
         android:icon="@drawable/ic_root"
         android:key="password_manager_root"
         android:layout="@layout/preference_material_middle"

@@ -1,16 +1,12 @@
 package com.wstxda.gsl.utils
 
-import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.widget.Toast
 import androidx.annotation.StringRes
 
-object IntentHelper {
-
-    private const val TAG = "IntentHelper"
+object ActivityUtils {
 
     fun tryStartActivity(context: Context, packageName: String, className: String): Boolean {
         val intent = Intent().apply {
@@ -22,16 +18,10 @@ object IntentHelper {
     }
 
     fun tryStartActivity(context: Context, intent: Intent): Boolean {
-        return try {
+        return runCatching {
             context.startActivity(intent)
             true
-        } catch (_: ActivityNotFoundException) {
-            Log.d(TAG, "Activity not found: ${intent.component}")
-            false
-        } catch (e: Exception) {
-            Log.w(TAG, "Failed to start activity: ${intent.component}", e)
-            false
-        }
+        }.getOrDefault(false)
     }
 
     fun showToast(context: Context, @StringRes messageResId: Int) {
