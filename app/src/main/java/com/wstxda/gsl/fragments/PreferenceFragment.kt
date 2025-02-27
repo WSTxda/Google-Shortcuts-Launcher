@@ -30,9 +30,10 @@ class PreferenceFragment : PreferenceFragmentCompat() {
             "assistant_shortcut" to AssistantShortcut::class.java,
             "quick_share_shortcut" to QuickShareShortcut::class.java,
             "lens_shortcut" to LensShortcut::class.java,
-            "weather_shortcut" to WeatherShortcut::class.java,
-            "password_manager_shortcut" to PasswordManagerShortcut::class.java,
             "game_shortcut" to GamesShortcut::class.java,
+            "files_shortcut" to FilesShortcut::class.java,
+            "password_manager_shortcut" to PasswordManagerShortcut::class.java,
+            "weather_shortcut" to WeatherShortcut::class.java,
             "music_search_shortcut" to MusicSearchShortcut::class.java,
             "settings_activity" to SettingsActivity::class.java,
         )

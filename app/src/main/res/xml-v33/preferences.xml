@@ -51,6 +51,15 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
+        android:icon="@mipmap/ic_launcher_files"
+        android:key="files_shortcut"
+        android:layout="@layout/preference_material_shortcuts_middle"
+        android:summaryOff="@string/pref_shortcut_disabled"
+        android:summaryOn="@string/pref_shortcut_enabled"
+        android:title="@string/files" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_password"
         android:key="password_manager_shortcut"
         android:layout="@layout/preference_material_shortcuts_middle"

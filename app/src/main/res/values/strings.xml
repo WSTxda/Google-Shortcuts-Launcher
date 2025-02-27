@@ -54,4 +54,6 @@
 
     <string name="password_url" translatable="false">https://passwords.google.com</string>
     <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>
+    <string name="no_file_manager_supported">Files not supported in your device</string>
+    <string name="files">Files</string>
 </resources>

@@ -81,6 +81,21 @@
         </activity>
 
         <activity
+            android:name="com.wstxda.gsl.shortcuts.FilesShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:icon="@mipmap/ic_launcher_files"
+            android:label="@string/files"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name="com.wstxda.gsl.shortcuts.GamesShortcut"
             android:enableOnBackInvokedCallback="true"
             android:excludeFromRecents="true"
