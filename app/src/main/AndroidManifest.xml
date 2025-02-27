@@ -3,11 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:allowBackup="false"
         android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        tools:ignore="DataExtractionRules"
         tools:targetApi="tiramisu">
 
         <activity
