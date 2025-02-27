@@ -51,6 +51,21 @@
         </activity>
 
         <activity
+            android:name="com.wstxda.gsl.shortcuts.QuickShareShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:icon="@mipmap/ic_launcher_share"
+            android:label="@string/quick_share"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name="com.wstxda.gsl.shortcuts.LensShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
