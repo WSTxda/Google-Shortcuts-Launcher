@@ -31,11 +31,15 @@
     <string name="games">Jogos</string>
     <string name="assistant">Assistente</string>
     <string name="lens">Lens</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="files">Arquivos</string>
 
     <string name="google_not_found">Atividade não encontrada. Instale ou ative o Google App</string>
     <string name="play_games_not_found">Atividade não encontrada. Instale ou ative o Google Play Games</string>
+    <string name="play_services_not_found">Atividade não encontrada. Instale ou ative o Google Play Services</string>
     <string name="browser_not_found">Nenhum navegador encontrado. Instale ou ative seu navegador</string>
     <string name="game_manager_not_found">Gerenciador de jogos não suportado neste dispositivo</string>
+    <string name="files_not_found">Arquivos não suportado neste dispositivo</string>
     <string name="password_manager_root_error">Conceda acesso root primeiro</string>
 
     <string name="assistant_game_title">Usar atalhos do assistente de voz?</string>

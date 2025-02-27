@@ -36,12 +36,14 @@
     <string name="assistant">Assistant</string>
     <string name="lens">Lens</string>
     <string name="quick_share">Quick Share</string>
+    <string name="files">Files</string>
 
     <string name="google_not_found">Activity not found. Please install or enable Google App</string>
     <string name="play_services_not_found">Activity not found. Please install or enable Google Play Services</string>
     <string name="play_games_not_found">Activity not found. Please install or enable Google Play Games</string>
     <string name="browser_not_found">No browser found, Please install or enable your browser</string>
     <string name="game_manager_not_found">Game manager not supported in this device</string>
+    <string name="files_not_found">Files not supported in this device</string>
     <string name="password_manager_root_error">Grant root permission first</string>
 
     <string name="assistant_game_title">Enable voice assistant shortcuts?</string>
@@ -54,6 +56,4 @@
 
     <string name="password_url" translatable="false">https://passwords.google.com</string>
     <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>
-    <string name="no_file_manager_supported">Files not supported in your device</string>
-    <string name="files">Files</string>
 </resources>

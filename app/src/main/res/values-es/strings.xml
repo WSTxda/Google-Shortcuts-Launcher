@@ -31,11 +31,15 @@
     <string name="games">Juegos</string>
     <string name="assistant">Asistente</string>
     <string name="lens">Lens</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="files">Archivos</string>
 
     <string name="google_not_found">Actividad no encontrada. Instale o active Google App</string>
     <string name="play_games_not_found">Actividad no encontrada. Instale o active Google Play Games</string>
+    <string name="play_services_not_found">Actividad no encontrada. Por favor, instale o active Google Play Services</string>
     <string name="browser_not_found">Navegador no encontrado. Instale o active su navegador</string>
     <string name="game_manager_not_found">El administrador de juegos no es compatible con este dispositivo</string>
+    <string name="files_not_found">Archivos no compatibles con este dispositivo</string>
     <string name="password_manager_root_error">Conceder primero el permiso de root</string>
 
     <string name="assistant_game_title">¿Activar accesos directos del asistente por voz?</string>

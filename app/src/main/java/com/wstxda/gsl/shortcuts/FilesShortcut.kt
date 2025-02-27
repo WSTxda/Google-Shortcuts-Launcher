@@ -22,6 +22,6 @@ class FilesShortcut : ShortcutsActivity() {
         val browseDocIntent = Intent("android.provider.action.BROWSE_DOCUMENT_ROOT", STORAGE_URI)
         if (tryStartActivity(browseDocIntent)) return
 
-        showToast(R.string.no_file_manager_supported)
+        showToast(R.string.files_not_found)
     }
 }

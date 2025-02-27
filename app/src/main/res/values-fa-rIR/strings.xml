@@ -31,11 +31,15 @@
     <string name="games">بازی‌ها</string>
     <string name="assistant">دستیار</string>
     <string name="lens">لنز</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="files">فایل‌ها</string>
 
     <string name="google_not_found">فعالیت یافت نشد. لطفاً برنامه گوگل را نصب یا فعال کنید</string>
     <string name="play_games_not_found">فعالیت یافت نشد. لطفاً بازی‌های گوگل پلی را نصب یا فعال کنید</string>
+    <string name="play_services_not_found">فعالیت یافت نشد. لطفاً Google Play Services را نصب یا فعال کنید</string>
     <string name="browser_not_found">مرورگری پیدا نشد، لطفا مرورگر خود را نصب یا فعال کنید</string>
     <string name="game_manager_not_found">مدیر بازی در این دستگاه پشتیبانی نمی شود</string>
+    <string name="files_not_found">فایل‌ها در این دستگاه پشتیبانی نمی‌شوند</string>
     <string name="password_manager_root_error">ابتدا مجوز ریشه را اعطا کنید</string>
 
     <string name="assistant_game_title">آیا میانبرهای دستیار صوتی را فعال کنیم؟</string>

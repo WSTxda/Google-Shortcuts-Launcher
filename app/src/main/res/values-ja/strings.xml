@@ -32,11 +32,15 @@
     <string name="games">ゲーム</string>
     <string name="assistant">アシスタント</string>
     <string name="lens">レンズ</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="files">ファイル</string>
 
     <string name="google_not_found">アクティビティが見つかりません。Google アプリをインストールするか有効化してください。</string>
     <string name="play_games_not_found">アクティビティが見つかりません。Google Play Games をインストールするか有効化してください。</string>
+    <string name="play_services_not_found">アクティビティが見つかりません。Google Play サービスをインストールまたは有効にしてください</string>
     <string name="browser_not_found">ブラウザが見つかりません。ブラウザをインストールするか有効化してください。</string>
     <string name="game_manager_not_found">このデバイスではゲームマネージャーに非対応です。</string>
+    <string name="files_not_found">このデバイスでサポートされていないファイル</string>
     <string name="password_manager_root_error">最初に root 権限を許可してください</string>
 
     <string name="assistant_game_title">音声アシスタントのショートカットを有効化しますか？</string>

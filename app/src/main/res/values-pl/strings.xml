@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Skróty Google</string>
+    <string name="app_settings">Ustawienia</string>
+
+    <string name="pref_category_shortcuts_manager">Menedżer skrótów</string>
+    <string name="pref_category_other">Inne</string>
+    <string name="pref_category_about">Informacje</string>
+
+    <string name="pref_version">Wersja</string>
+    <string name="pref_developer">Programista</string>
+    <string name="pref_source_code">Repozytorium kodu źródłowego</string>
+
+    <string name="pref_shortcut_enabled">Launcher skrótów włączony</string>
+    <string name="pref_shortcut_disabled">Launcher skrótów wyłączony</string>
+
+    <string name="pref_device_game_manager">Menedżer gier urządzenia</string>
+    <string name="pref_device_game_manager_summary">Używaj menedżera gier na urządzeniu do uruchamiania gier zamiast korzystać z Gier Google Play</string>
+
+    <string name="pref_password_manager_root">Menedżer haseł (root)</string>
+    <string name="pref_password_manager_root_summary">Użyj dostępu root, aby otworzyć menedżer haseł w Usługach Google Play</string>
+
+    <string name="pref_show_settings">Pokaż ustawienia w launcherze</string>
+    <string name="pref_show_settings_summary">Stuknij i przytrzymaj <b>Wyszukiwanie muzyki</b>, aby uzyskać dostęp do ukrytych ustawień w panelu szybkich ustawień</string>
+
+    <string name="pref_add_music_search_quick_settings">Dodaj wyszukiwanie muzyki do panelu szybkich ustawień</string>
+
+    <string name="music_search_quick_settings">Wyszukiwanie muzyki</string>
+    <string name="password">Hasła</string>
+    <string name="music_search">Wyszukaj</string>
+    <string name="weather">Pogoda</string>
+    <string name="games">Gry</string>
+    <string name="assistant">Asystent</string>
+    <string name="lens">Obiektyw</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="files">Pliki</string>
+
+    <string name="google_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz aplikację Google</string>
+    <string name="play_games_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz Gry Google Play</string>
+    <string name="play_services_not_found">Aktywność nie znaleziona. Zainstaluj lub włącz Google Play Services</string>
+    <string name="browser_not_found">Nie znaleziono przeglądarki. Zainstaluj lub włącz przeglądarkę</string>
+    <string name="game_manager_not_found">Menedżer gier nie jest obsługiwany przez to urządzenie</string>
+    <string name="files_not_found">Pliki nieobsługiwane na tym urządzeniu</string>
+    <string name="password_manager_root_error">Najpierw nadaj uprawnienia root</string>
+
+    <string name="assistant_game_title">Włączyć skróty asystenta głosowego?</string>
+    <string name="assistant_game_summary">Używaj skrótów asystenta głosowego do otwierania gier za pomocą stuknięć i gestów na tym urządzeniu. Wybierz <b>Skróty Google</b> jako domyślnego asystenta głosowego, aby włączyć tę funkcję</string>
+    <string name="assistant_setup_button">Włącz Asystenta</string>
+    <string name="assistant_cancel_button">Anuluj</string>
+
+    <string name="tile_added_success">Pomyślnie dodano do szybkich ustawień</string>
+    <string name="tile_already_added">Dodano już do szybkich ustawień</string>
+</resources>
