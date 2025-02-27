@@ -11,7 +11,7 @@ class QuickShareShortcut : ShortcutsActivity() {
         val intent = Intent().apply {
             component = ComponentName(
                 "com.google.android.gms",
-                "com.google.android.gms.nearby.sharing.settings.SendActivity"
+                "com.google.android.gms.nearby.sharing.send.SendActivity"
             )
         }
         if (!tryStartActivity(intent)) {
