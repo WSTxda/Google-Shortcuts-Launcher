@@ -1,92 +1,51 @@
 package com.wstxda.gsl.shortcuts
 
-import android.annotation.SuppressLint
 import android.content.Intent
-import android.os.Bundle
-import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
-import androidx.preference.PreferenceManager
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.wstxda.gsl.R
-import com.wstxda.gsl.utils.ActivityUtils
+import com.wstxda.gsl.logic.PreferenceHelper
+import com.wstxda.gsl.ui.ShortcutsActivity
+import com.wstxda.gsl.utils.Constants
 import com.wstxda.gsl.utils.GamesBrandsPackages
+import com.wstxda.gsl.utils.ShortcutLauncher
 
-class GamesShortcut : AppCompatActivity() {
+class GamesShortcut : ShortcutsActivity() {
 
-    companion object {
-        private const val GAME_MANAGER_PREF_KEY = "device_game_manager"
-        private const val SHEET_SHOWN_PREF_KEY = "sheetShown"
-    }
+    private val preferences by lazy { PreferenceHelper(this) }
 
-    private val sharedPreferences by lazy { PreferenceManager.getDefaultSharedPreferences(this) }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        checkAndHandleBottomSheetDialog()
-    }
-
-    private fun checkAndHandleBottomSheetDialog() {
-        when (sharedPreferences.getBoolean(SHEET_SHOWN_PREF_KEY, false)) {
-            false -> showAssistantBottomSheet()
-            true -> launchGames()
+    override fun onCreateInternal() {
+        val useGameManager = preferences.getBoolean(Constants.GAME_MANAGER_PREF_KEY)
+        if (useGameManager) {
+            launchBrandGamesManager()
+        } else {
+            launchGooglePlayGamesFolder()
         }
     }
 
-    private fun launchGames() {
-        val useGameManager = sharedPreferences.getBoolean(GAME_MANAGER_PREF_KEY, false)
-        val success = when {
-            useGameManager -> launchBrandGamesManager()
-            else -> launchGooglePlayGamesFolder()
+    private fun launchBrandGamesManager() {
+        val options = GamesBrandsPackages.gamesLaunchersIntents.map { (packageName, className) ->
+            ShortcutLauncher.LaunchOption(createIntent(packageName, className))
         }
-        if (!success) {
-            ActivityUtils.showToast(
-                this,
-                if (useGameManager) R.string.game_manager_not_found else R.string.play_games_not_found
-            )
-        }
-        finish()
+        launchShortcuts(options, R.string.game_manager_not_found)
     }
 
-    private fun launchBrandGamesManager(): Boolean {
-        return GamesBrandsPackages.gamesLaunchersIntents.any { (packageName, className) ->
-            ActivityUtils.tryStartActivity(this, packageName, className)
-        }
-    }
-
-    private fun launchGooglePlayGamesFolder(): Boolean {
-        return ActivityUtils.tryStartActivity(
-            this,
-            "com.google.android.play.games",
-            "com.google.android.apps.play.games.features.gamefolder.GameFolderTrampolineActivity"
+    private fun launchGooglePlayGamesFolder() {
+        launchShortcuts(
+            listOf(
+                ShortcutLauncher.LaunchOption(
+                    createIntent(
+                        "com.google.android.play.games",
+                        "com.google.android.apps.play.games.features.gamefolder.GameFolderTrampolineActivity"
+                    )
+                )
+            ), R.string.play_games_not_found
         )
     }
 
-    @SuppressLint("InflateParams")
-    private fun showAssistantBottomSheet() {
-        val bottomSheetView = layoutInflater.inflate(R.layout.bottom_sheet_assistant, null, false)
-        BottomSheetDialog(this).apply {
-            setContentView(bottomSheetView)
-            bottomSheetView.findViewById<Button>(R.id.setup_button).setOnClickListener {
-                openAssistantSettings()
-                markSheetAsShown()
-                dismiss()
-                finish()
-            }
-            bottomSheetView.findViewById<Button>(R.id.cancel_button).setOnClickListener {
-                markSheetAsShown()
-                dismiss()
-                launchGames()
-            }
-            setOnCancelListener { finish() }
-            show()
+    private fun createIntent(packageName: String, className: String): Intent {
+        return Intent().apply {
+            setClassName(packageName, className)
+            action = Intent.ACTION_MAIN
+            addCategory(Intent.CATEGORY_LAUNCHER)
         }
-    }
-
-    private fun openAssistantSettings() {
-        startActivity(Intent(android.provider.Settings.ACTION_VOICE_INPUT_SETTINGS))
-    }
-
-    private fun markSheetAsShown() {
-        sharedPreferences.edit().putBoolean(SHEET_SHOWN_PREF_KEY, true).apply()
     }
 }

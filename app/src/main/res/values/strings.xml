@@ -46,11 +46,6 @@
     <string name="files_not_found">Files not supported in this device</string>
     <string name="password_manager_root_error">Grant root permission first</string>
 
-    <string name="assistant_game_title">Enable voice assistant shortcuts?</string>
-    <string name="assistant_game_summary">Use voice assistant shortcuts to open your games with buttons and gestures on this device. Select <b>Google Shortcuts Launcher</b> as the default voice assistant to enable this feature</string>
-    <string name="assistant_setup_button">Enable Assistant</string>
-    <string name="assistant_cancel_button">Cancel</string>
-
     <string name="tile_added_success">Successfully added to quick settings</string>
     <string name="tile_already_added">Already added to quick settings</string>
 

@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
@@ -12,12 +13,16 @@ import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
 import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.ui.SettingsActivity
-import com.wstxda.gsl.utils.TileManager
+import com.wstxda.gsl.ui.TileManager
 
 class PreferenceFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+            findPreference<Preference>("add_music_search_tile")?.isVisible = false
+        }
 
         setupShortcutsActivityPreferences()
         setupTilePreference()
@@ -28,13 +33,13 @@ class PreferenceFragment : PreferenceFragmentCompat() {
     private fun setupShortcutsActivityPreferences() {
         val preferences = mapOf(
             "assistant_shortcut" to AssistantShortcut::class.java,
-            "quick_share_shortcut" to QuickShareShortcut::class.java,
-            "lens_shortcut" to LensShortcut::class.java,
-            "game_shortcut" to GamesShortcut::class.java,
             "files_shortcut" to FilesShortcut::class.java,
-            "password_manager_shortcut" to PasswordManagerShortcut::class.java,
-            "weather_shortcut" to WeatherShortcut::class.java,
+            "games_shortcut" to GamesShortcut::class.java,
+            "lens_shortcut" to LensShortcut::class.java,
             "music_search_shortcut" to MusicSearchShortcut::class.java,
+            "password_manager_shortcut" to PasswordManagerShortcut::class.java,
+            "quick_share_shortcut" to QuickShareShortcut::class.java,
+            "weather_shortcut" to WeatherShortcut::class.java,
             "settings_activity" to SettingsActivity::class.java,
         )
 

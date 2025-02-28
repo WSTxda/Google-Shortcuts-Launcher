@@ -43,11 +43,6 @@
     <string name="files_not_found">このデバイスでサポートされていないファイル</string>
     <string name="password_manager_root_error">最初に root 権限を許可してください</string>
 
-    <string name="assistant_game_title">音声アシスタントのショートカットを有効化しますか？</string>
-    <string name="assistant_game_summary">音声アシスタントのショートカットを使用して、このデバイスのボタンやジェスチャーでゲームを起動できます。この機能を有効化するには<b>Google ショートカットランチャー</b>をデフォルトのアシスタントとして設定してください。</string>
-    <string name="assistant_setup_button">アシスタントを有効化する</string>
-    <string name="assistant_cancel_button">キャンセル</string>
-
     <string name="tile_added_success">クイック設定に正常に追加されました</string>
     <string name="tile_already_added">クイック設定にすでに追加されています</string>
 </resources>

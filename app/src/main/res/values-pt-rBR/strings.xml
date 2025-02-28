@@ -42,11 +42,6 @@
     <string name="files_not_found">Arquivos não suportado neste dispositivo</string>
     <string name="password_manager_root_error">Conceda acesso root primeiro</string>
 
-    <string name="assistant_game_title">Usar atalhos do assistente de voz?</string>
-    <string name="assistant_game_summary">Use atalhos do assistente de voz para abrir seus jogos com botões e gestos neste dispositivo. Selecione <b>Atalhos do Google</b> como assistente de voz padrão para ativar este recurso</string>
-    <string name="assistant_setup_button">Ativar Assistente</string>
-    <string name="assistant_cancel_button">Cancelar</string>
-
     <string name="tile_added_success">Adicionado com sucesso às configurações rápidas</string>
     <string name="tile_already_added">Já adicionado às configurações rápidas</string>
 </resources>

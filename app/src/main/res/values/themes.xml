@@ -27,9 +27,9 @@
         <!--attributes colors-->
         <item name="android:colorAccent">?colorPrimary</item>
         <!--components theme-->
-        <item name="snackbarStyle">@style/Theme.Snackbar</item>
-        <item name="alertDialogTheme">@style/Theme.AlertDialog</item>
-        <item name="switchPreferenceCompatStyle">@style/Theme.SwitchPreferenceCompat</item>
+        <item name="snackbarStyle">@style/Theme.Component.Snackbar</item>
+        <item name="alertDialogTheme">@style/Theme.Component.AlertDialog</item>
+        <item name="switchPreferenceCompatStyle">@style/Theme.Component.SwitchPreferenceCompat</item>
         <!--app bars colors-->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/black</item>
@@ -90,16 +90,16 @@
 
     <!--app theme components-->
 
-    <style name="Theme.Snackbar" parent="Widget.Material3.Snackbar">
+    <style name="Theme.Component.Snackbar" parent="Widget.Material3.Snackbar">
         <item name="android:layout_margin">17dp</item>
         <item name="animationMode">slide</item>
     </style>
 
-    <style name="Theme.SwitchPreferenceCompat" parent="@style/Preference.SwitchPreferenceCompat.Material">
+    <style name="Theme.Component.SwitchPreferenceCompat" parent="@style/Preference.SwitchPreferenceCompat.Material">
         <item name="widgetLayout">@layout/preference_material_switch</item>
     </style>
 
-    <style name="Theme.AlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog">
+    <style name="Theme.Component.AlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog">
         <item name="android:colorBackground">?colorSurfaceContainer</item>
         <item name="android:windowAnimationStyle">@style/MaterialAlertDialog.Material3.Animation
         </item>

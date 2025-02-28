@@ -1,4 +1,4 @@
-package com.wstxda.gsl.utils
+package com.wstxda.gsl.ui
 
 import android.app.Activity
 import android.app.StatusBarManager

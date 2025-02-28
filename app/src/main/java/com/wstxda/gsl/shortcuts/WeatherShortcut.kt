@@ -4,22 +4,31 @@ import android.content.Intent
 import android.net.Uri
 import com.wstxda.gsl.R
 import com.wstxda.gsl.ui.ShortcutsActivity
+import com.wstxda.gsl.utils.ShortcutLauncher
 
 class WeatherShortcut : ShortcutsActivity() {
 
     override fun onCreateInternal() {
-        val packageName = "com.google.android.googlequicksearchbox"
-        val className = "com.google.android.apps.search.weather.WeatherExportedActivity"
-        if (!tryStartActivity(packageName, className)) {
-            launchWeatherInBrowser()
+        launchShortcuts(
+            listOf(
+                ShortcutLauncher.LaunchOption(createWeatherIntent()),
+                ShortcutLauncher.LaunchOption(createBrowserIntent())
+            ), R.string.browser_not_found
+        )
+    }
+
+    private fun createWeatherIntent(): Intent {
+        return Intent().apply {
+            setClassName(
+                "com.google.android.googlequicksearchbox",
+                "com.google.android.apps.search.weather.WeatherExportedActivity"
+            )
+            action = Intent.ACTION_MAIN
+            addCategory(Intent.CATEGORY_LAUNCHER)
         }
     }
 
-    private fun launchWeatherInBrowser() {
-        val weatherUrl = getString(R.string.weather_url)
-        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(weatherUrl))
-        if (!tryStartActivity(browserIntent)) {
-            showToast(R.string.browser_not_found)
-        }
+    private fun createBrowserIntent(): Intent {
+        return Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.weather_url)))
     }
 }

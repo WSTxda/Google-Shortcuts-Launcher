@@ -44,7 +44,7 @@
             android:ellipsize="marquee"
             android:maxLines="8"
             android:textAppearance="?attr/textAppearanceBodyMedium"
-            android:textColor="?colorOnSurfaceVariant" />
+            android:textColor="?android:textColorSecondary" />
     </LinearLayout>
 
     <LinearLayout

@@ -2,6 +2,12 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <Preference
+        android:icon="@drawable/ic_add"
+        android:key="add_music_search_tile"
+        android:layout="@layout/preference_material_shortcuts_tile"
+        android:title="@string/pref_add_music_search_quick_settings" />
+
     <PreferenceCategory
         android:layout="@layout/preference_material_category"
         android:title="@string/pref_category_shortcuts_manager"
@@ -18,12 +24,21 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_share"
-        android:key="quick_share_shortcut"
+        android:icon="@mipmap/ic_launcher_files"
+        android:key="files_shortcut"
         android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/quick_share" />
+        android:title="@string/files" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:icon="@mipmap/ic_launcher_game"
+        android:key="games_shortcut"
+        android:layout="@layout/preference_material_shortcuts_middle"
+        android:summaryOff="@string/pref_shortcut_disabled"
+        android:summaryOn="@string/pref_shortcut_enabled"
+        android:title="@string/games" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
@@ -36,12 +51,12 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_game"
-        android:key="game_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
+        android:icon="@mipmap/ic_launcher_music"
+        android:key="music_search_shortcut"
+        android:layout="@layout/preference_material_shortcuts_top"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/games" />
+        android:title="@string/music_search_quick_settings" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
@@ -54,21 +69,21 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_weather"
-        android:key="weather_shortcut"
+        android:icon="@mipmap/ic_launcher_share"
+        android:key="quick_share_shortcut"
         android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/weather" />
+        android:title="@string/quick_share" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_music"
-        android:key="music_search_shortcut"
+        android:icon="@mipmap/ic_launcher_weather"
+        android:key="weather_shortcut"
         android:layout="@layout/preference_material_shortcuts_bottom"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/music_search_quick_settings" />
+        android:title="@string/weather" />
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"
@@ -77,7 +92,7 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="false"
-        android:dependency="game_shortcut"
+        android:dependency="games_shortcut"
         android:icon="@drawable/ic_games"
         android:key="device_game_manager"
         android:layout="@layout/preference_material_top"

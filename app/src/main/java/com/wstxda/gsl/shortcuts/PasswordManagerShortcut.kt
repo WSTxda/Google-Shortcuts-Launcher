@@ -2,49 +2,42 @@ package com.wstxda.gsl.shortcuts
 
 import android.content.Intent
 import android.net.Uri
-import androidx.preference.PreferenceManager
 import com.wstxda.gsl.R
+import com.wstxda.gsl.logic.PreferenceHelper
+import com.wstxda.gsl.logic.RootChecker
 import com.wstxda.gsl.ui.ShortcutsActivity
+import com.wstxda.gsl.utils.Constants
+import com.wstxda.gsl.utils.ShortcutLauncher
 
 class PasswordManagerShortcut : ShortcutsActivity() {
 
-    companion object {
-        private const val PASSWORD_URL_KEY = "password_manager_root"
-    }
+    private val preferences by lazy { PreferenceHelper(this) }
 
     override fun onCreateInternal() {
-        val useSuMode =
-            PreferenceManager.getDefaultSharedPreferences(this).getBoolean(PASSWORD_URL_KEY, false)
+        val useSuMode = preferences.getBoolean(Constants.PASSWORD_URL_KEY)
         when {
-            useSuMode && isRootAvailable() -> launchPasswordManager()
+            useSuMode && RootChecker.isRootAvailable() -> launchPasswordManager()
             useSuMode -> showToast(R.string.password_manager_root_error)
-            else -> startPasswordManagerBrowser(getString(R.string.password_url))
+            else -> launchPasswordManagerBrowser()
         }
     }
-
-    private fun isRootAvailable(): Boolean = runCatching {
-        val process = ProcessBuilder("su", "-c", "id").start()
-        process.waitFor() == 0
-    }.getOrDefault(false)
 
     private fun launchPasswordManager() {
-        runCatching {
-            ProcessBuilder(
-                "su",
-                "-c",
-                "am",
-                "start",
-                "com.google.android.gms/com.google.android.gms.credential.manager.PasswordManagerActivity"
-            ).start()
-        }.onFailure {
-            showToast(R.string.password_manager_root_error)
+        if (!RootChecker.launchRootActivity(
+                Constants.PASSWORD_PACKAGE, Constants.PASSWORD_ACTIVITY
+            )
+        ) {
+            showToast(R.string.play_services_not_found)
         }
     }
 
-    private fun startPasswordManagerBrowser(url: String) {
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-        if (!tryStartActivity(intent)) {
-            showToast(R.string.browser_not_found)
-        }
+    private fun launchPasswordManagerBrowser() {
+        launchShortcuts(
+            listOf(ShortcutLauncher.LaunchOption(createBrowserIntent())), R.string.browser_not_found
+        )
+    }
+
+    private fun createBrowserIntent(): Intent {
+        return Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.password_url)))
     }
 }

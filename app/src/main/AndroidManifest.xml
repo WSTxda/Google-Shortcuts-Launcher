@@ -4,21 +4,23 @@
 
     <application
         android:allowBackup="false"
-        android:enableOnBackInvokedCallback="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="false"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="DataExtractionRules"
         tools:targetApi="tiramisu">
 
         <activity
             android:name="com.wstxda.gsl.ui.SettingsActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:enableOnBackInvokedCallback="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_settings"
             android:label="@string/app_settings"
-            android:noHistory="true">
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -28,7 +30,6 @@
         <activity-alias
             android:name="com.wstxda.gsl.ui.SettingsActivityLauncher"
             android:exported="true"
-            android:noHistory="true"
             android:process=":ui"
             android:targetActivity="com.wstxda.gsl.ui.SettingsActivity">
             <intent-filter>
@@ -45,36 +46,6 @@
             android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_assistant"
             android:label="@string/assistant"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.Transparent">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.wstxda.gsl.shortcuts.QuickShareShortcut"
-            android:excludeFromRecents="true"
-            android:exported="true"
-            android:finishOnTaskLaunch="true"
-            android:icon="@mipmap/ic_launcher_share"
-            android:label="@string/quick_share"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.Transparent">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.wstxda.gsl.shortcuts.LensShortcut"
-            android:excludeFromRecents="true"
-            android:exported="true"
-            android:finishOnTaskLaunch="true"
-            android:icon="@mipmap/ic_launcher_lens"
-            android:label="@string/lens"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -113,9 +84,35 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.wstxda.gsl.shortcuts.LensShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:icon="@mipmap/ic_launcher_lens"
+            android:label="@string/lens"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
             <intent-filter>
-                <action android:name="android.intent.action.ASSIST" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.wstxda.gsl.shortcuts.MusicSearchShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:icon="@mipmap/ic_launcher_music"
+            android:label="@string/music_search"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
@@ -135,12 +132,12 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.WeatherShortcut"
+            android:name="com.wstxda.gsl.shortcuts.QuickShareShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
-            android:icon="@mipmap/ic_launcher_weather"
-            android:label="@string/weather"
+            android:icon="@mipmap/ic_launcher_share"
+            android:label="@string/quick_share"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -150,12 +147,12 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.MusicSearchShortcut"
+            android:name="com.wstxda.gsl.shortcuts.WeatherShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:finishOnTaskLaunch="true"
-            android:icon="@mipmap/ic_launcher_music"
-            android:label="@string/music_search"
+            android:icon="@mipmap/ic_launcher_weather"
+            android:label="@string/weather"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>

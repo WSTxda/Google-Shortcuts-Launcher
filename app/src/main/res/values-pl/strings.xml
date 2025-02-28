@@ -42,11 +42,6 @@
     <string name="files_not_found">Pliki nieobsługiwane na tym urządzeniu</string>
     <string name="password_manager_root_error">Najpierw nadaj uprawnienia root</string>
 
-    <string name="assistant_game_title">Włączyć skróty asystenta głosowego?</string>
-    <string name="assistant_game_summary">Używaj skrótów asystenta głosowego do otwierania gier za pomocą stuknięć i gestów na tym urządzeniu. Wybierz <b>Skróty Google</b> jako domyślnego asystenta głosowego, aby włączyć tę funkcję</string>
-    <string name="assistant_setup_button">Włącz Asystenta</string>
-    <string name="assistant_cancel_button">Anuluj</string>
-
     <string name="tile_added_success">Pomyślnie dodano do szybkich ustawień</string>
     <string name="tile_already_added">Dodano już do szybkich ustawień</string>
 </resources>
