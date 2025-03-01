@@ -49,6 +49,14 @@
     <string name="tile_added_success">Successfully added to quick settings</string>
     <string name="tile_already_added">Already added to quick settings</string>
 
+    <string name="update_checker_button">Check updates</string>
+    <string name="update_checker_download_button">Download</string>
+
+    <string name="update_checker_no_update">No update available</string>
+    <string name="update_checker_update_available">New update available: %s</string>
+    <string name="update_checker_no_internet">No internet connection</string>
+    <string name="update_checker_generic_error">Something went wrong. Please try again later</string>
+
     <string name="password_url" translatable="false">https://passwords.google.com</string>
     <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>
 </resources>

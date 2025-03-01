@@ -45,4 +45,12 @@
 
     <string name="tile_added_success">クイック設定に正常に追加されました</string>
     <string name="tile_already_added">クイック設定にすでに追加されています</string>
+
+    <string name="update_checker_button">アップデートを確認</string>
+    <string name="update_checker_download_button">ダウンロード</string>
+
+    <string name="update_checker_no_update">利用可能なアップデートはありません</string>
+    <string name="update_checker_update_available">新しいアップデートが利用可能です: %s</string>
+    <string name="update_checker_no_internet">インターネット接続がありません</string>
+    <string name="update_checker_generic_error">何か問題が発生しました。後でもう一度お試しください</string>
 </resources>

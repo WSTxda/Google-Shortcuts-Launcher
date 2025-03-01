@@ -53,7 +53,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_music"
         android:key="music_search_shortcut"
-        android:layout="@layout/preference_material_shortcuts_top"
+        android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/music_search_quick_settings" />
@@ -102,9 +102,11 @@
     <SwitchPreferenceCompat
         android:defaultValue="false"
         android:dependency="password_manager_shortcut"
+        android:disableDependentsState="true"
         android:icon="@drawable/ic_root"
         android:key="password_manager_root"
         android:layout="@layout/preference_material_middle"
+        android:shouldDisableView="true"
         android:summary="@string/pref_password_manager_root_summary"
         android:title="@string/pref_password_manager_root" />
 
@@ -135,11 +137,11 @@
         android:summary="@string/pref_source_code"
         android:title="@string/pref_github" />
 
-    <Preference
-        android:icon="@drawable/ic_about"
+    <com.wstxda.gsl.fragments.view.UpdaterPreference
         android:key="version"
-        android:layout="@layout/preference_material_bottom"
         android:summary="@string/pref_version_number"
-        android:title="@string/pref_version" />
+        android:title="@string/pref_version"
+        app:allowDividerAbove="false"
+        app:allowDividerBelow="false" />
 
 </androidx.preference.PreferenceScreen>

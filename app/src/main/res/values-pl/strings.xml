@@ -44,4 +44,12 @@
 
     <string name="tile_added_success">Pomyślnie dodano do szybkich ustawień</string>
     <string name="tile_already_added">Dodano już do szybkich ustawień</string>
+
+    <string name="update_checker_button">Sprawdź aktualizacje</string>
+    <string name="update_checker_download_button">Pobierz</string>
+
+    <string name="update_checker_no_update">Brak dostępnych aktualizacji</string>
+    <string name="update_checker_update_available">Dostępna nowa aktualizacja: %s</string>
+    <string name="update_checker_no_internet">Brak połączenia z internetem</string>
+    <string name="update_checker_generic_error">Coś poszło nie tak. Spróbuj ponownie później</string>
 </resources>

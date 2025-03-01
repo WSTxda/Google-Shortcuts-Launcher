@@ -2,7 +2,6 @@ package com.wstxda.gsl.fragments
 
 import android.content.ComponentName
 import android.content.Intent
-import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
@@ -15,7 +14,7 @@ import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.ui.SettingsActivity
 import com.wstxda.gsl.ui.TileManager
 
-class PreferenceFragment : PreferenceFragmentCompat() {
+class SettingsFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
@@ -27,7 +26,6 @@ class PreferenceFragment : PreferenceFragmentCompat() {
         setupShortcutsActivityPreferences()
         setupTilePreference()
         setupLinkPreferences()
-        updateVersionSummary()
     }
 
     private fun setupShortcutsActivityPreferences() {
@@ -73,20 +71,6 @@ class PreferenceFragment : PreferenceFragmentCompat() {
             val tileManager = TileManager(requireContext())
             tileManager.requestAddTile()
             true
-        }
-    }
-
-    private fun updateVersionSummary() {
-        findPreference<Preference>("version")?.summary = getVersionName()
-    }
-
-    private fun getVersionName(): String {
-        return try {
-            val packageInfo: PackageInfo =
-                requireContext().packageManager.getPackageInfo(requireContext().packageName, 0)
-            packageInfo.versionName ?: "N/A"
-        } catch (_: PackageManager.NameNotFoundException) {
-            "N/A"
         }
     }
 

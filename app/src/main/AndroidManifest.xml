@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Used to check connection in OTA (UpdaterService.kt) implementation -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -29,7 +33,7 @@
 
         <activity-alias
             android:name="com.wstxda.gsl.ui.SettingsActivityLauncher"
-            android:exported="true"
+            android:exported="false"
             android:process=":ui"
             android:targetActivity="com.wstxda.gsl.ui.SettingsActivity">
             <intent-filter>

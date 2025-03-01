@@ -44,4 +44,12 @@
 
     <string name="tile_added_success">با موفقیت به تنظیمات سریع اضافه شد</string>
     <string name="tile_already_added">قبلاً به تنظیمات سریع اضافه شده است</string>
+
+    <string name="update_checker_button">بررسی به‌روزرسانی‌ها</string>
+    <string name="update_checker_download_button">دانلود</string>
+
+    <string name="update_checker_no_update">به‌روزرسانی در دسترس نیست</string>
+    <string name="update_checker_update_available">به‌روزرسانی جدید در دسترس است: %s</string>
+    <string name="update_checker_no_internet">اتصال به اینترنت وجود ندارد</string>
+    <string name="update_checker_generic_error">مشکلی پیش آمد. لطفاً بعداً دوباره امتحان کنید</string>
 </resources>
