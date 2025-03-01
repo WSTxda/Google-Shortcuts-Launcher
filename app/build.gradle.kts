@@ -10,8 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.wstxda.gsl"
         minSdk = 24
-        //noinspection OldTargetApi
-        targetSdk = 33
+        targetSdk = 35
         versionCode = 520
         versionName = "5.2"
 
