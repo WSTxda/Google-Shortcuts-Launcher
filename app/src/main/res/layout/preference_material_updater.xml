@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
-    android:background="@drawable/preference_background_updater"
+    android:background="@drawable/preference_background_bottom"
     android:baselineAligned="false"
     android:clickable="true"
     android:focusable="true"
@@ -17,7 +17,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:layout_weight="1"
         android:orientation="vertical">
@@ -42,7 +42,7 @@
 
     <Button
         android:id="@+id/check_updates"
-        style="@style/Widget.Material3.Button.Icon"
+        style="@style/Widget.Material3.Button.TonalButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"

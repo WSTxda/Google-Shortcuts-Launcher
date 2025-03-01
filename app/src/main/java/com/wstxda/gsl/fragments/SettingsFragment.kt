@@ -78,7 +78,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         val links = mapOf(
             "developer" to "https://github.com/WSTxda",
             "github_repository" to "https://github.com/WSTxda/Google-Shortcuts-Launcher",
-            "version" to "https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest"
+            // "version" to "https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest"
         )
 
         links.forEach { (key, url) ->

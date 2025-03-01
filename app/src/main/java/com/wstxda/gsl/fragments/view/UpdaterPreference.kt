@@ -14,11 +14,12 @@ class UpdaterPreference @JvmOverloads constructor(
 
     init {
         layoutResource = R.layout.preference_material_updater
-        isSelectable = false
     }
 
     override fun onBindViewHolder(holder: PreferenceViewHolder) {
         super.onBindViewHolder(holder)
+        holder.itemView.isClickable = false
+        holder.itemView.isFocusable = false
 
         holder.findViewById(android.R.id.summary)?.let {
             it as android.widget.TextView
@@ -38,8 +39,5 @@ class UpdaterPreference @JvmOverloads constructor(
         } catch (_: Exception) {
             "N/A"
         }
-    }
-
-    override fun onClick() {
     }
 }
