@@ -16,6 +16,12 @@ Google Shortcuts Launcher provides a seamless way to integrate powerful Google s
 
 ### Shortcuts Available:
 
+**Voice Assistant**  
+Quickly invoke your device's voice assistant, such as Gemini, Google Assistant, or others, to streamline tasks and access smart voice commands.
+
+**Files (AOSP)**  
+Use the system built-in file manager, to organize, copy, move, delete among many other operations.
+
 **Games Launcher**  
 A folder displaying all your installed games, along with recommendations from Google Play Games.  
 
@@ -39,8 +45,8 @@ Get real-time local weather updates and detailed weekly forecasts.
 
 > If the Google app is unavailable, the weather information will open in your browser.
 
-**Voice Assistant**  
-Quickly invoke your device's voice assistant, such as Gemini, Google Assistant, or others, to streamline tasks and access smart voice commands.
+**Google Quick Share**  
+Send and receive photos, documents, and more between nearby Android devices and Windows PCs.
 
 > [!NOTE]  
 > **Required Apps:** Google, Google Play Services, and Google Play Games must be installed on your device for shortcuts to function properly.  
