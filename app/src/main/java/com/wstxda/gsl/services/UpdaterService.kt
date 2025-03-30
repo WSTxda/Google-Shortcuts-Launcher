@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import android.net.Uri
 import android.view.View
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.snackbar.Snackbar
@@ -15,6 +14,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
 import java.net.URL
+import androidx.core.net.toUri
 
 object UpdaterService {
     private const val GITHUB_RELEASE_URL =
@@ -93,7 +93,7 @@ object UpdaterService {
         snackbar.setAction(R.string.update_checker_download_button) {
             val intent = Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse(GITHUB_RELEASE_URL.replace("api.", "").replace("/repos", ""))
+                GITHUB_RELEASE_URL.replace("api.", "").replace("/repos", "").toUri()
             )
             anchorView.context.startActivity(intent)
         }

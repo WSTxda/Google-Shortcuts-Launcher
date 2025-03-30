@@ -1,13 +1,13 @@
 package com.wstxda.gsl.shortcuts
 
 import android.content.Intent
-import android.net.Uri
 import com.wstxda.gsl.R
 import com.wstxda.gsl.logic.PreferenceHelper
 import com.wstxda.gsl.logic.RootChecker
 import com.wstxda.gsl.ui.ShortcutsActivity
 import com.wstxda.gsl.utils.Constants
 import com.wstxda.gsl.utils.ShortcutLauncher
+import androidx.core.net.toUri
 
 class PasswordManagerShortcut : ShortcutsActivity() {
 
@@ -38,6 +38,6 @@ class PasswordManagerShortcut : ShortcutsActivity() {
     }
 
     private fun createBrowserIntent(): Intent {
-        return Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.password_url)))
+        return Intent(Intent.ACTION_VIEW, getString(R.string.password_url).toUri())
     }
 }

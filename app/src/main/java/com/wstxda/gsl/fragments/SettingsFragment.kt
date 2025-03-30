@@ -3,7 +3,6 @@ package com.wstxda.gsl.fragments
 import android.content.ComponentName
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import androidx.preference.Preference
@@ -13,6 +12,7 @@ import com.wstxda.gsl.R
 import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.ui.SettingsActivity
 import com.wstxda.gsl.ui.TileManager
+import androidx.core.net.toUri
 
 class SettingsFragment : PreferenceFragmentCompat() {
 
@@ -88,7 +88,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     private fun setupLinkPreference(key: String, url: String) {
         findPreference<Preference>(key)?.setOnPreferenceClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            val intent = Intent(Intent.ACTION_VIEW, url.toUri())
             startActivity(intent)
             true
         }

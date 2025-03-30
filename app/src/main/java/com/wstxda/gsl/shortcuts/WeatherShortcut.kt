@@ -1,10 +1,10 @@
 package com.wstxda.gsl.shortcuts
 
 import android.content.Intent
-import android.net.Uri
 import com.wstxda.gsl.R
 import com.wstxda.gsl.ui.ShortcutsActivity
 import com.wstxda.gsl.utils.ShortcutLauncher
+import androidx.core.net.toUri
 
 class WeatherShortcut : ShortcutsActivity() {
 
@@ -29,6 +29,6 @@ class WeatherShortcut : ShortcutsActivity() {
     }
 
     private fun createBrowserIntent(): Intent {
-        return Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.weather_url)))
+        return Intent(Intent.ACTION_VIEW, getString(R.string.weather_url).toUri())
     }
 }
