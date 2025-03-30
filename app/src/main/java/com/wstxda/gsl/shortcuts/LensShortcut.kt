@@ -21,6 +21,8 @@ class LensShortcut : ShortcutsActivity() {
                 "com.google.android.apps.search.lens.LensExportedActivity"
             )
             flags = Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY
+            // TODO: Investigate why FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY is required for Lens to work properly.
+            // Currently, using this flag causes an issue where launching another shortcut after (e.g., FilesShortcut) reopens Lens instead of the another shortcut.
         }
     }
 }
