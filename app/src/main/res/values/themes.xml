@@ -105,5 +105,7 @@
         </item>
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="dialogCornerRadius">28dp</item>
+        <item name="android:windowMinWidthMajor">91%</item>
+        <item name="android:windowMinWidthMinor">91%</item>
     </style>
 </resources>
