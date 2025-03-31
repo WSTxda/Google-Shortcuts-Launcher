@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <style name="AppTheme.Base" parent="@style/Theme.Material3.DynamicColors.Light.NoActionBar">
@@ -7,7 +6,8 @@
         <!--components theme-->
         <item name="snackbarStyle">@style/Theme.Component.Snackbar</item>
         <item name="alertDialogTheme">@style/Theme.Component.AlertDialog</item>
-        <item name="switchPreferenceCompatStyle">@style/Theme.Component.SwitchPreferenceCompat</item>
+        <item name="switchPreferenceCompatStyle">@style/Theme.Component.SwitchPreferenceCompat
+        </item>
         <!--app bars colors-->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
