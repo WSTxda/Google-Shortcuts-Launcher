@@ -99,7 +99,7 @@
         <item name="widgetLayout">@layout/preference_material_switch</item>
     </style>
 
-    <style name="Theme.Component.AlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog">
+    <style name="Theme.Component.AlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog.Centered">
         <item name="android:colorBackground">?colorSurfaceContainer</item>
         <item name="android:windowAnimationStyle">@style/MaterialAlertDialog.Material3.Animation
         </item>

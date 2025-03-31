@@ -25,6 +25,8 @@
 
     <string name="pref_add_music_search_quick_settings">音楽を検索のパネルをクイック設定に追加</string>
 
+    <string name="pref_theme">テーマ</string>
+
     <string name="music_search_quick_settings">音楽を検索</string>
     <string name="password">パスワード</string>
     <string name="music_search">検索</string>
@@ -45,6 +47,12 @@
 
     <string name="tile_added_success">クイック設定に正常に追加されました</string>
     <string name="tile_already_added">クイック設定にすでに追加されています</string>
+
+    <string name="theme_select">テーマを選択</string>
+
+    <string name="theme_system">システムのデフォルト</string>
+    <string name="theme_light">ライト</string>
+    <string name="theme_dark">ダーク</string>
 
     <string name="update_checker_button">アップデートを確認</string>
     <string name="update_checker_download_button">ダウンロード</string>

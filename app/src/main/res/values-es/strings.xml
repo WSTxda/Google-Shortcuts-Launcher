@@ -24,6 +24,8 @@
 
     <string name="pref_add_music_search_quick_settings">Agregar buscar música en configuración rápida</string>
 
+    <string name="pref_theme">Tema</string>
+
     <string name="music_search_quick_settings">Buscar música</string>
     <string name="password">Contraseñas</string>
     <string name="music_search">Buscar</string>
@@ -44,6 +46,12 @@
 
     <string name="tile_added_success">Añadido con éxito a las configuración rápida</string>
     <string name="tile_already_added">Ya está añadido a las configuración rápida</string>
+
+    <string name="theme_select">Seleccionar tema</string>
+
+    <string name="theme_system">Predeterminado del sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
 
     <string name="update_checker_button">Comprobar actualizaciones</string>
     <string name="update_checker_download_button">Descargar</string>

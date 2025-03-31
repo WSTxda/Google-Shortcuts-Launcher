@@ -90,12 +90,24 @@
         android:title="@string/pref_category_other"
         app:allowDividerAbove="false" />
 
+    <ListPreference
+        android:defaultValue="system"
+        android:entries="@array/theme_entries"
+        android:entryValues="@array/theme_values"
+        android:icon="@drawable/ic_theme"
+        android:key="select_theme"
+        android:layout="@layout/preference_material_top"
+        android:title="@string/pref_theme"
+        app:dialogIcon="@drawable/ic_theme_dialog"
+        app:dialogTitle="@string/theme_select"
+        app:useSimpleSummaryProvider="true" />
+
     <SwitchPreferenceCompat
         android:defaultValue="false"
         android:dependency="games_shortcut"
         android:icon="@drawable/ic_games"
         android:key="device_game_manager"
-        android:layout="@layout/preference_material_top"
+        android:layout="@layout/preference_material_middle"
         android:summary="@string/pref_device_game_manager_summary"
         android:title="@string/pref_device_game_manager" />
 

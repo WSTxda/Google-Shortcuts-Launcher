@@ -28,6 +28,8 @@
 
     <string name="pref_add_music_search_quick_settings">Add music search in quick settings panel</string>
 
+    <string name="pref_theme">Theme</string>
+
     <string name="music_search_quick_settings">Music search</string>
     <string name="password">Passwords</string>
     <string name="music_search">Search</string>
@@ -48,6 +50,12 @@
 
     <string name="tile_added_success">Successfully added to quick settings</string>
     <string name="tile_already_added">Already added to quick settings</string>
+
+    <string name="theme_select">Select theme</string>
+
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
 
     <string name="update_checker_button">Check updates</string>
     <string name="update_checker_download_button">Download</string>

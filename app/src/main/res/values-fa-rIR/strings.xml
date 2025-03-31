@@ -24,6 +24,8 @@
 
     <string name="pref_add_music_search_quick_settings">اضافه کردن جستجوی موسیقی به پنل تنظیمات سریع</string>
 
+    <string name="pref_theme">تم</string>
+
     <string name="music_search_quick_settings">جستجوی موسیقی</string>
     <string name="password">گذرواژه‌ها</string>
     <string name="music_search">جستحو</string>
@@ -44,6 +46,12 @@
 
     <string name="tile_added_success">با موفقیت به تنظیمات سریع اضافه شد</string>
     <string name="tile_already_added">قبلاً به تنظیمات سریع اضافه شده است</string>
+
+    <string name="theme_select">انتخاب تم</string>
+
+    <string name="theme_system">پیش‌فرض سیستم</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تیره</string>
 
     <string name="update_checker_button">بررسی به‌روزرسانی‌ها</string>
     <string name="update_checker_download_button">دانلود</string>

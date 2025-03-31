@@ -24,6 +24,8 @@
 
     <string name="pref_add_music_search_quick_settings">Dodaj wyszukiwanie muzyki do panelu szybkich ustawień</string>
 
+    <string name="pref_theme">Motyw</string>
+
     <string name="music_search_quick_settings">Wyszukiwanie muzyki</string>
     <string name="password">Hasła</string>
     <string name="music_search">Wyszukaj</string>
@@ -44,6 +46,12 @@
 
     <string name="tile_added_success">Pomyślnie dodano do szybkich ustawień</string>
     <string name="tile_already_added">Dodano już do szybkich ustawień</string>
+
+    <string name="theme_select">Wybierz motyw</string>
+
+    <string name="theme_system">Domyślny systemowy</string>
+    <string name="theme_light">Jasny</string>
+    <string name="theme_dark">Ciemny</string>
 
     <string name="update_checker_button">Sprawdź aktualizacje</string>
     <string name="update_checker_download_button">Pobierz</string>

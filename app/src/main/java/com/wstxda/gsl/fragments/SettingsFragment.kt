@@ -13,6 +13,8 @@ import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.ui.SettingsActivity
 import com.wstxda.gsl.ui.TileManager
 import androidx.core.net.toUri
+import androidx.preference.ListPreference
+import com.wstxda.gsl.ui.ThemeManager
 
 class SettingsFragment : PreferenceFragmentCompat() {
 
@@ -25,6 +27,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
         setupShortcutsActivityPreferences()
         setupTilePreference()
+        setupThemePreference()
         setupLinkPreferences()
     }
 
@@ -71,6 +74,17 @@ class SettingsFragment : PreferenceFragmentCompat() {
             val tileManager = TileManager(requireContext())
             tileManager.requestAddTile()
             true
+        }
+    }
+
+    private fun setupThemePreference() {
+        findPreference<ListPreference>("select_theme")?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                val theme = newValue as String
+                ThemeManager.setupTheme(theme)
+                true
+            }
+            ThemeManager.setupTheme(value)
         }
     }
 
