@@ -2,6 +2,9 @@ package com.wstxda.gsl.utils
 
 object GamesBrandsPackages {
     val gamesLaunchersIntents = listOf(
+        //AOSP ROMs
+        "io.chaldeaprjkt.gamespace" to "io.chaldeaprjkt.gamespace.settings.SettingsActivity",
+
         // ASUS
         "com.asus.gamecenter" to "com.asus.gamecenter.GameCenterActivity",
         "com.asus.game" to "com.asus.game.ui.GameLauncherActivity",
@@ -14,6 +17,9 @@ object GamesBrandsPackages {
         "com.blackshark.gamespace" to "com.blackshark.gamespace.ui.MainActivity",
         "com.blackshark.gamespace" to "com.blackshark.gamespace.ui.GameSpaceMainActivity",
         "com.blackshark.gamespace" to "com.blackshark.gamespace.ui.GameCenterActivity",
+
+        //Google Pixel
+        "com.google.android.gms" to "com.google.android.gms.gp.gameservice.SettingsActivity",
 
         // Huawei
         "com.huawei.gameassistant" to "com.huawei.gameassistant.ui.MainActivity",
