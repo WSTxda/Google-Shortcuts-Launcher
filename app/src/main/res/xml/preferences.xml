@@ -92,7 +92,7 @@
     <Preference
         android:key="digital_assistant_setup"
         android:layout="@layout/preference_material_highlight_top"
-        android:icon="@drawable/ic_assistant_shortcut"
+        android:icon="@drawable/ic_assistant_setup_open"
         android:summary="@string/pref_setup_digital_assistant_summary"
         android:title="@string/pref_setup_digital_assistant" />
 
