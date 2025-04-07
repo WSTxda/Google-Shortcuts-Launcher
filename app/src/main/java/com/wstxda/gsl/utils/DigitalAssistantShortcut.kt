@@ -3,19 +3,12 @@ package com.wstxda.gsl.utils
 import android.content.Context
 import android.content.Intent
 import androidx.preference.PreferenceManager
-import com.wstxda.gsl.shortcuts.AssistantShortcut
-import com.wstxda.gsl.shortcuts.FilesShortcut
-import com.wstxda.gsl.shortcuts.GamesShortcut
-import com.wstxda.gsl.shortcuts.LensShortcut
-import com.wstxda.gsl.shortcuts.MusicSearchShortcut
-import com.wstxda.gsl.shortcuts.PasswordManagerShortcut
-import com.wstxda.gsl.shortcuts.QuickShareShortcut
-import com.wstxda.gsl.shortcuts.WeatherShortcut
+import com.wstxda.gsl.shortcuts.*
 import kotlin.collections.get
 
 object DigitalAssistantShortcut {
     private val ShortcutsArrays = mapOf(
-        "assistant_shortcut" to AssistantShortcut::class.java,
+//        "assistant_shortcut" to AssistantShortcut::class.java,
         "files_shortcut" to FilesShortcut::class.java,
         "games_shortcut" to GamesShortcut::class.java,
         "lens_shortcut" to LensShortcut::class.java,

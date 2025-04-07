@@ -97,7 +97,7 @@
         android:title="@string/pref_setup_digital_assistant" />
 
     <ListPreference
-        android:defaultValue="assistant_shortcut"
+        android:defaultValue="lens_shortcut"
         android:enabled="false"
         android:entries="@array/digital_assistant_shortcut_entries"
         android:entryValues="@array/digital_assistant_shortcut_values"

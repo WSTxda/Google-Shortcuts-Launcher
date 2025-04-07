@@ -13,7 +13,7 @@
     </string-array>
 
     <string-array name="digital_assistant_shortcut_entries">
-        <item>@string/assistant</item>
+        <!--<item>@string/assistant</item>-->
         <item>@string/files</item>
         <item>@string/games</item>
         <item>@string/lens</item>
@@ -24,7 +24,7 @@
     </string-array>
 
     <string-array name="digital_assistant_shortcut_values">
-        <item>assistant_shortcut</item>
+        <!--<item>assistant_shortcut</item>-->
         <item>files_shortcut</item>
         <item>games_shortcut</item>
         <item>lens_shortcut</item>
