@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
-    android:layout_marginTop="24dp"
     android:layout_marginEnd="16dp"
-    android:background="@drawable/preference_background_highlight_single"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/preference_background_highlight_top"
     android:baselineAligned="false"
     android:clickable="true"
     android:focusable="true"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="marquee"
             android:maxLines="2"
-            android:textAppearance="?attr/textAppearanceLabelLarge" />
+            android:textAppearance="?attr/textAppearanceBodyLarge" />
 
         <TextView
             android:id="@android:id/summary"
@@ -47,4 +47,12 @@
             android:textAppearance="?attr/textAppearanceBodyMedium"
             android:textColor="?android:textColorSecondary" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@android:id/widget_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical" />
 </LinearLayout>

@@ -11,4 +11,26 @@
         <item>light</item>
         <item>dark</item>
     </string-array>
+
+    <string-array name="digital_assistant_shortcut_entries">
+        <item>@string/assistant</item>
+        <item>@string/files</item>
+        <item>@string/games</item>
+        <item>@string/lens</item>
+        <item>@string/music_search_quick_settings</item>
+        <item>@string/password</item>
+        <item>@string/quick_share</item>
+        <item>@string/weather</item>
+    </string-array>
+
+    <string-array name="digital_assistant_shortcut_values">
+        <item>assistant_shortcut</item>
+        <item>files_shortcut</item>
+        <item>games_shortcut</item>
+        <item>lens_shortcut</item>
+        <item>music_search_shortcut</item>
+        <item>password_manager_shortcut</item>
+        <item>quick_share_shortcut</item>
+        <item>weather_shortcut</item>
+    </string-array>
 </resources>

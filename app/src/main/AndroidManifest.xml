@@ -166,6 +166,19 @@
             </intent-filter>
         </activity>
 
+        <!-- Digital assistant activity fallback -->
+        <activity
+            android:name="com.wstxda.gsl.services.DigitalAssistantFallback"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <!-- Music search quick settings tile -->
         <service
             android:name="com.wstxda.gsl.services.MusicSearchTileService"

@@ -28,6 +28,7 @@
         <!--components theme-->
         <item name="snackbarStyle">@style/Theme.Component.Snackbar</item>
         <item name="alertDialogTheme">@style/Theme.Component.AlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/Theme.Component.AlertDialog</item>
         <item name="switchPreferenceCompatStyle">@style/Theme.Component.SwitchPreferenceCompat
         </item>
         <!--app bars colors-->
@@ -107,5 +108,13 @@
         <item name="dialogCornerRadius">28dp</item>
         <item name="android:windowMinWidthMajor">91%</item>
         <item name="android:windowMinWidthMinor">91%</item>
+    </style>
+
+    <style name="Theme.Component.AlertDialog.Assistant" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog.Centered">
+        <item name="android:colorBackground">?colorSurfaceContainer</item>
+        <item name="android:windowAnimationStyle">@style/MaterialAlertDialog.Material3.Animation</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.Material3.Button.TonalButton</item>
+        <item name="dialogCornerRadius">28dp</item>
     </style>
 </resources>

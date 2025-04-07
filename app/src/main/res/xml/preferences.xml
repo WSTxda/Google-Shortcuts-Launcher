@@ -79,26 +79,33 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_weather"
         android:key="weather_shortcut"
-        android:layout="@layout/preference_material_shortcuts_bottom"
+        android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/weather" />
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"
-        android:title="@string/pref_category_other"
+        android:title="@string/pref_category_shortcuts_settings"
         app:allowDividerAbove="false" />
 
+    <Preference
+        android:key="digital_assistant_setup"
+        android:layout="@layout/preference_material_highlight_top"
+        android:icon="@drawable/ic_assistant_shortcut"
+        android:summary="@string/pref_setup_digital_assistant_summary"
+        android:title="@string/pref_setup_digital_assistant" />
+
     <ListPreference
-        android:defaultValue="system"
-        android:entries="@array/theme_entries"
-        android:entryValues="@array/theme_values"
-        android:icon="@drawable/ic_theme"
-        android:key="select_theme"
+        android:defaultValue="assistant_shortcut"
+        android:enabled="false"
+        android:entries="@array/digital_assistant_shortcut_entries"
+        android:entryValues="@array/digital_assistant_shortcut_values"
+        android:icon="@drawable/ic_assistant_shortcut"
+        android:key="digital_assistant_shortcut"
         android:layout="@layout/preference_material_top"
-        android:title="@string/pref_theme"
-        app:dialogIcon="@drawable/ic_theme_dialog"
-        app:dialogTitle="@string/theme_select"
+        android:title="@string/pref_digital_assistant_shortcut"
+        app:dialogIcon="@drawable/ic_assistant_shortcut_select"
         app:useSimpleSummaryProvider="true" />
 
     <SwitchPreferenceCompat
@@ -116,10 +123,27 @@
         android:disableDependentsState="true"
         android:icon="@drawable/ic_root"
         android:key="password_manager_root"
-        android:layout="@layout/preference_material_middle"
+        android:layout="@layout/preference_material_bottom"
         android:shouldDisableView="true"
         android:summary="@string/pref_password_manager_root_summary"
         android:title="@string/pref_password_manager_root" />
+
+    <PreferenceCategory
+        android:layout="@layout/preference_material_category"
+        android:title="@string/pref_category_other"
+        app:allowDividerAbove="false" />
+
+    <ListPreference
+        android:defaultValue="system"
+        android:entries="@array/theme_entries"
+        android:entryValues="@array/theme_values"
+        android:icon="@drawable/ic_theme"
+        android:key="select_theme"
+        android:layout="@layout/preference_material_top"
+        android:title="@string/pref_theme"
+        app:dialogIcon="@drawable/ic_theme_dialog"
+        app:dialogTitle="@string/theme_select"
+        app:useSimpleSummaryProvider="true" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
