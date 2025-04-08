@@ -23,7 +23,6 @@
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:enableOnBackInvokedCallback="true"
             android:exported="true"
-            android:excludeFromRecents="true"
             android:icon="@mipmap/ic_launcher_settings"
             android:label="@string/app_settings">
             <intent-filter>
