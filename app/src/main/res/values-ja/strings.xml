@@ -27,7 +27,7 @@
 
     <string name="pref_theme">テーマ</string>
 
-    <string name="music_search_quick_settings">音楽を検索</string>
+    <string name="music_search_label">音楽を検索</string>
     <string name="password">パスワード</string>
     <string name="music_search">検索</string>
     <string name="weather">天気</string>

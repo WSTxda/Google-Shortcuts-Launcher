@@ -55,7 +55,7 @@
         android:layout="@layout/preference_material_shortcuts_middle"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/music_search_quick_settings" />
+        android:title="@string/music_search_label" />
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
@@ -79,7 +79,7 @@
         android:defaultValue="true"
         android:icon="@mipmap/ic_launcher_weather"
         android:key="weather_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
+        android:layout="@layout/preference_material_shortcuts_bottom"
         android:summaryOff="@string/pref_shortcut_disabled"
         android:summaryOn="@string/pref_shortcut_enabled"
         android:title="@string/weather" />
@@ -92,7 +92,7 @@
     <Preference
         android:key="digital_assistant_setup"
         android:layout="@layout/preference_material_highlight_top"
-        android:icon="@drawable/ic_assistant_setup_open"
+        android:icon="@drawable/ic_open"
         android:summary="@string/pref_setup_digital_assistant_summary"
         android:title="@string/pref_setup_digital_assistant" />
 
@@ -101,11 +101,12 @@
         android:enabled="false"
         android:entries="@array/digital_assistant_shortcut_entries"
         android:entryValues="@array/digital_assistant_shortcut_values"
-        android:icon="@drawable/ic_assistant_shortcut"
+        android:icon="@drawable/ic_device_shortcut"
         android:key="digital_assistant_shortcut"
         android:layout="@layout/preference_material_top"
         android:title="@string/pref_digital_assistant_shortcut"
-        app:dialogIcon="@drawable/ic_assistant_shortcut_select"
+        app:dialogIcon="@drawable/ic_shortcut"
+        app:dialogTitle="@string/digital_assistant_shortcut_select"
         app:useSimpleSummaryProvider="true" />
 
     <SwitchPreferenceCompat
@@ -141,7 +142,7 @@
         android:key="select_theme"
         android:layout="@layout/preference_material_top"
         android:title="@string/pref_theme"
-        app:dialogIcon="@drawable/ic_theme_dialog"
+        app:dialogIcon="@drawable/ic_theme_color"
         app:dialogTitle="@string/theme_select"
         app:useSimpleSummaryProvider="true" />
 

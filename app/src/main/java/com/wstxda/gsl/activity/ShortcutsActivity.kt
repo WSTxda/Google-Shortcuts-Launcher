@@ -1,11 +1,12 @@
-package com.wstxda.gsl.ui
+package com.wstxda.gsl.activity
 
 import android.os.Bundle
+import androidx.activity.ComponentActivity
 import androidx.annotation.StringRes
 import com.wstxda.gsl.logic.ActivityUtils
-import com.wstxda.gsl.utils.ShortcutLauncher
+import com.wstxda.gsl.logic.ShortcutLauncher
 
-abstract class ShortcutsActivity : androidx.activity.ComponentActivity() {
+abstract class ShortcutsActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

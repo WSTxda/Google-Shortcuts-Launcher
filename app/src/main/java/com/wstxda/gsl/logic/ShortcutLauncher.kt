@@ -1,8 +1,7 @@
-package com.wstxda.gsl.utils
+package com.wstxda.gsl.logic
 
 import android.content.Context
 import android.content.Intent
-import com.wstxda.gsl.logic.ActivityUtils
 
 class ShortcutLauncher(private val context: Context) {
 

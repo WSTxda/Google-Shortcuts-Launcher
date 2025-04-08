@@ -1,6 +1,5 @@
 package com.wstxda.gsl.logic
 
-//import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast

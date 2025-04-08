@@ -19,23 +19,24 @@
 
         <!-- Settings activity-->
         <activity
-            android:name="com.wstxda.gsl.ui.SettingsActivity"
+            android:name="com.wstxda.gsl.activity.SettingsActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:enableOnBackInvokedCallback="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_settings"
-            android:label="@string/app_settings">
+            android:label="@string/app_settings"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <!-- Settings activity for preferences actions -->
         <activity-alias
-            android:name="com.wstxda.gsl.ui.SettingsActivityLauncher"
+            android:name="com.wstxda.gsl.activity.SettingsActivityLauncher"
             android:exported="false"
-            android:process=":ui"
-            android:targetActivity="com.wstxda.gsl.ui.SettingsActivity">
+            android:targetActivity="com.wstxda.gsl.activity.SettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
@@ -48,9 +49,9 @@
             android:name="com.wstxda.gsl.shortcuts.AssistantShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_assistant"
             android:label="@string/assistant"
+            android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -63,9 +64,9 @@
             android:name="com.wstxda.gsl.shortcuts.FilesShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_files"
             android:label="@string/files"
+            android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -76,12 +77,11 @@
 
         <activity
             android:name="com.wstxda.gsl.shortcuts.GamesShortcut"
-            android:enableOnBackInvokedCallback="true"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_game"
             android:label="@string/games"
+            android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -94,9 +94,9 @@
             android:name="com.wstxda.gsl.shortcuts.LensShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_lens"
             android:label="@string/lens"
+            android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -109,9 +109,9 @@
             android:name="com.wstxda.gsl.shortcuts.MusicSearchShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_music"
             android:label="@string/music_search"
+            android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -124,9 +124,9 @@
             android:name="com.wstxda.gsl.shortcuts.PasswordManagerShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_password"
             android:label="@string/password"
+            android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -139,9 +139,9 @@
             android:name="com.wstxda.gsl.shortcuts.QuickShareShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_share"
             android:label="@string/quick_share"
+            android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -154,9 +154,9 @@
             android:name="com.wstxda.gsl.shortcuts.WeatherShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
             android:icon="@mipmap/ic_launcher_weather"
             android:label="@string/weather"
+            android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -165,12 +165,12 @@
             </intent-filter>
         </activity>
 
-        <!-- Digital assistant activity fallback -->
+        <!-- Digital assistant fallback service activity -->
         <activity
-            android:name="com.wstxda.gsl.services.DigitalAssistantFallback"
+            android:name="com.wstxda.gsl.services.AssistantFallbackService"
             android:excludeFromRecents="true"
             android:exported="true"
-            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTop"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.ASSIST" />
@@ -183,7 +183,7 @@
             android:name="com.wstxda.gsl.services.MusicSearchTileService"
             android:exported="true"
             android:icon="@drawable/ic_music_search_tile"
-            android:label="@string/music_search_quick_settings"
+            android:label="@string/music_search_label"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />

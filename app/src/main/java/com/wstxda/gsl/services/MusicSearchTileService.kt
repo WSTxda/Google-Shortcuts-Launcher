@@ -7,7 +7,7 @@ import android.service.quicksettings.TileService
 import com.wstxda.gsl.R
 import com.wstxda.gsl.logic.ActivityUtils
 import com.wstxda.gsl.utils.IntentFactory
-import com.wstxda.gsl.utils.ShortcutLauncher
+import com.wstxda.gsl.logic.ShortcutLauncher
 
 class MusicSearchTileService : TileService() {
 

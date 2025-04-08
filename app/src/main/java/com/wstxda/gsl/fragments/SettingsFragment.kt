@@ -14,24 +14,16 @@ import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
 import com.wstxda.gsl.fragments.view.DigitalAssistantPreference
 import com.wstxda.gsl.shortcuts.*
-import com.wstxda.gsl.ui.SettingsActivity
+import com.wstxda.gsl.activity.SettingsActivity
 import com.wstxda.gsl.ui.TileManager
 import com.wstxda.gsl.ui.ThemeManager
 import androidx.core.net.toUri
 import com.wstxda.gsl.ui.DigitalAssistantSetupDialog
+import com.wstxda.gsl.utils.Constants
 
 class SettingsFragment : PreferenceFragmentCompat() {
-
-    companion object {
-        private const val MUSIC_SEARCH_TILE_KEY = "add_music_search_tile"
-        private const val DIGITAL_ASSISTANT_SETUP_KEY = "digital_assistant_setup"
-        private const val SELECT_THEME_KEY = "select_theme"
-    }
-
     private val digitalAssistantPreference: DigitalAssistantPreference by lazy {
-        DigitalAssistantPreference(
-            this
-        )
+        DigitalAssistantPreference(this)
     }
 
     private val digitalAssistantLauncher: ActivityResultLauncher<Intent> =
@@ -47,8 +39,8 @@ class SettingsFragment : PreferenceFragmentCompat() {
         setPreferencesFromResource(R.xml.preferences, rootKey)
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
-            findPreference<Preference>(MUSIC_SEARCH_TILE_KEY)?.isVisible = false
-            findPreference<Preference>(DIGITAL_ASSISTANT_SETUP_KEY)?.isVisible = false
+            findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.isVisible = false
+            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)?.isVisible = false
         }
 
         setupShortcutsActivityPreferences()
@@ -102,7 +94,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
     }
 
     private fun setupTilePreference() {
-        findPreference<Preference>(MUSIC_SEARCH_TILE_KEY)?.setOnPreferenceClickListener {
+        findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.setOnPreferenceClickListener {
             val tileManager = TileManager(requireContext())
             tileManager.requestAddTile()
             true
@@ -114,7 +106,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         digitalAssistantPreference.updateDigitalAssistantPreferences(isAssistSetupDone)
 
         if (!isAssistSetupDone) {
-            findPreference<Preference>(DIGITAL_ASSISTANT_SETUP_KEY)?.setOnPreferenceClickListener {
+            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)?.setOnPreferenceClickListener {
                 DigitalAssistantSetupDialog.show(childFragmentManager, digitalAssistantLauncher)
                 true
             }
@@ -122,12 +114,9 @@ class SettingsFragment : PreferenceFragmentCompat() {
     }
 
     private fun setupThemePreference() {
-        findPreference<ListPreference>(SELECT_THEME_KEY)?.apply {
-            setOnPreferenceChangeListener { _, newValue ->
-                ThemeManager.setupTheme(newValue as String)
-                true
-            }
-            ThemeManager.setupTheme(value)
+        findPreference<ListPreference>(Constants.SELECT_THEME_KEY)?.setOnPreferenceChangeListener { _, newValue ->
+            ThemeManager.setupTheme(newValue as String)
+            true
         }
     }
 

@@ -52,8 +52,8 @@
         <item name="colorOnError">@color/md_theme_onError</item>
         <item name="colorErrorContainer">@color/md_theme_errorContainer</item>
         <item name="colorOnErrorContainer">@color/md_theme_onErrorContainer</item>
-        <item name="colorOnBackground">@color/md_theme_onBackground</item>
         <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorOnBackground">@color/md_theme_onBackground</item>
         <item name="colorSurface">@color/md_theme_surface</item>
         <item name="colorOnSurface">@color/md_theme_onSurface</item>
         <item name="colorSurfaceVariant">@color/md_theme_surfaceVariant</item>
@@ -108,13 +108,5 @@
         <item name="dialogCornerRadius">28dp</item>
         <item name="android:windowMinWidthMajor">91%</item>
         <item name="android:windowMinWidthMinor">91%</item>
-    </style>
-
-    <style name="Theme.Component.AlertDialog.Assistant" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog.Centered">
-        <item name="android:colorBackground">?colorSurfaceContainer</item>
-        <item name="android:windowAnimationStyle">@style/MaterialAlertDialog.Material3.Animation</item>
-        <item name="android:windowSoftInputMode">adjustResize</item>
-        <item name="buttonBarPositiveButtonStyle">@style/Widget.Material3.Button.TonalButton</item>
-        <item name="dialogCornerRadius">28dp</item>
     </style>
 </resources>

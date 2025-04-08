@@ -42,7 +42,7 @@ class TileManager(private val context: Context) {
             val statusBarManager = context.getSystemService(StatusBarManager::class.java)
             statusBarManager?.requestAddTileService(
                 tileServiceComponent,
-                context.getString(R.string.music_search_quick_settings),
+                context.getString(R.string.music_search_label),
                 Icon.createWithResource(context, R.drawable.ic_music_search_tile),
                 executor,
                 resultCallback

@@ -27,7 +27,7 @@
 
     <string name="pref_theme">Motyw</string>
 
-    <string name="music_search_quick_settings">Wyszukiwanie muzyki</string>
+    <string name="music_search_label">Wyszukiwanie muzyki</string>
     <string name="password">Hasła</string>
     <string name="music_search">Wyszukaj</string>
     <string name="weather">Pogoda</string>

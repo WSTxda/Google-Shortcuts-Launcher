@@ -9,4 +9,8 @@ class PreferenceHelper(context: Context) {
     fun getBoolean(key: String, defaultValue: Boolean = false): Boolean {
         return preferences.getBoolean(key, defaultValue)
     }
+
+    fun getString(key: String, defaultValue: String?): String? {
+        return preferences.getString(key, defaultValue)
+    }
 }

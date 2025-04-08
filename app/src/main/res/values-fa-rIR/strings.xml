@@ -27,7 +27,7 @@
 
     <string name="pref_theme">تم</string>
 
-    <string name="music_search_quick_settings">جستجوی موسیقی</string>
+    <string name="music_search_label">جستجوی موسیقی</string>
     <string name="password">گذرواژه‌ها</string>
     <string name="music_search">جستحو</string>
     <string name="weather">آب‌وهوا</string>

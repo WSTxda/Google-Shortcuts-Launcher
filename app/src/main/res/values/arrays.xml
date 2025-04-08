@@ -17,7 +17,7 @@
         <item>@string/files</item>
         <item>@string/games</item>
         <item>@string/lens</item>
-        <item>@string/music_search_quick_settings</item>
+        <item>@string/music_search_label</item>
         <item>@string/password</item>
         <item>@string/quick_share</item>
         <item>@string/weather</item>

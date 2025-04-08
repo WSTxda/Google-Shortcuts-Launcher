@@ -37,7 +37,7 @@
     <string name="pref_setup_digital_assistant">Setup digital assistant</string>
     <string name="pref_setup_digital_assistant_summary">Set Google Shortcuts Launcher as default digital assistant app</string>
 
-    <string name="music_search_quick_settings">Music search</string>
+    <string name="music_search_label">Music search</string>
     <string name="password">Passwords</string>
     <string name="music_search">Search</string>
     <string name="weather">Weather</string>
@@ -74,7 +74,11 @@
 
     <string name="digital_assistant_setup_title">Default digital assistant app</string>
     <string name="digital_assistant_setup_message">In settings, select <b>Google Shortcuts Launcher</b> as default digital assistant app to quickly launch your selected shortcut using device gestures, buttons and more</string>
-    <string name="setup_now_button">Setup now</string>
+    <string name="digital_assistant_setup_button">Setup now</string>
+
+    <string name="digital_assistant_shortcut_select">Select shortcut</string>
+    <string name="digital_assistant_shortcut_disabled">Error, check if shortcut is disabled in settings</string>
+    <string name="digital_assistant_shortcut_invalid">Invalid shortcut selected</string>
 
     <string name="password_url" translatable="false">https://passwords.google.com</string>
     <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>

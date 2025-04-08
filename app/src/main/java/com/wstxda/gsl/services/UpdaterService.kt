@@ -8,6 +8,7 @@ import android.view.View
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.snackbar.Snackbar
 import com.wstxda.gsl.R
+import com.wstxda.gsl.utils.Constants
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -17,9 +18,6 @@ import java.net.URL
 import androidx.core.net.toUri
 
 object UpdaterService {
-    private const val GITHUB_RELEASE_URL =
-        "https://api.github.com/repos/WSTxda/Google-Shortcuts-Launcher/releases/latest"
-
     fun checkForUpdates(context: Context, anchorView: View) {
         CoroutineScope(Dispatchers.Main).launch {
             if (!isNetworkAvailable(context)) {
@@ -36,7 +34,7 @@ object UpdaterService {
                 } else {
                     showNoUpdateSnackbar(anchorView)
                 }
-            } catch (e: Exception) {
+            } catch (_: Exception) {
                 showGenericErrorSnackbar(anchorView)
             }
         }
@@ -51,7 +49,7 @@ object UpdaterService {
     }
 
     private fun fetchLatestVersion(): String {
-        val jsonString = URL(GITHUB_RELEASE_URL).readText()
+        val jsonString = URL(Constants.GITHUB_RELEASE_URL).readText()
         val jsonObject = JSONObject(jsonString)
         return jsonObject.optString("tag_name").removePrefix("v")
     }
@@ -93,7 +91,7 @@ object UpdaterService {
         snackbar.setAction(R.string.update_checker_download_button) {
             val intent = Intent(
                 Intent.ACTION_VIEW,
-                GITHUB_RELEASE_URL.replace("api.", "").replace("/repos", "").toUri()
+                Constants.GITHUB_RELEASE_URL.replace("api.", "").replace("/repos", "").toUri()
             )
             anchorView.context.startActivity(intent)
         }
