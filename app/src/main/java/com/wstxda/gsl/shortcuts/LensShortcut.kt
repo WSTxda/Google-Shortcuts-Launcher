@@ -4,11 +4,14 @@ import android.content.ComponentName
 import android.content.Intent
 import com.wstxda.gsl.R
 import com.wstxda.gsl.activity.ShortcutsActivity
-import com.wstxda.gsl.logic.launchShortcuts
+import com.wstxda.gsl.logic.launchShortcutsHistory
+import com.wstxda.gsl.logic.showToast
 
 class LensShortcut : ShortcutsActivity() {
     override fun onCreateInternal() {
-        launchShortcuts(listOf(createLensIntent()), R.string.google_not_found)
+        if (!launchShortcutsHistory(createLensIntent())) {
+            showToast(R.string.google_not_found)
+        }
     }
 
     private fun createLensIntent() = Intent().apply {
@@ -16,8 +19,5 @@ class LensShortcut : ShortcutsActivity() {
             "com.google.android.googlequicksearchbox",
             "com.google.android.apps.search.lens.LensExportedActivity"
         )
-        flags = Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY
-        // TODO: Investigate why FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY is required for Lens to work properly.
-        // Currently, using this flag causes an issue where launching another shortcut after (e.g., FilesShortcut) reopens Lens instead of the another shortcut.
     }
 }
