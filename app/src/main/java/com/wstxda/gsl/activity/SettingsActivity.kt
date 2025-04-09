@@ -1,11 +1,12 @@
 package com.wstxda.gsl.activity
 
+import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import androidx.activity.SystemBarStyle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.fragment.NavHostFragment
 import com.wstxda.gsl.R
@@ -17,39 +18,35 @@ class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        setupEdgeToEdge()
-        setupToolbar()
-        setupNavigation(savedInstanceState)
-        setupWindowInsets()
-    }
 
-    private fun setupEdgeToEdge() {
-        enableEdgeToEdge()
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            window.isNavigationBarContrastEnforced = false
-        }
-    }
+        enableEdgeToEdgeNoContrast()
 
-    private fun setupToolbar() {
         binding.collapsingToolbar.title = getString(R.string.app_settings)
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(false)
-    }
 
-    private fun setupNavigation(savedInstanceState: Bundle?) {
         if (savedInstanceState == null) {
-            (supportFragmentManager.findFragmentById(R.id.nav_host_container) as? NavHostFragment)?.navController?.setGraph(
-                R.navigation.nav_settings
-            )
+            val navHostFragment =
+                supportFragmentManager.findFragmentById(R.id.nav_host_container) as NavHostFragment
+            val navController = navHostFragment.navController
+            navController.setGraph(R.navigation.nav_settings)
+        }
+
+        ViewCompat.setOnApplyWindowInsetsListener(binding.navHostContainer) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, 0, systemBars.right, systemBars.bottom * 2)
+            insets
         }
     }
 
-    private fun setupWindowInsets() {
-        ViewCompat.setOnApplyWindowInsetsListener(binding.navHostContainer) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, 0, systemBars.right, systemBars.bottom)
-            insets
+    private fun enableEdgeToEdgeNoContrast() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            enableEdgeToEdge(
+                navigationBarStyle = SystemBarStyle.auto(
+                    Color.TRANSPARENT, Color.TRANSPARENT
+                )
+            )
+            window.isNavigationBarContrastEnforced = false
         }
     }
 }
