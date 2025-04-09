@@ -31,6 +31,7 @@
         android:autoSizeStepGranularity="2sp"
         android:autoSizeTextType="uniform"
         android:maxLines="1"
+        android:scrollbars="none"
         android:text="@string/digital_assistant_setup_title"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
