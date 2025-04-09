@@ -5,49 +5,57 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.net.toUri
+import androidx.lifecycle.lifecycleScope
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
+import com.wstxda.gsl.activity.SettingsActivity
 import com.wstxda.gsl.fragments.view.DigitalAssistantPreference
 import com.wstxda.gsl.shortcuts.*
-import com.wstxda.gsl.activity.SettingsActivity
-import com.wstxda.gsl.ui.TileManager
-import com.wstxda.gsl.ui.ThemeManager
-import androidx.core.net.toUri
 import com.wstxda.gsl.ui.DigitalAssistantSetupDialog
+import com.wstxda.gsl.ui.ThemeManager
+import com.wstxda.gsl.ui.TileManager
 import com.wstxda.gsl.utils.Constants
+import kotlinx.coroutines.launch
 
 class SettingsFragment : PreferenceFragmentCompat() {
-    private val digitalAssistantPreference: DigitalAssistantPreference by lazy {
-        DigitalAssistantPreference(this)
-    }
 
-    private val digitalAssistantLauncher: ActivityResultLauncher<Intent> =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-            val isAssistSetupDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
-            digitalAssistantPreference.updateDigitalAssistantPreferences(isAssistSetupDone)
-            if (!isAssistSetupDone) {
-                setupDigitalAssistantPreferences()
+    private val digitalAssistantPreference by lazy { DigitalAssistantPreference(this) }
+
+    private val digitalAssistantLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { _ ->
+            viewLifecycleOwner.lifecycleScope.launch {
+                val isAssistSetupDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
+                digitalAssistantPreference.updateDigitalAssistantPreferences(isAssistSetupDone)
+                if (!isAssistSetupDone) setupDigitalAssistantPreferences()
             }
         }
 
+    private val shortcuts = mapOf(
+        "assistant_shortcut" to AssistantShortcut::class.java,
+        "files_shortcut" to FilesShortcut::class.java,
+        "games_shortcut" to GamesShortcut::class.java,
+        "lens_shortcut" to LensShortcut::class.java,
+        "music_search_shortcut" to MusicSearchShortcut::class.java,
+        "password_manager_shortcut" to PasswordManagerShortcut::class.java,
+        "quick_share_shortcut" to QuickShareShortcut::class.java,
+        "weather_shortcut" to WeatherShortcut::class.java,
+        "settings_activity" to SettingsActivity::class.java
+    )
+
+    private val links = mapOf(
+        "developer" to "https://github.com/WSTxda",
+        "github_repository" to "https://github.com/WSTxda/Google-Shortcuts-Launcher"
+    )
+
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
-
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
-            findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.isVisible = false
-            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)?.isVisible = false
-        }
-
-        setupShortcutsActivityPreferences()
-        setupTilePreference()
-        setupDigitalAssistantPreferences()
-        setupThemePreference()
-        setupLinkPreferences()
+        setupInitialVisibility()
+        setupPreferences()
     }
 
     override fun onResume() {
@@ -55,48 +63,42 @@ class SettingsFragment : PreferenceFragmentCompat() {
         setupDigitalAssistantPreferences()
     }
 
-    private fun setupPreference(key: String, activityClass: Class<*>) {
-        findPreference<SwitchPreferenceCompat>(key)?.setOnPreferenceChangeListener { _, newValue ->
-            toggleActivityVisibility(activityClass, newValue as? Boolean == true)
-            true
+    private fun setupInitialVisibility() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+            findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.isVisible = false
+            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)?.isVisible = false
         }
     }
 
-    private fun setupShortcutsActivityPreferences() {
-        val preferences = mapOf(
-            "assistant_shortcut" to AssistantShortcut::class.java,
-            "files_shortcut" to FilesShortcut::class.java,
-            "games_shortcut" to GamesShortcut::class.java,
-            "lens_shortcut" to LensShortcut::class.java,
-            "music_search_shortcut" to MusicSearchShortcut::class.java,
-            "password_manager_shortcut" to PasswordManagerShortcut::class.java,
-            "quick_share_shortcut" to QuickShareShortcut::class.java,
-            "weather_shortcut" to WeatherShortcut::class.java,
-            "settings_activity" to SettingsActivity::class.java,
-        )
+    private fun setupPreferences() {
+        setupShortcutsActivityPreferences()
+        setupTilePreference()
+        setupDigitalAssistantPreferences()
+        setupThemePreference()
+        setupLinkPreferences()
+    }
 
-        preferences.forEach { (key, activityClass) ->
-            setupPreference(key, activityClass)
+    private fun setupShortcutsActivityPreferences() {
+        shortcuts.forEach { (key, activityClass) ->
+            findPreference<SwitchPreferenceCompat>(key)?.setOnPreferenceChangeListener { _, newValue ->
+                toggleActivityVisibility(activityClass, newValue as Boolean)
+                true
+            }
         }
     }
 
     private fun toggleActivityVisibility(activityClass: Class<*>, showActivity: Boolean) {
-        val packageManager = requireActivity().packageManager
-        val componentName = ComponentName(requireContext(), activityClass)
-        val newState = if (showActivity) {
-            PackageManager.COMPONENT_ENABLED_STATE_ENABLED
-        } else {
-            PackageManager.COMPONENT_ENABLED_STATE_DISABLED
-        }
-        packageManager.setComponentEnabledSetting(
-            componentName, newState, PackageManager.DONT_KILL_APP
+        val newState = if (showActivity) PackageManager.COMPONENT_ENABLED_STATE_ENABLED
+        else PackageManager.COMPONENT_ENABLED_STATE_DISABLED
+
+        requireActivity().packageManager.setComponentEnabledSetting(
+            ComponentName(requireContext(), activityClass), newState, PackageManager.DONT_KILL_APP
         )
     }
 
     private fun setupTilePreference() {
         findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.setOnPreferenceClickListener {
-            val tileManager = TileManager(requireContext())
-            tileManager.requestAddTile()
+            TileManager(requireContext()).requestAddTile()
             true
         }
     }
@@ -104,7 +106,6 @@ class SettingsFragment : PreferenceFragmentCompat() {
     private fun setupDigitalAssistantPreferences() {
         val isAssistSetupDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
         digitalAssistantPreference.updateDigitalAssistantPreferences(isAssistSetupDone)
-
         if (!isAssistSetupDone) {
             findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)?.setOnPreferenceClickListener {
                 DigitalAssistantSetupDialog.show(childFragmentManager, digitalAssistantLauncher)
@@ -121,20 +122,11 @@ class SettingsFragment : PreferenceFragmentCompat() {
     }
 
     private fun setupLinkPreferences() {
-        val links = mapOf(
-            "developer" to "https://github.com/WSTxda",
-            "github_repository" to "https://github.com/WSTxda/Google-Shortcuts-Launcher",
-        )
-
         links.forEach { (key, url) ->
-            setupLinkPreference(key, url)
-        }
-    }
-
-    private fun setupLinkPreference(key: String, url: String) {
-        findPreference<Preference>(key)?.setOnPreferenceClickListener {
-            startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
-            true
+            findPreference<Preference>(key)?.setOnPreferenceClickListener {
+                startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
+                true
+            }
         }
     }
 }

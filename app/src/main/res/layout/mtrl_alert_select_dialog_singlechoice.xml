@@ -1,4 +1,5 @@
 <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@android:id/text1"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -17,4 +18,5 @@
     android:paddingBottom="10.0dip"
     android:textAlignment="viewStart"
     android:textAppearance="?textAppearanceBodyLarge"
-    android:textColor="?colorOnSurface" />
+    android:textColor="?colorOnSurface"
+    tools:ignore="PrivateResource" />

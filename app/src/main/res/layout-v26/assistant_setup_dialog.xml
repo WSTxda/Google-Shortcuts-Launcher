@@ -8,7 +8,8 @@
     android:paddingStart="24dp"
     android:paddingTop="20dp"
     android:paddingEnd="24dp"
-    android:paddingBottom="20dp">
+    android:paddingBottom="20dp"
+    tools:ignore="Overdraw">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/dialog_icon"
