@@ -4,6 +4,7 @@
     <string name="app_settings">設定</string>
 
     <string name="pref_category_shortcuts_manager">ショートカットの管理</string>
+    <string name="pref_category_shortcuts_settings">ショートカットの設定</string>
     <string name="pref_category_other">その他</string>
     <string name="pref_category_about">アプリについて</string>
 
@@ -26,6 +27,11 @@
     <string name="pref_add_music_search_quick_settings">音楽を検索のパネルをクイック設定に追加</string>
 
     <string name="pref_theme">テーマ</string>
+
+    <string name="pref_digital_assistant_shortcut">デジタルアシスタントのショートカット</string>
+
+    <string name="pref_setup_digital_assistant">デジタルアシスタントの設定</string>
+    <string name="pref_setup_digital_assistant_summary">Google ショートカットランチャーをデフォルトのデジタルアシスタントアプリとして設定する</string>
 
     <string name="music_search_label">音楽を検索</string>
     <string name="password">パスワード</string>
@@ -61,4 +67,12 @@
     <string name="update_checker_update_available">新しいアップデートが利用可能です: %s</string>
     <string name="update_checker_no_internet">インターネット接続がありません</string>
     <string name="update_checker_generic_error">何か問題が発生しました。後でもう一度お試しください</string>
+
+    <string name="digital_assistant_setup_title">デフォルトのデジタルアシスタントアプリ</string>
+    <string name="digital_assistant_setup_message">設定で<b>Google ショートカットランチャー</b>をデフォルトのデジタルアシスタントアプリとして選択すると、デバイスジェスチャー、ボタンなどで選択したショートカットをすばやく起動できます…</string>
+    <string name="digital_assistant_setup_button">今すぐ設定</string>
+
+    <string name="digital_assistant_shortcut_select">ショートカットを選択</string>
+    <string name="digital_assistant_shortcut_disabled">起動できません。まず設定でこのショートカットを有効にしてください</string>
+    <string name="digital_assistant_shortcut_invalid">無効なショートカットが選択されました</string>
 </resources>

@@ -4,6 +4,7 @@
     <string name="app_settings">Ustawienia</string>
 
     <string name="pref_category_shortcuts_manager">Menedżer skrótów</string>
+    <string name="pref_category_shortcuts_settings">Ustawienia skrótów</string>
     <string name="pref_category_other">Inne</string>
     <string name="pref_category_about">Informacje</string>
 
@@ -26,6 +27,11 @@
     <string name="pref_add_music_search_quick_settings">Dodaj wyszukiwanie muzyki do panelu szybkich ustawień</string>
 
     <string name="pref_theme">Motyw</string>
+
+    <string name="pref_digital_assistant_shortcut">Skrót asystenta cyfrowego</string>
+
+    <string name="pref_setup_digital_assistant">Skonfiguruj asystenta cyfrowego</string>
+    <string name="pref_setup_digital_assistant_summary">Ustaw Skróty Google jako domyślną aplikację asystenta cyfrowego</string>
 
     <string name="music_search_label">Wyszukiwanie muzyki</string>
     <string name="password">Hasła</string>
@@ -61,4 +67,12 @@
     <string name="update_checker_update_available">Dostępna nowa aktualizacja: %s</string>
     <string name="update_checker_no_internet">Brak połączenia z internetem</string>
     <string name="update_checker_generic_error">Coś poszło nie tak. Spróbuj ponownie później</string>
+
+    <string name="digital_assistant_setup_title">Domyślna aplikacja asystenta cyfrowego</string>
+    <string name="digital_assistant_setup_message">W ustawieniach wybierz <b>Skróty Google</b> jako domyślną aplikację asystenta cyfrowego, aby szybko uruchamiać wybrany skrót za pomocą gestów urządzenia, przycisków i innych sposobów…</string>
+    <string name="digital_assistant_setup_button">Skonfiguruj teraz</string>
+
+    <string name="digital_assistant_shortcut_select">Wybierz skrót</string>
+    <string name="digital_assistant_shortcut_disabled">Nie można uruchomić, najpierw włącz ten skrót w ustawieniach</string>
+    <string name="digital_assistant_shortcut_invalid">Wybrano nieprawidłowy skrót</string>
 </resources>

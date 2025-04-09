@@ -73,11 +73,11 @@
     <string name="update_checker_generic_error">Something went wrong. Please try again later</string>
 
     <string name="digital_assistant_setup_title">Default digital assistant app</string>
-    <string name="digital_assistant_setup_message">In settings, select <b>Google Shortcuts Launcher</b> as default digital assistant app to quickly launch your selected shortcut using device gestures, buttons and more</string>
+    <string name="digital_assistant_setup_message">In settings, select <b>Google Shortcuts Launcher</b> as default digital assistant app to quickly launch your selected shortcut using device gestures, buttons and more…</string>
     <string name="digital_assistant_setup_button">Setup now</string>
 
     <string name="digital_assistant_shortcut_select">Select shortcut</string>
-    <string name="digital_assistant_shortcut_disabled">Error, check if shortcut is disabled in settings</string>
+    <string name="digital_assistant_shortcut_disabled">Unable to launch, enable this shortcut in settings first</string>
     <string name="digital_assistant_shortcut_invalid">Invalid shortcut selected</string>
 
     <string name="password_url" translatable="false">https://passwords.google.com</string>

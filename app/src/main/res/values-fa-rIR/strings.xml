@@ -4,6 +4,7 @@
     <string name="app_settings">تنظیمات</string>
 
     <string name="pref_category_shortcuts_manager">مدیریت میانبرها</string>
+    <string name="pref_category_shortcuts_settings">تنظیمات میانبرها</string>
     <string name="pref_category_other">دیگر</string>
     <string name="pref_category_about">درباره</string>
 
@@ -26,6 +27,11 @@
     <string name="pref_add_music_search_quick_settings">اضافه کردن جستجوی موسیقی به پنل تنظیمات سریع</string>
 
     <string name="pref_theme">تم</string>
+
+    <string name="pref_digital_assistant_shortcut">میانبر دستیار دیجیتال</string>
+
+    <string name="pref_setup_digital_assistant">راه‌اندازی دستیار دیجیتال</string>
+    <string name="pref_setup_digital_assistant_summary">تنظیم راه‌انداز میانبرهای گوگل به عنوان برنامه دستیار دیجیتال پیش‌فرض</string>
 
     <string name="music_search_label">جستجوی موسیقی</string>
     <string name="password">گذرواژه‌ها</string>
@@ -61,4 +67,12 @@
     <string name="update_checker_update_available">به‌روزرسانی جدید در دسترس است: %s</string>
     <string name="update_checker_no_internet">اتصال به اینترنت وجود ندارد</string>
     <string name="update_checker_generic_error">مشکلی پیش آمد. لطفاً بعداً دوباره امتحان کنید</string>
+
+    <string name="digital_assistant_setup_title">برنامه دستیار دیجیتال پیش‌فرض</string>
+    <string name="digital_assistant_setup_message">در تنظیمات، <b>راه‌انداز میانبرهای گوگل</b> را به عنوان برنامه دستیار دیجیتال پیش‌فرض انتخاب کنید تا میانبر انتخاب‌شده خود را به‌سرعت با استفاده از ژست‌های دستگاه، دکمه‌ها و موارد دیگر راه‌اندازی کنید…</string>
+    <string name="digital_assistant_setup_button">اکنون راه‌اندازی کنید</string>
+
+    <string name="digital_assistant_shortcut_select">انتخاب میانبر</string>
+    <string name="digital_assistant_shortcut_disabled">نمی‌توان راه‌اندازی کرد، ابتدا این میانبر را در تنظیمات فعال کنید</string>
+    <string name="digital_assistant_shortcut_invalid">میانبر انتخاب‌شده نامعتبر است</string>
 </resources>

@@ -4,6 +4,7 @@
     <string name="app_settings">Ajustes</string>
 
     <string name="pref_category_shortcuts_manager">Gestionar atajos</string>
+    <string name="pref_category_shortcuts_settings">Configuración de atajos</string>
     <string name="pref_category_other">Otros</string>
     <string name="pref_category_about">Acerca de</string>
 
@@ -26,6 +27,11 @@
     <string name="pref_add_music_search_quick_settings">Agregar buscar música en configuración rápida</string>
 
     <string name="pref_theme">Tema</string>
+
+    <string name="pref_digital_assistant_shortcut">Acceso directo al asistente digital</string>
+
+    <string name="pref_setup_digital_assistant">Configurar asistente digital</string>
+    <string name="pref_setup_digital_assistant_summary">Establecer Atajos de Google como la aplicación de asistente digital predeterminada</string>
 
     <string name="music_search_label">Buscar música</string>
     <string name="password">Contraseñas</string>
@@ -61,4 +67,12 @@
     <string name="update_checker_update_available">Nueva actualización disponible: %s</string>
     <string name="update_checker_no_internet">Sin conexión a internet</string>
     <string name="update_checker_generic_error">Algo salió mal. Por favor, intenta de nuevo más tarde</string>
+
+    <string name="digital_assistant_setup_title">Aplicación de asistente digital predeterminada</string>
+    <string name="digital_assistant_setup_message">En la configuración, selecciona <b>Atajos de Google</b> como la aplicación de asistente digital predeterminada para iniciar rápidamente tu acceso directo seleccionado usando gestos del dispositivo, botones y más…</string>
+    <string name="digital_assistant_setup_button">Configurar ahora</string>
+
+    <string name="digital_assistant_shortcut_select">Seleccionar acceso directo</string>
+    <string name="digital_assistant_shortcut_disabled">No se puede iniciar, habilita este acceso directo en la configuración primero</string>
+    <string name="digital_assistant_shortcut_invalid">Acceso directo seleccionado no válido</string>
 </resources>
