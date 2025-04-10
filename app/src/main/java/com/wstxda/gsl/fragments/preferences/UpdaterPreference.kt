@@ -1,4 +1,4 @@
-package com.wstxda.gsl.fragments.view
+package com.wstxda.gsl.fragments.preferences
 
 import android.content.Context
 import android.util.AttributeSet

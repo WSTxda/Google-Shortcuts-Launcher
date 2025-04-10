@@ -173,7 +173,7 @@
         android:summary="@string/pref_source_code"
         android:title="@string/pref_github" />
 
-    <com.wstxda.gsl.fragments.view.UpdaterPreference
+    <com.wstxda.gsl.fragments.preferences.UpdaterPreference
         android:key="version"
         android:summary="@string/pref_version_number"
         android:title="@string/pref_version"

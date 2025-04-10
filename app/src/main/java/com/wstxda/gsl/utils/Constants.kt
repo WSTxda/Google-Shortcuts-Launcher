@@ -12,7 +12,6 @@ object Constants {
     const val DIGITAL_ASSISTANT_SETUP_KEY = "digital_assistant_setup"
     const val DIGITAL_ASSISTANT_DIALOG_TAG = "DigitalAssistantSetupDialog"
     const val GITHUB_RELEASE_URL = "https://api.github.com/repos/WSTxda/Google-Shortcuts-Launcher/releases/latest"
-    const val SELECT_THEME_KEY = "select_theme"
     const val THEME_SYSTEM = "system"
     const val THEME_LIGHT = "light"
     const val THEME_DARK = "dark"

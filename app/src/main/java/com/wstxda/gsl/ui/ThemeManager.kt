@@ -4,12 +4,11 @@ import androidx.appcompat.app.AppCompatDelegate
 import com.wstxda.gsl.utils.Constants
 
 object ThemeManager {
-    fun setupTheme(theme: String) {
+    fun applyTheme(theme: String) {
         when (theme) {
             Constants.THEME_LIGHT -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             Constants.THEME_DARK -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             Constants.THEME_SYSTEM -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-            else -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         }
     }
 }

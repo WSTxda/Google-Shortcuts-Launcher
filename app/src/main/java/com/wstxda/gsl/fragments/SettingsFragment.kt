@@ -14,20 +14,23 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
 import com.wstxda.gsl.activity.SettingsActivity
-import com.wstxda.gsl.fragments.view.DigitalAssistantPreference
+import com.wstxda.gsl.fragments.preferences.DigitalAssistantPreference
+import com.wstxda.gsl.fragments.preferences.ThemePreferences
 import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.ui.DigitalAssistantSetupDialog
 import com.wstxda.gsl.ui.ThemeManager
 import com.wstxda.gsl.ui.TileManager
 import com.wstxda.gsl.utils.Constants
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 class SettingsFragment : PreferenceFragmentCompat() {
+    private lateinit var themePreferences: ThemePreferences
 
     private val digitalAssistantPreference by lazy { DigitalAssistantPreference(this) }
 
     private val digitalAssistantLauncher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { _ ->
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
             viewLifecycleOwner.lifecycleScope.launch {
                 val isAssistSetupDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
                 digitalAssistantPreference.updateDigitalAssistantPreferences(isAssistSetupDone)
@@ -54,6 +57,8 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
+        themePreferences = ThemePreferences(requireContext())
+
         setupInitialVisibility()
         setupPreferences()
     }
@@ -66,7 +71,6 @@ class SettingsFragment : PreferenceFragmentCompat() {
     private fun setupInitialVisibility() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
             findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.isVisible = false
-            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)?.isVisible = false
         }
     }
 
@@ -80,7 +84,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     private fun setupShortcutsActivityPreferences() {
         shortcuts.forEach { (key, activityClass) ->
-            findPreference<SwitchPreferenceCompat>(key)?.setOnPreferenceChangeListener { _, newValue ->
+            (findPreference<SwitchPreferenceCompat>(key))?.setOnPreferenceChangeListener { _, newValue ->
                 toggleActivityVisibility(activityClass, newValue as Boolean)
                 true
             }
@@ -106,6 +110,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
     private fun setupDigitalAssistantPreferences() {
         val isAssistSetupDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
         digitalAssistantPreference.updateDigitalAssistantPreferences(isAssistSetupDone)
+
         if (!isAssistSetupDone) {
             findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)?.setOnPreferenceClickListener {
                 DigitalAssistantSetupDialog.show(childFragmentManager, digitalAssistantLauncher)
@@ -115,8 +120,18 @@ class SettingsFragment : PreferenceFragmentCompat() {
     }
 
     private fun setupThemePreference() {
-        findPreference<ListPreference>(Constants.SELECT_THEME_KEY)?.setOnPreferenceChangeListener { _, newValue ->
-            ThemeManager.setupTheme(newValue as String)
+        val themePreference = findPreference<ListPreference>("select_theme")
+        lifecycleScope.launch {
+            val currentTheme = themePreferences.themeFlow.first()
+            themePreference?.value = currentTheme
+        }
+
+        themePreference?.setOnPreferenceChangeListener { _, newValue ->
+            val selectedTheme = newValue as String
+            lifecycleScope.launch {
+                themePreferences.saveTheme(selectedTheme)
+                ThemeManager.applyTheme(selectedTheme)
+            }
             true
         }
     }

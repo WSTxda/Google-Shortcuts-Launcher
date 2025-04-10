@@ -10,7 +10,7 @@ import androidx.fragment.app.DialogFragment
 import androidx.preference.PreferenceFragmentCompat
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.wstxda.gsl.databinding.AssistantSetupDialogBinding
-import com.wstxda.gsl.fragments.view.DigitalAssistantPreference
+import com.wstxda.gsl.fragments.preferences.DigitalAssistantPreference
 import com.wstxda.gsl.utils.Constants
 
 class DigitalAssistantSetupDialog : DialogFragment() {
