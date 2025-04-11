@@ -1,0 +1,85 @@
+<resources>
+
+    <string name="app_name">Google Shortcuts Launcher</string>
+    <string name="app_settings">Settings</string>
+
+    <string name="pref_category_shortcuts_manager">Shortcuts manager</string>
+    <string name="pref_category_shortcuts_settings">Shortcuts settings</string>
+    <string name="pref_category_other">Others</string>
+    <string name="pref_category_about">About</string>
+
+    <string name="pref_wstxda" translatable="false">WSTxda</string>
+    <string name="pref_github" translatable="false">GitHub</string>
+    <string name="pref_version">Version</string>
+    <string name="pref_developer">Developer</string>
+    <string name="pref_source_code">Source code repository</string>
+
+    <string name="pref_shortcut_enabled">Shortcut launcher enabled</string>
+    <string name="pref_shortcut_disabled">Shortcut launcher disabled</string>
+
+    <string name="pref_device_game_manager">Device game manager</string>
+    <string name="pref_device_game_manager_summary">Use the device game manager to launch games instead of the Google Play Games folder</string>
+
+    <string name="pref_password_manager_root">Password manager (root)</string>
+    <string name="pref_password_manager_root_summary">Use root access to open password manager activity in Google Play Services</string>
+
+    <string name="pref_show_settings">Show settings in launcher</string>
+    <string name="pref_show_settings_summary">To access settings when hidden, press the <b>Music search</b> qs tile in quick settings panel</string>
+
+    <string name="pref_version_number" translatable="false">%s</string>
+
+    <string name="pref_add_music_search_quick_settings">Add music search in quick settings panel</string>
+
+    <string name="pref_theme">Theme</string>
+
+    <string name="pref_digital_assistant_shortcut">Digital assistant shortcut</string>
+
+    <string name="pref_setup_digital_assistant">Setup digital assistant</string>
+    <string name="pref_setup_digital_assistant_summary">Set Google Shortcuts Launcher as default digital assistant app</string>
+
+    <string name="music_search_label">Music search</string>
+    <string name="password">Passwords</string>
+    <string name="music_search">Search</string>
+    <string name="weather">Weather</string>
+    <string name="games">Games</string>
+    <string name="assistant">Assistant</string>
+    <string name="lens">Lens</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="files">Files</string>
+
+    <string name="google_not_found">Activity not found. Please install or enable Google App</string>
+    <string name="play_services_not_found">Activity not found. Please install or enable Google Play Services</string>
+    <string name="play_games_not_found">Activity not found. Please install or enable Google Play Games</string>
+    <string name="browser_not_found">No browser found, Please install or enable your browser</string>
+    <string name="game_manager_not_found">Game manager not supported in this device</string>
+    <string name="files_not_found">Files not supported in this device</string>
+    <string name="password_manager_root_error">Grant root permission first</string>
+
+    <string name="tile_added_success">Successfully added to quick settings</string>
+    <string name="tile_already_added">Already added to quick settings</string>
+
+    <string name="theme_select">Select theme</string>
+
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <string name="update_checker_button">Check updates</string>
+    <string name="update_checker_download_button">Download</string>
+
+    <string name="update_checker_no_update">No update available</string>
+    <string name="update_checker_update_available">New update available: %s</string>
+    <string name="update_checker_no_internet">No internet connection</string>
+    <string name="update_checker_generic_error">Something went wrong. Please try again later</string>
+
+    <string name="digital_assistant_setup_title">Default digital assistant app</string>
+    <string name="digital_assistant_setup_message">In settings, select <b>Google Shortcuts Launcher</b> as default digital assistant app to quickly launch your selected shortcut using device gestures, buttons and more…</string>
+    <string name="digital_assistant_setup_button">Setup now</string>
+
+    <string name="digital_assistant_shortcut_select">Select shortcut</string>
+    <string name="digital_assistant_shortcut_disabled">Unable to launch, enable this shortcut in settings first</string>
+    <string name="digital_assistant_shortcut_invalid">Invalid shortcut selected</string>
+
+    <string name="password_url" translatable="false">https://passwords.google.com</string>
+    <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>
+</resources>
