@@ -11,8 +11,8 @@ android {
         applicationId = "com.wstxda.gsl"
         minSdk = 24
         targetSdk = 35
-        versionCode = 530
-        versionName = "5.3"
+        versionCode = 531
+        versionName = "5.3.1"
     }
 
     buildTypes {
