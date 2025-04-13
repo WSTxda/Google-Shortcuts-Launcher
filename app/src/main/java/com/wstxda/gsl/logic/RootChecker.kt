@@ -1,22 +1,24 @@
 package com.wstxda.gsl.logic
 
-import java.io.DataOutputStream
+import android.util.Log
 
 object RootChecker {
+    private const val TAG = "RootChecker"
+
     fun isRootAvailable(): Boolean = runCatching {
-        val process = Runtime.getRuntime().exec("su")
-        process.waitFor()
-        process.exitValue() == 0
-    }.getOrElse { false }
+        val process = ProcessBuilder("su", "-c", "id").start()
+        process.waitFor() == 0
+    }.getOrElse {
+        Log.e(TAG, "Root check failed", it)
+        false
+    }
 
     fun launchRootActivity(packageName: String, activityName: String): Boolean = runCatching {
-        val process = Runtime.getRuntime().exec("su")
-        DataOutputStream(process.outputStream).use { os ->
-            os.writeBytes("am start -n $packageName/$activityName\n")
-            os.writeBytes("exit\n")
-            os.flush()
-        }
-        process.waitFor()
-        process.exitValue() == 0
-    }.getOrElse { false }
+        val process =
+            ProcessBuilder("su", "-c", "am", "start", "-n", "$packageName/$activityName").start()
+        process.waitFor() == 0
+    }.getOrElse {
+        Log.e(TAG, "Failed to launch root activity", it)
+        false
+    }
 }
