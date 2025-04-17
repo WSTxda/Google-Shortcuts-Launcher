@@ -1,0 +1,80 @@
+<resources>
+
+    <string name="app_name">مشغّل اختصارات Google</string>
+    <string name="app_settings">الإعدادات</string>
+
+    <string name="pref_category_shortcuts_manager">إدارة الاختصارات</string>
+    <string name="pref_category_shortcuts_settings">إعدادات الاختصارات</string>
+    <string name="pref_category_other">أخرى</string>
+    <string name="pref_category_about">حول</string>
+
+    <string name="pref_version">الإصدار</string>
+    <string name="pref_developer">المطور</string>
+    <string name="pref_source_code">مستودع الكود المصدري</string>
+
+    <string name="pref_shortcut_enabled">تم تفعيل مشغّل الاختصارات</string>
+    <string name="pref_shortcut_disabled">تم تعطيل مشغّل الاختصارات</string>
+
+    <string name="pref_device_game_manager">مدير الألعاب بالجهاز</string>
+    <string name="pref_device_game_manager_summary">استخدم مدير الألعاب بالجهاز لتشغيل الألعاب بدلاً من مجلد ألعاب Google Play</string>
+
+    <string name="pref_password_manager_root">مدير كلمات المرور (روت)</string>
+    <string name="pref_password_manager_root_summary">استخدم صلاحيات الروت لفتح نشاط مدير كلمات المرور في خدمات Google Play</string>
+
+    <string name="pref_show_settings">عرض الإعدادات في المشغّل</string>
+    <string name="pref_show_settings_summary">للوصول إلى الإعدادات عند إخفائها، اضغط على لوحة <b>البحث عن الموسيقى</b> في لوحة الإعدادات السريعة</string>
+
+    <string name="pref_version_number" translatable="false">%s</string>
+
+    <string name="pref_add_music_search_quick_settings">أضف البحث عن الموسيقى في لوحة الإعدادات السريعة</string>
+
+    <string name="pref_theme">السمة</string>
+
+    <string name="pref_digital_assistant_shortcut">اختصار المساعد الرقمي</string>
+
+    <string name="pref_setup_digital_assistant">إعداد المساعد الرقمي</string>
+    <string name="pref_setup_digital_assistant_summary">تعيين مشغّل اختصارات Google كتطبيق مساعد رقمي افتراضي</string>
+
+    <string name="music_search_label">البحث عن الموسيقى</string>
+    <string name="password">كلمات المرور</string>
+    <string name="music_search">بحث</string>
+    <string name="weather">الطقس</string>
+    <string name="games">الألعاب</string>
+    <string name="assistant">المساعد</string>
+    <string name="lens">Lens</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="files">الملفات</string>
+
+    <string name="google_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل تطبيق Google</string>
+    <string name="play_services_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل خدمات Google Play</string>
+    <string name="play_games_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل ألعاب Google Play</string>
+    <string name="browser_not_found">لم يتم العثور على متصفح، الرجاء تثبيت أو تفعيل المتصفح</string>
+    <string name="game_manager_not_found">مدير الألعاب غير مدعوم على هذا الجهاز</string>
+    <string name="files_not_found">الملفات غير مدعومة على هذا الجهاز</string>
+    <string name="password_manager_root_error">امنح صلاحية الروت أولاً</string>
+
+    <string name="tile_added_success">تمت الإضافة إلى الإعدادات السريعة بنجاح</string>
+    <string name="tile_already_added">موجود بالفعل في الإعدادات السريعة</string>
+
+    <string name="theme_select">اختر السمة</string>
+
+    <string name="theme_system">افتراضي</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">مظلم</string>
+
+    <string name="update_checker_button">التحقق من التحديثات</string>
+    <string name="update_checker_download_button">تحميل</string>
+
+    <string name="update_checker_no_update">لا يوجد تحديث متاح</string>
+    <string name="update_checker_update_available">تحديث جديد متاح: %s</string>
+    <string name="update_checker_no_internet">لا يوجد اتصال بالإنترنت</string>
+    <string name="update_checker_generic_error">حدث خطأ ما. الرجاء المحاولة لاحقاً</string>
+
+    <string name="digital_assistant_setup_title">تطبيق المساعد الرقمي الافتراضي</string>
+    <string name="digital_assistant_setup_message">في الإعدادات، اختر <b>مشغّل اختصارات Google</b> كتطبيق مساعد رقمي افتراضي لتشغيل الاختصار المحدد باستخدام الإيماءات أو الأزرار أو غيرها…</string>
+    <string name="digital_assistant_setup_button">إعداد الآن</string>
+
+    <string name="digital_assistant_shortcut_select">اختر اختصار</string>
+    <string name="digital_assistant_shortcut_disabled">غير قادر على التشغيل، فعّل هذا الاختصار من الإعدادات أولاً</string>
+    <string name="digital_assistant_shortcut_invalid">تم اختيار اختصار غير صالح</string>
+</resources>
