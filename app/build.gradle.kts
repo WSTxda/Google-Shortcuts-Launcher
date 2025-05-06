@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -11,15 +11,16 @@ android {
         applicationId = "com.wstxda.gsl"
         minSdk = 24
         targetSdk = 35
-        versionCode = 531
-        versionName = "5.3.1"
+        versionCode = 600
+        versionName = "6.0"
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
     }
@@ -36,10 +37,9 @@ android {
 }
 
 dependencies {
-
-    implementation("androidx.appcompat:appcompat:1.7.0")
-    implementation("androidx.preference:preference-ktx:1.2.1")
-    implementation("com.google.android.material:material:1.12.0")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.9")
-    implementation("androidx.datastore:datastore-preferences:1.1.4")
+    implementation(libs.androidx.datastore)
+    implementation(libs.androidx.preference)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.navigation)
+    implementation(libs.google.material)
 }
