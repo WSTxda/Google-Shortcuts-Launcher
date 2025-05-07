@@ -1,10 +1,10 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!--app theme-->
 
     <style name="AppTheme" parent="AppTheme.Base" />
 
-    <!--app theme transparent-->
+    <!--app theme transparent (shortcuts)-->
 
     <style name="AppTheme.Transparent" parent="@style/AppTheme.Base">
         <!--app bars colors-->
@@ -13,6 +13,7 @@
         <!--window transparent-->
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
@@ -20,14 +21,14 @@
     <!--app theme base-->
 
     <style name="AppTheme.Base" parent="@style/Theme.Material3.Light.NoActionBar">
-        <!--attributes colors-->
-        <item name="android:colorAccent">?colorPrimary</item>
         <!--components theme-->
-        <item name="snackbarStyle">@style/Theme.Component.Snackbar</item>
-        <item name="alertDialogTheme">@style/Theme.Component.AlertDialog</item>
-        <item name="materialAlertDialogTheme">@style/Theme.Component.AlertDialog</item>
-        <item name="switchPreferenceCompatStyle">@style/Theme.Component.SwitchPreferenceCompat
+        <item name="snackbarStyle">@style/Theme.Component.Material.Snackbar</item>
+        <item name="alertDialogTheme">@style/Theme.Component.Material.AlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/Theme.Component.Material.AlertDialog</item>
+        <item name="switchPreferenceCompatStyle">@style/Theme.Component.Material.SwitchPreferenceCompat
         </item>
+        <!--fixes some UI issues on MIUI/HyperOS devices -->
+        <item name="android:forceDarkAllowed" tools:targetApi="Q">false</item>
         <!--app bars colors-->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/black</item>
@@ -84,26 +85,5 @@
         <item name="android:listPreferredItemPaddingRight">17dp</item>
         <item name="android:listPreferredItemPaddingStart">17dp</item>
         <item name="android:listPreferredItemPaddingEnd">17dp</item>
-    </style>
-
-    <!--app theme components-->
-
-    <style name="Theme.Component.Snackbar" parent="Widget.Material3.Snackbar">
-        <item name="android:layout_margin">17dp</item>
-        <item name="animationMode">slide</item>
-    </style>
-
-    <style name="Theme.Component.SwitchPreferenceCompat" parent="@style/Preference.SwitchPreferenceCompat.Material">
-        <item name="widgetLayout">@layout/preference_material_switch</item>
-    </style>
-
-    <style name="Theme.Component.AlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog.Centered">
-        <item name="android:colorBackground">?colorSurfaceContainer</item>
-        <item name="android:windowAnimationStyle">@style/MaterialAlertDialog.Material3.Animation
-        </item>
-        <item name="android:windowSoftInputMode">adjustResize</item>
-        <item name="dialogCornerRadius">28dp</item>
-        <item name="android:windowMinWidthMajor">91%</item>
-        <item name="android:windowMinWidthMinor">91%</item>
     </style>
 </resources>

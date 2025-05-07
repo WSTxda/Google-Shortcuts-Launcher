@@ -1,16 +1,16 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="AppTheme.Base" parent="@style/Theme.Material3.Dark.NoActionBar">
-        <!--attributes colors-->
-        <item name="android:colorAccent">?colorPrimary</item>
         <!--components theme-->
-        <item name="snackbarStyle">@style/Theme.Component.Snackbar</item>
-        <item name="alertDialogTheme">@style/Theme.Component.AlertDialog</item>
-        <item name="switchPreferenceCompatStyle">@style/Theme.Component.SwitchPreferenceCompat
+        <item name="snackbarStyle">@style/Theme.Component.Material.Snackbar</item>
+        <item name="alertDialogTheme">@style/Theme.Component.Material.AlertDialog</item>
+        <item name="switchPreferenceCompatStyle">@style/Theme.Component.Material.SwitchPreferenceCompat
         </item>
+        <!--fixes some UI issues on MIUI/HyperOS devices -->
+        <item name="android:forceDarkAllowed" tools:targetApi="Q">false</item>
         <!--app bars colors-->
-        <item name="android:statusBarColor">?android:colorBackground</item>
-        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
         <item name="android:windowLightStatusBar">false</item>
         <!--material colors-->
         <item name="colorPrimary">@color/md_theme_primary</item>
