@@ -15,17 +15,14 @@ import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
 import com.wstxda.gsl.activity.SettingsActivity
 import com.wstxda.gsl.fragments.preferences.DigitalAssistantPreference
-import com.wstxda.gsl.fragments.preferences.ThemePreferences
 import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.ui.DigitalAssistantSetupDialog
 import com.wstxda.gsl.ui.ThemeManager
 import com.wstxda.gsl.ui.TileManager
 import com.wstxda.gsl.utils.Constants
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 class SettingsFragment : PreferenceFragmentCompat() {
-    private lateinit var themePreferences: ThemePreferences
 
     private val digitalAssistantPreference by lazy { DigitalAssistantPreference(this) }
 
@@ -57,7 +54,6 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
-        themePreferences = ThemePreferences(requireContext())
 
         setupInitialVisibility()
         setupPreferences()
@@ -120,18 +116,9 @@ class SettingsFragment : PreferenceFragmentCompat() {
     }
 
     private fun setupThemePreference() {
-        val themePreference = findPreference<ListPreference>("select_theme")
-        lifecycleScope.launch {
-            val currentTheme = themePreferences.themeFlow.first()
-            themePreference?.value = currentTheme
-        }
-
-        themePreference?.setOnPreferenceChangeListener { _, newValue ->
-            val selectedTheme = newValue as String
-            lifecycleScope.launch {
-                themePreferences.saveTheme(selectedTheme)
-                ThemeManager.applyTheme(selectedTheme)
-            }
+        findPreference<ListPreference>(Constants.THEME_PREF_KEY)?.setOnPreferenceChangeListener { _, newValue ->
+            ThemeManager.applyTheme(newValue.toString())
+            requireActivity().recreate()
             true
         }
     }
