@@ -22,7 +22,7 @@ object DigitalAssistantShortcuts {
     fun launchSelectedShortcut(context: Context) {
         val preferenceHelper = PreferenceHelper(context)
         val selectedShortcut =
-            preferenceHelper.getString("digital_assistant_shortcut", null) ?: return
+            preferenceHelper.getString(Constants.DIGITAL_ASSISTANT_SHORTCUT, null) ?: return
         val activityClass = shortcutMap[selectedShortcut]
         if (activityClass != null) {
             val intent = Intent(context, activityClass)

@@ -28,11 +28,13 @@ class PasswordManagerShortcut : ShortcutsActivity() {
 
     private suspend fun handleRootMode() {
         if (withContext(Dispatchers.IO) { RootChecker.isRootAvailable() }) {
-            if (!withContext(Dispatchers.IO) {
-                    RootChecker.launchRootActivity(
-                        Constants.PASSWORD_PACKAGE, Constants.PASSWORD_ACTIVITY
-                    )
-                }) {
+            val success = withContext(Dispatchers.IO) {
+                RootChecker.launchRootActivity(
+                    "com.google.android.gms",
+                    "com.google.android.gms.credential.manager.PasswordManagerActivity"
+                )
+            }
+            if (!success) {
                 showToast(R.string.play_services_not_found)
             }
         } else {

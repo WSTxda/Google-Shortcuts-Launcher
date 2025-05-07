@@ -24,9 +24,9 @@ class DigitalAssistantSetupDialog : DialogFragment() {
             fragmentManager: androidx.fragment.app.FragmentManager,
             launcher: ActivityResultLauncher<Intent>
         ) {
-            if (fragmentManager.findFragmentByTag(Constants.DIGITAL_ASSISTANT_DIALOG_TAG) != null) return
+            if (fragmentManager.findFragmentByTag(Constants.DIGITAL_ASSISTANT_DIALOG) != null) return
             DigitalAssistantSetupDialog().apply { this.launcher = launcher }
-                .show(fragmentManager, Constants.DIGITAL_ASSISTANT_DIALOG_TAG)
+                .show(fragmentManager, Constants.DIGITAL_ASSISTANT_DIALOG)
         }
     }
 
