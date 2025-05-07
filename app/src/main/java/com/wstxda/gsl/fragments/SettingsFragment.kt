@@ -1,12 +1,12 @@
 package com.wstxda.gsl.fragments
 
-import android.content.ComponentName
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.net.toUri
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.ListPreference
 import androidx.preference.Preference
@@ -17,23 +17,27 @@ import com.wstxda.gsl.activity.SettingsActivity
 import com.wstxda.gsl.fragments.preferences.DigitalAssistantPreference
 import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.ui.DigitalAssistantSetupDialog
-import com.wstxda.gsl.ui.ThemeManager
 import com.wstxda.gsl.ui.TileManager
 import com.wstxda.gsl.utils.Constants
+import com.wstxda.gsl.viewmodel.SettingsViewModel
 import kotlinx.coroutines.launch
 
 class SettingsFragment : PreferenceFragmentCompat() {
 
+    private val viewModel: SettingsViewModel by viewModels {
+        ViewModelProvider.AndroidViewModelFactory.getInstance(requireActivity().application)
+    }
     private val digitalAssistantPreference by lazy { DigitalAssistantPreference(this) }
-
-    private val digitalAssistantLauncher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-            viewLifecycleOwner.lifecycleScope.launch {
-                val isAssistSetupDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
-                digitalAssistantPreference.updateDigitalAssistantPreferences(isAssistSetupDone)
-                if (!isAssistSetupDone) setupDigitalAssistantPreferences()
-            }
+    private val digitalAssistantLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) {
+        viewLifecycleOwner.lifecycleScope.launch {
+            val isDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
+            viewModel.setAssistSetupDone(isDone)
+            digitalAssistantPreference.updateDigitalAssistantPreferences(isDone)
+            if (!isDone) setupDigitalAssistantClickListener()
         }
+    }
 
     private val shortcuts = mapOf(
         "assistant_shortcut" to AssistantShortcut::class.java,
@@ -54,14 +58,24 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
-
+        observeViewModel()
         setupInitialVisibility()
         setupPreferences()
     }
 
+    private fun observeViewModel() {
+        viewModel.isAssistSetupDone.observe(this) { isDone ->
+            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)?.isVisible = !isDone
+        }
+    }
+
     override fun onResume() {
         super.onResume()
-        setupDigitalAssistantPreferences()
+        viewLifecycleOwner.lifecycleScope.launch {
+            val isDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
+            viewModel.setAssistSetupDone(isDone)
+            digitalAssistantPreference.updateDigitalAssistantPreferences(isDone)
+        }
     }
 
     private fun setupInitialVisibility() {
@@ -73,62 +87,52 @@ class SettingsFragment : PreferenceFragmentCompat() {
     private fun setupPreferences() {
         setupShortcutsActivityPreferences()
         setupTilePreference()
-        setupDigitalAssistantPreferences()
+        setupDigitalAssistantClickListener()
         setupThemePreference()
         setupLinkPreferences()
     }
 
     private fun setupShortcutsActivityPreferences() {
         shortcuts.forEach { (key, activityClass) ->
-            (findPreference<SwitchPreferenceCompat>(key))?.setOnPreferenceChangeListener { _, newValue ->
-                toggleActivityVisibility(activityClass, newValue as Boolean)
-                true
-            }
+            findPreference<SwitchPreferenceCompat>(key)
+                ?.setOnPreferenceChangeListener { _, newValue ->
+                    viewModel.toggleActivityVisibility(activityClass, newValue as Boolean)
+                    true
+                }
         }
-    }
-
-    private fun toggleActivityVisibility(activityClass: Class<*>, showActivity: Boolean) {
-        val newState = if (showActivity) PackageManager.COMPONENT_ENABLED_STATE_ENABLED
-        else PackageManager.COMPONENT_ENABLED_STATE_DISABLED
-
-        requireActivity().packageManager.setComponentEnabledSetting(
-            ComponentName(requireContext(), activityClass), newState, PackageManager.DONT_KILL_APP
-        )
     }
 
     private fun setupTilePreference() {
-        findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.setOnPreferenceClickListener {
-            TileManager(requireContext()).requestAddTile()
-            true
-        }
+        findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)
+            ?.setOnPreferenceClickListener {
+                TileManager(requireContext()).requestAddTile()
+                true
+            }
     }
 
-    private fun setupDigitalAssistantPreferences() {
-        val isAssistSetupDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
-        digitalAssistantPreference.updateDigitalAssistantPreferences(isAssistSetupDone)
-
-        if (!isAssistSetupDone) {
-            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)?.setOnPreferenceClickListener {
+    private fun setupDigitalAssistantClickListener() {
+        findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_KEY)
+            ?.setOnPreferenceClickListener {
                 DigitalAssistantSetupDialog.show(childFragmentManager, digitalAssistantLauncher)
                 true
             }
-        }
     }
 
     private fun setupThemePreference() {
-        findPreference<ListPreference>(Constants.THEME_PREF_KEY)?.setOnPreferenceChangeListener { _, newValue ->
-            ThemeManager.applyTheme(newValue.toString())
-            requireActivity().recreate()
-            true
-        }
+        findPreference<ListPreference>(Constants.THEME_PREF_KEY)
+            ?.setOnPreferenceChangeListener { _, newValue ->
+                viewModel.applyTheme(newValue.toString())
+                true
+            }
     }
 
     private fun setupLinkPreferences() {
         links.forEach { (key, url) ->
-            findPreference<Preference>(key)?.setOnPreferenceClickListener {
-                startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
-                true
-            }
+            findPreference<Preference>(key)
+                ?.setOnPreferenceClickListener {
+                    startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
+                    true
+                }
         }
     }
 }
