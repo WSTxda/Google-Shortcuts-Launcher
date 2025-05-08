@@ -7,6 +7,7 @@ object Constants {
     const val GAME_MANAGER_PREF_KEY = "device_game_manager"
     const val PASSWORD_URL_KEY = "password_manager_root"
     const val MUSIC_SEARCH_TILE_KEY = "add_music_search_tile"
+    const val LIBRARY_PREF_KEY = "library"
     const val DIGITAL_ASSISTANT_SETUP = "digital_assistant_setup"
     const val DIGITAL_ASSISTANT_SHORTCUT = "digital_assistant_shortcut"
 

@@ -173,6 +173,13 @@
         android:summary="@string/pref_source_code"
         android:title="@string/pref_github" />
 
+    <Preference
+        android:icon="@drawable/ic_license"
+        android:key="library"
+        android:layout="@layout/preference_material_middle"
+        android:summary="@string/pref_used_library_summary"
+        android:title="@string/pref_used_library" />
+
     <com.wstxda.gsl.fragments.preferences.UpdaterPreference
         android:key="version"
         android:summary="@string/pref_version_number"

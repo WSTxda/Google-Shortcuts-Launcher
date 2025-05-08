@@ -1,4 +1,6 @@
+# versions.toml
 [versions]
+aboutLibraries = "12.1.2"
 agp = "8.9.2"
 kotlin = "2.1.20"
 preference = "1.2.1"
@@ -11,7 +13,9 @@ androidx-preference = { group = "androidx.preference", name = "preference", vers
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-navigation = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigation" }
 google-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+aboutlibraries-view = { module = "com.mikepenz:aboutlibraries", version.ref = "aboutLibraries" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+aboutLibraries = { id = "com.mikepenz.aboutlibraries.plugin", version.ref = "aboutLibraries" }

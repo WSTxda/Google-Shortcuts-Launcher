@@ -45,6 +45,21 @@
             </intent-filter>
         </activity-alias>
 
+        <!-- Library activity for preferences -->
+        <activity
+            android:name="com.wstxda.gsl.activity.LibraryActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:enableOnBackInvokedCallback="true"
+            android:exported="true"
+            android:label="@string/app_library"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.Library">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <!-- Shortcuts activity's -->
         <activity
             android:name="com.wstxda.gsl.shortcuts.AssistantShortcut"

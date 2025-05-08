@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.aboutLibraries)
 }
 
 android {
@@ -41,4 +42,5 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.navigation)
     implementation(libs.google.material)
+    implementation(libs.aboutlibraries.view)
 }

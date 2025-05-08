@@ -4,6 +4,10 @@
 
     <style name="AppTheme" parent="AppTheme.Base" />
 
+    <!--app theme library-->
+
+    <style name="AppTheme.Library" parent="@style/AppTheme.Base" />
+
     <!--app theme transparent (shortcuts)-->
 
     <style name="AppTheme.Transparent" parent="@style/AppTheme.Base">

@@ -13,6 +13,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
+import com.wstxda.gsl.activity.LibraryActivity
 import com.wstxda.gsl.activity.SettingsActivity
 import com.wstxda.gsl.fragments.preferences.DigitalAssistantPreference
 import com.wstxda.gsl.shortcuts.*
@@ -60,6 +61,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         setPreferencesFromResource(R.xml.preferences, rootKey)
         observeViewModel()
         setupInitialVisibility()
+        setupLibraryPreference()
         setupPreferences()
     }
 
@@ -89,50 +91,54 @@ class SettingsFragment : PreferenceFragmentCompat() {
         setupTilePreference()
         setupDigitalAssistantClickListener()
         setupThemePreference()
+        setupLibraryPreference()
         setupLinkPreferences()
     }
 
     private fun setupShortcutsActivityPreferences() {
         shortcuts.forEach { (key, activityClass) ->
-            findPreference<SwitchPreferenceCompat>(key)
-                ?.setOnPreferenceChangeListener { _, newValue ->
-                    viewModel.toggleActivityVisibility(activityClass, newValue as Boolean)
-                    true
-                }
+            findPreference<SwitchPreferenceCompat>(key)?.setOnPreferenceChangeListener { _, newValue ->
+                viewModel.toggleActivityVisibility(activityClass, newValue as Boolean)
+                true
+            }
         }
     }
 
     private fun setupTilePreference() {
-        findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)
-            ?.setOnPreferenceClickListener {
-                TileManager(requireContext()).requestAddTile()
-                true
-            }
+        findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.setOnPreferenceClickListener {
+            TileManager(requireContext()).requestAddTile()
+            true
+        }
     }
 
     private fun setupDigitalAssistantClickListener() {
-        findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP)
-            ?.setOnPreferenceClickListener {
-                DigitalAssistantSetupDialog.show(childFragmentManager, digitalAssistantLauncher)
-                true
-            }
+        findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP)?.setOnPreferenceClickListener {
+            DigitalAssistantSetupDialog.show(childFragmentManager, digitalAssistantLauncher)
+            true
+        }
     }
 
     private fun setupThemePreference() {
-        findPreference<ListPreference>(Constants.THEME_PREF_KEY)
-            ?.setOnPreferenceChangeListener { _, newValue ->
-                viewModel.applyTheme(newValue.toString())
-                true
-            }
+        findPreference<ListPreference>(Constants.THEME_PREF_KEY)?.setOnPreferenceChangeListener { _, newValue ->
+            viewModel.applyTheme(newValue.toString())
+            true
+        }
+    }
+
+    private fun setupLibraryPreference() {
+        findPreference<Preference>(Constants.LIBRARY_PREF_KEY)?.setOnPreferenceClickListener {
+            val intent = Intent(requireContext(), LibraryActivity::class.java)
+            startActivity(intent)
+            true
+        }
     }
 
     private fun setupLinkPreferences() {
         links.forEach { (key, url) ->
-            findPreference<Preference>(key)
-                ?.setOnPreferenceClickListener {
-                    startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
-                    true
-                }
+            findPreference<Preference>(key)?.setOnPreferenceClickListener {
+                startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
+                true
+            }
         }
     }
 }
