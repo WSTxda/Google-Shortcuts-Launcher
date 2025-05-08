@@ -59,7 +59,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/positive_button"
-        style="@style/Widget.Material3.Button"
+        style="@style/Widget.Material3Expressive.Button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -70,7 +70,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/negative_button"
-        style="@style/Widget.Material3.Button.TonalButton"
+        style="@style/Widget.Material3Expressive.Button.TonalButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@android:string/cancel"

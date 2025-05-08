@@ -24,7 +24,7 @@
 
     <!--app theme base-->
 
-    <style name="AppTheme.Base" parent="@style/Theme.Material3.Light.NoActionBar">
+    <style name="AppTheme.Base" parent="@style/Theme.Material3Expressive.Light.NoActionBar">
         <!--components theme-->
         <item name="snackbarStyle">@style/Theme.Component.Material.Snackbar</item>
         <item name="alertDialogTheme">@style/Theme.Component.Material.AlertDialog</item>

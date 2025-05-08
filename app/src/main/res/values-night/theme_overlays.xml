@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="ThemeOverlay.AppTheme.MediumContrast" parent="Theme.Material3.Dark.NoActionBar">
+    <style name="ThemeOverlay.AppTheme.MediumContrast" parent="Theme.Material3Expressive.Dark.NoActionBar">
         <item name="colorPrimary">@color/md_theme_primary_mediumContrast</item>
         <item name="colorOnPrimary">@color/md_theme_onPrimary_mediumContrast</item>
         <item name="colorPrimaryContainer">@color/md_theme_primaryContainer_mediumContrast</item>

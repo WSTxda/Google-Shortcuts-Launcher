@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
@@ -9,7 +9,7 @@
     android:focusable="true"
     android:orientation="horizontal">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@android:id/icon"
         android:layout_width="38dp"
         android:layout_height="38dp"
@@ -17,7 +17,7 @@
         android:layout_margin="16dp"
         android:importantForAccessibility="no" />
 
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -27,7 +27,7 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@android:id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:maxLines="2"
             android:textAppearance="?attr/textAppearanceBodyLarge" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@android:id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,13 +43,13 @@
             android:maxLines="8"
             android:textAppearance="?attr/textAppearanceBodyMedium"
             android:textColor="?android:textColorSecondary" />
-    </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@android:id/widget_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginEnd="16dp"
         android:orientation="vertical" />
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

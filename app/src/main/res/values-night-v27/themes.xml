@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme.Base" parent="@style/Theme.Material3.Dark.NoActionBar">
+    <style name="AppTheme.Base" parent="@style/Theme.Material3Expressive.Dark.NoActionBar">
         <!--components theme-->
         <item name="snackbarStyle">@style/Theme.Component.Material.Snackbar</item>
         <item name="alertDialogTheme">@style/Theme.Component.Material.AlertDialog</item>
