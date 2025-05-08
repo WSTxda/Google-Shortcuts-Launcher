@@ -1,15 +1,13 @@
 package com.wstxda.gsl.activity
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
 
-abstract class ShortcutsActivity : AppCompatActivity() {
+abstract class ShortcutsActivity : BaseActivity() {
+
+    override val decorFitsSystemWindows = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        WindowCompat.setDecorFitsSystemWindows(window, true)
         onCreateInternal()
         finish()
     }
