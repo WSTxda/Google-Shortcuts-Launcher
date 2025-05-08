@@ -2,6 +2,7 @@
 
     <string name="app_name">Google ショートカットランチャー</string>
     <string name="app_settings">設定</string>
+    <string name="app_library">ライブラリ</string>
 
     <string name="pref_category_shortcuts_manager">ショートカットの管理</string>
     <string name="pref_category_shortcuts_settings">ショートカットの設定</string>
@@ -32,6 +33,9 @@
 
     <string name="pref_setup_digital_assistant">デジタルアシスタントの設定</string>
     <string name="pref_setup_digital_assistant_summary">Google ショートカットランチャーをデフォルトのデジタルアシスタントアプリとして設定する</string>
+
+    <string name="pref_used_library">ライブラリ</string>
+    <string name="pref_used_library_summary">オープンソースライセンス</string>
 
     <string name="music_search_label">音楽を検索</string>
     <string name="password">パスワード</string>

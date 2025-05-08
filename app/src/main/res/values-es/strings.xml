@@ -2,6 +2,7 @@
 
     <string name="app_name">Atajos de Google</string>
     <string name="app_settings">Ajustes</string>
+    <string name="app_library">Biblioteca</string>
 
     <string name="pref_category_shortcuts_manager">Gestionar atajos</string>
     <string name="pref_category_shortcuts_settings">Configuración de atajos</string>
@@ -32,6 +33,9 @@
 
     <string name="pref_setup_digital_assistant">Configurar asistente digital</string>
     <string name="pref_setup_digital_assistant_summary">Establecer Atajos de Google como la aplicación de asistente digital predeterminada</string>
+
+    <string name="pref_used_library">Bibliotecas</string>
+    <string name="pref_used_library_summary">Licencias de código abierto</string>
 
     <string name="music_search_label">Buscar música</string>
     <string name="password">Contraseñas</string>

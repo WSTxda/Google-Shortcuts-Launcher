@@ -2,6 +2,7 @@
 
     <string name="app_name">Atalhos do Google</string>
     <string name="app_settings">Configurações</string>
+    <string name="app_library">Biblioteca</string>
 
     <string name="pref_category_shortcuts_manager">Gerenciar atalhos</string>
     <string name="pref_category_shortcuts_settings">Configurações dos atalhos</string>
@@ -32,6 +33,9 @@
 
     <string name="pref_setup_digital_assistant">Configurar assistente digital</string>
     <string name="pref_setup_digital_assistant_summary">Definir Atalhos do Google como aplicativo de assistente digital padrão</string>
+
+    <string name="pref_used_library">Bibliotecas</string>
+    <string name="pref_used_library_summary">Licenças de código aberto</string>
 
     <string name="music_search_label">Pesquisar música</string>
     <string name="password">Senhas</string>

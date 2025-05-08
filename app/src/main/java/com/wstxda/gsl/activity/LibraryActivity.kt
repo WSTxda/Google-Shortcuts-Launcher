@@ -18,10 +18,10 @@ class LibraryActivity : BaseActivity() {
         setupToolbar(toolbar)
 
         val collapsingToolbar: CollapsingToolbarLayout = findViewById(R.id.collapsing_toolbar)
-        collapsingToolbar.title = getString(R.string.pref_used_library)
+        collapsingToolbar.title = getString(R.string.pref_used_library_summary)
 
         if (savedInstanceState == null) {
-            val fragment = LibsBuilder().supportFragment()
+            val fragment = LibsBuilder().withVersionShown(false).supportFragment()
             supportFragmentManager.beginTransaction()
                 .replace(R.id.library_fragment_container, fragment).commit()
         }

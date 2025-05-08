@@ -2,6 +2,7 @@
 
     <string name="app_name">مشغّل اختصارات Google</string>
     <string name="app_settings">الإعدادات</string>
+    <string name="app_library">المكتبة</string>
 
     <string name="pref_category_shortcuts_manager">إدارة الاختصارات</string>
     <string name="pref_category_shortcuts_settings">إعدادات الاختصارات</string>
@@ -34,6 +35,9 @@
 
     <string name="pref_setup_digital_assistant">إعداد المساعد الرقمي</string>
     <string name="pref_setup_digital_assistant_summary">تعيين مشغّل اختصارات Google كتطبيق مساعد رقمي افتراضي</string>
+
+    <string name="pref_used_library">المكتبات</string>
+    <string name="pref_used_library_summary">تراخيص المصدر المفتوح</string>
 
     <string name="music_search_label">البحث عن الموسيقى</string>
     <string name="password">كلمات المرور</string>

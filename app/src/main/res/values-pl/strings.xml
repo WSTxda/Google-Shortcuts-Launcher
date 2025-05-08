@@ -2,6 +2,7 @@
 
     <string name="app_name">Skróty Google</string>
     <string name="app_settings">Ustawienia</string>
+    <string name="app_library">Biblioteka</string>
 
     <string name="pref_category_shortcuts_manager">Menedżer skrótów</string>
     <string name="pref_category_shortcuts_settings">Ustawienia skrótów</string>
@@ -32,6 +33,9 @@
 
     <string name="pref_setup_digital_assistant">Skonfiguruj asystenta cyfrowego</string>
     <string name="pref_setup_digital_assistant_summary">Ustaw Skróty Google jako domyślną aplikację asystenta cyfrowego</string>
+
+    <string name="pref_used_library">Biblioteki</string>
+    <string name="pref_used_library_summary">Licencje open source</string>
 
     <string name="music_search_label">Wyszukiwanie muzyki</string>
     <string name="password">Hasła</string>

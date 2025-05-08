@@ -38,8 +38,8 @@
     <string name="pref_setup_digital_assistant">Setup digital assistant</string>
     <string name="pref_setup_digital_assistant_summary">Set Google Shortcuts Launcher as default digital assistant app</string>
 
-    <string name="pref_used_library">Used libraries</string>
-    <string name="pref_used_library_summary">Open source libraries licenses</string>
+    <string name="pref_used_library">Libraries</string>
+    <string name="pref_used_library_summary">Open source licenses</string>
 
     <string name="music_search_label">Music search</string>
     <string name="password">Passwords</string>
