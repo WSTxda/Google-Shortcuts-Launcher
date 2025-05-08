@@ -25,9 +25,9 @@ class DigitalAssistantPreference(private val fragment: PreferenceFragmentCompat)
     }
 
     fun updateDigitalAssistantPreferences(isAssistSetupDone: Boolean) {
-        fragment.findPreference<androidx.preference.Preference>(Constants.DIGITAL_ASSISTANT_SETUP)?.isVisible =
+        fragment.findPreference<androidx.preference.Preference>(Constants.DIGITAL_ASSISTANT_SETUP_PREF_KEY)?.isVisible =
             !isAssistSetupDone
-        fragment.findPreference<androidx.preference.ListPreference>(Constants.DIGITAL_ASSISTANT_SHORTCUT)
+        fragment.findPreference<androidx.preference.ListPreference>(Constants.DIGITAL_ASSISTANT_SHORTCUT_PREF_KEY)
             ?.apply {
                 isVisible = isAssistSetupDone
                 isEnabled = isAssistSetupDone

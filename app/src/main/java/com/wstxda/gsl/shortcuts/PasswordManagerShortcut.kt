@@ -20,7 +20,7 @@ class PasswordManagerShortcut : ShortcutsActivity() {
     override fun onCreateInternal() {
         lifecycleScope.launch {
             when {
-                preferences.getBoolean(Constants.PASSWORD_URL_KEY) -> handleRootMode()
+                preferences.getBoolean(Constants.PASSWORD_MANAGER_ROOT_PREF_KEY) -> handleRootMode()
                 else -> launchPasswordManagerBrowser()
             }
         }

@@ -67,7 +67,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     private fun observeViewModel() {
         viewModel.isAssistSetupDone.observe(this) { isDone ->
-            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP)?.isVisible = !isDone
+            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_PREF_KEY)?.isVisible = !isDone
         }
     }
 
@@ -112,7 +112,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
     }
 
     private fun setupDigitalAssistantClickListener() {
-        findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP)?.setOnPreferenceClickListener {
+        findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_PREF_KEY)?.setOnPreferenceClickListener {
             DigitalAssistantSetupDialog.show(childFragmentManager, digitalAssistantLauncher)
             true
         }

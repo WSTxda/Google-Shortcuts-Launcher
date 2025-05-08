@@ -3,27 +3,26 @@
 package com.wstxda.gsl.activity
 
 import android.os.Bundle
-import androidx.appcompat.widget.Toolbar
-import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.mikepenz.aboutlibraries.LibsBuilder
 import com.wstxda.gsl.R
+import com.wstxda.gsl.databinding.ActivityLibraryBinding
 
 class LibraryActivity : BaseActivity() {
 
+    private val binding by lazy { ActivityLibraryBinding.inflate(layoutInflater) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_library)
+        setContentView(binding.root)
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setupToolbar(toolbar)
+        setupToolbar(binding.toolbar)
 
-        val collapsingToolbar: CollapsingToolbarLayout = findViewById(R.id.collapsing_toolbar)
-        collapsingToolbar.title = getString(R.string.pref_used_library_summary)
+        binding.collapsingToolbar.title = getString(R.string.pref_used_library_summary)
 
         if (savedInstanceState == null) {
             val fragment = LibsBuilder().withVersionShown(false).supportFragment()
             supportFragmentManager.beginTransaction()
-                .replace(R.id.library_fragment_container, fragment).commit()
+                .replace(binding.libraryFragmentContainer.id, fragment).commit()
         }
     }
 }
