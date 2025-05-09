@@ -16,11 +16,10 @@ class LibraryActivity : BaseActivity() {
         setContentView(binding.root)
 
         setupToolbar(binding.toolbar)
-
         binding.collapsingToolbar.title = getString(R.string.pref_used_library_summary)
 
         if (savedInstanceState == null) {
-            val fragment = LibsBuilder().supportFragment()
+            val fragment = LibsBuilder().withEdgeToEdge(true).supportFragment()
             supportFragmentManager.beginTransaction()
                 .replace(binding.libraryFragmentContainer.id, fragment).commit()
         }
