@@ -4,6 +4,7 @@
     <style name="Theme.Component.Material.Snackbar" parent="Widget.Material3.Snackbar">
         <item name="android:layout_margin">17dp</item>
         <item name="animationMode">slide</item>
+        <item name="snackbarButtonStyle">@style/Widget.Material3Expressive.Button.TextButton.Snackbar</item>
     </style>
 
     <style name="Theme.Component.Material.SwitchPreferenceCompat" parent="@style/Preference.SwitchPreferenceCompat.Material">
@@ -18,6 +19,9 @@
         <item name="materialAlertDialogTitleIconStyle">@style/Theme.Component.Material.AlertDialog.Title.Icon</item>
         <item name="android:windowMinWidthMajor">91%</item>
         <item name="android:windowMinWidthMinor">91%</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.Material3Expressive.Button.TextButton.Dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.Material3Expressive.Button.TextButton.Dialog</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.Material3Expressive.Button.TextButton.Dialog</item>
     </style>
 
     <style name="Theme.Component.Material.AlertDialog.Title.Icon" parent="MaterialAlertDialog.Material3.Title.Icon.CenterStacked">
