@@ -20,6 +20,7 @@
         <item>@string/password</item>
         <item>@string/incognito</item>
         <item>@string/quick_share</item>
+        <item>@string/search</item>
         <item>@string/weather</item>
     </string-array>
 
@@ -31,6 +32,7 @@
         <item>password_manager_shortcut</item>
         <item>incognito_shortcut</item>
         <item>quick_share_shortcut</item>
+        <item>search_shortcut</item>
         <item>weather_shortcut</item>
     </string-array>
 </resources>
