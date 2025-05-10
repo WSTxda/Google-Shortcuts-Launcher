@@ -90,9 +90,9 @@
         app:allowDividerAbove="false" />
 
     <Preference
+        android:icon="@drawable/ic_open"
         android:key="digital_assistant_setup"
         android:layout="@layout/preference_material_highlight_top"
-        android:icon="@drawable/ic_open"
         android:summary="@string/pref_setup_digital_assistant_summary"
         android:title="@string/pref_setup_digital_assistant" />
 
@@ -174,7 +174,7 @@
         android:title="@string/pref_github" />
 
     <Preference
-        android:icon="@drawable/ic_license"
+        android:icon="@drawable/ic_library"
         android:key="library"
         android:layout="@layout/preference_material_middle"
         android:summary="@string/pref_used_library_summary"
@@ -185,5 +185,6 @@
         android:summary="@string/pref_version_number"
         android:title="@string/pref_version"
         app:allowDividerAbove="false"
-        app:allowDividerBelow="false" />
+        app:allowDividerBelow="false"
+        app:iconSpaceReserved="false" />
 </androidx.preference.PreferenceScreen>

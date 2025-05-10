@@ -19,4 +19,6 @@
     android:textAlignment="viewStart"
     android:textAppearance="?textAppearanceBodyLarge"
     android:textColor="?colorOnSurface"
-    tools:ignore="PrivateResource" />
+    tools:checked="true"
+    tools:ignore="PrivateResource"
+    tools:text="@string/theme_system" />

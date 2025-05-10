@@ -1,4 +1,5 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="32dp"
@@ -16,5 +17,6 @@
         android:textAllCaps="true"
         android:textAppearance="?attr/textAppearanceLabelMedium"
         android:textColor="?attr/colorOnSurfaceVariant"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        tools:text="@string/pref_category_about" />
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -7,9 +7,9 @@
             <corners
                 android:bottomLeftRadius="4dp"
                 android:bottomRightRadius="4dp"
-                android:topLeftRadius="16dp"
-                android:topRightRadius="16dp" />
-            <solid android:color="?colorSurfaceContainerLow" />
+                android:topLeftRadius="18dp"
+                android:topRightRadius="18dp" />
+            <solid android:color="?attr/colorSurfaceContainerLow" />
         </shape>
     </item>
 </ripple>

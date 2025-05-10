@@ -13,8 +13,8 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/dialog_icon"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
-        app:cardCornerRadius="16dp"
+        app:cardCornerRadius="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dialog_title">

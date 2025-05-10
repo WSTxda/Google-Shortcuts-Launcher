@@ -4,12 +4,8 @@
     tools:ignore="PrivateResource">
     <item>
         <shape>
-            <corners
-                android:bottomLeftRadius="16dp"
-                android:bottomRightRadius="16dp"
-                android:topLeftRadius="16dp"
-                android:topRightRadius="16dp" />
-            <solid android:color="?colorSecondaryContainer" />
+            <corners android:radius="16dp" />
+            <solid android:color="?attr/colorSecondaryContainer" />
         </shape>
     </item>
 </ripple>
