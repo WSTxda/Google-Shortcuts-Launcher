@@ -15,6 +15,7 @@ object DigitalAssistantShortcuts {
         "lens_shortcut" to LensShortcut::class.java,
         "music_search_shortcut" to MusicSearchShortcut::class.java,
         "password_manager_shortcut" to PasswordManagerShortcut::class.java,
+        "incognito_shortcut" to IncognitoShortcut::class.java,
         "quick_share_shortcut" to QuickShareShortcut::class.java,
         "weather_shortcut" to WeatherShortcut::class.java
     )

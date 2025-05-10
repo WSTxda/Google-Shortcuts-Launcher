@@ -107,6 +107,21 @@
         </activity>
 
         <activity
+            android:name="com.wstxda.gsl.shortcuts.IncognitoShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_incognito"
+            android:label="Incognito"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name="com.wstxda.gsl.shortcuts.LensShortcut"
             android:excludeFromRecents="true"
             android:exported="true"

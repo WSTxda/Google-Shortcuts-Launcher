@@ -50,6 +50,7 @@
     <string name="lens">Lens</string>
     <string name="quick_share">Quick Share</string>
     <string name="files">Files</string>
+    <string name="incognito">Incognito</string>
 
     <string name="google_not_found">Activity not found. Please install or enable Google App</string>
     <string name="play_services_not_found">Activity not found. Please install or enable Google Play Services</string>
@@ -57,6 +58,7 @@
     <string name="browser_not_found">No browser found, Please install or enable your browser</string>
     <string name="game_manager_not_found">Game manager not supported in this device</string>
     <string name="files_not_found">Files not supported in this device</string>
+    <string name="chrome_not_found">Activity not found. Please install or enable Google Chrome</string>
     <string name="password_manager_root_error">Grant root permission first</string>
 
     <string name="tile_added_success">Successfully added to quick settings</string>
