@@ -26,10 +26,17 @@ object GamesBrandsPackages {
         "com.huawei.gameassistant" to "com.huawei.gameassistant.ui.GameSpaceMainActivity",
         "com.huawei.gameassistant" to "com.huawei.gameassistant.ui.GameManagerActivity",
 
+        // Honor
+        "com.hihonor.gameassistant" to "com.hihonor.gameassistant.ui.MainActivity",
+
         // Lenovo
         "com.lenovo.gamezone" to "com.lenovo.gamezone.ui.GameZoneMainActivity",
         "com.lenovo.gamespace" to "com.lenovo.gamespace.ui.GameSpaceMainActivity",
         "com.lenovo.gamezone" to "com.lenovo.gamezone.ui.GameManagerActivity",
+
+        // LG
+        "com.lge.gamecenter" to "com.lge.gamecenter.GameCenterActivity",
+        "com.lge.gamelauncher" to "com.lge.gamelauncher.MainActivity",
 
         // Meizu
         "com.meizu.flyme.gamecenter" to "com.meizu.flyme.gamecenter.GameCenterMainActivity",
