@@ -111,7 +111,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_incognito"
-            android:label="Incognito"
+            android:label="@string/incognito"
             android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">

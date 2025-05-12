@@ -15,6 +15,6 @@ class IncognitoShortcut : ShortcutsActivity() {
                 addCategory(Intent.CATEGORY_LAUNCHER)
             }
         }
-        launchShortcuts(intents, R.string.chrome_not_found)
+        launchShortcuts(intents, R.string.browser_not_found)
     }
 }

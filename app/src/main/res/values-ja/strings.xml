@@ -46,6 +46,8 @@
     <string name="lens">レンズ</string>
     <string name="quick_share">Quick Share</string>
     <string name="files">ファイル</string>
+    <string name="incognito">シークレット</string>
+    <string name="search">検索</string>
 
     <string name="google_not_found">アクティビティが見つかりません。Google アプリをインストールするか有効化してください。</string>
     <string name="play_games_not_found">アクティビティが見つかりません。Google Play Games をインストールするか有効化してください。</string>
@@ -53,7 +55,7 @@
     <string name="browser_not_found">ブラウザが見つかりません。ブラウザをインストールするか有効化してください。</string>
     <string name="game_manager_not_found">このデバイスではゲームマネージャーに非対応です。</string>
     <string name="files_not_found">このデバイスでサポートされていないファイル</string>
-    <string name="password_manager_root_error">最初に root 権限を許可してください</string>
+    <string name="root_access_error">最初に root 権限を許可してください</string>
 
     <string name="tile_added_success">クイック設定に正常に追加されました</string>
     <string name="tile_already_added">クイック設定にすでに追加されています</string>
