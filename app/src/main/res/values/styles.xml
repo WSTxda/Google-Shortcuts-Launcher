@@ -11,20 +11,12 @@
         <item name="widgetLayout">@layout/preference_material_switch</item>
     </style>
 
-    <style name="Theme.Component.Material.AlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog.Centered">
+    <style name="Theme.Component.Material.AlertDialog" parent="@style/ThemeOverlay.Material3Expressive.MaterialAlertDialog.Centered">
         <item name="android:colorBackground">?colorSurfaceContainer</item>
         <item name="android:windowAnimationStyle">@style/MaterialAlertDialog.Material3.Animation</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="dialogCornerRadius">28dp</item>
-        <item name="materialAlertDialogTitleIconStyle">@style/Theme.Component.Material.AlertDialog.Title.Icon</item>
         <item name="android:windowMinWidthMajor">91%</item>
         <item name="android:windowMinWidthMinor">91%</item>
-        <item name="buttonBarPositiveButtonStyle">@style/Widget.Material3Expressive.Button.TextButton.Dialog</item>
-        <item name="buttonBarNegativeButtonStyle">@style/Widget.Material3Expressive.Button.TextButton.Dialog</item>
-        <item name="buttonBarNeutralButtonStyle">@style/Widget.Material3Expressive.Button.TextButton.Dialog</item>
-    </style>
-
-    <style name="Theme.Component.Material.AlertDialog.Title.Icon" parent="MaterialAlertDialog.Material3.Title.Icon.CenterStacked">
-        <item name="android:layout_marginTop">12dp</item>
     </style>
 </resources>
