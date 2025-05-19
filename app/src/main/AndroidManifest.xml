@@ -23,10 +23,12 @@
             android:name="com.wstxda.gsl.activity.SettingsActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:enableOnBackInvokedCallback="true"
+            android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_settings"
             android:label="@string/app_settings"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -50,9 +52,11 @@
             android:name="com.wstxda.gsl.activity.LibraryActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:enableOnBackInvokedCallback="true"
-            android:exported="true"
+            android:excludeFromRecents="true"
+            android:exported="false"
             android:label="@string/app_library"
             android:launchMode="singleTop"
+            android:noHistory="true"
             android:theme="@style/AppTheme.Library">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
