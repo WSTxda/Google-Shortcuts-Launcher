@@ -1,6 +1,8 @@
 package com.wstxda.gsl.logic
 
 import android.util.Log
+import kotlin.getOrElse
+import kotlin.runCatching
 
 object RootChecker {
     private const val TAG = "RootChecker"

@@ -2,6 +2,7 @@ package com.wstxda.gsl.utils
 
 object GamesBrandsPackages {
     val gamesLaunchersIntents = listOf(
+
         // AOSP ROMs
         "io.chaldeaprjkt.gamespace" to "io.chaldeaprjkt.gamespace.settings.SettingsActivity",
 

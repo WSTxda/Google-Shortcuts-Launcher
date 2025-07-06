@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Used to check connection in OTA (UpdaterService.kt) implementation -->
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -19,6 +20,7 @@
         tools:targetApi="tiramisu">
 
         <!-- Settings activity-->
+
         <activity
             android:name="com.wstxda.gsl.activity.SettingsActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
@@ -34,6 +36,7 @@
         </activity>
 
         <!-- Settings activity for preferences actions -->
+
         <activity-alias
             android:name="com.wstxda.gsl.activity.SettingsActivityLauncher"
             android:exported="false"
@@ -46,6 +49,7 @@
         </activity-alias>
 
         <!-- Library activity for preferences -->
+
         <activity
             android:name="com.wstxda.gsl.activity.LibraryActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
@@ -61,6 +65,7 @@
         </activity>
 
         <!-- Shortcuts activity's -->
+
         <activity
             android:name="com.wstxda.gsl.shortcuts.AssistantShortcut"
             android:excludeFromRecents="true"
@@ -212,6 +217,7 @@
         </activity>
 
         <!-- Digital assistant fallback service activity -->
+
         <activity
             android:name="com.wstxda.gsl.services.AssistantFallbackService"
             android:excludeFromRecents="true"
@@ -225,6 +231,7 @@
         </activity>
 
         <!-- Music search quick settings tile -->
+
         <service
             android:name="com.wstxda.gsl.services.MusicSearchTileService"
             android:exported="true"

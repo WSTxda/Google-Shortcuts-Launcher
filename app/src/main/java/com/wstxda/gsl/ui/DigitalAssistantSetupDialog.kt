@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.provider.Settings
 import androidx.activity.result.ActivityResultLauncher
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.FragmentManager
 import androidx.preference.PreferenceFragmentCompat
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.wstxda.gsl.databinding.AssistantSetupDialogBinding
@@ -21,8 +22,8 @@ class DigitalAssistantSetupDialog : DialogFragment() {
 
     companion object {
         fun show(
-            fragmentManager: androidx.fragment.app.FragmentManager,
-            launcher: ActivityResultLauncher<Intent>
+            fragmentManager: FragmentManager,
+            launcher: ActivityResultLauncher<Intent>,
         ) {
             if (fragmentManager.findFragmentByTag(Constants.DIGITAL_ASSISTANT_DIALOG) != null) return
             DigitalAssistantSetupDialog().apply { this.launcher = launcher }
@@ -36,9 +37,7 @@ class DigitalAssistantSetupDialog : DialogFragment() {
         binding.positiveButton.setOnClickListener {
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
                 (parentFragment as? PreferenceFragmentCompat)?.let {
-                    DigitalAssistantPreference(it).setDigitalAssistSetupStatus(
-                        requireContext(), true
-                    )
+                    DigitalAssistantPreference(it).setDigitalAssistSetupStatus(true)
                 }
             }
             runCatching {

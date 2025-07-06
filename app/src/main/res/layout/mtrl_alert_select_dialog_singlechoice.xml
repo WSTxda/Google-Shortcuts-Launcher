@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/single_choice_background"
-    android:drawableEnd="@drawable/dialog_singlechoice_icon"
+    android:drawableEnd="@drawable/ic_dialog_singlechoice"
     android:drawablePadding="8.0dip"
     android:drawableTint="?colorOnSurface"
     android:ellipsize="marquee"

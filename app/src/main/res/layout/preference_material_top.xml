@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
-    android:layout_marginBottom="4dp"
+    android:layout_marginBottom="2dp"
     android:background="@drawable/preference_background_top"
     android:baselineAligned="false"
     android:clickable="true"
@@ -39,13 +39,14 @@
             android:layout_height="wrap_content"
             android:ellipsize="marquee"
             android:maxLines="2"
-            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
             tools:text="@string/pref_theme" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@android:id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
             android:ellipsize="marquee"
             android:maxLines="8"
             android:textAppearance="?attr/textAppearanceBodyMedium"

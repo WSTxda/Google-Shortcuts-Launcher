@@ -39,14 +39,15 @@
             android:layout_height="wrap_content"
             android:ellipsize="marquee"
             android:maxLines="2"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
             android:textColor="?attr/colorOnSecondaryContainer"
-            android:textAppearance="?attr/textAppearanceLabelLarge"
             tools:text="@string/pref_add_music_search_quick_settings" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@android:id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
             android:ellipsize="marquee"
             android:maxLines="8"
             android:textAppearance="?attr/textAppearanceBodySmall"

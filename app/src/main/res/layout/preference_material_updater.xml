@@ -36,13 +36,14 @@
             android:layout_height="wrap_content"
             android:ellipsize="marquee"
             android:maxLines="2"
-            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
             tools:text="@string/pref_version" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@android:id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
             android:ellipsize="marquee"
             android:maxLines="8"
             android:textAppearance="?attr/textAppearanceBodyMedium"
