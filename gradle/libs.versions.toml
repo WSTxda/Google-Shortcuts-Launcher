@@ -1,12 +1,12 @@
 # versions.toml
 [versions]
-agp = "8.9.3"
+agp = "8.10.1"
 kotlin = "2.1.20"
 preference = "1.2.1"
-appcompat = "1.7.0"
-navigation = "2.9.0"
-material = "1.14.0-alpha01"
-aboutLibraries = "12.1.2"
+appcompat = "1.7.1"
+navigation = "2.9.1"
+material = "1.14.0-alpha02"
+aboutLibraries = "12.2.1"
 
 [libraries]
 androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
