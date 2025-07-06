@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.wstxda.gsl"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.wstxda.gsl"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 540
         versionName = "5.4"
     }
