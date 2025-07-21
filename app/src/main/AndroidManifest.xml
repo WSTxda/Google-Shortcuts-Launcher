@@ -216,10 +216,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Digital assistant fallback service activity -->
+        <!-- Digital assistant service activity -->
 
         <activity
-            android:name="com.wstxda.gsl.services.AssistantFallbackService"
+            android:name="com.wstxda.gsl.services.DigitalAssistantService"
             android:excludeFromRecents="true"
             android:exported="true"
             android:launchMode="singleTop"

@@ -17,7 +17,7 @@
     <string name="pref_shortcut_disabled">Atalho no launcher desativado</string>
 
     <string name="pref_device_game_manager">Gerenciador de jogos do dispositivo</string>
-    <string name="pref_device_game_manager_summary">Use o gerenciador de jogos do dispositivo para iniciar jogos em vez da pasta Google Play Games</string>
+    <string name="pref_device_game_manager_summary">Use o gerenciador de jogos do dispositivo para iniciar jogos em vez da pasta do Google Play Games</string>
 
     <string name="pref_password_manager_root">Gerenciador de senhas (root)</string>
     <string name="pref_password_manager_root_summary">Use o acesso root para abrir a atividade do gerenciador de senhas no Google Play Services</string>
@@ -75,7 +75,7 @@
     <string name="update_checker_generic_error">Algo deu errado. Tente novamente mais tarde</string>
 
     <string name="digital_assistant_setup_title">Aplicativo de assistente digital padrão</string>
-    <string name="digital_assistant_setup_message">Nas configurações, selecione <b>Atalhos do Google</b> como aplicativo de assistente digital padrão para iniciar rapidamente o atalho selecionado usando gestos do dispositivo, botões e mais…</string>
+    <string name="digital_assistant_setup_message">Nas configurações, selecione <b>Atalhos do Google</b> como aplicativo de assistente digital padrão para iniciar rapidamente o atalho selecionado usando gestos do dispositivo, botões e muito mais…</string>
     <string name="digital_assistant_setup_button">Configurar agora</string>
 
     <string name="digital_assistant_shortcut_select">Selecionar atalho</string>
