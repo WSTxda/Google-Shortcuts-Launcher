@@ -19,15 +19,15 @@
         android:theme="@style/AppTheme"
         tools:targetApi="tiramisu">
 
-        <!-- Settings activity-->
+        <!-- Manager activity-->
 
         <activity
-            android:name="com.wstxda.gsl.activity.SettingsActivity"
+            android:name="com.wstxda.gsl.activity.ManagerActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:enableOnBackInvokedCallback="true"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_settings"
-            android:label="@string/app_settings"
+            android:icon="@mipmap/ic_launcher_manager"
+            android:label="@string/app_manager"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,12 +35,12 @@
             </intent-filter>
         </activity>
 
-        <!-- Settings activity for preferences actions -->
+        <!-- Manager activity for preferences actions -->
 
         <activity-alias
-            android:name="com.wstxda.gsl.activity.SettingsActivityLauncher"
+            android:name="com.wstxda.gsl.activity.ManagerActivityLauncher"
             android:exported="false"
-            android:targetActivity="com.wstxda.gsl.activity.SettingsActivity">
+            android:targetActivity="com.wstxda.gsl.activity.ManagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />

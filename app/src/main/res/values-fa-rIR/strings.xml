@@ -1,14 +1,14 @@
 <resources>
 
     <string name="app_name">راه‌انداز میانبرهای گوگل</string>
-    <string name="app_settings">تنظیمات</string>
+    <string name="app_manager">مدیر</string>
+    <string name="app_manager_shortcuts">مدیریت میانبرها</string>
     <string name="app_library">کتابخانه</string>
 
     <string name="pref_expandable_search">میانبرهای جستجو</string>
     <string name="pref_expandable_manager">میانبرهای مدیریت</string>
     <string name="pref_expandable_others">میانبرهای دیگر</string>
 
-    <string name="pref_category_shortcuts_manager">مدیریت میانبرها</string>
     <string name="pref_category_shortcuts_settings">تنظیمات میانبرها</string>
     <string name="pref_category_other">دیگر</string>
     <string name="pref_category_about">درباره</string>
@@ -26,8 +26,8 @@
     <string name="pref_password_manager_root">مدیریت گذرواژه (ریشه)</string>
     <string name="pref_password_manager_root_summary">از دسترسی ریشه برای باز کردن فعالیت مدیریت گذرواژه در خدمات گوگل پلی استفاده کنید</string>
 
-    <string name="pref_show_settings">نمایش تنظیمات در راه‌انداز</string>
-    <string name="pref_show_settings_summary">برای دسترسی به تنظیمات در صورتی که مخفی است، کاشی <b>جستجوی موسیقی</b> را در صفحه‌ی تنظیمات سریع بفشارید</string>
+    <string name="pref_show_manager">نمایش مدیر در لانچر</string>
+    <string name="pref_show_manager_summary">برای دسترسی به مدیر هنگام مخفی بودن، کاشی <b>جستجوی موسیقی</b> را در تنظیمات سریع فشار دهید</string>
 
     <string name="pref_add_music_search_quick_settings">اضافه کردن جستجوی موسیقی به پنل تنظیمات سریع</string>
 
@@ -83,6 +83,6 @@
     <string name="digital_assistant_setup_button">اکنون راه‌اندازی کنید</string>
 
     <string name="digital_assistant_shortcut_select">انتخاب میانبر</string>
-    <string name="digital_assistant_shortcut_disabled">نمی‌توان راه‌اندازی کرد، ابتدا این میانبر را در تنظیمات فعال کنید</string>
+    <string name="digital_assistant_shortcut_disabled">امکان اجرا وجود ندارد. ابتدا این میانبر را در مدیر فعال کنید</string>
     <string name="digital_assistant_shortcut_invalid">میانبر انتخاب‌شده نامعتبر است</string>
 </resources>

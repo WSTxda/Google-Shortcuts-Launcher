@@ -1,14 +1,14 @@
 <resources>
 
     <string name="app_name">Atajos de Google</string>
-    <string name="app_settings">Ajustes</string>
+    <string name="app_manager">Gestor</string>
+    <string name="app_manager_shortcuts">Gestor de atajos</string>
     <string name="app_library">Biblioteca</string>
 
     <string name="pref_expandable_search">Atajos de búsqueda</string>
-    <string name="pref_expandable_manager">Atajos del gestor</string>
+    <string name="pref_expandable_manager">Atajos del gestores</string>
     <string name="pref_expandable_others">Otros atajos</string>
 
-    <string name="pref_category_shortcuts_manager">Gestionar atajos</string>
     <string name="pref_category_shortcuts_settings">Configuración de atajos</string>
     <string name="pref_category_other">Otros</string>
     <string name="pref_category_about">Acerca de</string>
@@ -26,8 +26,8 @@
     <string name="pref_password_manager_root">Administrador de contraseñas (root)</string>
     <string name="pref_password_manager_root_summary">Use acesso root para abrir la actividad del administrador de contraseñas en los Google Play Services</string>
 
-    <string name="pref_show_settings">Mostrar ajustes en lanzador</string>
-    <string name="pref_show_settings_summary">Para acceder a la configuración cuando esté oculta, presione el acceso directo de <b>Buscar música</b> en el panel de configuración rápida</string>
+    <string name="pref_show_manager">Mostrar gestor en lanzador</string>
+    <string name="pref_show_manager_summary">Para acceder a gestor cuando esté oculta, presione el acceso directo de <b>Buscar música</b> en el panel de configuración rápida</string>
 
     <string name="pref_add_music_search_quick_settings">Agregar buscar música en configuración rápida</string>
 
@@ -83,6 +83,6 @@
     <string name="digital_assistant_setup_button">Configurar ahora</string>
 
     <string name="digital_assistant_shortcut_select">Seleccionar acceso directo</string>
-    <string name="digital_assistant_shortcut_disabled">No se puede iniciar, habilita este acceso directo en la configuración primero</string>
+    <string name="digital_assistant_shortcut_disabled">No se puede iniciar. activa este atajo en el gestor primero</string>
     <string name="digital_assistant_shortcut_invalid">Acceso directo seleccionado no válido</string>
 </resources>

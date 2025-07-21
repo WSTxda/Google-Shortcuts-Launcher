@@ -4,13 +4,8 @@
     <Preference
         android:icon="@drawable/ic_add"
         android:key="add_music_search_tile"
-        android:layout="@layout/preference_material_shortcuts_tile"
+        android:layout="@layout/preference_material_tile"
         android:title="@string/pref_add_music_search_quick_settings" />
-
-    <PreferenceCategory
-        android:layout="@layout/preference_material_category"
-        android:title="@string/pref_category_shortcuts_manager"
-        app:allowDividerAbove="false" />
 
     <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
         android:title="@string/pref_expandable_search"
@@ -184,11 +179,11 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="true"
-        android:icon="@drawable/ic_settings"
-        android:key="settings_activity"
+        android:icon="@drawable/ic_manager"
+        android:key="manager_activity"
         android:layout="@layout/preference_material_bottom"
-        android:summary="@string/pref_show_settings_summary"
-        android:title="@string/pref_show_settings" />
+        android:summary="@string/pref_show_manager_summary"
+        android:title="@string/pref_show_manager" />
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"

@@ -1,14 +1,14 @@
 <resources>
 
     <string name="app_name">مشغّل اختصارات Google</string>
-    <string name="app_settings">الإعدادات</string>
+    <string name="app_manager">المدير</string>
+    <string name="app_manager_shortcuts">إدارة الاختصارات</string>
     <string name="app_library">المكتبة</string>
 
     <string name="pref_expandable_search">اختصارات البحث</string>
     <string name="pref_expandable_manager">اختصارات المدير</string>
     <string name="pref_expandable_others">اختصارات أخرى</string>
 
-    <string name="pref_category_shortcuts_manager">إدارة الاختصارات</string>
     <string name="pref_category_shortcuts_settings">إعدادات الاختصارات</string>
     <string name="pref_category_other">أخرى</string>
     <string name="pref_category_about">حول</string>
@@ -26,8 +26,8 @@
     <string name="pref_password_manager_root">مدير كلمات المرور (روت)</string>
     <string name="pref_password_manager_root_summary">استخدم صلاحيات الروت لفتح نشاط مدير كلمات المرور في خدمات Google Play</string>
 
-    <string name="pref_show_settings">عرض الإعدادات في المشغّل</string>
-    <string name="pref_show_settings_summary">للوصول إلى الإعدادات عند إخفائها، اضغط على لوحة <b>البحث عن الموسيقى</b> في لوحة الإعدادات السريعة</string>
+    <string name="pref_show_manager">إظهار المدير في المشغّل</string>
+    <string name="pref_show_manager_summary">للوصول إلى المدير عند إخفائه، اضغط على لوحة الإعدادات السريعة <b>بحث الموسيقى</b></string>
 
     <string name="pref_add_music_search_quick_settings">أضف البحث عن الموسيقى في لوحة الإعدادات السريعة</string>
 
@@ -83,6 +83,6 @@
     <string name="digital_assistant_setup_button">إعداد الآن</string>
 
     <string name="digital_assistant_shortcut_select">اختر اختصار</string>
-    <string name="digital_assistant_shortcut_disabled">غير قادر على التشغيل، فعّل هذا الاختصار من الإعدادات أولاً</string>
+    <string name="digital_assistant_shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولاً في المدير</string>
     <string name="digital_assistant_shortcut_invalid">تم اختيار اختصار غير صالح</string>
 </resources>

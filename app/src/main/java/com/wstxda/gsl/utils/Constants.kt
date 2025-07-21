@@ -30,6 +30,10 @@ object Constants {
 
     const val IS_ASSIST_SETUP_DONE = "is_assist_setup_done"
 
+    // Root checker
+
+    const val ROOT_CHECKER_TAG = "RootChecker"
+
     // GitHub API releases URL
 
     const val GITHUB_RELEASE_URL = "https://api.github.com/repos/WSTxda/Google-Shortcuts-Launcher/releases/latest"

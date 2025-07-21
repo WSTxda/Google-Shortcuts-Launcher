@@ -13,7 +13,10 @@
         android:id="@android:id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:letterSpacing="0.1"
+        android:textAllCaps="true"
         android:textAppearance="?attr/textAppearanceLabelLarge"
-        android:textColor="?attr/colorPrimary"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="12sp"
         tools:text="@string/pref_category_about" />
 </androidx.appcompat.widget.LinearLayoutCompat>

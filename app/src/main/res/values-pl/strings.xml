@@ -1,14 +1,14 @@
 <resources>
 
     <string name="app_name">Skróty Google</string>
-    <string name="app_settings">Ustawienia</string>
+    <string name="app_manager">Menedżer</string>
+    <string name="app_manager_shortcuts">Menedżer skrótów</string>
     <string name="app_library">Biblioteka</string>
 
     <string name="pref_expandable_search">Skrótów wyszukiwania</string>
     <string name="pref_expandable_manager">Skrótów menedżera</string>
     <string name="pref_expandable_others">Inne skrótów</string>
 
-    <string name="pref_category_shortcuts_manager">Menedżer skrótów</string>
     <string name="pref_category_shortcuts_settings">Ustawienia skrótów</string>
     <string name="pref_category_other">Inne</string>
     <string name="pref_category_about">Informacje</string>
@@ -26,8 +26,8 @@
     <string name="pref_password_manager_root">Menedżer haseł (root)</string>
     <string name="pref_password_manager_root_summary">Użyj dostępu root, aby otworzyć menedżer haseł w Usługach Google Play</string>
 
-    <string name="pref_show_settings">Pokaż ustawienia w launcherze</string>
-    <string name="pref_show_settings_summary">Stuknij i przytrzymaj <b>Wyszukiwanie muzyki</b>, aby uzyskać dostęp do ukrytych ustawień w panelu szybkich ustawień</string>
+    <string name="pref_show_manager">Pokaż menedżera w launcherze</string>
+    <string name="pref_show_manager_summary">Aby uzyskać dostęp do menedżera, gdy jest ukryty, naciśnij kafelek <b>Wyszukiwanie muzyki</b> w panelu szybkich ustawień</string>
 
     <string name="pref_add_music_search_quick_settings">Dodaj wyszukiwanie muzyki do panelu szybkich ustawień</string>
 
@@ -83,6 +83,6 @@
     <string name="digital_assistant_setup_button">Skonfiguruj teraz</string>
 
     <string name="digital_assistant_shortcut_select">Wybierz skrót</string>
-    <string name="digital_assistant_shortcut_disabled">Nie można uruchomić, najpierw włącz ten skrót w ustawieniach</string>
+    <string name="digital_assistant_shortcut_disabled">Nie można uruchomić. Najpierw włącz ten skrót w menedżerze</string>
     <string name="digital_assistant_shortcut_invalid">Wybrano nieprawidłowy skrót</string>
 </resources>

@@ -1,14 +1,14 @@
 <resources>
 
     <string name="app_name">Google ショートカットランチャー</string>
-    <string name="app_settings">設定</string>
+    <string name="app_manager">マネージャー</string>
+    <string name="app_manager_shortcuts">ショートカットマネージャー</string>
     <string name="app_library">ライブラリ</string>
 
     <string name="pref_expandable_search">検索ショートカット</string>
     <string name="pref_expandable_manager">マネージャーのショートカット</string>
     <string name="pref_expandable_others">その他のショートカット</string>
 
-    <string name="pref_category_shortcuts_manager">ショートカットの管理</string>
     <string name="pref_category_shortcuts_settings">ショートカットの設定</string>
     <string name="pref_category_other">その他</string>
     <string name="pref_category_about">アプリについて</string>
@@ -26,8 +26,8 @@
     <string name="pref_password_manager_root">パスワード マネージャー (root)</string>
     <string name="pref_password_manager_root_summary">root 権限を使用して、Google Play 開発者サービスからパスワード マネージャーのアクティビティを開きます。</string>
 
-    <string name="pref_show_settings">ランチャーで設定を表示</string>
-    <string name="pref_show_settings_summary">非表示になっている設定にアクセスするには<b>音楽を検索</b>のクイック設定パネルからアクセスしてください。</string>
+    <string name="pref_show_manager">ランチャーにマネージャーを表示</string>
+    <string name="pref_show_manager_summary">非表示の場合は、クイック設定パネルの <b>音楽を検索</b> タイルをタップしてマネージャーにアクセスできます</string>
 
     <string name="pref_add_music_search_quick_settings">音楽を検索のパネルをクイック設定に追加</string>
 
@@ -83,6 +83,6 @@
     <string name="digital_assistant_setup_button">今すぐ設定</string>
 
     <string name="digital_assistant_shortcut_select">ショートカットを選択</string>
-    <string name="digital_assistant_shortcut_disabled">起動できません。まず設定でこのショートカットを有効にしてください</string>
+    <string name="digital_assistant_shortcut_disabled">起動できません。先にマネージャーでこのショートカットを有効にしてください</string>
     <string name="digital_assistant_shortcut_invalid">無効なショートカットが選択されました</string>
 </resources>

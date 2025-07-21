@@ -14,18 +14,18 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
 import com.wstxda.gsl.activity.LibraryActivity
-import com.wstxda.gsl.activity.SettingsActivity
+import com.wstxda.gsl.activity.ManagerActivity
 import com.wstxda.gsl.fragments.preferences.DigitalAssistantPreference
 import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.ui.DigitalAssistantSetupDialog
 import com.wstxda.gsl.ui.TileManager
 import com.wstxda.gsl.utils.Constants
-import com.wstxda.gsl.viewmodel.SettingsViewModel
+import com.wstxda.gsl.viewmodel.ManagerViewModel
 import kotlinx.coroutines.launch
 
-class SettingsFragment : PreferenceFragmentCompat() {
+class ManagerFragment : PreferenceFragmentCompat() {
 
-    private val viewModel: SettingsViewModel by viewModels {
+    private val viewModel: ManagerViewModel by viewModels {
         ViewModelProvider.AndroidViewModelFactory.getInstance(requireActivity().application)
     }
     private val digitalAssistantPreference by lazy { DigitalAssistantPreference(this) }
@@ -51,7 +51,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         "quick_share_shortcut" to QuickShareShortcut::class.java,
         "search_shortcut" to SearchShortcut::class.java,
         "weather_shortcut" to WeatherShortcut::class.java,
-        "settings_activity" to SettingsActivity::class.java
+        "manager_activity" to ManagerActivity::class.java
     )
 
     private val links = mapOf(

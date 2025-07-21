@@ -1,14 +1,14 @@
 <resources>
 
     <string name="app_name">Atalhos do Google</string>
-    <string name="app_settings">Configurações</string>
+    <string name="app_manager">Gerenciador</string>
+    <string name="app_manager_shortcuts">Gerenciador de atalhos</string>
     <string name="app_library">Biblioteca</string>
 
     <string name="pref_expandable_search">Atalhos de pesquisa</string>
-    <string name="pref_expandable_manager">Atalhos de gerenciador</string>
+    <string name="pref_expandable_manager">Atalhos de gerenciadores</string>
     <string name="pref_expandable_others">Outros atalhos</string>
 
-    <string name="pref_category_shortcuts_manager">Gerenciar atalhos</string>
     <string name="pref_category_shortcuts_settings">Configurações dos atalhos</string>
     <string name="pref_category_other">Outros</string>
     <string name="pref_category_about">Sobre</string>
@@ -26,8 +26,8 @@
     <string name="pref_password_manager_root">Gerenciador de senhas (root)</string>
     <string name="pref_password_manager_root_summary">Use o acesso root para abrir a atividade do gerenciador de senhas no Google Play Services</string>
 
-    <string name="pref_show_settings">Mostrar configurações no launcher</string>
-    <string name="pref_show_settings_summary">Para acessar as configurações quando estiver oculta, pressione o atalho de <b>Pesquisar música</b> no painel de configurações rápidas</string>
+    <string name="pref_show_manager">Mostrar gerenciador no launcher</string>
+    <string name="pref_show_manager_summary">Para acessar o gerenciador quando estiver oculto, pressione o atalho de <b>Pesquisar música</b> no painel de configurações rápidas</string>
 
     <string name="pref_add_music_search_quick_settings">Adicionar pesquisa de música nas configurações rápidas</string>
 
@@ -83,6 +83,6 @@
     <string name="digital_assistant_setup_button">Configurar agora</string>
 
     <string name="digital_assistant_shortcut_select">Selecionar atalho</string>
-    <string name="digital_assistant_shortcut_disabled">Não foi possível iniciar, habilite este atalho nas configurações primeiro</string>
+    <string name="digital_assistant_shortcut_disabled">Não foi possível iniciar, habilite este atalho no gerenciador primeiro</string>
     <string name="digital_assistant_shortcut_invalid">Atalho selecionado inválido</string>
 </resources>
