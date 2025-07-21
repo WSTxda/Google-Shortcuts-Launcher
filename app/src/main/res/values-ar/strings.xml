@@ -4,6 +4,10 @@
     <string name="app_settings">الإعدادات</string>
     <string name="app_library">المكتبة</string>
 
+    <string name="pref_expandable_search">اختصارات البحث</string>
+    <string name="pref_expandable_manager">اختصارات المدير</string>
+    <string name="pref_expandable_others">اختصارات أخرى</string>
+
     <string name="pref_category_shortcuts_manager">إدارة الاختصارات</string>
     <string name="pref_category_shortcuts_settings">إعدادات الاختصارات</string>
     <string name="pref_category_other">أخرى</string>

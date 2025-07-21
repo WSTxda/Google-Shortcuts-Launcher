@@ -4,6 +4,10 @@
     <string name="app_settings">設定</string>
     <string name="app_library">ライブラリ</string>
 
+    <string name="pref_expandable_search">検索ショートカット</string>
+    <string name="pref_expandable_manager">マネージャーのショートカット</string>
+    <string name="pref_expandable_others">その他のショートカット</string>
+
     <string name="pref_category_shortcuts_manager">ショートカットの管理</string>
     <string name="pref_category_shortcuts_settings">ショートカットの設定</string>
     <string name="pref_category_other">その他</string>

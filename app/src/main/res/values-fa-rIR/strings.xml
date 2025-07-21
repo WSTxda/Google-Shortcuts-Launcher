@@ -4,6 +4,10 @@
     <string name="app_settings">تنظیمات</string>
     <string name="app_library">کتابخانه</string>
 
+    <string name="pref_expandable_search">میانبرهای جستجو</string>
+    <string name="pref_expandable_manager">میانبرهای مدیریت</string>
+    <string name="pref_expandable_others">میانبرهای دیگر</string>
+
     <string name="pref_category_shortcuts_manager">مدیریت میانبرها</string>
     <string name="pref_category_shortcuts_settings">تنظیمات میانبرها</string>
     <string name="pref_category_other">دیگر</string>

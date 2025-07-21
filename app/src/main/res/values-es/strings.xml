@@ -4,6 +4,10 @@
     <string name="app_settings">Ajustes</string>
     <string name="app_library">Biblioteca</string>
 
+    <string name="pref_expandable_search">Atajos de búsqueda</string>
+    <string name="pref_expandable_manager">Atajos del gestor</string>
+    <string name="pref_expandable_others">Otros atajos</string>
+
     <string name="pref_category_shortcuts_manager">Gestionar atajos</string>
     <string name="pref_category_shortcuts_settings">Configuración de atajos</string>
     <string name="pref_category_other">Otros</string>

@@ -12,105 +12,123 @@
         android:title="@string/pref_category_shortcuts_manager"
         app:allowDividerAbove="false" />
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_assistant"
-        android:key="assistant_shortcut"
-        android:layout="@layout/preference_material_shortcuts_top"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/assistant" />
+    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+        android:title="@string/pref_expandable_search"
+        app:allowDividerAbove="false">
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_files"
-        android:key="files_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/files" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_incognito"
+            android:key="incognito_shortcut"
+            android:layout="@layout/preference_material_shortcuts_top"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/incognito" />
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_game"
-        android:key="games_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/games" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_lens"
+            android:key="lens_shortcut"
+            android:layout="@layout/preference_material_shortcuts_middle"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/lens" />
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_lens"
-        android:key="lens_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/lens" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_music"
+            android:key="music_search_shortcut"
+            android:layout="@layout/preference_material_shortcuts_middle"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/music_search_label" />
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_music"
-        android:key="music_search_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/music_search_label" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_search"
+            android:key="search_shortcut"
+            android:layout="@layout/preference_material_shortcuts_bottom"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/search" />
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_password"
-        android:key="password_manager_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/password" />
+    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_incognito"
-        android:key="incognito_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/incognito" />
+    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+        android:title="@string/pref_expandable_manager"
+        app:allowDividerAbove="false">
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_share"
-        android:key="quick_share_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/quick_share" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_files"
+            android:key="files_shortcut"
+            android:layout="@layout/preference_material_shortcuts_top"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/files" />
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_search"
-        android:key="search_shortcut"
-        android:layout="@layout/preference_material_shortcuts_middle"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/search" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_game"
+            android:key="games_shortcut"
+            android:layout="@layout/preference_material_shortcuts_middle"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/games" />
 
-    <SwitchPreferenceCompat
-        android:defaultValue="true"
-        android:icon="@mipmap/ic_launcher_weather"
-        android:key="weather_shortcut"
-        android:layout="@layout/preference_material_shortcuts_bottom"
-        android:summaryOff="@string/pref_shortcut_disabled"
-        android:summaryOn="@string/pref_shortcut_enabled"
-        android:title="@string/weather" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_password"
+            android:key="password_manager_shortcut"
+            android:layout="@layout/preference_material_shortcuts_bottom"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/password" />
+
+    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
+
+    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+        android:title="@string/pref_expandable_others"
+        app:allowDividerAbove="false">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_assistant"
+            android:key="assistant_shortcut"
+            android:layout="@layout/preference_material_shortcuts_top"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/assistant" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_share"
+            android:key="quick_share_shortcut"
+            android:layout="@layout/preference_material_shortcuts_middle"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/quick_share" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_weather"
+            android:key="weather_shortcut"
+            android:layout="@layout/preference_material_shortcuts_bottom"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/weather" />
+
+    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
 
     <PreferenceCategory
-        android:layout="@layout/preference_material_category"
+        android:layout="@layout/preference_material_category_alt"
         android:title="@string/pref_category_shortcuts_settings"
         app:allowDividerAbove="false" />
 
     <Preference
         android:icon="@drawable/ic_open"
         android:key="digital_assistant_setup"
-        android:layout="@layout/preference_material_highlight_top"
+        android:layout="@layout/preference_material_top"
         android:summary="@string/pref_setup_digital_assistant_summary"
         android:title="@string/pref_setup_digital_assistant" />
 

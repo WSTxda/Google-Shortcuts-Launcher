@@ -4,6 +4,10 @@
     <string name="app_settings">Ustawienia</string>
     <string name="app_library">Biblioteka</string>
 
+    <string name="pref_expandable_search">Skrótów wyszukiwania</string>
+    <string name="pref_expandable_manager">Skrótów menedżera</string>
+    <string name="pref_expandable_others">Inne skrótów</string>
+
     <string name="pref_category_shortcuts_manager">Menedżer skrótów</string>
     <string name="pref_category_shortcuts_settings">Ustawienia skrótów</string>
     <string name="pref_category_other">Inne</string>
