@@ -4,7 +4,7 @@ object GamesBrandsPackages {
     val gamesLaunchersIntents = listOf(
 
         // AOSP ROMs
-        "io.chaldeaprjkt.gamespace" to "io.chaldeaprjkt.gamespace.settings.ManagerActivity",
+        "io.chaldeaprjkt.gamespace" to "io.chaldeaprjkt.gamespace.settings.SettingsActivity",
 
         // ASUS
         "com.asus.gamecenter" to "com.asus.gamecenter.GameCenterActivity",
@@ -20,7 +20,7 @@ object GamesBrandsPackages {
         "com.blackshark.gamespace" to "com.blackshark.gamespace.ui.GameCenterActivity",
 
         // Google Pixel
-        "com.google.android.gms" to "com.google.android.gms.gp.gameservice.ManagerActivity",
+        "com.google.android.gms" to "com.google.android.gms.gp.gameservice.SettingsActivity",
 
         // Huawei
         "com.huawei.gameassistant" to "com.huawei.gameassistant.ui.MainActivity",
