@@ -1,7 +1,6 @@
 package com.wstxda.gsl.fragments.preferences
 
 import android.content.Context
-import android.os.Build
 import android.os.Bundle
 import android.os.Parcelable
 import android.util.AttributeSet
@@ -15,8 +14,13 @@ class ExpandablePreferences @JvmOverloads constructor(
     attrs: AttributeSet? = null,
 ) : PreferenceGroup(context, attrs) {
 
-    private var expanded = false
-    private var indicatorView: ImageView? = null
+    companion object {
+        private const val STATE_SUPER = "super_state"
+        private const val STATE_EXPANDED_PREFIX = "expanded_"
+    }
+
+    private var isExpanded = false
+    var onExpansionChanged: ((Boolean) -> Unit)? = null
 
     init {
         isPersistent = false
@@ -26,31 +30,29 @@ class ExpandablePreferences @JvmOverloads constructor(
     override fun onBindViewHolder(holder: PreferenceViewHolder) {
         super.onBindViewHolder(holder)
 
-        indicatorView = holder.findViewById(R.id.expanded_indicator) as? ImageView
-        updateIndicator()
+        val indicator = holder.findViewById(R.id.expanded_indicator) as? ImageView
+
+        indicator?.rotation = if (isExpanded) 180f else 0f
 
         holder.itemView.setOnClickListener {
             toggleExpanded()
+
+            indicator?.animate()?.rotation(if (isExpanded) 180f else 0f)?.setDuration(300)?.start()
+
+            notifyChanged()
         }
     }
 
     private fun toggleExpanded() {
-        expanded = !expanded
+        isExpanded = !isExpanded
         updateChildrenVisibility()
-        updateIndicator()
+        onExpansionChanged?.invoke(isExpanded)
     }
 
     private fun updateChildrenVisibility() {
         for (i in 0 until preferenceCount) {
-            getPreference(i).isVisible = expanded
+            getPreference(i).isVisible = isExpanded
         }
-    }
-
-    private fun updateIndicator() {
-        indicatorView?.setImageResource(
-            if (expanded) R.drawable.ic_arrow_up
-            else R.drawable.ic_arrow_down
-        )
     }
 
     override fun onAttached() {
@@ -60,19 +62,16 @@ class ExpandablePreferences @JvmOverloads constructor(
 
     override fun onSaveInstanceState(): Parcelable {
         return Bundle().apply {
-            putParcelable("super", super.onSaveInstanceState())
-            putBoolean("expanded", expanded)
+            putParcelable(STATE_SUPER, super.onSaveInstanceState())
+            putBoolean(STATE_EXPANDED_PREFIX + key, isExpanded)
         }
     }
 
+    @Suppress("DEPRECATION")
     override fun onRestoreInstanceState(state: Parcelable?) {
         if (state is Bundle) {
-            expanded = state.getBoolean("expanded", false)
-            val superState = if (Build.VERSION.SDK_INT >= 33) {
-                state.getParcelable("super", Parcelable::class.java)
-            } else {
-                @Suppress("DEPRECATION") state.getParcelable("super")
-            }
+            isExpanded = state.getBoolean(STATE_EXPANDED_PREFIX + key, false)
+            val superState = state.getParcelable<Parcelable>(STATE_SUPER)
             super.onRestoreInstanceState(superState)
             updateChildrenVisibility()
         } else {
