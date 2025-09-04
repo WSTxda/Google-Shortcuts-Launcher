@@ -53,10 +53,12 @@
     <string name="incognito">ناشناس</string>
     <string name="search">جستجو</string>
     <string name="history">تاریخچه</string>
+    <string name="collections">مجموعه‌ها</string>
 
     <string name="google_not_found">فعالیت یافت نشد. لطفاً برنامه گوگل را نصب یا فعال کنید</string>
     <string name="play_games_not_found">فعالیت یافت نشد. لطفاً بازی‌های گوگل پلی را نصب یا فعال کنید</string>
     <string name="play_services_not_found">فعالیت یافت نشد. لطفاً Google Play Services را نصب یا فعال کنید</string>
+    <string name="play_store_not_found">فعالیت یافت نشد. لطفاً فروشگاه گوگل پلی را نصب یا فعال کنید</string>
     <string name="browser_not_found">مرورگری پیدا نشد، لطفا مرورگر خود را نصب یا فعال کنید</string>
     <string name="game_manager_not_found">مدیر بازی در این دستگاه پشتیبانی نمی شود</string>
     <string name="files_not_found">فایل‌ها در این دستگاه پشتیبانی نمی‌شوند</string>

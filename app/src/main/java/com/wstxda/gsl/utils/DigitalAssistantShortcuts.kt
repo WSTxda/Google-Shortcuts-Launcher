@@ -10,12 +10,13 @@ import com.wstxda.gsl.shortcuts.*
 
 object DigitalAssistantShortcuts {
     private val shortcutMap = mapOf(
+        "collections_shortcut" to CollectionsShortcut::class.java,
         "files_shortcut" to FilesShortcut::class.java,
         "games_shortcut" to GamesShortcut::class.java,
+        "incognito_shortcut" to IncognitoShortcut::class.java,
         "lens_shortcut" to LensShortcut::class.java,
         "music_search_shortcut" to MusicSearchShortcut::class.java,
         "password_manager_shortcut" to PasswordManagerShortcut::class.java,
-        "incognito_shortcut" to IncognitoShortcut::class.java,
         "quick_share_shortcut" to QuickShareShortcut::class.java,
         "search_shortcut" to SearchShortcut::class.java,
         "weather_shortcut" to WeatherShortcut::class.java

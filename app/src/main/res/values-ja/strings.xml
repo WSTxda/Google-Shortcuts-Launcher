@@ -53,10 +53,12 @@
     <string name="incognito">シークレット</string>
     <string name="search">検索</string>
     <string name="history">履歴</string>
+    <string name="collections">コレクション</string>
 
     <string name="google_not_found">アクティビティが見つかりません。Google アプリをインストールするか有効化してください。</string>
     <string name="play_games_not_found">アクティビティが見つかりません。Google Play Games をインストールするか有効化してください。</string>
     <string name="play_services_not_found">アクティビティが見つかりません。Google Play サービスをインストールまたは有効にしてください</string>
+    <string name="play_store_not_found">アクティビティが見つかりません。Google Play ストアをインストールするか有効化してください。</string>
     <string name="browser_not_found">ブラウザが見つかりません。ブラウザをインストールするか有効化してください。</string>
     <string name="game_manager_not_found">このデバイスではゲームマネージャーに非対応です。</string>
     <string name="files_not_found">このデバイスでサポートされていないファイル</string>

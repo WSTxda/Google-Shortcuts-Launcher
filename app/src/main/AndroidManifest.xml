@@ -82,6 +82,21 @@
         </activity>
 
         <activity
+            android:name=".shortcuts.CollectionsShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_collections"
+            android:label="@string/collections"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".shortcuts.FilesShortcut"
             android:excludeFromRecents="true"
             android:exported="true"

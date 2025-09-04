@@ -55,9 +55,18 @@
 
         <SwitchPreferenceCompat
             android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_collections"
+            android:key="collections_shortcut"
+            android:layout="@layout/preference_material_shortcuts_top"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/collections" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
             android:icon="@mipmap/ic_launcher_files"
             android:key="files_shortcut"
-            android:layout="@layout/preference_material_shortcuts_top"
+            android:layout="@layout/preference_material_shortcuts_middle"
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/files" />

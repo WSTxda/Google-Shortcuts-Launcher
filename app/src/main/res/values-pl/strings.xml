@@ -53,10 +53,12 @@
     <string name="incognito">Incognito</string>
     <string name="search">Szukaj</string>
     <string name="history">Historia</string>
+    <string name="collections">Kolekcje</string>
 
     <string name="google_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz aplikację Google</string>
     <string name="play_games_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz Gry Google Play</string>
     <string name="play_services_not_found">Aktywność nie znaleziona. Zainstaluj lub włącz Google Play Services</string>
+    <string name="play_store_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz Sklep Google Play</string>
     <string name="browser_not_found">Nie znaleziono przeglądarki. Zainstaluj lub włącz przeglądarkę</string>
     <string name="game_manager_not_found">Menedżer gier nie jest obsługiwany przez to urządzenie</string>
     <string name="files_not_found">Pliki nieobsługiwane na tym urządzeniu</string>

@@ -53,10 +53,12 @@
     <string name="incognito">متخفٍ</string>
     <string name="search">بحث</string>
     <string name="history">السجلّ</string>
+    <string name="collections">المجموعات</string>
 
     <string name="google_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل تطبيق Google</string>
     <string name="play_services_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل خدمات Google Play</string>
     <string name="play_games_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل ألعاب Google Play</string>
+    <string name="play_store_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل متجر Google Play</string>
     <string name="browser_not_found">لم يتم العثور على متصفح، الرجاء تثبيت أو تفعيل المتصفح</string>
     <string name="game_manager_not_found">مدير الألعاب غير مدعوم على هذا الجهاز</string>
     <string name="files_not_found">الملفات غير مدعومة على هذا الجهاز</string>

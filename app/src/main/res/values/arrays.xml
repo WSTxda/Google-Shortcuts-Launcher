@@ -17,24 +17,26 @@
     <!--digital assistant shortcut selector-->
 
     <string-array name="digital_assistant_shortcut_entries">
+        <item>@string/collections</item>
         <item>@string/files</item>
         <item>@string/games</item>
+        <item>@string/incognito</item>
         <item>@string/lens</item>
         <item>@string/music_search_label</item>
         <item>@string/password</item>
-        <item>@string/incognito</item>
         <item>@string/quick_share</item>
         <item>@string/search</item>
         <item>@string/weather</item>
     </string-array>
 
     <string-array name="digital_assistant_shortcut_values">
+        <item>collections_shortcut</item>
         <item>files_shortcut</item>
         <item>games_shortcut</item>
+        <item>incognito_shortcut</item>
         <item>lens_shortcut</item>
         <item>music_search_shortcut</item>
         <item>password_manager_shortcut</item>
-        <item>incognito_shortcut</item>
         <item>quick_share_shortcut</item>
         <item>search_shortcut</item>
         <item>weather_shortcut</item>
