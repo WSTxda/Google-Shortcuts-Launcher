@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="ExpandablePreferences">
+        <attr name="isExpanded" format="boolean" />
+    </declare-styleable>
+</resources>

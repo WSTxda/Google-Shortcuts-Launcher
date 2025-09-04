@@ -1,57 +1,39 @@
 package com.wstxda.gsl.fragments.preferences
 
 import android.content.Context
-import android.os.Bundle
+import android.os.Parcel
 import android.os.Parcelable
 import android.util.AttributeSet
 import android.widget.ImageView
 import androidx.preference.PreferenceGroup
 import androidx.preference.PreferenceViewHolder
 import com.wstxda.gsl.R
+import androidx.core.content.withStyledAttributes
 
 class ExpandablePreferences @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
 ) : PreferenceGroup(context, attrs) {
 
-    companion object {
-        private const val STATE_SUPER = "super_state"
-        private const val STATE_EXPANDED_PREFIX = "expanded_"
-    }
-
-    private var isExpanded = false
     var onExpansionChanged: ((Boolean) -> Unit)? = null
+
+    private var isExpanded: Boolean = false
+        set(value) {
+            if (field != value) {
+                field = value
+                updateChildrenVisibility()
+                onExpansionChanged?.invoke(value)
+            }
+        }
 
     init {
         isPersistent = false
         layoutResource = R.layout.preference_material_expandable
-    }
 
-    override fun onBindViewHolder(holder: PreferenceViewHolder) {
-        super.onBindViewHolder(holder)
-
-        val indicator = holder.findViewById(R.id.expanded_indicator) as? ImageView
-
-        indicator?.rotation = if (isExpanded) 180f else 0f
-
-        holder.itemView.setOnClickListener {
-            toggleExpanded()
-
-            indicator?.animate()?.rotation(if (isExpanded) 180f else 0f)?.setDuration(300)?.start()
-
-            notifyChanged()
-        }
-    }
-
-    private fun toggleExpanded() {
-        isExpanded = !isExpanded
-        updateChildrenVisibility()
-        onExpansionChanged?.invoke(isExpanded)
-    }
-
-    private fun updateChildrenVisibility() {
-        for (i in 0 until preferenceCount) {
-            getPreference(i).isVisible = isExpanded
+        attrs?.let {
+            context.withStyledAttributes(it, R.styleable.ExpandablePreferences, 0, 0) {
+                isExpanded = getBoolean(R.styleable.ExpandablePreferences_isExpanded, false)
+            }
         }
     }
 
@@ -60,22 +42,57 @@ class ExpandablePreferences @JvmOverloads constructor(
         updateChildrenVisibility()
     }
 
-    override fun onSaveInstanceState(): Parcelable {
-        return Bundle().apply {
-            putParcelable(STATE_SUPER, super.onSaveInstanceState())
-            putBoolean(STATE_EXPANDED_PREFIX + key, isExpanded)
+    override fun onBindViewHolder(holder: PreferenceViewHolder) {
+        super.onBindViewHolder(holder)
+        val indicator = holder.findViewById(R.id.expanded_indicator) as? ImageView ?: return
+        indicator.rotation = if (isExpanded) 180f else 0f
+
+        holder.itemView.setOnClickListener {
+            indicator.animate().rotation(if (isExpanded) 0f else 180f).setDuration(400).start()
+
+            isExpanded = !isExpanded
         }
     }
 
-    @Suppress("DEPRECATION")
+    private fun updateChildrenVisibility() {
+        for (i in 0 until preferenceCount) {
+            getPreference(i).isVisible = isExpanded
+        }
+    }
+
+    override fun onSaveInstanceState(): Parcelable {
+        val superState = super.onSaveInstanceState()
+        val myState = SavedState(superState)
+        myState.isExpanded = this.isExpanded
+        return myState
+    }
+
     override fun onRestoreInstanceState(state: Parcelable?) {
-        if (state is Bundle) {
-            isExpanded = state.getBoolean(STATE_EXPANDED_PREFIX + key, false)
-            val superState = state.getParcelable<Parcelable>(STATE_SUPER)
-            super.onRestoreInstanceState(superState)
-            updateChildrenVisibility()
-        } else {
+        if (state !is SavedState) {
             super.onRestoreInstanceState(state)
+            return
+        }
+        super.onRestoreInstanceState(state.superState)
+        isExpanded = state.isExpanded
+    }
+
+    private class SavedState : BaseSavedState {
+        var isExpanded: Boolean = false
+
+        constructor(superState: Parcelable?) : super(superState)
+
+        private constructor(source: Parcel) : super(source) {
+            isExpanded = source.readInt() == 1
+        }
+
+        override fun writeToParcel(dest: Parcel, flags: Int) {
+            super.writeToParcel(dest, flags)
+            dest.writeInt(if (isExpanded) 1 else 0)
+        }
+
+        companion object CREATOR : Parcelable.Creator<SavedState> {
+            override fun createFromParcel(parcel: Parcel): SavedState = SavedState(parcel)
+            override fun newArray(size: Int): Array<SavedState?> = arrayOfNulls(size)
         }
     }
 }
