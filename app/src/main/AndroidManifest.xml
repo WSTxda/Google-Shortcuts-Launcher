@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.wstxda.gsl.activity.AppActivity"
+        android:name=".GSL"
         android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:enableOnBackInvokedCallback="false"
@@ -22,7 +22,7 @@
         <!-- Manager activity-->
 
         <activity
-            android:name="com.wstxda.gsl.activity.ManagerActivity"
+            android:name=".activity.ManagerActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:enableOnBackInvokedCallback="true"
             android:exported="true"
@@ -38,9 +38,9 @@
         <!-- Manager activity for preferences actions -->
 
         <activity-alias
-            android:name="com.wstxda.gsl.activity.ManagerActivityLauncher"
+            android:name=".activity.ManagerActivityLauncher"
             android:exported="false"
-            android:targetActivity="com.wstxda.gsl.activity.ManagerActivity">
+            android:targetActivity=".activity.ManagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
@@ -51,7 +51,7 @@
         <!-- Library activity for preferences -->
 
         <activity
-            android:name="com.wstxda.gsl.activity.LibraryActivity"
+            android:name=".activity.LibraryActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:enableOnBackInvokedCallback="true"
             android:exported="true"
@@ -67,7 +67,7 @@
         <!-- Shortcuts activity's -->
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.AssistantShortcut"
+            android:name=".shortcuts.AssistantShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_assistant"
@@ -82,7 +82,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.FilesShortcut"
+            android:name=".shortcuts.FilesShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_files"
@@ -97,7 +97,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.GamesShortcut"
+            android:name=".shortcuts.GamesShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_game"
@@ -112,7 +112,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.IncognitoShortcut"
+            android:name=".shortcuts.IncognitoShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_incognito"
@@ -127,7 +127,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.LensShortcut"
+            android:name=".shortcuts.LensShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_lens"
@@ -142,7 +142,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.MusicSearchShortcut"
+            android:name=".shortcuts.MusicSearchShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_music"
@@ -157,7 +157,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.PasswordManagerShortcut"
+            android:name=".shortcuts.PasswordManagerShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_password"
@@ -172,7 +172,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.QuickShareShortcut"
+            android:name=".shortcuts.QuickShareShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_share"
@@ -187,7 +187,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.SearchShortcut"
+            android:name=".shortcuts.SearchShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_search"
@@ -202,7 +202,7 @@
         </activity>
 
         <activity
-            android:name="com.wstxda.gsl.shortcuts.WeatherShortcut"
+            android:name=".shortcuts.WeatherShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_weather"
@@ -219,7 +219,7 @@
         <!-- Digital assistant service activity -->
 
         <activity
-            android:name="com.wstxda.gsl.services.DigitalAssistantService"
+            android:name=".services.DigitalAssistantService"
             android:excludeFromRecents="true"
             android:exported="true"
             android:launchMode="singleTop"
@@ -233,7 +233,7 @@
         <!-- Music search quick settings tile -->
 
         <service
-            android:name="com.wstxda.gsl.services.MusicSearchTileService"
+            android:name=".services.MusicSearchTileService"
             android:exported="true"
             android:icon="@drawable/ic_music_search_tile"
             android:label="@string/music_search_label"

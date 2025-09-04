@@ -1,5 +1,7 @@
 <resources>
 
+    <!--theme selector-->
+
     <string-array name="theme_entries">
         <item>@string/theme_system</item>
         <item>@string/theme_light</item>
@@ -11,6 +13,8 @@
         <item>light</item>
         <item>dark</item>
     </string-array>
+
+    <!--digital assistant shortcut selector-->
 
     <string-array name="digital_assistant_shortcut_entries">
         <item>@string/files</item>

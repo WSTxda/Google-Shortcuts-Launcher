@@ -8,12 +8,14 @@
 
     <style name="AppTheme.Library" parent="@style/AppTheme.Base" />
 
-    <!--app theme transparent (shortcuts)-->
+    <!--app theme transparent-->
 
     <style name="AppTheme.Transparent" parent="@style/AppTheme.Base">
         <!--app bars colors-->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:enforceNavigationBarContrast" tools:targetApi="Q">false</item>
         <!--window transparent-->
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
@@ -25,12 +27,13 @@
     <!--app theme base-->
 
     <style name="AppTheme.Base" parent="@style/Theme.Material3Expressive.Light.NoActionBar">
+        <!--preference theme-->
+        <item name="android:colorAccent">?attr/colorPrimary</item>
         <!--components theme-->
-        <item name="snackbarStyle">@style/Theme.Component.Material.Snackbar</item>
         <item name="alertDialogTheme">@style/Theme.Component.Material.AlertDialog</item>
+        <item name="snackbarStyle">@style/Theme.Component.Material.Snackbar</item>
         <item name="materialAlertDialogTheme">@style/Theme.Component.Material.AlertDialog</item>
-        <item name="switchPreferenceCompatStyle">@style/Theme.Component.Material.SwitchPreferenceCompat
-        </item>
+        <item name="switchPreferenceCompatStyle">@style/Theme.Component.Material.SwitchPreferenceCompat</item>
         <!--fixes some UI issues on MIUI/HyperOS devices -->
         <item name="android:forceDarkAllowed" tools:targetApi="Q">false</item>
         <!--app bars colors-->

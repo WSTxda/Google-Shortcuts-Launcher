@@ -4,10 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="?attr/listPreferredItemPaddingStart"
-    android:layout_marginTop="4dp"
     android:layout_marginEnd="?attr/listPreferredItemPaddingEnd"
-    android:layout_marginBottom="4dp"
-    android:background="@drawable/preference_background_secondary_single"
+    android:background="@drawable/preference_background_single"
     android:clickable="true"
     android:focusable="true"
     android:padding="16dp">
@@ -23,9 +21,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="?attr/colorOnSecondaryContainer"
-        tools:src="@drawable/ic_shortcut"
-        tools:visibility="gone" />
+        app:tint="?android:textColorPrimary"
+        tools:src="@drawable/ic_theme" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@android:id/title"
@@ -35,13 +32,12 @@
         android:ellipsize="marquee"
         android:maxLines="2"
         android:textAppearance="?attr/textAppearanceTitleMedium"
-        android:textColor="?attr/colorOnSecondaryContainer"
         app:layout_constraintBottom_toTopOf="@android:id/summary"
         app:layout_constraintEnd_toStartOf="@android:id/widget_frame"
         app:layout_constraintStart_toEndOf="@android:id/icon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="@string/pref_expandable_search" />
+        tools:text="@string/pref_theme" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@android:id/summary"
@@ -51,23 +47,20 @@
         android:ellipsize="marquee"
         android:maxLines="10"
         android:textAppearance="?attr/textAppearanceBodyMedium"
-        android:textColor="?attr/colorSecondary"
+        android:textColor="?android:textColorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@android:id/title"
         app:layout_constraintStart_toStartOf="@android:id/title"
         app:layout_constraintTop_toBottomOf="@android:id/title"
-        tools:text="@string/music_search_label"
-        tools:visibility="gone" />
+        tools:text="@string/theme_system" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/expanded_indicator"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@android:id/widget_frame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:src="@drawable/ic_arrow_down"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="?attr/colorOnSecondaryContainer" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

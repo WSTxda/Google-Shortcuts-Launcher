@@ -1,11 +1,11 @@
-package com.wstxda.gsl.activity
+package com.wstxda.gsl
 
 import android.app.Application
 import androidx.preference.PreferenceManager
-import com.wstxda.gsl.utils.Constants
 import com.wstxda.gsl.ui.ThemeManager
+import com.wstxda.gsl.utils.Constants
 
-class AppActivity : Application() {
+class GSL : Application() {
     override fun onCreate() {
         super.onCreate()
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)

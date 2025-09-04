@@ -116,7 +116,7 @@
     </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
 
     <PreferenceCategory
-        android:layout="@layout/preference_material_category_alt"
+        android:layout="@layout/preference_material_category"
         android:title="@string/pref_category_shortcuts_settings"
         app:allowDividerAbove="false" />
 

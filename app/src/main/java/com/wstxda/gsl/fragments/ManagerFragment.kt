@@ -17,7 +17,7 @@ import com.wstxda.gsl.activity.LibraryActivity
 import com.wstxda.gsl.activity.ManagerActivity
 import com.wstxda.gsl.fragments.preferences.DigitalAssistantPreference
 import com.wstxda.gsl.shortcuts.*
-import com.wstxda.gsl.ui.DigitalAssistantSetupDialog
+import com.wstxda.gsl.ui.component.DigitalAssistantSetupDialog
 import com.wstxda.gsl.ui.TileManager
 import com.wstxda.gsl.utils.Constants
 import com.wstxda.gsl.viewmodel.ManagerViewModel
