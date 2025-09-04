@@ -52,6 +52,7 @@
     <string name="files">ファイル</string>
     <string name="incognito">シークレット</string>
     <string name="search">検索</string>
+    <string name="history">履歴</string>
 
     <string name="google_not_found">アクティビティが見つかりません。Google アプリをインストールするか有効化してください。</string>
     <string name="play_games_not_found">アクティビティが見つかりません。Google Play Games をインストールするか有効化してください。</string>

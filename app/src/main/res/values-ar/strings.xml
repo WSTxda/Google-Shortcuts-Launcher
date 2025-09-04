@@ -52,6 +52,7 @@
     <string name="files">الملفات</string>
     <string name="incognito">متخفٍ</string>
     <string name="search">بحث</string>
+    <string name="history">السجلّ</string>
 
     <string name="google_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل تطبيق Google</string>
     <string name="play_services_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل خدمات Google Play</string>

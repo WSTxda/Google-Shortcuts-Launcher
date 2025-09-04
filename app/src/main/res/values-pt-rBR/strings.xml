@@ -52,6 +52,7 @@
     <string name="files">Arquivos</string>
     <string name="incognito">Anônimo</string>
     <string name="search">Pesquisar</string>
+    <string name="history">Histórico</string>
 
     <string name="google_not_found">Atividade não encontrada. Instale ou ative o Google App</string>
     <string name="play_games_not_found">Atividade não encontrada. Instale ou ative o Google Play Games</string>

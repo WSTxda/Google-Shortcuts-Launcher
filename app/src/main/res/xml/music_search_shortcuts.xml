@@ -1,0 +1,14 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_shortcut_history"
+        android:shortcutId="history_service"
+        android:shortcutLongLabel="@string/history"
+        android:shortcutShortLabel="@string/history">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.wstxda.gsl.services.HistoryService"
+            android:targetPackage="com.wstxda.gsl" />
+    </shortcut>
+</shortcuts>

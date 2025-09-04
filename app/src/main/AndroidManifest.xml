@@ -153,6 +153,9 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/music_search_shortcuts" />
         </activity>
 
         <activity
@@ -235,6 +238,7 @@
             android:name=".services.HistoryService"
             android:excludeFromRecents="true"
             android:exported="false"
+            android:label="@string/history"
             android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
