@@ -23,8 +23,8 @@
     <string name="pref_device_game_manager">デバイスのゲームマネージャー</string>
     <string name="pref_device_game_manager_summary">Google ゲームフォルダの代わりにデバイス内のゲーム マネージャーを使用してゲームを起動します。</string>
 
-    <string name="pref_password_manager_root">パスワード マネージャー (root)</string>
-    <string name="pref_password_manager_root_summary">root 権限を使用して、Google Play 開発者サービスからパスワード マネージャーのアクティビティを開きます。</string>
+    <string name="pref_shortcut_root_mode">ショートカットにroot権限を使用</string>
+    <string name="pref_shortcut_root_mode_summary">ルートアクセスを使用して、特定のショートカットでエクスポートされていない、またはその他のアクセスできないアクティビティを開きます</string>
 
     <string name="pref_show_manager">ランチャーにマネージャーを表示</string>
     <string name="pref_show_manager_summary">非表示の場合は、クイック設定パネルの <b>音楽を検索</b> タイルをタップしてマネージャーにアクセスできます</string>

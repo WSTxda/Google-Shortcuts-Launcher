@@ -23,8 +23,8 @@
     <string name="pref_device_game_manager">Menedżer gier urządzenia</string>
     <string name="pref_device_game_manager_summary">Używaj menedżera gier na urządzeniu do uruchamiania gier zamiast korzystać z Gier Google Play</string>
 
-    <string name="pref_password_manager_root">Menedżer haseł (root)</string>
-    <string name="pref_password_manager_root_summary">Użyj dostępu root, aby otworzyć menedżer haseł w Usługach Google Play</string>
+    <string name="pref_shortcut_root_mode">Użyj roota dla skrótów</string>
+    <string name="pref_shortcut_root_mode_summary">Użyj dostępu do roota, aby otwierać nieeksportowane lub w inny sposób niedostępne działania w niektórych skrótach</string>
 
     <string name="pref_show_manager">Pokaż menedżera w launcherze</string>
     <string name="pref_show_manager_summary">Aby uzyskać dostęp do menedżera, gdy jest ukryty, naciśnij kafelek <b>Wyszukiwanie muzyki</b> w panelu szybkich ustawień</string>

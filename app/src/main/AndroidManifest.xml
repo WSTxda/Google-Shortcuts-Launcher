@@ -44,7 +44,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
-                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>
         </activity-alias>
 
@@ -54,7 +53,7 @@
             android:name=".activity.LibraryActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:enableOnBackInvokedCallback="true"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/app_library"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.Library">
@@ -227,6 +226,20 @@
             <intent-filter>
                 <action android:name="android.intent.action.ASSIST" />
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Music search history quick settings tile preference -->
+
+        <activity
+            android:name=".services.HistoryService"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>
         </activity>
 

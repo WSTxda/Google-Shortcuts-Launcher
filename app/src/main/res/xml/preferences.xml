@@ -151,14 +151,11 @@
 
     <SwitchPreferenceCompat
         android:defaultValue="false"
-        android:dependency="password_manager_shortcut"
-        android:disableDependentsState="true"
         android:icon="@drawable/ic_root"
-        android:key="password_manager_root"
+        android:key="shortcut_root_mode"
         android:layout="@layout/preference_material_bottom"
-        android:shouldDisableView="true"
-        android:summary="@string/pref_password_manager_root_summary"
-        android:title="@string/pref_password_manager_root" />
+        android:summary="@string/pref_shortcut_root_mode_summary"
+        android:title="@string/pref_shortcut_root_mode" />
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"

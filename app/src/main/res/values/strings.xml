@@ -25,8 +25,8 @@
     <string name="pref_device_game_manager">Device game manager</string>
     <string name="pref_device_game_manager_summary">Use the device game manager to launch games instead of the Google Play Games folder</string>
 
-    <string name="pref_password_manager_root">Password manager (root)</string>
-    <string name="pref_password_manager_root_summary">Use root access to open password manager activity in Google Play Services</string>
+    <string name="pref_shortcut_root_mode">Use root for shortcuts</string>
+    <string name="pref_shortcut_root_mode_summary">Use root access to open non-exported or otherwise inaccessible activities in certain shortcuts</string>
 
     <string name="pref_show_manager">Show manager in launcher</string>
     <string name="pref_show_manager_summary">To access manager when hidden, press the <b>Music search</b> qs tile in quick settings panel</string>

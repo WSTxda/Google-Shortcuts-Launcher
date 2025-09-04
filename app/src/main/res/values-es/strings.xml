@@ -23,8 +23,8 @@
     <string name="pref_device_game_manager">Administrador de juegos del dispositivo</string>
     <string name="pref_device_game_manager_summary">Utiliza el administrador de juegos del dispositivo para iniciar juegos en lugar de la carpeta de Google Play Games</string>
 
-    <string name="pref_password_manager_root">Administrador de contraseñas (root)</string>
-    <string name="pref_password_manager_root_summary">Use acesso root para abrir la actividad del administrador de contraseñas en los Google Play Services</string>
+    <string name="pref_shortcut_root_mode">Utilice root para los atajos</string>
+    <string name="pref_shortcut_root_mode_summary">Utilice el acceso root para abrir actividades no exportadas o inaccesibles en ciertos atajos</string>
 
     <string name="pref_show_manager">Mostrar gestor en lanzador</string>
     <string name="pref_show_manager_summary">Para acceder a gestor cuando esté oculta, presione el acceso directo de <b>Buscar música</b> en el panel de configuración rápida</string>

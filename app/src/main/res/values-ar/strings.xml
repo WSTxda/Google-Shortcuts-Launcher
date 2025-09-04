@@ -23,8 +23,8 @@
     <string name="pref_device_game_manager">مدير الألعاب بالجهاز</string>
     <string name="pref_device_game_manager_summary">استخدم مدير الألعاب بالجهاز لتشغيل الألعاب بدلاً من مجلد ألعاب Google Play</string>
 
-    <string name="pref_password_manager_root">مدير كلمات المرور (روت)</string>
-    <string name="pref_password_manager_root_summary">استخدم صلاحيات الروت لفتح نشاط مدير كلمات المرور في خدمات Google Play</string>
+    <string name="pref_shortcut_root_mode">استخدام صلاحيات الروت للاختصارات</string>
+    <string name="pref_shortcut_root_mode_summary">استخدم صلاحيات الروت لفتح الأنشطة غير المصدرة أو التي يتعذر الوصول إليها في اختصارات معينة</string>
 
     <string name="pref_show_manager">إظهار المدير في المشغّل</string>
     <string name="pref_show_manager_summary">للوصول إلى المدير عند إخفائه، اضغط على لوحة الإعدادات السريعة <b>بحث الموسيقى</b></string>

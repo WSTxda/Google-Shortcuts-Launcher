@@ -12,7 +12,7 @@ object Constants {
     const val DIGITAL_ASSISTANT_SETUP_PREF_KEY = "digital_assistant_setup"
     const val DIGITAL_ASSISTANT_SHORTCUT_PREF_KEY = "digital_assistant_shortcut"
     const val GAME_MANAGER_PREF_KEY = "device_game_manager"
-    const val PASSWORD_MANAGER_ROOT_PREF_KEY = "password_manager_root"
+    const val SHORTCUT_ROOT_MODE_PREF_KEY = "shortcut_root_mode"
     const val LIBRARY_PREF_KEY = "library"
     const val THEME_PREF_KEY = "select_theme"
 
