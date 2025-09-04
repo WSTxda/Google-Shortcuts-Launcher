@@ -44,6 +44,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>
         </activity-alias>
 
@@ -241,11 +242,7 @@
             android:label="@string/history"
             android:launchMode="singleTop"
             android:noHistory="true"
-            android:theme="@style/AppTheme.Transparent">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme.Transparent" />
 
         <!-- Music search quick settings tile -->
 
