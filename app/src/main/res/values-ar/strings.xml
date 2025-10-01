@@ -82,8 +82,8 @@
     <string name="update_checker_generic_error">حدث خطأ ما. الرجاء المحاولة لاحقاً</string>
 
     <string name="digital_assistant_setup_title">تطبيق المساعد الرقمي الافتراضي</string>
-    <string name="digital_assistant_setup_message">في الإعدادات، اختر <b>مشغّل اختصارات Google</b> كتطبيق مساعد رقمي افتراضي لتشغيل الاختصار المحدد باستخدام الإيماءات أو الأزرار أو غيرها…</string>
-    <string name="digital_assistant_setup_button">إعداد الآن</string>
+    <string name="digital_assistant_setup_message">في الإعدادات، حدد <b>مشغّل اختصارات Google</b> كتطبيق مساعد رقمي افتراضي لتشغيل الاختصار الذي حددته بسرعة باستخدام إيماءات الجهاز والأزرار والمزيد…</string>
+    <string name="digital_assistant_setup_button">تعيين كافتراضي</string>
 
     <string name="digital_assistant_shortcut_select">اختر اختصار</string>
     <string name="digital_assistant_shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولاً في المدير</string>

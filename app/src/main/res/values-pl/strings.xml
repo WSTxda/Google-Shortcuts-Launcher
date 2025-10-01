@@ -82,8 +82,8 @@
     <string name="update_checker_generic_error">Coś poszło nie tak. Spróbuj ponownie później</string>
 
     <string name="digital_assistant_setup_title">Domyślna aplikacja asystenta cyfrowego</string>
-    <string name="digital_assistant_setup_message">W ustawieniach wybierz <b>Skróty Google</b> jako domyślną aplikację asystenta cyfrowego, aby szybko uruchamiać wybrany skrót za pomocą gestów urządzenia, przycisków i innych sposobów…</string>
-    <string name="digital_assistant_setup_button">Skonfiguruj teraz</string>
+    <string name="digital_assistant_setup_message">W ustawieniach wybierz <b>Skróty Google</b> jako domyślną aplikację asystenta cyfrowego, aby szybko uruchamiać wybrany skrót za pomocą gestów, przycisków urządzenia i nie tylko…</string>
+    <string name="digital_assistant_setup_button">Ustaw jako domyślne</string>
 
     <string name="digital_assistant_shortcut_select">Wybierz skrót</string>
     <string name="digital_assistant_shortcut_disabled">Nie można uruchomić. Najpierw włącz ten skrót w menedżerze</string>

@@ -82,8 +82,8 @@
     <string name="update_checker_generic_error">مشکلی پیش آمد. لطفاً بعداً دوباره امتحان کنید</string>
 
     <string name="digital_assistant_setup_title">برنامه دستیار دیجیتال پیش‌فرض</string>
-    <string name="digital_assistant_setup_message">در تنظیمات، <b>راه‌انداز میانبرهای گوگل</b> را به عنوان برنامه دستیار دیجیتال پیش‌فرض انتخاب کنید تا میانبر انتخاب‌شده خود را به‌سرعت با استفاده از ژست‌های دستگاه، دکمه‌ها و موارد دیگر راه‌اندازی کنید…</string>
-    <string name="digital_assistant_setup_button">اکنون راه‌اندازی کنید</string>
+    <string name="digital_assistant_setup_message">در تنظیمات، <b>راه‌انداز میانبرهای گوگل</b> را به‌عنوان برنامه دستیار دیجیتال پیش‌فرض خود انتخاب کنید تا میانبر انتخابی خود را با استفاده از حرکات دستگاه، دکمه‌ها و موارد دیگر به‌سرعت راه‌اندازی کنید…</string>
+    <string name="digital_assistant_setup_button">تنظیم به‌عنوان پیش‌فرض</string>
 
     <string name="digital_assistant_shortcut_select">انتخاب میانبر</string>
     <string name="digital_assistant_shortcut_disabled">امکان اجرا وجود ندارد. ابتدا این میانبر را در مدیر فعال کنید</string>

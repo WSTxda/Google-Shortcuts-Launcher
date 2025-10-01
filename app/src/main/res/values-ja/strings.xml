@@ -82,8 +82,8 @@
     <string name="update_checker_generic_error">何か問題が発生しました。後でもう一度お試しください</string>
 
     <string name="digital_assistant_setup_title">デフォルトのデジタルアシスタントアプリ</string>
-    <string name="digital_assistant_setup_message">設定で<b>Google ショートカットランチャー</b>をデフォルトのデジタルアシスタントアプリとして選択すると、デバイスジェスチャー、ボタンなどで選択したショートカットをすばやく起動できます…</string>
-    <string name="digital_assistant_setup_button">今すぐ設定</string>
+    <string name="digital_assistant_setup_message">設定で <b>Google ショートカットランチャー</b> をデフォルトのデジタルアシスタントアプリとして選択すると、デバイスのジェスチャーやボタンなどを使用して、選択したショートカットをすばやく起動できます…</string>
+    <string name="digital_assistant_setup_button">デフォルトとして設定</string>
 
     <string name="digital_assistant_shortcut_select">ショートカットを選択</string>
     <string name="digital_assistant_shortcut_disabled">起動できません。先にマネージャーでこのショートカットを有効にしてください</string>

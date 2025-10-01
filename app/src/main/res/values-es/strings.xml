@@ -82,8 +82,8 @@
     <string name="update_checker_generic_error">Algo salió mal. Por favor, intenta de nuevo más tarde</string>
 
     <string name="digital_assistant_setup_title">Aplicación de asistente digital predeterminada</string>
-    <string name="digital_assistant_setup_message">En la configuración, selecciona <b>Atajos de Google</b> como la aplicación de asistente digital predeterminada para iniciar rápidamente tu acceso directo seleccionado usando gestos del dispositivo, botones y más…</string>
-    <string name="digital_assistant_setup_button">Configurar ahora</string>
+    <string name="digital_assistant_setup_message">En los ajustes, selecciona <b>Atajos de Google</b> como tu aplicación de asistente digital predeterminada para iniciar rápidamente el atajo seleccionado mediante gestos del dispositivo, botones y más…</string>
+    <string name="digital_assistant_setup_button">Establecer como predeterminado</string>
 
     <string name="digital_assistant_shortcut_select">Seleccionar acceso directo</string>
     <string name="digital_assistant_shortcut_disabled">No se puede iniciar. activa este atajo en el gestor primero</string>
