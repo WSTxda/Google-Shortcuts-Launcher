@@ -42,6 +42,8 @@
     <string name="pref_used_library_summary">Licenças de código aberto</string>
 
     <string name="music_search_label">Pesquisar música</string>
+    <string name="music_search_subtitle">Toque para pesquisar uma música</string>
+
     <string name="password">Senhas</string>
     <string name="music_search">Pesquisar</string>
     <string name="weather">Clima</string>

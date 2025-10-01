@@ -46,6 +46,8 @@
     <string name="pref_used_library_summary">Open source licenses</string>
 
     <string name="music_search_label">Music search</string>
+    <string name="music_search_subtitle">Tap to search for a song</string>
+
     <string name="password">Passwords</string>
     <string name="music_search">Search</string>
     <string name="weather">Weather</string>

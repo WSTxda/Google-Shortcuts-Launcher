@@ -42,6 +42,8 @@
     <string name="pref_used_library_summary">Licencje open source</string>
 
     <string name="music_search_label">Wyszukiwanie muzyki</string>
+    <string name="music_search_subtitle">Dotknij, aby wyszukać piosenkę</string>
+
     <string name="password">Hasła</string>
     <string name="music_search">Wyszukaj</string>
     <string name="weather">Pogoda</string>

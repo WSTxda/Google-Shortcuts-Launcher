@@ -42,6 +42,8 @@
     <string name="pref_used_library_summary">مجوزهای منبع باز</string>
 
     <string name="music_search_label">جستجوی موسیقی</string>
+    <string name="music_search_subtitle">برای جستجوی آهنگ ضربه بزنید</string>
+
     <string name="password">گذرواژه‌ها</string>
     <string name="music_search">جستحو</string>
     <string name="weather">آب‌وهوا</string>
@@ -81,9 +83,9 @@
     <string name="update_checker_no_internet">اتصال به اینترنت وجود ندارد</string>
     <string name="update_checker_generic_error">مشکلی پیش آمد. لطفاً بعداً دوباره امتحان کنید</string>
 
-    <string name="digital_assistant_setup_title">برنامه دستیار دیجیتال پیش‌فرض</string>
-    <string name="digital_assistant_setup_message">در تنظیمات، <b>راه‌انداز میانبرهای گوگل</b> را به‌عنوان برنامه دستیار دیجیتال پیش‌فرض خود انتخاب کنید تا میانبر انتخابی خود را با استفاده از حرکات دستگاه، دکمه‌ها و موارد دیگر به‌سرعت راه‌اندازی کنید…</string>
-    <string name="digital_assistant_setup_button">تنظیم به‌عنوان پیش‌فرض</string>
+    <string name="digital_assistant_setup_title">Default digital assistant app</string>
+    <string name="digital_assistant_setup_message">In the settings, select <b>Google Shortcuts Launcher</b> as your default digital assistant app to quickly launch your selected shortcut using device gestures, buttons and more…</string>
+    <string name="digital_assistant_setup_button">Set as default</string>
 
     <string name="digital_assistant_shortcut_select">انتخاب میانبر</string>
     <string name="digital_assistant_shortcut_disabled">امکان اجرا وجود ندارد. ابتدا این میانبر را در مدیر فعال کنید</string>

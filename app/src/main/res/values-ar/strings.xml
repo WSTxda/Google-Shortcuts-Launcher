@@ -42,6 +42,8 @@
     <string name="pref_used_library_summary">تراخيص المصدر المفتوح</string>
 
     <string name="music_search_label">البحث عن الموسيقى</string>
+    <string name="music_search_subtitle">انقر للبحث عن أغنية</string>
+
     <string name="password">كلمات المرور</string>
     <string name="music_search">بحث</string>
     <string name="weather">الطقس</string>

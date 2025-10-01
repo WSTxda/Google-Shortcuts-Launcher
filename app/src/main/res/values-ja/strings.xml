@@ -42,6 +42,8 @@
     <string name="pref_used_library_summary">オープンソースライセンス</string>
 
     <string name="music_search_label">音楽を検索</string>
+    <string name="music_search_subtitle">タップして曲を検索</string>
+
     <string name="password">パスワード</string>
     <string name="music_search">検索</string>
     <string name="weather">天気</string>
