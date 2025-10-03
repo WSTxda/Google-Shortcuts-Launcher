@@ -2,13 +2,12 @@
     <shortcut
         android:enabled="true"
         android:icon="@drawable/ic_launcher_shortcut_history"
-        android:shortcutId="music_search_service"
+        android:shortcutId="lens_history"
         android:shortcutLongLabel="@string/history"
         android:shortcutShortLabel="@string/history">
 
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.wstxda.gsl.services.MusicSearchHistory"
-            android:targetPackage="com.wstxda.gsl" />
+            android:data="https://myactivity.google.com/myactivity?product=40" />
     </shortcut>
 </shortcuts>

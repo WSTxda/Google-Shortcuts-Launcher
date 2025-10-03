@@ -154,6 +154,9 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/lens_shortcuts" />
         </activity>
 
         <activity
@@ -217,6 +220,9 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/search_shortcuts" />
         </activity>
 
         <activity
@@ -248,10 +254,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Music search history quick settings tile preference -->
+        <!-- Music search history activity -->
 
         <activity
-            android:name=".services.HistoryService"
+            android:name=".services.MusicSearchHistory"
             android:excludeFromRecents="true"
             android:exported="false"
             android:label="@string/history"

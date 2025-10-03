@@ -14,7 +14,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class HistoryService : ShortcutsActivity() {
+class MusicSearchHistory : ShortcutsActivity() {
     private val preferences by lazy { PreferenceHelper(this) }
 
     override fun onCreateInternal() {
