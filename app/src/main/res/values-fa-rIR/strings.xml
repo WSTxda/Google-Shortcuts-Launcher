@@ -56,6 +56,7 @@
     <string name="search">جستجو</string>
     <string name="history">تاریخچه</string>
     <string name="collections">مجموعه‌ها</string>
+    <string name="shopping">خرید</string>
 
     <string name="google_not_found">فعالیت یافت نشد. لطفاً برنامه گوگل را نصب یا فعال کنید</string>
     <string name="play_games_not_found">فعالیت یافت نشد. لطفاً بازی‌های گوگل پلی را نصب یا فعال کنید</string>

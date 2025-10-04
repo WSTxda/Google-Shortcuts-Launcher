@@ -42,10 +42,19 @@
             android:defaultValue="true"
             android:icon="@mipmap/ic_launcher_search"
             android:key="search_shortcut"
-            android:layout="@layout/preference_material_shortcuts_bottom"
+            android:layout="@layout/preference_material_shortcuts_middle"
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/search" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_shopping"
+            android:key="shopping_shortcut"
+            android:layout="@layout/preference_material_shortcuts_bottom"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/shopping" />
 
     </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
 

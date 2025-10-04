@@ -56,6 +56,7 @@
     <string name="search">Szukaj</string>
     <string name="history">Historia</string>
     <string name="collections">Kolekcje</string>
+    <string name="shopping">Zakupy</string>
 
     <string name="google_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz aplikację Google</string>
     <string name="play_games_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz Gry Google Play</string>

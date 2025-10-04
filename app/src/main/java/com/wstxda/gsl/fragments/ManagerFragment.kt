@@ -51,6 +51,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
         "password_manager_shortcut" to PasswordManagerShortcut::class.java,
         "quick_share_shortcut" to QuickShareShortcut::class.java,
         "search_shortcut" to SearchShortcut::class.java,
+        "shopping_shortcut" to ShoppingShortcut::class.java,
         "weather_shortcut" to WeatherShortcut::class.java,
         "manager_activity" to ManagerActivity::class.java
     )

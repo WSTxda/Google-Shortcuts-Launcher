@@ -226,6 +226,24 @@
         </activity>
 
         <activity
+            android:name=".shortcuts.ShoppingShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_shopping"
+            android:label="@string/shopping"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shopping_shortcuts" />
+        </activity>
+
+        <activity
             android:name=".shortcuts.WeatherShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
