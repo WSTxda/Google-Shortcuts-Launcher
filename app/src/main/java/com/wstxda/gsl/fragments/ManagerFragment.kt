@@ -44,6 +44,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
         "assistant_shortcut" to AssistantShortcut::class.java,
         "collections_shortcut" to CollectionsShortcut::class.java,
         "files_shortcut" to FilesShortcut::class.java,
+        "finance_shortcut" to FinanceShortcut::class.java,
         "games_shortcut" to GamesShortcut::class.java,
         "incognito_shortcut" to IncognitoShortcut::class.java,
         "lens_shortcut" to LensShortcut::class.java,

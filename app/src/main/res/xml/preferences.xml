@@ -130,6 +130,15 @@
 
         <SwitchPreferenceCompat
             android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_finance"
+            android:key="finance_shortcut"
+            android:layout="@layout/preference_material_shortcuts_middle"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/finance" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
             android:icon="@mipmap/ic_launcher_share"
             android:key="quick_share_shortcut"
             android:layout="@layout/preference_material_shortcuts_middle"

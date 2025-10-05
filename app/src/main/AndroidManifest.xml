@@ -112,6 +112,21 @@
         </activity>
 
         <activity
+            android:name=".shortcuts.FinanceShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_finance"
+            android:label="@string/finance"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".shortcuts.GamesShortcut"
             android:excludeFromRecents="true"
             android:exported="true"

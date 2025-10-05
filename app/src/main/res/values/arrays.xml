@@ -19,6 +19,7 @@
     <string-array name="digital_assistant_shortcut_entries">
         <item>@string/collections</item>
         <item>@string/files</item>
+        <item>@string/finance</item>
         <item>@string/games</item>
         <item>@string/incognito</item>
         <item>@string/lens</item>
@@ -34,6 +35,7 @@
     <string-array name="digital_assistant_shortcut_values">
         <item>collections_shortcut</item>
         <item>files_shortcut</item>
+        <item>finance_shortcut</item>
         <item>games_shortcut</item>
         <item>incognito_shortcut</item>
         <item>lens_shortcut</item>
