@@ -223,6 +223,21 @@
         </activity>
 
         <activity
+            android:name=".shortcuts.ScannerShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_scanner"
+            android:label="@string/scanner"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".shortcuts.SearchShortcut"
             android:excludeFromRecents="true"
             android:exported="true"

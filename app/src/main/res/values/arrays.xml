@@ -26,6 +26,7 @@
         <item>@string/music_search_label</item>
         <item>@string/password</item>
         <item>@string/quick_share</item>
+        <item>@string/scanner</item>
         <item>@string/search</item>
         <item>@string/shopping</item>
         <item>@string/travel</item>
@@ -42,6 +43,7 @@
         <item>music_search_shortcut</item>
         <item>password_manager_shortcut</item>
         <item>quick_share_shortcut</item>
+        <item>scanner_shortcut</item>
         <item>search_shortcut</item>
         <item>shopping_shortcut</item>
         <item>travel_shortcut</item>

@@ -59,6 +59,7 @@
     <string name="shopping">Zakupy</string>
     <string name="travel">Podróże</string>
     <string name="finance">Finanse</string>
+    <string name="scanner">Skaner</string>
 
     <string name="history_shortcut">Historia</string>
     <string name="settings_shortcut">Ustawienia</string>

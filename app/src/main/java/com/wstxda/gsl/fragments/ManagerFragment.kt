@@ -51,6 +51,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
         "music_search_shortcut" to MusicSearchShortcut::class.java,
         "password_manager_shortcut" to PasswordManagerShortcut::class.java,
         "quick_share_shortcut" to QuickShareShortcut::class.java,
+        "scanner_shortcut" to ScannerShortcut::class.java,
         "search_shortcut" to SearchShortcut::class.java,
         "shopping_shortcut" to ShoppingShortcut::class.java,
         "travel_shortcut" to TravelShortcut::class.java,

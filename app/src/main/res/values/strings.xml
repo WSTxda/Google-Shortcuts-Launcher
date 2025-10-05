@@ -63,6 +63,7 @@
     <string name="shopping">Shopping</string>
     <string name="travel">Travels</string>
     <string name="finance">Finances</string>
+    <string name="scanner">Scanner</string>
 
     <string name="history_shortcut">History</string>
     <string name="settings_shortcut">Settings</string>

@@ -9,6 +9,7 @@
     <color name="ic_launcher_background_manager">#5F6368</color>
     <color name="ic_launcher_background_files">#1A73E8</color>
     <color name="ic_launcher_background_incognito">#101214</color>
+    <color name="ic_launcher_background_scanner">#303234</color>
 
     <!--material colors-->
 

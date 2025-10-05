@@ -148,6 +148,15 @@
 
         <SwitchPreferenceCompat
             android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_scanner"
+            android:key="scanner_shortcut"
+            android:layout="@layout/preference_material_shortcuts_middle"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/scanner" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
             android:icon="@mipmap/ic_launcher_weather"
             android:key="weather_shortcut"
             android:layout="@layout/preference_material_shortcuts_bottom"
