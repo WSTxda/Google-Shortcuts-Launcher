@@ -28,7 +28,7 @@
     <string name="pref_shortcut_root_mode_summary">استخدم صلاحيات الروت لفتح الأنشطة غير المصدرة أو التي يتعذر الوصول إليها في اختصارات معينة</string>
 
     <string name="pref_show_manager">إظهار المدير في المشغّل</string>
-    <string name="pref_show_manager_summary">للوصول إلى المدير عند إخفائه، اضغط على لوحة الإعدادات السريعة <b>بحث الموسيقى</b></string>
+    <string name="pref_show_manager_summary">للوصول إلى المدير عند إخفائه، اضغط على مربع الاختصار في لوحة الإعدادات السريعة</string>
 
     <string name="pref_add_shortcut_tile">إضافة مربع اختصار في لوحة الإعدادات السريعة</string>
 

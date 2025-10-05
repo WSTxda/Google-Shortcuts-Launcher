@@ -28,7 +28,7 @@
     <string name="pref_shortcut_root_mode_summary">ルートアクセスを使用して、特定のショートカットでエクスポートされていない、またはその他のアクセスできないアクティビティを開きます</string>
 
     <string name="pref_show_manager">ランチャーにマネージャーを表示</string>
-    <string name="pref_show_manager_summary">非表示の場合は、クイック設定パネルの <b>音楽を検索</b> タイルをタップしてマネージャーにアクセスできます</string>
+    <string name="pref_show_manager_summary">非表示のときにマネージャーにアクセスするには、クイック設定パネルのショートカットQSタイルを押します</string>
 
     <string name="pref_add_shortcut_tile">クイック設定パネルにショートカットタイルを追加</string>
 

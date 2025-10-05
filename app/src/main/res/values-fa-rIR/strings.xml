@@ -28,7 +28,7 @@
     <string name="pref_shortcut_root_mode_summary">برای باز کردن فعالیت‌های غیرقابل دسترسی یا غیرصادر شده در میانبرهای خاص از دسترسی روت استفاده کنید</string>
 
     <string name="pref_show_manager">نمایش مدیر در لانچر</string>
-    <string name="pref_show_manager_summary">برای دسترسی به مدیر هنگام مخفی بودن، کاشی <b>جستجوی موسیقی</b> را در تنظیمات سریع فشار دهید</string>
+    <string name="pref_show_manager_summary">برای دسترسی به مدیر در حالت پنهان، کاشی میانبر را در پنل تنظیمات سریع فشار دهید</string>
 
     <string name="pref_tile_shortcut">میانبر کاشی تنظیمات سریع</string>
 

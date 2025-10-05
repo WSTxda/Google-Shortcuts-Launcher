@@ -28,7 +28,7 @@
     <string name="pref_shortcut_root_mode_summary">Utilizar acesso root para abrir atividades não exportadas ou inacessíveis em determinados atalhos</string>
 
     <string name="pref_show_manager">Mostrar gerenciador no launcher</string>
-    <string name="pref_show_manager_summary">Para acessar o gerenciador quando estiver oculto, pressione o atalho de <b>Pesquisar música</b> no painel de configurações rápidas</string>
+    <string name="pref_show_manager_summary">Para acessar o gerenciador quando oculto, pressione o bloco de atalho no painel de configurações rápidas</string>
 
     <string name="pref_add_shortcut_tile">Adicionar atalho ao painel de configurações rápidas</string>
 

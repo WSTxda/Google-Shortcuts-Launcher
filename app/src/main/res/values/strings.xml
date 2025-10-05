@@ -30,7 +30,7 @@
     <string name="pref_shortcut_root_mode_summary">Use root access to open non-exported or otherwise inaccessible activities in certain shortcuts</string>
 
     <string name="pref_show_manager">Show manager in launcher</string>
-    <string name="pref_show_manager_summary">To access manager when hidden, press the <b>Music search</b> qs tile in quick settings panel</string>
+    <string name="pref_show_manager_summary">To access manager when hidden, press the shortcut qs tile in quick settings panel</string>
 
     <string name="pref_version_number" translatable="false">%s</string>
 
