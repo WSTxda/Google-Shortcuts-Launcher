@@ -9,14 +9,14 @@ import android.os.Build
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.wstxda.gsl.R
-import com.wstxda.gsl.services.MusicSearchTileService
+import com.wstxda.gsl.services.ShortcutTileService
 import java.util.concurrent.Executors
 import java.util.function.Consumer
 
 class TileManager(private val context: Context) {
     fun requestAddTile() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            val tileServiceComponent = ComponentName(context, MusicSearchTileService::class.java)
+            val tileServiceComponent = ComponentName(context, ShortcutTileService::class.java)
             val executor = Executors.newSingleThreadExecutor()
             val resultCallback = Consumer<Int> { result ->
                 (context as? Activity)?.findViewById<View>(android.R.id.content)?.let { rootView ->
@@ -34,8 +34,8 @@ class TileManager(private val context: Context) {
             }
             context.getSystemService(StatusBarManager::class.java)?.requestAddTileService(
                 tileServiceComponent,
-                context.getString(R.string.music_search_label),
-                Icon.createWithResource(context, R.drawable.ic_music_search_tile),
+                context.getString(R.string.shortcut_open),
+                Icon.createWithResource(context, R.drawable.ic_shortcut_default),
                 executor,
                 resultCallback
             )

@@ -39,7 +39,7 @@
         app:layout_constraintStart_toEndOf="@android:id/icon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="@string/pref_add_music_search_quick_settings" />
+        tools:text="@string/pref_add_shortcut_tile" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@android:id/summary"

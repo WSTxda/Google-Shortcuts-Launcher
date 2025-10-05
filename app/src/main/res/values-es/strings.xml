@@ -30,11 +30,13 @@
     <string name="pref_show_manager">Mostrar gestor en lanzador</string>
     <string name="pref_show_manager_summary">Para acceder a gestor cuando esté oculta, presione el acceso directo de <b>Buscar música</b> en el panel de configuración rápida</string>
 
-    <string name="pref_add_music_search_quick_settings">Agregar buscar música en configuración rápida</string>
+    <string name="pref_add_shortcut_tile">Añadir atajo al panel de configuración rápida</string>
 
     <string name="pref_theme">Tema</string>
 
     <string name="pref_digital_assistant_shortcut">Acceso directo al asistente digital</string>
+
+    <string name="pref_tile_shortcut">Atajo del panel de configuración rápida</string>
 
     <string name="pref_setup_digital_assistant">Configurar asistente digital</string>
     <string name="pref_setup_digital_assistant_summary">Establecer Atajos de Google como la aplicación de asistente digital predeterminada</string>
@@ -42,11 +44,8 @@
     <string name="pref_used_library">Bibliotecas</string>
     <string name="pref_used_library_summary">Licencias de código abierto</string>
 
-    <string name="music_search_label">Buscar música</string>
-    <string name="music_search_subtitle">Toca para buscar una canción</string>
-
-    <string name="password">Contraseñas</string>
-    <string name="music_search">Buscar</string>
+    <string name="password_manager">Contraseñas</string>
+    <string name="music_search">Buscar música</string>
     <string name="weather">Tiempo</string>
     <string name="games">Juegos</string>
     <string name="assistant">Asistente</string>
@@ -97,7 +96,8 @@
     <string name="digital_assistant_setup_message">En los ajustes, selecciona <b>Atajos de Google</b> como tu aplicación de asistente digital predeterminada para iniciar rápidamente el atajo seleccionado mediante gestos del dispositivo, botones y más…</string>
     <string name="digital_assistant_setup_button">Establecer como predeterminado</string>
 
-    <string name="digital_assistant_shortcut_select">Seleccionar acceso directo</string>
-    <string name="digital_assistant_shortcut_disabled">No se puede iniciar. activa este atajo en el gestor primero</string>
-    <string name="digital_assistant_shortcut_invalid">Acceso directo seleccionado no válido</string>
+    <string name="shortcut_open">Abrir atajo</string>
+    <string name="shortcut_select">Seleccionar acceso directo</string>
+    <string name="shortcut_disabled">No se puede iniciar. activa este atajo en el gestor primero</string>
+    <string name="shortcut_invalid">Acceso directo seleccionado no válido</string>
 </resources>

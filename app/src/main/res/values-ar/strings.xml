@@ -30,11 +30,13 @@
     <string name="pref_show_manager">إظهار المدير في المشغّل</string>
     <string name="pref_show_manager_summary">للوصول إلى المدير عند إخفائه، اضغط على لوحة الإعدادات السريعة <b>بحث الموسيقى</b></string>
 
-    <string name="pref_add_music_search_quick_settings">أضف البحث عن الموسيقى في لوحة الإعدادات السريعة</string>
+    <string name="pref_add_shortcut_tile">إضافة مربع اختصار في لوحة الإعدادات السريعة</string>
 
     <string name="pref_theme">السمة</string>
 
     <string name="pref_digital_assistant_shortcut">اختصار المساعد الرقمي</string>
+
+    <string name="pref_tile_shortcut">اختصار مربع الإعدادات السريعة</string>
 
     <string name="pref_setup_digital_assistant">إعداد المساعد الرقمي</string>
     <string name="pref_setup_digital_assistant_summary">تعيين مشغّل اختصارات Google كتطبيق مساعد رقمي افتراضي</string>
@@ -42,11 +44,8 @@
     <string name="pref_used_library">المكتبات</string>
     <string name="pref_used_library_summary">تراخيص المصدر المفتوح</string>
 
-    <string name="music_search_label">البحث عن الموسيقى</string>
-    <string name="music_search_subtitle">انقر للبحث عن أغنية</string>
-
-    <string name="password">كلمات المرور</string>
-    <string name="music_search">بحث</string>
+    <string name="password_manager">كلمات المرور</string>
+    <string name="music_search">البحث عن الموسيقى</string>
     <string name="weather">الطقس</string>
     <string name="games">الألعاب</string>
     <string name="assistant">المساعد</string>
@@ -97,7 +96,8 @@
     <string name="digital_assistant_setup_message">في الإعدادات، حدد <b>مشغّل اختصارات Google</b> كتطبيق مساعد رقمي افتراضي لتشغيل الاختصار الذي حددته بسرعة باستخدام إيماءات الجهاز والأزرار والمزيد…</string>
     <string name="digital_assistant_setup_button">تعيين كافتراضي</string>
 
-    <string name="digital_assistant_shortcut_select">اختر اختصار</string>
-    <string name="digital_assistant_shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولاً في المدير</string>
-    <string name="digital_assistant_shortcut_invalid">تم اختيار اختصار غير صالح</string>
+    <string name="shortcut_open">فتح الاختصار</string>
+    <string name="shortcut_select">اختر اختصار</string>
+    <string name="shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولاً في المدير</string>
+    <string name="shortcut_invalid">تم اختيار اختصار غير صالح</string>
 </resources>

@@ -30,11 +30,13 @@
     <string name="pref_show_manager">Mostrar gerenciador no launcher</string>
     <string name="pref_show_manager_summary">Para acessar o gerenciador quando estiver oculto, pressione o atalho de <b>Pesquisar música</b> no painel de configurações rápidas</string>
 
-    <string name="pref_add_music_search_quick_settings">Adicionar pesquisa de música nas configurações rápidas</string>
+    <string name="pref_add_shortcut_tile">Adicionar atalho ao painel de configurações rápidas</string>
 
     <string name="pref_theme">Tema</string>
 
     <string name="pref_digital_assistant_shortcut">Atalho do assistente digital</string>
+
+    <string name="pref_tile_shortcut">Atalho do painel de configurações rápidas</string>
 
     <string name="pref_setup_digital_assistant">Configurar assistente digital</string>
     <string name="pref_setup_digital_assistant_summary">Definir Atalhos do Google como aplicativo de assistente digital padrão</string>
@@ -42,11 +44,8 @@
     <string name="pref_used_library">Bibliotecas</string>
     <string name="pref_used_library_summary">Licenças de código aberto</string>
 
-    <string name="music_search_label">Pesquisar música</string>
-    <string name="music_search_subtitle">Toque para pesquisar uma música</string>
-
-    <string name="password">Senhas</string>
-    <string name="music_search">Pesquisar</string>
+    <string name="password_manager">Senhas</string>
+    <string name="music_search">Pesquisar música</string>
     <string name="weather">Clima</string>
     <string name="games">Jogos</string>
     <string name="assistant">Assistente</string>
@@ -97,7 +96,8 @@
     <string name="digital_assistant_setup_message">Nas configurações, selecione o <b>Atalhos do Google</b> como o aplicativo de assistente digital padrão para iniciar rapidamente o atalho selecionado usando gestos do dispositivo, botões e muito mais…</string>
     <string name="digital_assistant_setup_button">Definir como padrão</string>
 
-    <string name="digital_assistant_shortcut_select">Selecionar atalho</string>
-    <string name="digital_assistant_shortcut_disabled">Não foi possível iniciar, habilite este atalho no gerenciador primeiro</string>
-    <string name="digital_assistant_shortcut_invalid">Atalho selecionado inválido</string>
+    <string name="shortcut_open">Abrir atalho</string>
+    <string name="shortcut_select">Selecionar atalho</string>
+    <string name="shortcut_disabled">Não foi possível iniciar, habilite este atalho no gerenciador primeiro</string>
+    <string name="shortcut_invalid">Atalho selecionado inválido</string>
 </resources>

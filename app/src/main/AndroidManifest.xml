@@ -179,7 +179,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_music"
-            android:label="@string/music_search"
+            android:label="@string/search"
             android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
@@ -197,7 +197,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_password"
-            android:label="@string/password"
+            android:label="@string/password_manager"
             android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
@@ -306,10 +306,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Digital assistant service activity -->
+        <!-- Digital assistant shortcut service -->
 
         <activity
-            android:name=".services.DigitalAssistantService"
+            android:name=".services.ShortcutAssistantService"
             android:excludeFromRecents="true"
             android:exported="true"
             android:launchMode="singleTop"
@@ -331,13 +331,13 @@
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent" />
 
-        <!-- Music search quick settings tile -->
+        <!-- Quick settings tile shortcut service -->
 
         <service
-            android:name=".services.MusicSearchTileService"
+            android:name=".services.ShortcutTileService"
             android:exported="true"
-            android:icon="@drawable/ic_music_search_tile"
-            android:label="@string/music_search_label"
+            android:icon="@drawable/ic_shortcut_default"
+            android:label="@string/shortcut_open"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />

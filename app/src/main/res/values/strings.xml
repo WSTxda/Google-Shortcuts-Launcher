@@ -34,11 +34,13 @@
 
     <string name="pref_version_number" translatable="false">%s</string>
 
-    <string name="pref_add_music_search_quick_settings">Add music search in quick settings panel</string>
+    <string name="pref_add_shortcut_tile">Add shortcut tile in quick settings panel</string>
 
     <string name="pref_theme">Theme</string>
 
     <string name="pref_digital_assistant_shortcut">Digital assistant shortcut</string>
+
+    <string name="pref_tile_shortcut">Quick settings tile shortcut</string>
 
     <string name="pref_setup_digital_assistant">Setup digital assistant</string>
     <string name="pref_setup_digital_assistant_summary">Set Google Shortcuts Launcher as default digital assistant app</string>
@@ -46,11 +48,8 @@
     <string name="pref_used_library">Libraries</string>
     <string name="pref_used_library_summary">Open source licenses</string>
 
-    <string name="music_search_label">Music search</string>
-    <string name="music_search_subtitle">Tap to search for a song</string>
-
-    <string name="password">Passwords</string>
-    <string name="music_search">Search</string>
+    <string name="password_manager">Passwords</string>
+    <string name="music_search">Music search</string>
     <string name="weather">Weather</string>
     <string name="games">Games</string>
     <string name="assistant">Assistant</string>
@@ -101,7 +100,8 @@
     <string name="digital_assistant_setup_message">In the settings, select <b>Google Shortcuts Launcher</b> as your default digital assistant app to quickly launch your selected shortcut using device gestures, buttons and more…</string>
     <string name="digital_assistant_setup_button">Set as default</string>
 
-    <string name="digital_assistant_shortcut_select">Select shortcut</string>
-    <string name="digital_assistant_shortcut_disabled">Unable to launch, enable this shortcut in manager first</string>
-    <string name="digital_assistant_shortcut_invalid">Invalid shortcut selected</string>
+    <string name="shortcut_open">Open shortcut</string>
+    <string name="shortcut_select">Select shortcut</string>
+    <string name="shortcut_disabled">Unable to launch, enable this shortcut in manager first</string>
+    <string name="shortcut_invalid">Invalid shortcut selected</string>
 </resources>

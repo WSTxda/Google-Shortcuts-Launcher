@@ -89,7 +89,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
 
     private fun setupInitialVisibility() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
-            findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.isVisible = false
+            findPreference<Preference>(Constants.ADD_TILE_SHORTCUT_PREF_KEY)?.isVisible = false
         }
     }
 
@@ -112,7 +112,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
     }
 
     private fun setupTilePreference() {
-        findPreference<Preference>(Constants.MUSIC_SEARCH_TILE_KEY)?.setOnPreferenceClickListener {
+        findPreference<Preference>(Constants.ADD_TILE_SHORTCUT_PREF_KEY)?.setOnPreferenceClickListener {
             TileManager(requireContext()).requestAddTile()
             true
         }

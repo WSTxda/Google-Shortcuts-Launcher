@@ -30,11 +30,13 @@
     <string name="pref_show_manager">Pokaż menedżera w launcherze</string>
     <string name="pref_show_manager_summary">Aby uzyskać dostęp do menedżera, gdy jest ukryty, naciśnij kafelek <b>Wyszukiwanie muzyki</b> w panelu szybkich ustawień</string>
 
-    <string name="pref_add_music_search_quick_settings">Dodaj wyszukiwanie muzyki do panelu szybkich ustawień</string>
+    <string name="pref_add_shortcut_tile">Dodaj kafelek skrótu w panelu szybkich ustawień</string>
 
     <string name="pref_theme">Motyw</string>
 
     <string name="pref_digital_assistant_shortcut">Skrót asystenta cyfrowego</string>
+
+    <string name="pref_tile_shortcut">Skrót kafelka szybkich ustawień</string>
 
     <string name="pref_setup_digital_assistant">Skonfiguruj asystenta cyfrowego</string>
     <string name="pref_setup_digital_assistant_summary">Ustaw Skróty Google jako domyślną aplikację asystenta cyfrowego</string>
@@ -42,11 +44,8 @@
     <string name="pref_used_library">Biblioteki</string>
     <string name="pref_used_library_summary">Licencje open source</string>
 
-    <string name="music_search_label">Wyszukiwanie muzyki</string>
-    <string name="music_search_subtitle">Dotknij, aby wyszukać piosenkę</string>
-
-    <string name="password">Hasła</string>
-    <string name="music_search">Wyszukaj</string>
+    <string name="password_manager">Hasła</string>
+    <string name="music_search">Wyszukiwanie muzyki</string>
     <string name="weather">Pogoda</string>
     <string name="games">Gry</string>
     <string name="assistant">Asystent</string>
@@ -97,7 +96,8 @@
     <string name="digital_assistant_setup_message">W ustawieniach wybierz <b>Skróty Google</b> jako domyślną aplikację asystenta cyfrowego, aby szybko uruchamiać wybrany skrót za pomocą gestów, przycisków urządzenia i nie tylko…</string>
     <string name="digital_assistant_setup_button">Ustaw jako domyślne</string>
 
-    <string name="digital_assistant_shortcut_select">Wybierz skrót</string>
-    <string name="digital_assistant_shortcut_disabled">Nie można uruchomić. Najpierw włącz ten skrót w menedżerze</string>
-    <string name="digital_assistant_shortcut_invalid">Wybrano nieprawidłowy skrót</string>
+    <string name="shortcut_open">Otwórz skrót</string>
+    <string name="shortcut_select">Wybierz skrót</string>
+    <string name="shortcut_disabled">Nie można uruchomić. Najpierw włącz ten skrót w menedżerze</string>
+    <string name="shortcut_invalid">Wybrano nieprawidłowy skrót</string>
 </resources>

@@ -7,10 +7,11 @@ object Constants {
 
     // Preferences keys
 
-    const val MUSIC_SEARCH_TILE_KEY = "add_music_search_tile"
+    const val ADD_TILE_SHORTCUT_PREF_KEY = "add_shortcut_tile"
 
     const val DIGITAL_ASSISTANT_SETUP_PREF_KEY = "digital_assistant_setup"
     const val DIGITAL_ASSISTANT_SHORTCUT_PREF_KEY = "digital_assistant_shortcut"
+    const val TILE_SHORTCUT_PREF_KEY = "tile_shortcut"
     const val GAME_MANAGER_PREF_KEY = "device_game_manager"
     const val SHORTCUT_ROOT_MODE_PREF_KEY = "shortcut_root_mode"
     const val LIBRARY_PREF_KEY = "library"

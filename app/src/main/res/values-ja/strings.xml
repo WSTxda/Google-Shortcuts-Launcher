@@ -30,11 +30,13 @@
     <string name="pref_show_manager">ランチャーにマネージャーを表示</string>
     <string name="pref_show_manager_summary">非表示の場合は、クイック設定パネルの <b>音楽を検索</b> タイルをタップしてマネージャーにアクセスできます</string>
 
-    <string name="pref_add_music_search_quick_settings">音楽を検索のパネルをクイック設定に追加</string>
+    <string name="pref_add_shortcut_tile">クイック設定パネルにショートカットタイルを追加</string>
 
     <string name="pref_theme">テーマ</string>
 
     <string name="pref_digital_assistant_shortcut">デジタルアシスタントのショートカット</string>
+
+    <string name="pref_tile_shortcut">クイック設定タイルのショートカット</string>
 
     <string name="pref_setup_digital_assistant">デジタルアシスタントの設定</string>
     <string name="pref_setup_digital_assistant_summary">Google ショートカットランチャーをデフォルトのデジタルアシスタントアプリとして設定する</string>
@@ -42,11 +44,8 @@
     <string name="pref_used_library">ライブラリ</string>
     <string name="pref_used_library_summary">オープンソースライセンス</string>
 
-    <string name="music_search_label">音楽を検索</string>
-    <string name="music_search_subtitle">タップして曲を検索</string>
-
-    <string name="password">パスワード</string>
-    <string name="music_search">検索</string>
+    <string name="password_manager">パスワード</string>
+    <string name="music_search">音楽を検索</string>
     <string name="weather">天気</string>
     <string name="games">ゲーム</string>
     <string name="assistant">アシスタント</string>
@@ -97,7 +96,8 @@
     <string name="digital_assistant_setup_message">設定で <b>Google ショートカットランチャー</b> をデフォルトのデジタルアシスタントアプリとして選択すると、デバイスのジェスチャーやボタンなどを使用して、選択したショートカットをすばやく起動できます…</string>
     <string name="digital_assistant_setup_button">デフォルトとして設定</string>
 
-    <string name="digital_assistant_shortcut_select">ショートカットを選択</string>
-    <string name="digital_assistant_shortcut_disabled">起動できません。先にマネージャーでこのショートカットを有効にしてください</string>
-    <string name="digital_assistant_shortcut_invalid">無効なショートカットが選択されました</string>
+    <string name="shortcut_open">ショートカットを開く</string>
+    <string name="shortcut_select">ショートカットを選択</string>
+    <string name="shortcut_disabled">起動できません。先にマネージャーでこのショートカットを有効にしてください</string>
+    <string name="shortcut_invalid">無効なショートカットが選択されました</string>
 </resources>

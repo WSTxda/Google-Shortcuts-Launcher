@@ -3,9 +3,9 @@
 
     <Preference
         android:icon="@drawable/ic_add"
-        android:key="add_music_search_tile"
+        android:key="add_shortcut_tile"
         android:layout="@layout/preference_material_tile"
-        android:title="@string/pref_add_music_search_quick_settings" />
+        android:title="@string/pref_add_shortcut_tile" />
 
     <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
         android:title="@string/pref_expandable_search"
@@ -36,7 +36,7 @@
             android:layout="@layout/preference_material_shortcuts_middle"
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
-            android:title="@string/music_search_label" />
+            android:title="@string/music_search" />
 
         <SwitchPreferenceCompat
             android:defaultValue="true"
@@ -87,7 +87,7 @@
             android:layout="@layout/preference_material_shortcuts_bottom"
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
-            android:title="@string/password" />
+            android:title="@string/password_manager" />
 
     </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
 
@@ -181,14 +181,26 @@
     <ListPreference
         android:defaultValue="lens_shortcut"
         android:enabled="false"
-        android:entries="@array/digital_assistant_shortcut_entries"
+        android:entries="@array/shortcut_entries"
         android:entryValues="@array/digital_assistant_shortcut_values"
         android:icon="@drawable/ic_device_shortcut"
         android:key="digital_assistant_shortcut"
         android:layout="@layout/preference_material_top"
         android:title="@string/pref_digital_assistant_shortcut"
         app:dialogIcon="@drawable/ic_shortcut"
-        app:dialogTitle="@string/digital_assistant_shortcut_select"
+        app:dialogTitle="@string/shortcut_select"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        android:defaultValue="music_search_shortcut"
+        android:entries="@array/shortcut_entries"
+        android:entryValues="@array/tile_shortcut_values"
+        android:icon="@drawable/ic_tiles"
+        android:key="tile_shortcut"
+        android:layout="@layout/preference_material_middle"
+        android:title="@string/pref_tile_shortcut"
+        app:dialogIcon="@drawable/ic_shortcut"
+        app:dialogTitle="@string/shortcut_select"
         app:useSimpleSummaryProvider="true" />
 
     <SwitchPreferenceCompat
