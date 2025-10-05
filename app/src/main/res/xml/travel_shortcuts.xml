@@ -1,0 +1,37 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_shortcut_explore"
+        android:shortcutId="travels_explore"
+        android:shortcutLongLabel="@string/explore_shortcut"
+        android:shortcutShortLabel="@string/explore_shortcut">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.google.com/travel/explore" />
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_shortcut_flight"
+        android:shortcutId="travels_flight"
+        android:shortcutLongLabel="@string/flight_shortcut"
+        android:shortcutShortLabel="@string/flight_shortcut">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.google.com/travel/flights" />
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_shortcut_hotel"
+        android:shortcutId="travels_hotel"
+        android:shortcutLongLabel="@string/hotel_shortcut"
+        android:shortcutShortLabel="@string/hotel_shortcut">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.google.com/travel/search" />
+    </shortcut>
+</shortcuts>

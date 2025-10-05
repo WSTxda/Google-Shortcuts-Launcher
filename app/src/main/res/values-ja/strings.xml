@@ -7,6 +7,7 @@
 
     <string name="pref_expandable_search">検索ショートカット</string>
     <string name="pref_expandable_manager">マネージャーのショートカット</string>
+    <string name="pref_expandable_shopping">ショッピングのショートカット</string>
     <string name="pref_expandable_others">その他のショートカット</string>
 
     <string name="pref_category_shortcuts_settings">ショートカットの設定</string>
@@ -54,9 +55,15 @@
     <string name="files">ファイル</string>
     <string name="incognito">シークレット</string>
     <string name="search">検索</string>
-    <string name="history">履歴</string>
     <string name="collections">コレクション</string>
     <string name="shopping">ショッピング</string>
+    <string name="travel">トラベル</string>
+
+    <string name="history_shortcut">履歴</string>
+    <string name="settings_shortcut">設定</string>
+    <string name="explore_shortcut">発見</string>
+    <string name="flight_shortcut">フライト</string>
+    <string name="hotel_shortcut">ホテル</string>
 
     <string name="google_not_found">アクティビティが見つかりません。Google アプリをインストールするか有効化してください。</string>
     <string name="play_games_not_found">アクティビティが見つかりません。Google Play Games をインストールするか有効化してください。</string>

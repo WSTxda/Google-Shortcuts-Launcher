@@ -3,8 +3,8 @@
         android:enabled="true"
         android:icon="@drawable/ic_launcher_shortcut_history"
         android:shortcutId="lens_history"
-        android:shortcutLongLabel="@string/history"
-        android:shortcutShortLabel="@string/history">
+        android:shortcutLongLabel="@string/history_shortcut"
+        android:shortcutShortLabel="@string/history_shortcut">
 
         <intent
             android:action="android.intent.action.VIEW"

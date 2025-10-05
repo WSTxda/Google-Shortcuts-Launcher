@@ -7,6 +7,7 @@
 
     <string name="pref_expandable_search">میانبرهای جستجو</string>
     <string name="pref_expandable_manager">میانبرهای مدیریت</string>
+    <string name="pref_expandable_shopping">میانبرهای خرید</string>
     <string name="pref_expandable_others">میانبرهای دیگر</string>
 
     <string name="pref_category_shortcuts_settings">تنظیمات میانبرها</string>
@@ -54,9 +55,15 @@
     <string name="files">فایل‌ها</string>
     <string name="incognito">ناشناس</string>
     <string name="search">جستجو</string>
-    <string name="history">تاریخچه</string>
     <string name="collections">مجموعه‌ها</string>
     <string name="shopping">خرید</string>
+    <string name="travel">سفرها</string>
+
+    <string name="history_shortcut">تاریخچه</string>
+    <string name="settings_shortcut">تنظیمات</string>
+    <string name="explore_shortcut">کاوش</string>
+    <string name="flight_shortcut">پروازها</string>
+    <string name="hotel_shortcut">هتل‌ها</string>
 
     <string name="google_not_found">فعالیت یافت نشد. لطفاً برنامه گوگل را نصب یا فعال کنید</string>
     <string name="play_games_not_found">فعالیت یافت نشد. لطفاً بازی‌های گوگل پلی را نصب یا فعال کنید</string>

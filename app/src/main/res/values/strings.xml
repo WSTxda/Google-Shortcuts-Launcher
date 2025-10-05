@@ -7,6 +7,7 @@
 
     <string name="pref_expandable_search">Search shortcuts</string>
     <string name="pref_expandable_manager">Managers shortcuts</string>
+    <string name="pref_expandable_shopping">Shopping shortcuts</string>
     <string name="pref_expandable_others">Others shortcuts</string>
 
     <string name="pref_category_shortcuts_settings">Shortcuts settings</string>
@@ -58,9 +59,15 @@
     <string name="files">Files</string>
     <string name="incognito">Incognito</string>
     <string name="search">Search</string>
-    <string name="history">History</string>
     <string name="collections">Collections</string>
     <string name="shopping">Shopping</string>
+    <string name="travel">Travels</string>
+
+    <string name="history_shortcut">History</string>
+    <string name="settings_shortcut">Settings</string>
+    <string name="explore_shortcut">Explore</string>
+    <string name="flight_shortcut">Flights</string>
+    <string name="hotel_shortcut">Hotels</string>
 
     <string name="google_not_found">Activity not found. Please install or enable Google App</string>
     <string name="play_services_not_found">Activity not found. Please install or enable Google Play Services</string>
@@ -95,7 +102,4 @@
     <string name="digital_assistant_shortcut_select">Select shortcut</string>
     <string name="digital_assistant_shortcut_disabled">Unable to launch, enable this shortcut in manager first</string>
     <string name="digital_assistant_shortcut_invalid">Invalid shortcut selected</string>
-
-    <string name="password_url" translatable="false">https://passwords.google.com</string>
-    <string name="weather_url" translatable="false">https://www.google.com/search?q=weather</string>
 </resources>

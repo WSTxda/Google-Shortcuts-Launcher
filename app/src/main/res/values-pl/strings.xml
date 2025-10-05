@@ -7,6 +7,7 @@
 
     <string name="pref_expandable_search">Skrótów wyszukiwania</string>
     <string name="pref_expandable_manager">Skrótów menedżera</string>
+    <string name="pref_expandable_shopping">Skróty Zakupów</string>
     <string name="pref_expandable_others">Inne skrótów</string>
 
     <string name="pref_category_shortcuts_settings">Ustawienia skrótów</string>
@@ -54,9 +55,15 @@
     <string name="files">Pliki</string>
     <string name="incognito">Incognito</string>
     <string name="search">Szukaj</string>
-    <string name="history">Historia</string>
     <string name="collections">Kolekcje</string>
     <string name="shopping">Zakupy</string>
+    <string name="travel">Podróże</string>
+
+    <string name="history_shortcut">Historia</string>
+    <string name="settings_shortcut">Ustawienia</string>
+    <string name="explore_shortcut">Odkrywaj</string>
+    <string name="flight_shortcut">Loty</string>
+    <string name="hotel_shortcut">Hotele</string>
 
     <string name="google_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz aplikację Google</string>
     <string name="play_games_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz Gry Google Play</string>

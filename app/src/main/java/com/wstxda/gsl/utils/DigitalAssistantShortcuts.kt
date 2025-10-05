@@ -20,6 +20,7 @@ object DigitalAssistantShortcuts {
         "quick_share_shortcut" to QuickShareShortcut::class.java,
         "search_shortcut" to SearchShortcut::class.java,
         "shopping_shortcut" to ShoppingShortcut::class.java,
+        "travel_shortcut" to TravelShortcut::class.java,
         "weather_shortcut" to WeatherShortcut::class.java
     )
 

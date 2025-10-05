@@ -244,6 +244,24 @@
         </activity>
 
         <activity
+            android:name=".shortcuts.TravelShortcut"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_travel"
+            android:label="@string/travel"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/travel_shortcuts" />
+        </activity>
+
+        <activity
             android:name=".shortcuts.WeatherShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
@@ -278,7 +296,7 @@
             android:name=".services.MusicSearchHistory"
             android:excludeFromRecents="true"
             android:exported="false"
-            android:label="@string/history"
+            android:label="@string/history_shortcut"
             android:launchMode="singleTop"
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent" />

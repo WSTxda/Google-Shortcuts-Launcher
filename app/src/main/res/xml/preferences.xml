@@ -42,19 +42,10 @@
             android:defaultValue="true"
             android:icon="@mipmap/ic_launcher_search"
             android:key="search_shortcut"
-            android:layout="@layout/preference_material_shortcuts_middle"
-            android:summaryOff="@string/pref_shortcut_disabled"
-            android:summaryOn="@string/pref_shortcut_enabled"
-            android:title="@string/search" />
-
-        <SwitchPreferenceCompat
-            android:defaultValue="true"
-            android:icon="@mipmap/ic_launcher_shopping"
-            android:key="shopping_shortcut"
             android:layout="@layout/preference_material_shortcuts_bottom"
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
-            android:title="@string/shopping" />
+            android:title="@string/search" />
 
     </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
 
@@ -97,6 +88,30 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/password" />
+
+    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
+
+    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+        android:title="@string/pref_expandable_shopping"
+        app:allowDividerAbove="false">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_shopping"
+            android:key="shopping_shortcut"
+            android:layout="@layout/preference_material_shortcuts_top"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/shopping" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_travel"
+            android:key="travel_shortcut"
+            android:layout="@layout/preference_material_shortcuts_bottom"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/travel" />
 
     </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
 

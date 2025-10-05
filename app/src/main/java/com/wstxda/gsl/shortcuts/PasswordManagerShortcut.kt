@@ -47,5 +47,5 @@ class PasswordManagerShortcut : ShortcutsActivity() {
     }
 
     private fun createBrowserIntent(): Intent =
-        Intent(Intent.ACTION_VIEW, getString(R.string.password_url).toUri())
+        Intent(Intent.ACTION_VIEW, "https://passwords.google.com".toUri())
 }

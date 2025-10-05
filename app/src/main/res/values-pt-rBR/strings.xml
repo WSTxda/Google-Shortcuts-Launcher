@@ -7,6 +7,7 @@
 
     <string name="pref_expandable_search">Atalhos de pesquisa</string>
     <string name="pref_expandable_manager">Atalhos de gerenciadores</string>
+    <string name="pref_expandable_shopping">Atalhos de compras</string>
     <string name="pref_expandable_others">Outros atalhos</string>
 
     <string name="pref_category_shortcuts_settings">Configurações dos atalhos</string>
@@ -54,9 +55,15 @@
     <string name="files">Arquivos</string>
     <string name="incognito">Anônimo</string>
     <string name="search">Pesquisar</string>
-    <string name="history">Histórico</string>
     <string name="collections">Coleções</string>
     <string name="shopping">Shopping</string>
+    <string name="travel">Viagens</string>
+
+    <string name="history_shortcut">Histórico</string>
+    <string name="settings_shortcut">Configurações</string>
+    <string name="explore_shortcut">Explorar</string>
+    <string name="flight_shortcut">Voos</string>
+    <string name="hotel_shortcut">Hotéis</string>
 
     <string name="google_not_found">Atividade não encontrada. Instale ou ative o Google App</string>
     <string name="play_games_not_found">Atividade não encontrada. Instale ou ative o Google Play Games</string>

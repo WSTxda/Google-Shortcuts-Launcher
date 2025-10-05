@@ -27,6 +27,7 @@
         <item>@string/quick_share</item>
         <item>@string/search</item>
         <item>@string/shopping</item>
+        <item>@string/travel</item>
         <item>@string/weather</item>
     </string-array>
 
@@ -41,6 +42,7 @@
         <item>quick_share_shortcut</item>
         <item>search_shortcut</item>
         <item>shopping_shortcut</item>
+        <item>travel_shortcut</item>
         <item>weather_shortcut</item>
     </string-array>
 </resources>

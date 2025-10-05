@@ -11,7 +11,7 @@ class WeatherShortcut : ShortcutsActivity() {
         launchShortcuts(
             listOf(
                 createWeatherIntent(),
-                Intent(Intent.ACTION_VIEW, getString(R.string.weather_url).toUri())
+                Intent(Intent.ACTION_VIEW, "https://www.google.com/search?q=weather".toUri())
             ), R.string.browser_not_found
         )
     }
