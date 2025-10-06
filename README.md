@@ -20,42 +20,65 @@ Easily access essential Google apps features directly from your launcher app dra
 
 ## Shortcuts Available
 
-#### Digital Assistant 
-Quickly invoke your device’s voice assistant—such as Gemini, Google Assistant, or others—to streamline tasks and access smart voice commands.
+#### Assistant 
+Quickly invoke your device’s voice assistant—such as Gemini, Bixby, or others—to streamline tasks and access smart voice commands.
+> Android Digital Assistant Service
 
-#### Files (AOSP) 
-Launch the system's built-in file manager to organize, copy, move, delete, and perform many other operations easily.
-
-#### Games Launcher  
-A folder that displays all your installed games alongside recommendations from Google Play Games.  
-> Also integrates with game managers from various brands such as Xiaomi, Oppo, Samsung, Nubia, Asus, and more.
-
-#### Google Lens  
-Use your camera to search for objects, translate text, scan QR codes, copy content, and explore the world with powerful visual recognition features.
-
-#### Google Music Search  
-Identify music playing nearby with a single tap.  
-> A Quick Settings tile is also available for faster access.
-
-#### Google Password Manager  
-Launch the Google Password Manager in your browser to securely manage saved credentials.  
-> **Rooted Devices:** Directly access the native Play Services Password Manager interface—no browser required.
+#### Barcode Scanner
+Instantly scan product barcodes or QR codes using your device's camera to look up product details, compare prices, or navigate to a relevant website.
+> Google Play Services
 
 #### Chrome Incognito Tab  
 Start an Incognito session in Google Chrome where your activity isn’t saved to browsing history or local storage.
+> Google Chrome or Brave Browser
 
-#### Google Quick Share  
-Send and receive photos, files, and more between nearby Android devices and compatible Windows PCs—securely and wirelessly.
+#### Files (AOSP) 
+Launch the system's built-in file manager to organize, copy, move, delete, and perform many other operations easily.
+> AOSP File Manager
 
-#### Google Weather  
-Access real-time local weather updates along with a full weekly forecast.  
-> If the Google app is unavailable, weather data will open in your browser.
+#### Games Launcher  
+A folder that displays all your installed games alongside recommendations from Google Play Games.  
+> Google Play Games or Device Game Launcher/Turbo/Center/etc...
 
-#### Google Search  
-Perform quick searches on Google using the keyboard or voice input directly from your launcher.
+#### Google Finances
+Track your stocks, monitor market trends, and manage your investment portfolio with quick access to personalized financial news and data.
+> Web browser
+
+#### Google Lens  
+Use your camera to search for objects, translate text, scan QR codes, copy content, and explore the world with powerful visual recognition features.
+> Google App
+
+#### Google Music Search  
+Identify music playing nearby with a single tap.  
+> Google App
+
+#### Google Password Manager  
+Securely access your saved credentials to manage passwords, monitor their security with Password Checkup, and view your Passkeys.
+> (ROOT) Google Play Services or Web Browser
 
 #### Google Play Collections
 Organize your apps by theme and show personalized recommendations, helping you discover new content and pick up where you left off in games, videos, music, and more.
+> Google Play Store
+
+#### Google Quick Share  
+Send and receive photos, files, and more between nearby Android devices and compatible Windows PCs—securely and wirelessly.
+> Google Play Services
+
+#### Google Search  
+Perform quick searches on Google using the keyboard or voice input directly from your launcher.
+> Google App
+
+#### Google Shopping
+Search for products, compare prices across various retailers, find local stores, and manage your shopping lists and saved items.
+> Web Browser
+
+#### Google Travels
+Plan, manage, and track your trips with ease. Quickly view flight details, hotel reservations, local activities, and personalized travel recommendations.
+> Web Browser
+
+#### Google Weather  
+Access real-time local weather updates along with a full weekly forecast.  
+> Google App or Web Browser
 
 ---
 
