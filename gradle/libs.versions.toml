@@ -6,7 +6,7 @@ preference = "1.2.1"
 appcompat = "1.7.1"
 navigation = "2.9.5"
 material = "1.14.0-alpha05"
-aboutLibraries = "12.2.4"
+aboutLibraries = "13.0.0"
 
 [libraries]
 androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
@@ -18,4 +18,4 @@ aboutlibraries-view = { module = "com.mikepenz:aboutlibraries", version.ref = "a
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-aboutLibraries = { id = "com.mikepenz.aboutlibraries.plugin", version.ref = "aboutLibraries" }
+aboutLibraries = { id = "com.mikepenz.aboutlibraries.plugin.android", version.ref = "aboutLibraries" }
