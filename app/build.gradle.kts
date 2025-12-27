@@ -14,8 +14,6 @@ android {
         targetSdk = 36
         versionCode = 570
         versionName = "5.7"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
