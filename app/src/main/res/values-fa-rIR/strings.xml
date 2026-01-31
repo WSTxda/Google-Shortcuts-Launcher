@@ -6,8 +6,9 @@
     <string name="app_library">کتابخانه</string>
 
     <string name="pref_expandable_search">میانبرهای جستجو</string>
-    <string name="pref_expandable_manager">میانبرهای مدیریت</string>
+    <string name="pref_expandable_manager">میانبرهای مدیران</string>
     <string name="pref_expandable_shopping">میانبرهای خرید</string>
+    <string name="pref_expandable_games">میانبرهای بازی</string>
     <string name="pref_expandable_others">میانبرهای دیگر</string>
 
     <string name="pref_category_shortcuts_settings">تنظیمات میانبرها</string>
@@ -59,6 +60,12 @@
     <string name="travel">سفرها</string>
     <string name="finance">امور مالی</string>
     <string name="scanner">اسکنر</string>
+
+    <string name="cricket">کریکت</string>
+    <string name="minesweeper">مین‌روب</string>
+    <string name="pacman">پک-من</string>
+    <string name="snake">مار</string>
+    <string name="solitaire">بازی ورق</string>
 
     <string name="history_shortcut">تاریخچه</string>
     <string name="settings_shortcut">تنظیمات</string>

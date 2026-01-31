@@ -17,6 +17,7 @@ import com.wstxda.gsl.activity.LibraryActivity
 import com.wstxda.gsl.activity.ManagerActivity
 import com.wstxda.gsl.fragments.preferences.DigitalAssistantPreference
 import com.wstxda.gsl.shortcuts.*
+import com.wstxda.gsl.shortcuts.games.*
 import com.wstxda.gsl.ui.component.DigitalAssistantSetupDialog
 import com.wstxda.gsl.ui.TileManager
 import com.wstxda.gsl.utils.Constants
@@ -41,6 +42,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
     }
 
     private val shortcuts = mapOf(
+        // Apps
         "assistant_shortcut" to AssistantShortcut::class.java,
         "collections_shortcut" to CollectionsShortcut::class.java,
         "files_shortcut" to FilesShortcut::class.java,
@@ -56,7 +58,13 @@ class ManagerFragment : PreferenceFragmentCompat() {
         "shopping_shortcut" to ShoppingShortcut::class.java,
         "travel_shortcut" to TravelShortcut::class.java,
         "weather_shortcut" to WeatherShortcut::class.java,
-        "manager_activity" to ManagerActivity::class.java
+        "manager_activity" to ManagerActivity::class.java,
+        // Games
+        "cricket_shortcut" to CricketShortcut::class.java,
+        "minesweeper_shortcut" to MinesweeperShortcut::class.java,
+        "pacman_shortcut" to PacmanShortcut::class.java,
+        "snake_shortcut" to SnakeShortcut::class.java,
+        "solitaire_shortcut" to SolitaireShortcut::class.java
     )
 
     private val links = mapOf(

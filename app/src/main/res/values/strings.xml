@@ -8,6 +8,7 @@
     <string name="pref_expandable_search">Search shortcuts</string>
     <string name="pref_expandable_manager">Managers shortcuts</string>
     <string name="pref_expandable_shopping">Shopping shortcuts</string>
+    <string name="pref_expandable_games">Games shortcuts</string>
     <string name="pref_expandable_others">Others shortcuts</string>
 
     <string name="pref_category_shortcuts_settings">Shortcuts settings</string>
@@ -63,6 +64,12 @@
     <string name="travel">Travels</string>
     <string name="finance">Finances</string>
     <string name="scanner">Scanner</string>
+
+    <string name="cricket">Cricket</string>
+    <string name="minesweeper">Minesweeper</string>
+    <string name="pacman">PAC-MAN</string>
+    <string name="snake">Snake</string>
+    <string name="solitaire">Solitaire</string>
 
     <string name="history_shortcut">History</string>
     <string name="settings_shortcut">Settings</string>

@@ -6,8 +6,9 @@
     <string name="app_library">Biblioteca</string>
 
     <string name="pref_expandable_search">Atajos de búsqueda</string>
-    <string name="pref_expandable_manager">Atajos del gestores</string>
+    <string name="pref_expandable_manager">Atajos de gestores</string>
     <string name="pref_expandable_shopping">Atajos de Shopping</string>
+    <string name="pref_expandable_games">Atajos de juegos</string>
     <string name="pref_expandable_others">Otros atajos</string>
 
     <string name="pref_category_shortcuts_settings">Configuración de atajos</string>
@@ -59,6 +60,12 @@
     <string name="travel">Viajes</string>
     <string name="finance">Finanzas</string>
     <string name="scanner">Escáner</string>
+
+    <string name="cricket">Críquet</string>
+    <string name="minesweeper">Buscaminas</string>
+    <string name="pacman">PAC-MAN</string>
+    <string name="snake">Snake</string>
+    <string name="solitaire">Solitario</string>
 
     <string name="history_shortcut">Historial</string>
     <string name="settings_shortcut">Ajustes</string>

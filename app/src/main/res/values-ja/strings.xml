@@ -8,6 +8,7 @@
     <string name="pref_expandable_search">検索ショートカット</string>
     <string name="pref_expandable_manager">マネージャーのショートカット</string>
     <string name="pref_expandable_shopping">ショッピングのショートカット</string>
+    <string name="pref_expandable_games">ゲームのショートカット</string>
     <string name="pref_expandable_others">その他のショートカット</string>
 
     <string name="pref_category_shortcuts_settings">ショートカットの設定</string>
@@ -59,6 +60,12 @@
     <string name="travel">トラベル</string>
     <string name="finance">ファイナンス</string>
     <string name="scanner">スキャナー</string>
+
+    <string name="cricket">クリケット</string>
+    <string name="minesweeper">マインスイーパ</string>
+    <string name="pacman">PAC-MAN</string>
+    <string name="snake">ヘビ</string>
+    <string name="solitaire">ソリティア</string>
 
     <string name="history_shortcut">履歴</string>
     <string name="settings_shortcut">設定</string>

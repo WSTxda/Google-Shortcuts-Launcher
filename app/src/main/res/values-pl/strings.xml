@@ -5,10 +5,11 @@
     <string name="app_manager_shortcuts">Menedżer skrótów</string>
     <string name="app_library">Biblioteka</string>
 
-    <string name="pref_expandable_search">Skrótów wyszukiwania</string>
-    <string name="pref_expandable_manager">Skrótów menedżera</string>
-    <string name="pref_expandable_shopping">Skróty Zakupów</string>
-    <string name="pref_expandable_others">Inne skrótów</string>
+    <string name="pref_expandable_search">Skróty wyszukiwania</string>
+    <string name="pref_expandable_manager">Skróty menedżera</string>
+    <string name="pref_expandable_shopping">Skróty zakupów</string>
+    <string name="pref_expandable_games">Skróty gier</string>
+    <string name="pref_expandable_others">Inne skróty</string>
 
     <string name="pref_category_shortcuts_settings">Ustawienia skrótów</string>
     <string name="pref_category_other">Inne</string>
@@ -59,6 +60,12 @@
     <string name="travel">Podróże</string>
     <string name="finance">Finanse</string>
     <string name="scanner">Skaner</string>
+
+    <string name="cricket">Krykiet</string>
+    <string name="minesweeper">Saper</string>
+    <string name="pacman">PAC-MAN</string>
+    <string name="snake">Wąż</string>
+    <string name="solitaire">Pasjans</string>
 
     <string name="history_shortcut">Historia</string>
     <string name="settings_shortcut">Ustawienia</string>

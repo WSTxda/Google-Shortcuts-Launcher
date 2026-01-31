@@ -8,6 +8,7 @@
     <string name="pref_expandable_search">اختصارات البحث</string>
     <string name="pref_expandable_manager">اختصارات المدير</string>
     <string name="pref_expandable_shopping">اختصارات التسوّق</string>
+    <string name="pref_expandable_games">اختصارات الألعاب</string>
     <string name="pref_expandable_others">اختصارات أخرى</string>
 
     <string name="pref_category_shortcuts_settings">إعدادات الاختصارات</string>
@@ -59,6 +60,12 @@
     <string name="travel">السفر</string>
     <string name="finance">الشؤون المالية</string>
     <string name="scanner">ماسح ضوئي</string>
+
+    <string name="cricket">كريكيت</string>
+    <string name="minesweeper">كاسحة الألغام</string>
+    <string name="pacman">باك مان</string>
+    <string name="snake">ثعبان</string>
+    <string name="solitaire">سوليتير</string>
 
     <string name="history_shortcut">السجلّ</string>
     <string name="settings_shortcut">الإعدادات</string>

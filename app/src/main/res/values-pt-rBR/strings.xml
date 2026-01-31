@@ -8,6 +8,7 @@
     <string name="pref_expandable_search">Atalhos de pesquisa</string>
     <string name="pref_expandable_manager">Atalhos de gerenciadores</string>
     <string name="pref_expandable_shopping">Atalhos de compras</string>
+    <string name="pref_expandable_games">Atalhos de jogos</string>
     <string name="pref_expandable_others">Outros atalhos</string>
 
     <string name="pref_category_shortcuts_settings">Configurações dos atalhos</string>
@@ -59,6 +60,12 @@
     <string name="travel">Viagens</string>
     <string name="finance">Finanças</string>
     <string name="scanner">Scanner</string>
+
+    <string name="cricket">Críquete</string>
+    <string name="minesweeper">Campo minado</string>
+    <string name="pacman">PAC-MAN</string>
+    <string name="snake">Serpente</string>
+    <string name="solitaire">Paciência</string>
 
     <string name="history_shortcut">Histórico</string>
     <string name="settings_shortcut">Configurações</string>

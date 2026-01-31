@@ -116,6 +116,57 @@
     </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
 
     <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+        android:title="@string/pref_expandable_games"
+        app:allowDividerAbove="false">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_games_cricket"
+            android:key="cricket_shortcut"
+            android:layout="@layout/preference_material_shortcuts_top"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/cricket" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_games_mines"
+            android:key="minesweeper_shortcut"
+            android:layout="@layout/preference_material_shortcuts_middle"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/minesweeper" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_games_pacman"
+            android:key="pacman_shortcut"
+            android:layout="@layout/preference_material_shortcuts_middle"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/pacman" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_games_snake"
+            android:key="snake_shortcut"
+            android:layout="@layout/preference_material_shortcuts_middle"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/snake" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@mipmap/ic_launcher_games_solitaire"
+            android:key="solitaire_shortcut"
+            android:layout="@layout/preference_material_shortcuts_bottom"
+            android:summaryOff="@string/pref_shortcut_disabled"
+            android:summaryOn="@string/pref_shortcut_enabled"
+            android:title="@string/solitaire" />
+
+    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
+
+    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
         android:title="@string/pref_expandable_others"
         app:allowDividerAbove="false">
 
