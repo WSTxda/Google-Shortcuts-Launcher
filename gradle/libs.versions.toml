@@ -4,8 +4,8 @@ agp = "8.13.2"
 kotlin = "2.3.0"
 preference = "1.2.1"
 appcompat = "1.7.1"
-navigation = "2.9.6"
-material = "1.14.0-alpha08"
+navigation = "2.9.7"
+material = "1.14.0-alpha09"
 aboutLibraries = "13.2.1"
 
 [libraries]
