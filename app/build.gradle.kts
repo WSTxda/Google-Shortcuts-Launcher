@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.wstxda.gsl"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.wstxda.gsl"

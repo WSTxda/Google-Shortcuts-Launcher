@@ -10,7 +10,7 @@
     android:ellipsize="marquee"
     android:gravity="center_vertical|start"
     android:minHeight="?attr/dropdownListPreferredItemHeight"
-    android:paddingStart="36dp"
+    android:paddingStart="32dp"
     android:paddingLeft="?attr/dialogPreferredPadding"
     android:paddingTop="12dp"
     android:paddingEnd="32dp"
