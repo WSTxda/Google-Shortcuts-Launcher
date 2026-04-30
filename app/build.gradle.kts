@@ -6,11 +6,13 @@ plugins {
 
 android {
     namespace = "com.wstxda.gsl"
-    compileSdk = 37
+    //noinspection GradleDependency
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.wstxda.gsl"
         minSdk = 26
+        //noinspection OldTargetApi
         targetSdk = 36
         versionCode = 570
         versionName = "5.7"
