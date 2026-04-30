@@ -20,13 +20,23 @@ class ShortcutTileService : TileService() {
     private val preferenceHelper by lazy { PreferenceHelper(this) }
     private val resourcesManager by lazy { ShortcutResourcesManager(this) }
 
+    override fun onTileAdded() {
+        super.onTileAdded()
+        updateTile()
+    }
+
+    override fun onTileRemoved() {
+        super.onTileRemoved()
+        updateTile()
+    }
+
     override fun onStartListening() {
         super.onStartListening()
         updateTile()
     }
 
-    override fun onTileAdded() {
-        super.onTileAdded()
+    override fun onStopListening() {
+        super.onStopListening()
         updateTile()
     }
 
