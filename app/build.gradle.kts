@@ -1,13 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.aboutLibraries)
 }
 
 android {
     namespace = "com.wstxda.gsl"
-    //noinspection GradleDependency
-    compileSdk = 36
+    compileSdk {
+        version = release(36) {
+            minorApiLevel = 1
+        }
+    }
 
     defaultConfig {
         applicationId = "com.wstxda.gsl"
@@ -33,12 +35,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_21
     }
 
-    kotlin {
-        compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
-        }
-    }
-
     buildFeatures {
         viewBinding = true
     }
@@ -46,13 +42,6 @@ android {
     dependenciesInfo {
         includeInApk = false
         includeInBundle = false
-    }
-
-    aboutLibraries {
-        library {
-            duplicationMode = com.mikepenz.aboutlibraries.plugin.DuplicateMode.MERGE
-            duplicationRule = com.mikepenz.aboutlibraries.plugin.DuplicateRule.SIMPLE
-        }
     }
 }
 
