@@ -6,6 +6,7 @@
         <!--preference theme-->
         <item name="android:colorAccent">?attr/colorPrimary</item>
         <!--components theme-->
+        <item name="bottomSheetDialogTheme">@style/Theme.Component.Material.BottomSheet</item>
         <item name="alertDialogTheme">@style/Theme.Component.Material.AlertDialog</item>
         <item name="snackbarStyle">@style/Theme.Component.Material.Snackbar</item>
         <item name="switchPreferenceCompatStyle">@style/Theme.Component.Material.SwitchPreferenceCompat</item>

@@ -1,6 +1,6 @@
 <resources>
 
-    <!--icons backgrounds-->
+    <!--app icons backgrounds-->
 
     <color name="ic_launcher_background">#FFFFFF</color>
     <color name="ic_launcher_background_game">#177f38</color>
