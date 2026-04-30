@@ -5,41 +5,65 @@ import androidx.core.net.toUri
 
 object Constants {
 
-    // Preferences keys
-
-    const val ADD_TILE_SHORTCUT_PREF_KEY = "add_shortcut_tile"
+    // -------------------------------------------------------------------------
+    // Preferences keys — digital assistant
+    // -------------------------------------------------------------------------
 
     const val DIGITAL_ASSISTANT_SETUP_PREF_KEY = "digital_assistant_setup"
     const val DIGITAL_ASSISTANT_SHORTCUT_PREF_KEY = "digital_assistant_shortcut"
+
+    // -------------------------------------------------------------------------
+    // Preferences keys — shortcuts settings
+    // -------------------------------------------------------------------------
+
+    const val ADD_TILE_SHORTCUT_PREF_KEY = "add_shortcut_tile"
     const val TILE_SHORTCUT_PREF_KEY = "tile_shortcut"
     const val GAME_MANAGER_PREF_KEY = "device_game_manager"
     const val SHORTCUT_ROOT_MODE_PREF_KEY = "shortcut_root_mode"
-    const val LIBRARY_PREF_KEY = "library"
-    const val THEME_PREF_KEY = "select_theme"
 
+    // -------------------------------------------------------------------------
+    // Preferences keys — others
+    // -------------------------------------------------------------------------
+
+    const val THEME_PREF_KEY = "select_theme"
+    const val LIBRARY_PREF_KEY = "library"
+
+    // -------------------------------------------------------------------------
     // Theme values
+    // -------------------------------------------------------------------------
 
     const val THEME_SYSTEM = "system"
     const val THEME_LIGHT = "light"
     const val THEME_DARK = "dark"
 
-    // Dialog fragments
+    // -------------------------------------------------------------------------
+    // Dialog / fragment tags
+    // -------------------------------------------------------------------------
 
     const val DIGITAL_ASSISTANT_DIALOG = "DigitalAssistantSetupDialog"
 
-    // Constants for preferences
+    // -------------------------------------------------------------------------
+    // SharedPreferences
+    // -------------------------------------------------------------------------
 
     const val IS_ASSIST_SETUP_DONE = "is_assist_setup_done"
 
-    // Root checker
+    // -------------------------------------------------------------------------
+    // Logs tags
+    // -------------------------------------------------------------------------
 
-    const val ROOT_CHECKER_TAG = "RootChecker"
+    const val ROOT_CHECKER = "RootChecker"
 
-    // GitHub API releases URL
+    // -------------------------------------------------------------------------
+    // Updater GitHub API
+    // -------------------------------------------------------------------------
 
     const val GITHUB_RELEASE_URL = "https://api.github.com/repos/WSTxda/Google-Shortcuts-Launcher/releases/latest"
+    const val GITHUB_RELEASE_PAGE_URL = "https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest"
 
-    // Files shortcut storage URI
+    // -------------------------------------------------------------------------
+    // Storage URI patch
+    // -------------------------------------------------------------------------
 
     val STORAGE_URI: Uri = "content://com.android.externalstorage.documents/root/primary".toUri()
 }

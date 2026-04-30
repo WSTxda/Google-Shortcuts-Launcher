@@ -1,6 +1,7 @@
 package com.wstxda.gsl.utils
 
 object GamesBrandsPackages {
+
     val gamesLaunchersIntents = listOf(
 
         // AOSP ROMs

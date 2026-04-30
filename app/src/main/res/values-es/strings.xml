@@ -31,6 +31,8 @@
     <string name="pref_show_manager">Mostrar gestor en lanzador</string>
     <string name="pref_show_manager_summary">Para acceder a gestor cuando esté oculta, presione el atajo en el panel de configuración rápida</string>
 
+    <string name="pref_version_number">Versión %s</string>
+
     <string name="pref_add_shortcut_tile">Añadir atajo al panel de configuración rápida</string>
 
     <string name="pref_theme">Tema</string>

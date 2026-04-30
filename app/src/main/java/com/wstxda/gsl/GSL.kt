@@ -6,6 +6,7 @@ import com.wstxda.gsl.ui.ThemeManager
 import com.wstxda.gsl.utils.Constants
 
 class GSL : Application() {
+
     override fun onCreate() {
         super.onCreate()
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)

@@ -15,7 +15,7 @@ import androidx.preference.SwitchPreferenceCompat
 import com.wstxda.gsl.R
 import com.wstxda.gsl.activity.LibraryActivity
 import com.wstxda.gsl.activity.ManagerActivity
-import com.wstxda.gsl.fragments.preferences.DigitalAssistantPreference
+import com.wstxda.gsl.preference.DigitalAssistantPreference
 import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.shortcuts.games.*
 import com.wstxda.gsl.ui.component.DigitalAssistantSetupDialog

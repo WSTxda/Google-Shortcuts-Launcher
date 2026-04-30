@@ -9,6 +9,7 @@ import androidx.lifecycle.MutableLiveData
 import com.wstxda.gsl.ui.ThemeManager
 
 class ManagerViewModel(application: Application) : AndroidViewModel(application) {
+
     private val pm = application.packageManager
     private val _isAssistSetupDone = MutableLiveData<Boolean>()
     val isAssistSetupDone: LiveData<Boolean> = _isAssistSetupDone

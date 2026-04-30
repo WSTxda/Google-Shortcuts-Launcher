@@ -9,6 +9,7 @@
     <application
         android:name=".GSL"
         android:allowBackup="false"
+        android:appCategory="productivity"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:enableOnBackInvokedCallback="false"
         android:fullBackupContent="false"
@@ -23,7 +24,6 @@
         <activity
             android:name=".activity.ManagerActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
-            android:enableOnBackInvokedCallback="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_manager"
             android:label="@string/app_manager"

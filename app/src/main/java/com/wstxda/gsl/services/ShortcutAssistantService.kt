@@ -11,6 +11,7 @@ import com.wstxda.gsl.utils.Constants
 import com.wstxda.gsl.utils.ShortcutsMap.shortcuts
 
 class ShortcutAssistantService : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         launchAssistantShortcut(this)
     }

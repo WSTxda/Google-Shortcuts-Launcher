@@ -1,4 +1,4 @@
-package com.wstxda.gsl.fragments.preferences
+package com.wstxda.gsl.preference
 
 import android.content.Context
 import android.os.Build

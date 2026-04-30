@@ -56,18 +56,17 @@
         app:layout_constraintEnd_toEndOf="@android:id/title"
         app:layout_constraintStart_toStartOf="@android:id/title"
         app:layout_constraintTop_toBottomOf="@android:id/title"
-        tools:text="@string/music_search_label"
+        tools:text="@string/music_search"
         tools:visibility="gone" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/expanded_indicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:src="@drawable/ic_arrow_down"
+        android:src="@drawable/ic_arrow_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="?attr/colorOnSecondaryContainer" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,6 +31,8 @@
     <string name="pref_show_manager">Mostrar gerenciador no launcher</string>
     <string name="pref_show_manager_summary">Para acessar o gerenciador quando oculto, pressione o bloco de atalho no painel de configurações rápidas</string>
 
+    <string name="pref_version_number">Versão %s</string>
+
     <string name="pref_add_shortcut_tile">Adicionar atalho ao painel de configurações rápidas</string>
 
     <string name="pref_theme">Tema</string>

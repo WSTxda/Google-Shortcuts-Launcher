@@ -31,6 +31,8 @@
     <string name="pref_show_manager">نمایش مدیر در لانچر</string>
     <string name="pref_show_manager_summary">برای دسترسی به مدیر در حالت پنهان، کاشی میانبر را در پنل تنظیمات سریع فشار دهید</string>
 
+    <string name="pref_version_number">نسخه %s</string>
+
     <string name="pref_tile_shortcut">میانبر کاشی تنظیمات سریع</string>
 
     <string name="pref_theme">تم</string>

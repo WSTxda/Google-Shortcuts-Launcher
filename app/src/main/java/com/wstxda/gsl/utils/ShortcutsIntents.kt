@@ -1,6 +1,7 @@
 package com.wstxda.gsl.utils
 
 object ShortcutsIntents {
+
     val incognitoBrowserIntents = listOf(
 
         // Google Chrome

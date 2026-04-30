@@ -7,9 +7,10 @@
         android:layout="@layout/preference_material_tile"
         android:title="@string/pref_add_shortcut_tile" />
 
-    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreferences
         android:title="@string/pref_expandable_search"
-        app:allowDividerAbove="false">
+        app:allowDividerAbove="false"
+        app:isExpanded="false">
 
         <SwitchPreferenceCompat
             android:defaultValue="true"
@@ -46,12 +47,12 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/search" />
+    </com.wstxda.gsl.preference.ExpandablePreferences>
 
-    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
-
-    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreferences
         android:title="@string/pref_expandable_manager"
-        app:allowDividerAbove="false">
+        app:allowDividerAbove="false"
+        app:isExpanded="false">
 
         <SwitchPreferenceCompat
             android:defaultValue="true"
@@ -88,12 +89,12 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/password_manager" />
+    </com.wstxda.gsl.preference.ExpandablePreferences>
 
-    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
-
-    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreferences
         android:title="@string/pref_expandable_shopping"
-        app:allowDividerAbove="false">
+        app:allowDividerAbove="false"
+        app:isExpanded="false">
 
         <SwitchPreferenceCompat
             android:defaultValue="true"
@@ -112,12 +113,12 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/travel" />
+    </com.wstxda.gsl.preference.ExpandablePreferences>
 
-    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
-
-    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreferences
         android:title="@string/pref_expandable_games"
-        app:allowDividerAbove="false">
+        app:allowDividerAbove="false"
+        app:isExpanded="false">
 
         <SwitchPreferenceCompat
             android:defaultValue="true"
@@ -163,12 +164,12 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/solitaire" />
+    </com.wstxda.gsl.preference.ExpandablePreferences>
 
-    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
-
-    <com.wstxda.gsl.fragments.preferences.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreferences
         android:title="@string/pref_expandable_others"
-        app:allowDividerAbove="false">
+        app:allowDividerAbove="false"
+        app:isExpanded="false">
 
         <SwitchPreferenceCompat
             android:defaultValue="true"
@@ -214,8 +215,7 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/weather" />
-
-    </com.wstxda.gsl.fragments.preferences.ExpandablePreferences>
+    </com.wstxda.gsl.preference.ExpandablePreferences>
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"
@@ -227,7 +227,8 @@
         android:key="digital_assistant_setup"
         android:layout="@layout/preference_material_top"
         android:summary="@string/pref_setup_digital_assistant_summary"
-        android:title="@string/pref_setup_digital_assistant" />
+        android:title="@string/pref_setup_digital_assistant"
+        app:isPreferenceVisible="false" />
 
     <ListPreference
         android:defaultValue="lens_shortcut"
@@ -322,10 +323,11 @@
         android:summary="@string/pref_used_library_summary"
         android:title="@string/pref_used_library" />
 
-    <com.wstxda.gsl.fragments.preferences.UpdaterPreference
+    <com.wstxda.gsl.preference.UpdaterPreference
+        android:icon="@drawable/ic_shortcut_default"
         android:key="version"
         android:summary="@string/pref_version_number"
-        android:title="@string/pref_version"
+        android:title="@string/app_name"
         app:allowDividerAbove="false"
         app:allowDividerBelow="false"
         app:iconSpaceReserved="false" />

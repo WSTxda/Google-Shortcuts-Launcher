@@ -31,6 +31,8 @@
     <string name="pref_show_manager">Pokaż menedżera w launcherze</string>
     <string name="pref_show_manager_summary">Aby uzyskać dostęp do menedżera, gdy jest ukryty, naciśnij kafelek skrótu w panelu szybkich ustawień</string>
 
+    <string name="pref_version_number">Wersja %s</string>
+
     <string name="pref_add_shortcut_tile">Dodaj kafelek skrótu w panelu szybkich ustawień</string>
 
     <string name="pref_theme">Motyw</string>

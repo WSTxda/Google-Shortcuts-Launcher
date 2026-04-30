@@ -1,6 +1,9 @@
-package com.wstxda.gsl.fragments.preferences
+package com.wstxda.gsl.preference
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.provider.Settings
 import android.util.AttributeSet
 import android.widget.Button
 import android.widget.TextView
@@ -22,17 +25,28 @@ class UpdaterPreference @JvmOverloads constructor(
 
     override fun onBindViewHolder(holder: PreferenceViewHolder) {
         super.onBindViewHolder(holder)
-        holder.itemView.apply {
-            isClickable = false
-            isFocusable = false
+
+        val versionName = getVersionName(context)
+        val versionText = context.getString(R.string.pref_version_number, versionName)
+
+        (holder.findViewById(android.R.id.summary) as? TextView)?.text = versionText
+
+        holder.itemView.setOnClickListener {
+            openAppInfo(context)
         }
-        (holder.findViewById(android.R.id.summary) as? TextView)?.text = getVersionName(context)
 
         (holder.findViewById(R.id.check_updates) as? Button)?.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch {
                 UpdaterService.checkForUpdates(context, holder.itemView)
             }
         }
+    }
+
+    private fun openAppInfo(context: Context) {
+        val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+            data = Uri.fromParts("package", context.packageName, null)
+        }
+        context.startActivity(intent)
     }
 
     private fun getVersionName(context: Context): String = runCatching {

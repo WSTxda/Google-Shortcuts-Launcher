@@ -6,7 +6,8 @@ import androidx.lifecycle.lifecycleScope
 import com.wstxda.gsl.R
 import com.wstxda.gsl.activity.ShortcutsActivity
 import com.wstxda.gsl.logic.PreferenceHelper
-import com.wstxda.gsl.logic.RootChecker
+import com.wstxda.gsl.logic.isRootAvailable
+import com.wstxda.gsl.logic.launchRootActivity
 import com.wstxda.gsl.logic.launchShortcuts
 import com.wstxda.gsl.logic.showToast
 import com.wstxda.gsl.utils.Constants
@@ -15,6 +16,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class MusicSearchHistory : ShortcutsActivity() {
+
     private val preferences by lazy { PreferenceHelper(this) }
 
     override fun onCreateInternal() {
@@ -28,9 +30,9 @@ class MusicSearchHistory : ShortcutsActivity() {
     }
 
     private suspend fun handleRootMode() {
-        if (withContext(Dispatchers.IO) { RootChecker.isRootAvailable() }) {
+        if (withContext(Dispatchers.IO) { isRootAvailable() }) {
             val success = withContext(Dispatchers.IO) {
-                RootChecker.launchRootActivity(
+                launchRootActivity(
                     "com.google.android.googlequicksearchbox",
                     "com.google.android.apps.search.soundsearch.history.HistoryActivity"
                 )

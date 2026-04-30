@@ -22,7 +22,9 @@ abstract class BaseActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(showBackButton)
         if (showBackButton) {
-            toolbar.setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
+            toolbar.setNavigationOnClickListener {
+                onBackPressedDispatcher.onBackPressed()
+            }
         }
     }
 
@@ -32,6 +34,8 @@ abstract class BaseActivity : AppCompatActivity() {
                 navigationBarStyle = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT)
             )
             window.isNavigationBarContrastEnforced = false
+        } else {
+            enableEdgeToEdge()
         }
     }
 
