@@ -6,6 +6,7 @@ import android.net.NetworkCapabilities
 import android.view.View
 import androidx.core.content.getSystemService
 import androidx.fragment.app.FragmentManager
+import androidx.preference.PreferenceManager
 import com.google.android.material.snackbar.Snackbar
 import com.wstxda.gsl.R
 import com.wstxda.gsl.repository.GitHubReleaseRepository
@@ -13,6 +14,8 @@ import com.wstxda.gsl.ui.component.UpdaterBottomSheet
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import androidx.core.content.edit
+import com.wstxda.gsl.utils.Constants
 
 object UpdaterService {
 
@@ -49,6 +52,20 @@ object UpdaterService {
         }
     }
 
+    fun checkForUpdatesAuto(
+        scope: CoroutineScope, context: Context, fragmentManager: FragmentManager
+    ) {
+        val prefs = PreferenceManager.getDefaultSharedPreferences(context)
+        val lastCheck = prefs.getLong(Constants.GITHUB_UPDATE_CHECKED, 0)
+        val currentTime = System.currentTimeMillis()
+        val twelveHours = 43200000L
+
+        if (currentTime - lastCheck > twelveHours) {
+            prefs.edit { putLong(Constants.GITHUB_UPDATE_CHECKED, currentTime) }
+            checkForUpdates(scope, context, fragmentManager, null)
+        }
+    }
+
     private fun isNetworkAvailable(context: Context): Boolean {
         val cm = context.getSystemService<ConnectivityManager>() ?: return false
         val caps = cm.getNetworkCapabilities(cm.activeNetwork ?: return false) ?: return false
@@ -56,11 +73,11 @@ object UpdaterService {
     }
 
     private fun getInstalledVersion(context: Context): String = runCatching {
-        context.packageManager.getPackageInfo(context.packageName, 0).versionName ?: "N/A"
-    }.getOrDefault("N/A")
+        context.packageManager.getPackageInfo(context.packageName, 0).versionName ?: "Unknown"
+    }.getOrDefault("Unknown")
 
     private fun compareVersions(current: String, latest: String): Int {
-        if (current == "N/A") return -1
+        if (current == "Unknown") return -1
         val c = current.split(".").map { it.toIntOrNull() ?: 0 }
         val l = latest.split(".").map { it.toIntOrNull() ?: 0 }
         for (i in 0 until maxOf(c.size, l.size)) {

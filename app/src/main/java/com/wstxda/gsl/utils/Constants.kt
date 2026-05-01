@@ -72,6 +72,7 @@ object Constants {
     const val GITHUB_CHANGELOG = "changelog"
     const val GITHUB_DOWNLOAD_URL = "download_url"
     const val GITHUB_PAGE_URL = "page_url"
+    const val GITHUB_UPDATE_CHECKED = "update_checked"
 
     const val GITHUB_API_URL = "https://api.github.com/repos/WSTxda/Google-Shortcuts-Launcher/releases/latest"
     const val GITHUB_RELEASE_URL = "https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest"
