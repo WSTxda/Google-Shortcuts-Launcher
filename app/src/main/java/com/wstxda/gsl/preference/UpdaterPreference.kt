@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
 import com.wstxda.gsl.R
-import com.wstxda.gsl.services.UpdaterService
+import com.wstxda.gsl.service.UpdaterService
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.cancel
 

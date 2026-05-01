@@ -1,4 +1,4 @@
-package com.wstxda.gsl.services
+package com.wstxda.gsl.service
 
 import android.content.Context
 import android.content.Intent
@@ -10,7 +10,7 @@ import com.wstxda.gsl.logic.showToast
 import com.wstxda.gsl.utils.Constants
 import com.wstxda.gsl.utils.ShortcutsMap.shortcuts
 
-class ShortcutAssistantService : ShortcutsActivity() {
+class DigitalAssistantService : ShortcutsActivity() {
 
     override fun onCreateInternal() {
         launchAssistantShortcut(this)

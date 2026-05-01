@@ -1,4 +1,4 @@
-package com.wstxda.gsl.services
+package com.wstxda.gsl.service
 
 import android.content.Context
 import android.net.ConnectivityManager

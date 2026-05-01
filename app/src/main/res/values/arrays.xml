@@ -14,6 +14,8 @@
         <item>dark</item>
     </string-array>
 
+    <!--shortcut selector-->
+
     <string-array name="shortcut_entries">
         <item>@string/assistant</item>
         <item>@string/collections</item>
@@ -32,29 +34,7 @@
         <item>@string/weather</item>
     </string-array>
 
-    <!--digital assistant shortcut selector-->
-
-    <string-array name="digital_assistant_shortcut_values">
-        <item>assistant_shortcut</item>
-        <item>collections_shortcut</item>
-        <item>files_shortcut</item>
-        <item>finance_shortcut</item>
-        <item>games_shortcut</item>
-        <item>incognito_shortcut</item>
-        <item>lens_shortcut</item>
-        <item>music_search_shortcut</item>
-        <item>password_manager_shortcut</item>
-        <item>quick_share_shortcut</item>
-        <item>scanner_shortcut</item>
-        <item>search_shortcut</item>
-        <item>shopping_shortcut</item>
-        <item>travel_shortcut</item>
-        <item>weather_shortcut</item>
-    </string-array>
-
-    <!--quick settings tile shortcut selector-->
-
-    <string-array name="tile_shortcut_values">
+    <string-array name="shortcut_values">
         <item>assistant_shortcut</item>
         <item>collections_shortcut</item>
         <item>files_shortcut</item>

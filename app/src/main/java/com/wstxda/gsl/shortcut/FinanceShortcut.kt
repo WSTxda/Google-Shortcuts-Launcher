@@ -1,4 +1,4 @@
-package com.wstxda.gsl.shortcuts
+package com.wstxda.gsl.shortcut
 
 import android.content.Intent
 import androidx.core.net.toUri
@@ -8,18 +8,18 @@ import com.wstxda.gsl.activity.ShortcutsActivity
 import com.wstxda.gsl.logic.launchShortcuts
 import kotlinx.coroutines.launch
 
-class TravelShortcut : ShortcutsActivity() {
+class FinanceShortcut : ShortcutsActivity() {
 
     override fun onCreateInternal() {
         lifecycleScope.launch {
-            launchTravelBrowser()
+            launchFinanceBrowser()
         }
     }
 
-    private fun launchTravelBrowser() {
+    private fun launchFinanceBrowser() {
         launchShortcuts(listOf(createBrowserIntent()), R.string.browser_not_found)
     }
 
     private fun createBrowserIntent(): Intent =
-        Intent(Intent.ACTION_VIEW, "https://www.google.com/travel".toUri())
+        Intent(Intent.ACTION_VIEW, "https://www.google.com/finance".toUri())
 }

@@ -1,4 +1,4 @@
-package com.wstxda.gsl.shortcuts
+package com.wstxda.gsl.service
 
 import android.content.Intent
 import androidx.core.net.toUri
@@ -15,38 +15,40 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class PasswordManagerShortcut : ShortcutsActivity() {
+class MusicSearchHistory : ShortcutsActivity() {
+
     private val preferences by lazy { PreferenceHelper(this) }
 
     override fun onCreateInternal() {
         lifecycleScope.launch {
-            when {
-                preferences.getBoolean(Constants.SHORTCUT_ROOT_MODE_PREF_KEY) -> handleRootMode()
-                else -> launchPasswordManagerBrowser()
+            if (preferences.getBoolean(Constants.SHORTCUT_ROOT_MODE_PREF_KEY)) {
+                handleRootMode()
+            } else {
+                launchHistoryBrowser()
             }
         }
     }
 
     private suspend fun handleRootMode() {
-        if (withContext(Dispatchers.IO) {isRootAvailable() }) {
+        if (withContext(Dispatchers.IO) { isRootAvailable() }) {
             val success = withContext(Dispatchers.IO) {
                 launchRootActivity(
-                    "com.google.android.gms",
-                    "com.google.android.gms.credential.manager.PasswordManagerActivity"
+                    "com.google.android.googlequicksearchbox",
+                    "com.google.android.apps.search.soundsearch.history.HistoryActivity"
                 )
             }
             if (!success) {
-                showToast(R.string.play_services_not_found)
+                showToast(R.string.google_not_found)
             }
         } else {
             showToast(R.string.root_access_warning)
         }
     }
 
-    private fun launchPasswordManagerBrowser() {
+    private fun launchHistoryBrowser() {
         launchShortcuts(listOf(createBrowserIntent()), R.string.browser_not_found)
     }
 
     private fun createBrowserIntent(): Intent =
-        Intent(Intent.ACTION_VIEW, "https://passwords.google.com".toUri())
+        Intent(Intent.ACTION_VIEW, "https://myactivity.google.com/myactivity?product=17".toUri())
 }

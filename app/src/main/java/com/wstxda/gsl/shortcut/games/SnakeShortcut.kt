@@ -1,4 +1,4 @@
-package com.wstxda.gsl.shortcuts.games
+package com.wstxda.gsl.shortcut.games
 
 import android.content.ComponentName
 import android.content.Intent

@@ -10,7 +10,7 @@ import androidx.preference.PreferenceViewHolder
 import com.wstxda.gsl.R
 import androidx.core.content.withStyledAttributes
 
-class ExpandablePreferences @JvmOverloads constructor(
+class ExpandablePreference @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
 ) : PreferenceGroup(context, attrs) {

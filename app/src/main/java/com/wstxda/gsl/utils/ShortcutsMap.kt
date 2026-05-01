@@ -1,6 +1,6 @@
 package com.wstxda.gsl.utils
 
-import com.wstxda.gsl.shortcuts.*
+import com.wstxda.gsl.shortcut.*
 
 object ShortcutsMap {
 

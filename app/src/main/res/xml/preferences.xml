@@ -3,11 +3,11 @@
 
     <Preference
         android:icon="@drawable/ic_add"
-        android:key="add_shortcut_tile"
+        android:key="shortcut_add_tile"
         android:layout="@layout/preference_material_tile"
         android:title="@string/pref_add_shortcut_tile" />
 
-    <com.wstxda.gsl.preference.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreference
         android:title="@string/pref_expandable_search"
         app:allowDividerAbove="false"
         app:isExpanded="false">
@@ -47,9 +47,9 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/search" />
-    </com.wstxda.gsl.preference.ExpandablePreferences>
+    </com.wstxda.gsl.preference.ExpandablePreference>
 
-    <com.wstxda.gsl.preference.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreference
         android:title="@string/pref_expandable_manager"
         app:allowDividerAbove="false"
         app:isExpanded="false">
@@ -89,9 +89,9 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/password_manager" />
-    </com.wstxda.gsl.preference.ExpandablePreferences>
+    </com.wstxda.gsl.preference.ExpandablePreference>
 
-    <com.wstxda.gsl.preference.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreference
         android:title="@string/pref_expandable_shopping"
         app:allowDividerAbove="false"
         app:isExpanded="false">
@@ -113,9 +113,9 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/travel" />
-    </com.wstxda.gsl.preference.ExpandablePreferences>
+    </com.wstxda.gsl.preference.ExpandablePreference>
 
-    <com.wstxda.gsl.preference.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreference
         android:title="@string/pref_expandable_games"
         app:allowDividerAbove="false"
         app:isExpanded="false">
@@ -164,9 +164,9 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/solitaire" />
-    </com.wstxda.gsl.preference.ExpandablePreferences>
+    </com.wstxda.gsl.preference.ExpandablePreference>
 
-    <com.wstxda.gsl.preference.ExpandablePreferences
+    <com.wstxda.gsl.preference.ExpandablePreference
         android:title="@string/pref_expandable_others"
         app:allowDividerAbove="false"
         app:isExpanded="false">
@@ -215,7 +215,7 @@
             android:summaryOff="@string/pref_shortcut_disabled"
             android:summaryOn="@string/pref_shortcut_enabled"
             android:title="@string/weather" />
-    </com.wstxda.gsl.preference.ExpandablePreferences>
+    </com.wstxda.gsl.preference.ExpandablePreference>
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"
@@ -234,7 +234,7 @@
         android:defaultValue="lens_shortcut"
         android:enabled="false"
         android:entries="@array/shortcut_entries"
-        android:entryValues="@array/digital_assistant_shortcut_values"
+        android:entryValues="@array/shortcut_values"
         android:icon="@drawable/ic_device_shortcut"
         android:key="digital_assistant_shortcut"
         android:layout="@layout/preference_material_top"
@@ -246,9 +246,9 @@
     <ListPreference
         android:defaultValue="music_search_shortcut"
         android:entries="@array/shortcut_entries"
-        android:entryValues="@array/tile_shortcut_values"
+        android:entryValues="@array/shortcut_values"
         android:icon="@drawable/ic_tiles"
-        android:key="tile_shortcut"
+        android:key="shortcut_tile"
         android:layout="@layout/preference_material_middle"
         android:title="@string/pref_tile_shortcut"
         app:dialogIcon="@drawable/ic_shortcut"

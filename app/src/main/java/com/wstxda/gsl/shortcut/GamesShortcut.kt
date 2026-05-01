@@ -1,4 +1,4 @@
-package com.wstxda.gsl.shortcuts
+package com.wstxda.gsl.shortcut
 
 import android.content.Intent
 import com.wstxda.gsl.R
@@ -11,7 +11,7 @@ import com.wstxda.gsl.utils.GamesBrandsPackages
 class GamesShortcut : ShortcutsActivity() {
     private val preferences by lazy { PreferenceHelper(this) }
     override fun onCreateInternal() {
-        if (preferences.getBoolean(Constants.GAME_MANAGER_PREF_KEY)) launchBrandGamesManager()
+        if (preferences.getBoolean(Constants.DEVICE_GAME_MANAGER_PREF_KEY)) launchBrandGamesManager()
         else launchGooglePlayGamesFolder()
     }
 

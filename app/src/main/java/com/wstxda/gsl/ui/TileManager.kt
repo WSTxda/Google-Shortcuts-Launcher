@@ -9,7 +9,7 @@ import android.os.Build
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.wstxda.gsl.R
-import com.wstxda.gsl.services.ShortcutTileService
+import com.wstxda.gsl.service.ShortcutTileService
 import java.util.concurrent.Executors
 import java.util.function.Consumer
 

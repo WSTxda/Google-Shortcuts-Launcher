@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Updater permissions -->
+    <!--updater permissions-->
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +14,7 @@
         android:allowBackup="false"
         android:appCategory="productivity"
         android:dataExtractionRules="@xml/data_extraction_rules"
-        android:enableOnBackInvokedCallback="false"
+        android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -33,11 +32,11 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <!-- Manager activity-->
+        <!--manager activity-->
 
         <activity
             android:name=".activity.ManagerActivity"
-            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:configChanges="screenSize|keyboard|keyboardHidden"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_manager"
             android:label="@string/app_manager"
@@ -48,7 +47,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Manager activity for preferences actions -->
+        <!--manager activity for preferences actions-->
 
         <activity-alias
             android:name=".activity.ManagerActivityLauncher"
@@ -61,26 +60,19 @@
             </intent-filter>
         </activity-alias>
 
-        <!-- Library activity for preferences -->
+        <!--about libraries activity-->
 
         <activity
             android:name=".activity.LibraryActivity"
-            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
-            android:enableOnBackInvokedCallback="true"
+            android:configChanges="screenSize|keyboard|keyboardHidden"
             android:exported="false"
-            android:label="@string/app_library"
             android:launchMode="singleTop"
-            android:theme="@style/AppTheme.Library">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme.Library" />
 
-        <!-- Shortcuts activity's -->
+        <!--shortcuts activity's-->
 
         <activity
-            android:name=".shortcuts.AssistantShortcut"
+            android:name=".shortcut.AssistantShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_assistant"
@@ -95,7 +87,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.CollectionsShortcut"
+            android:name=".shortcut.CollectionsShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_collections"
@@ -110,7 +102,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.FilesShortcut"
+            android:name=".shortcut.FilesShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_files"
@@ -125,7 +117,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.FinanceShortcut"
+            android:name=".shortcut.FinanceShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_finance"
@@ -140,7 +132,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.GamesShortcut"
+            android:name=".shortcut.GamesShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_game"
@@ -155,7 +147,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.IncognitoShortcut"
+            android:name=".shortcut.IncognitoShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_incognito"
@@ -170,7 +162,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.LensShortcut"
+            android:name=".shortcut.LensShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_lens"
@@ -188,7 +180,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.MusicSearchShortcut"
+            android:name=".shortcut.MusicSearchShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_music"
@@ -206,7 +198,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.PasswordManagerShortcut"
+            android:name=".shortcut.PasswordManagerShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_password"
@@ -221,7 +213,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.QuickShareShortcut"
+            android:name=".shortcut.QuickShareShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_share"
@@ -236,7 +228,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.ScannerShortcut"
+            android:name=".shortcut.ScannerShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_scanner"
@@ -251,7 +243,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.SearchShortcut"
+            android:name=".shortcut.SearchShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_search"
@@ -269,7 +261,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.ShoppingShortcut"
+            android:name=".shortcut.ShoppingShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_shopping"
@@ -287,7 +279,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.TravelShortcut"
+            android:name=".shortcut.TravelShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_travel"
@@ -305,7 +297,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.WeatherShortcut"
+            android:name=".shortcut.WeatherShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_weather"
@@ -319,10 +311,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Games Shortcuts activity's -->
+        <!--sames Shortcuts activity's-->
 
         <activity
-            android:name=".shortcuts.games.CricketShortcut"
+            android:name=".shortcut.games.CricketShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_games_cricket"
@@ -337,7 +329,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.games.MinesweeperShortcut"
+            android:name=".shortcut.games.MinesweeperShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_games_mines"
@@ -352,7 +344,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.games.PacmanShortcut"
+            android:name=".shortcut.games.PacmanShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_games_pacman"
@@ -367,7 +359,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.games.SnakeShortcut"
+            android:name=".shortcut.games.SnakeShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_games_snake"
@@ -382,7 +374,7 @@
         </activity>
 
         <activity
-            android:name=".shortcuts.games.SolitaireShortcut"
+            android:name=".shortcut.games.SolitaireShortcut"
             android:excludeFromRecents="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_games_solitaire"
@@ -396,13 +388,15 @@
             </intent-filter>
         </activity>
 
-        <!-- Digital assistant shortcut service -->
+        <!--digital assistant service-->
 
         <activity
-            android:name=".services.ShortcutAssistantService"
+            android:name=".service.DigitalAssistantService"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:excludeFromRecents="true"
             android:exported="true"
             android:launchMode="singleTop"
+            android:noHistory="true"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.ASSIST" />
@@ -410,10 +404,10 @@
             </intent-filter>
         </activity>
 
-        <!-- Music search history activity -->
+        <!--music search history activity-->
 
         <activity
-            android:name=".services.MusicSearchHistory"
+            android:name=".service.MusicSearchHistory"
             android:excludeFromRecents="true"
             android:exported="false"
             android:label="@string/history_shortcut"
@@ -421,10 +415,10 @@
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent" />
 
-        <!-- Quick settings tile shortcut service -->
+        <!--shortcut quick settings tile service-->
 
         <service
-            android:name=".services.ShortcutTileService"
+            android:name=".service.ShortcutTileService"
             android:exported="true"
             android:icon="@drawable/ic_shortcut_default"
             android:label="@string/shortcut_open"

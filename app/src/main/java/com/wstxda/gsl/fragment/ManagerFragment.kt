@@ -1,4 +1,4 @@
-package com.wstxda.gsl.fragments
+package com.wstxda.gsl.fragment
 
 import android.content.Intent
 import android.os.Build
@@ -17,8 +17,8 @@ import com.wstxda.gsl.activity.LibraryActivity
 import com.wstxda.gsl.activity.ManagerActivity
 import com.wstxda.gsl.preference.DigitalAssistantPreference
 import com.wstxda.gsl.preference.UpdaterPreference
-import com.wstxda.gsl.shortcuts.*
-import com.wstxda.gsl.shortcuts.games.*
+import com.wstxda.gsl.shortcut.*
+import com.wstxda.gsl.shortcut.games.*
 import com.wstxda.gsl.ui.component.DigitalAssistantSetupDialog
 import com.wstxda.gsl.ui.TileManager
 import com.wstxda.gsl.utils.Constants
@@ -100,7 +100,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
 
     private fun setupInitialVisibility() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
-            findPreference<Preference>(Constants.ADD_TILE_SHORTCUT_PREF_KEY)?.isVisible = false
+            findPreference<Preference>(Constants.SHORTCUT_ADD_TILE_PREF_KEY)?.isVisible = false
         }
     }
 
@@ -115,7 +115,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
     }
 
     private fun setupTilePreference() {
-        findPreference<Preference>(Constants.ADD_TILE_SHORTCUT_PREF_KEY)?.setOnPreferenceClickListener {
+        findPreference<Preference>(Constants.SHORTCUT_ADD_TILE_PREF_KEY)?.setOnPreferenceClickListener {
             TileManager(requireContext()).requestAddTile()
             true
         }

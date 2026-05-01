@@ -18,7 +18,7 @@ import com.google.android.material.divider.MaterialDivider
 import com.wstxda.gsl.R
 import com.wstxda.gsl.data.ReleaseInfo
 import com.wstxda.gsl.databinding.DialogUpdaterBinding
-import com.wstxda.gsl.services.ApkDownloader
+import com.wstxda.gsl.service.ApkDownloader
 import com.wstxda.gsl.utils.Constants
 import io.noties.markwon.Markwon
 import io.noties.markwon.linkify.LinkifyPlugin

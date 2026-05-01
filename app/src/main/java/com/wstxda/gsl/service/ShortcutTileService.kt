@@ -1,4 +1,4 @@
-package com.wstxda.gsl.services
+package com.wstxda.gsl.service
 
 import android.annotation.SuppressLint
 import android.app.PendingIntent
@@ -42,7 +42,7 @@ class ShortcutTileService : TileService() {
 
     @SuppressLint("StartActivityAndCollapseDeprecated")
     override fun onClick() {
-        val key = preferenceHelper.getString(Constants.TILE_SHORTCUT_PREF_KEY, null) ?: return
+        val key = preferenceHelper.getString(Constants.SHORTCUT_TILE_PREF_KEY, null) ?: return
         val activityClass = shortcuts[key]
 
         if (activityClass == null) {
@@ -71,7 +71,7 @@ class ShortcutTileService : TileService() {
 
     private fun updateTile() {
         val tile = qsTile ?: return
-        val key = preferenceHelper.getString(Constants.TILE_SHORTCUT_PREF_KEY, null)
+        val key = preferenceHelper.getString(Constants.SHORTCUT_TILE_PREF_KEY, null)
         val iconRes = resourcesManager.getShortcutIcon(key)
         val label = resourcesManager.getShortcutName(key)
 

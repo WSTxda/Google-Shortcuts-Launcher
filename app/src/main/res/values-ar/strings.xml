@@ -64,7 +64,7 @@
     <string name="pref_shortcut_disabled">تم تعطيل مشغّل الاختصارات</string>
 
     <string name="pref_device_game_manager">مدير الألعاب بالجهاز</string>
-    <string name="pref_device_game_manager_summary">استخدم مدير الألعاب بالجهاز لتشغيل الألعاب بدلاً من مجلد ألعاب Google Play</string>
+    <string name="pref_device_game_manager_summary">استخدم مدير الألعاب بالجهاز لتشغيل الألعاب بدلًا من مجلد ألعاب Google Play</string>
 
     <string name="pref_shortcut_root_mode">استخدام صلاحيات الروت للاختصارات</string>
     <string name="pref_shortcut_root_mode_summary">استخدم صلاحيات الروت لفتح الأنشطة غير المصدرة أو التي يتعذر الوصول إليها في اختصارات معينة</string>
@@ -115,13 +115,13 @@
 
     <string name="shortcut_open">فتح الاختصار</string>
     <string name="shortcut_select">اختر اختصار</string>
-    <string name="shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولاً في المدير</string>
+    <string name="shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولًا في المدير</string>
     <string name="shortcut_invalid">تم اختيار اختصار غير صالح</string>
 
     <!--shortcut open errors-->
 
     <string name="google_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل تطبيق Google</string>
-    <string name="play_services_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل خدمات Google Play</string>
+    <string name="play_services_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل خِدْمَات Google Play</string>
     <string name="play_games_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل ألعاب Google Play</string>
     <string name="play_store_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل متجر Google Play</string>
     <string name="browser_not_found">لم يتم العثور على متصفح، الرجاء تثبيت أو تفعيل المتصفح</string>
@@ -135,5 +135,5 @@
 
     <!--root permission-->
 
-    <string name="root_access_warning">امنح صلاحية الروت أولاً</string>
+    <string name="root_access_warning">امنح صَلاحِيَة الروت أولاً</string>
 </resources>

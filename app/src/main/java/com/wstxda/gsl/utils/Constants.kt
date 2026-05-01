@@ -16,9 +16,9 @@ object Constants {
     // Preferences keys — shortcuts settings
     // -------------------------------------------------------------------------
 
-    const val ADD_TILE_SHORTCUT_PREF_KEY = "add_shortcut_tile"
-    const val TILE_SHORTCUT_PREF_KEY = "tile_shortcut"
-    const val GAME_MANAGER_PREF_KEY = "device_game_manager"
+    const val SHORTCUT_ADD_TILE_PREF_KEY = "shortcut_add_tile"
+    const val SHORTCUT_TILE_PREF_KEY = "shortcut_tile"
+    const val DEVICE_GAME_MANAGER_PREF_KEY = "device_game_manager"
     const val SHORTCUT_ROOT_MODE_PREF_KEY = "shortcut_root_mode"
 
     // -------------------------------------------------------------------------
@@ -48,7 +48,7 @@ object Constants {
 
     const val DIGITAL_ASSISTANT_DIALOG = "DigitalAssistantSetupDialog"
     const val FREE_ANDROID_WARN_DIALOG = "FreeAndroidWarnDialog"
-    const val UPDATER_DIALOG = "UpdaterDialog"
+    const val UPDATER_DIALOG = "UpdaterBottomSheet"
 
     // -------------------------------------------------------------------------
     // SharedPreferences

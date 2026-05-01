@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?attr/colorSurfaceContainer"
-    android:padding="?attr/dialogPreferredPadding">
+    android:padding="?attr/dialogPreferredPadding"
+    tools:ignore="Overdraw">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/dialog_icon"

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/managerPreferenceFragment"
-        android:name="com.wstxda.gsl.fragments.ManagerFragment"
+        android:name="com.wstxda.gsl.fragment.ManagerFragment"
         android:label="@string/app_manager"
         tools:layout="@layout/activity_manager" />
 </navigation>
