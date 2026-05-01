@@ -60,6 +60,15 @@ Securely access your saved credentials to manage passwords, monitor their securi
 Organize your apps by theme and show personalized recommendations, helping you discover new content and pick up where you left off in games, videos, music, and more.
 > Google Play Store
 
+#### Google Play Mini Games
+Instant-access, no-install games built directly into the Google Play Games ecosystem:
+ - Cricked
+ - Minesweeper
+ - PAC-MAN
+ - Snake
+ - Solitaire
+> Google Play Games
+
 #### Google Quick Share  
 Send and receive photos, files, and more between nearby Android devices and compatible Windows PCs—securely and wirelessly.
 > Google Play Services
