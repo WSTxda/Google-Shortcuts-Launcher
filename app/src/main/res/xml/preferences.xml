@@ -323,6 +323,13 @@
         android:summary="@string/pref_used_library_summary"
         android:title="@string/pref_used_library" />
 
+    <Preference
+        android:icon="@drawable/ic_balance"
+        android:key="license"
+        android:summary="@string/pref_license_gnu"
+        android:title="@string/pref_license"
+        app:layout="@layout/preference_material_middle" />
+
     <com.wstxda.gsl.preference.UpdaterPreference
         android:icon="@drawable/ic_shortcut_default"
         android:key="updater"

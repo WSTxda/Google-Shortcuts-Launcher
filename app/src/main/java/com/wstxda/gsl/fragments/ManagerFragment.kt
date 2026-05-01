@@ -70,7 +70,8 @@ class ManagerFragment : PreferenceFragmentCompat() {
 
     private val links = mapOf(
         "developer" to "https://github.com/WSTxda",
-        "github_repository" to "https://github.com/WSTxda/Google-Shortcuts-Launcher"
+        "github_repository" to "https://github.com/WSTxda/Google-Shortcuts-Launcher",
+        "license" to "https://github.com/WSTxda/Google-Shortcuts-Launcher/blob/main/LICENSE"
     )
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
