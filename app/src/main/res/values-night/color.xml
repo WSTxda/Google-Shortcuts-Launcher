@@ -1,5 +1,9 @@
 <resources>
 
+    <!--app divider-->
+
+    <color name="divider_color">#1FFFFFFF</color>
+
     <!--material colors-->
 
     <color name="md_theme_primary">#ADC7FF</color>

@@ -94,12 +94,12 @@
     <string name="theme_dark">Ciemny</string>
 
     <string name="update_checker_button">Sprawdź aktualizacje</string>
-    <string name="update_checker_download_button">Pobierz</string>
+    <string name="updater_download_button">Pobierz</string>
 
-    <string name="update_checker_no_update">Brak dostępnych aktualizacji</string>
-    <string name="update_checker_update_available">Dostępna nowa aktualizacja: %s</string>
-    <string name="update_checker_no_internet">Brak połączenia z internetem</string>
-    <string name="update_checker_generic_error">Coś poszło nie tak. Spróbuj ponownie później</string>
+    <string name="updater_no_update_message">Brak dostępnych aktualizacji</string>
+    <string name="updater_update_available_message">Dostępna nowa aktualizacja: %s</string>
+    <string name="updater_no_internet_message">Brak połączenia z internetem</string>
+    <string name="updater_generic_error_message">Coś poszło nie tak. Spróbuj ponownie później</string>
 
     <string name="digital_assistant_setup_title">Domyślna aplikacja asystenta cyfrowego</string>
     <string name="digital_assistant_setup_message">W ustawieniach wybierz <b>Skróty Google</b> jako domyślną aplikację asystenta cyfrowego, aby szybko uruchamiać wybrany skrót za pomocą gestów, przycisków urządzenia i nie tylko…</string>

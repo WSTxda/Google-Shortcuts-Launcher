@@ -94,12 +94,12 @@
     <string name="theme_dark">Oscuro</string>
 
     <string name="update_checker_button">Comprobar actualizaciones</string>
-    <string name="update_checker_download_button">Descargar</string>
+    <string name="updater_download_button">Descargar</string>
 
-    <string name="update_checker_no_update">No hay actualizaciones disponibles</string>
-    <string name="update_checker_update_available">Nueva actualización disponible: %s</string>
-    <string name="update_checker_no_internet">Sin conexión a internet</string>
-    <string name="update_checker_generic_error">Algo salió mal. Por favor, intenta de nuevo más tarde</string>
+    <string name="updater_no_update_message">No hay actualizaciones disponibles</string>
+    <string name="updater_update_available_message">Nueva actualización disponible: %s</string>
+    <string name="updater_no_internet_message">Sin conexión a internet</string>
+    <string name="updater_generic_error_message">Algo salió mal. Por favor, intenta de nuevo más tarde</string>
 
     <string name="digital_assistant_setup_title">Aplicación de asistente digital predeterminada</string>
     <string name="digital_assistant_setup_message">En los ajustes, selecciona <b>Atajos de Google</b> como tu aplicación de asistente digital predeterminada para iniciar rápidamente el atajo seleccionado mediante gestos del dispositivo, botones y más…</string>

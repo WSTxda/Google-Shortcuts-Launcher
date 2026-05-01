@@ -1,106 +1,76 @@
 package com.wstxda.gsl.services
 
 import android.content.Context
-import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.view.View
-import androidx.coordinatorlayout.widget.CoordinatorLayout
-import androidx.core.net.toUri
+import androidx.core.content.getSystemService
+import androidx.fragment.app.FragmentManager
 import com.google.android.material.snackbar.Snackbar
 import com.wstxda.gsl.R
-import com.wstxda.gsl.utils.Constants
+import com.wstxda.gsl.repository.GitHubReleaseRepository
+import com.wstxda.gsl.ui.component.UpdaterBottomSheet
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-import org.json.JSONObject
-import java.net.URL
 
 object UpdaterService {
 
-    fun checkForUpdates(context: Context, anchorView: View) {
-        CoroutineScope(Dispatchers.Main).launch {
+    fun checkForUpdates(
+        scope: CoroutineScope,
+        context: Context,
+        fragmentManager: FragmentManager,
+        anchorView: View? = null
+    ) {
+        scope.launch(Dispatchers.Main) {
             if (!isNetworkAvailable(context)) {
-                showNoInternetSnackbar(anchorView)
+                anchorView?.let {
+                    showSnackbar(it, context.getString(R.string.updater_no_internet_message))
+                }
                 return@launch
             }
 
-            try {
-                val latestVersion = withContext(Dispatchers.IO) { fetchLatestVersion() }
-                val currentVersion = getCurrentVersion(context)
-                if (compareVersions(currentVersion, latestVersion) < 0) {
-                    showUpdateAvailableSnackbar(anchorView, latestVersion)
+            runCatching {
+                val release = GitHubReleaseRepository.fetchLatestRelease()
+                val current = getInstalledVersion(context)
+
+                if (compareVersions(current, release.version) < 0) {
+                    UpdaterBottomSheet.show(fragmentManager, release)
                 } else {
-                    showNoUpdateSnackbar(anchorView)
+                    anchorView?.let {
+                        showSnackbar(it, context.getString(R.string.updater_no_update_message))
+                    }
                 }
-            } catch (_: Exception) {
-                showGenericErrorSnackbar(anchorView)
+            }.onFailure {
+                anchorView?.let { view ->
+                    showSnackbar(view, context.getString(R.string.updater_generic_error_message))
+                }
             }
         }
     }
 
     private fun isNetworkAvailable(context: Context): Boolean {
-        val connectivityManager =
-            context.getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager
-                ?: return false
-        val network = connectivityManager.activeNetwork ?: return false
-        val capabilities = connectivityManager.getNetworkCapabilities(network) ?: return false
-        return capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
+        val cm = context.getSystemService<ConnectivityManager>() ?: return false
+        val caps = cm.getNetworkCapabilities(cm.activeNetwork ?: return false) ?: return false
+        return caps.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
     }
 
-    private suspend fun fetchLatestVersion(): String = withContext(Dispatchers.IO) {
-        val jsonString = URL(Constants.GITHUB_RELEASE_URL).readText()
-        val jsonObject = JSONObject(jsonString)
-        jsonObject.optString("tag_name").removePrefix("v")
-    }
-
-    private fun getCurrentVersion(context: Context): String = runCatching {
+    private fun getInstalledVersion(context: Context): String = runCatching {
         context.packageManager.getPackageInfo(context.packageName, 0).versionName ?: "N/A"
     }.getOrDefault("N/A")
 
     private fun compareVersions(current: String, latest: String): Int {
         if (current == "N/A") return -1
-        val currentParts = current.split(".").map { it.toIntOrNull() ?: 0 }
-        val latestParts = latest.split(".").map { it.toIntOrNull() ?: 0 }
-        for (i in 0 until maxOf(currentParts.size, latestParts.size)) {
-            val curr = currentParts.getOrElse(i) { 0 }
-            val late = latestParts.getOrElse(i) { 0 }
-            if (curr != late) return curr - late
+        val c = current.split(".").map { it.toIntOrNull() ?: 0 }
+        val l = latest.split(".").map { it.toIntOrNull() ?: 0 }
+        for (i in 0 until maxOf(c.size, l.size)) {
+            val diff = (c.getOrElse(i) { 0 }) - (l.getOrElse(i) { 0 })
+            if (diff != 0) return diff
         }
         return 0
     }
 
-    private fun showNoUpdateSnackbar(anchorView: View) {
-        Snackbar.make(anchorView, R.string.update_checker_no_update, Snackbar.LENGTH_SHORT).show()
-    }
-
-    private fun showUpdateAvailableSnackbar(anchorView: View, latestVersion: String) {
-        Snackbar.make(
-            anchorView,
-            anchorView.context.getString(R.string.update_checker_update_available, latestVersion),
-            Snackbar.LENGTH_LONG
-        ).apply {
-            setAction(R.string.update_checker_download_button) {
-                val intent = Intent(
-                    Intent.ACTION_VIEW, Constants.GITHUB_RELEASE_PAGE_URL.toUri()
-                )
-                anchorView.context.startActivity(intent)
-            }
-            addCallback(object : Snackbar.Callback() {
-                override fun onShown(snackBar: Snackbar) {
-                    (snackBar.view.layoutParams as? CoordinatorLayout.LayoutParams)?.behavior = null
-                }
-            })
-        }.show()
-    }
-
-    private fun showNoInternetSnackbar(anchorView: View) {
-        Snackbar.make(anchorView, R.string.update_checker_no_internet, Snackbar.LENGTH_LONG).show()
-    }
-
-    private fun showGenericErrorSnackbar(anchorView: View) {
-        Snackbar.make(anchorView, R.string.update_checker_generic_error, Snackbar.LENGTH_LONG)
-            .show()
+    private fun showSnackbar(anchorView: View, message: String) {
+        Snackbar.make(anchorView, message, Snackbar.LENGTH_SHORT).show()
     }
 }

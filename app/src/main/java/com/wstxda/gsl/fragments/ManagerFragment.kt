@@ -16,6 +16,7 @@ import com.wstxda.gsl.R
 import com.wstxda.gsl.activity.LibraryActivity
 import com.wstxda.gsl.activity.ManagerActivity
 import com.wstxda.gsl.preference.DigitalAssistantPreference
+import com.wstxda.gsl.preference.UpdaterPreference
 import com.wstxda.gsl.shortcuts.*
 import com.wstxda.gsl.shortcuts.games.*
 import com.wstxda.gsl.ui.component.DigitalAssistantSetupDialog
@@ -82,7 +83,8 @@ class ManagerFragment : PreferenceFragmentCompat() {
 
     private fun observeViewModel() {
         viewModel.isAssistSetupDone.observe(this) { isDone ->
-            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_PREF_KEY)?.isVisible = !isDone
+            findPreference<Preference>(Constants.DIGITAL_ASSISTANT_SETUP_PREF_KEY)?.isVisible =
+                !isDone
         }
     }
 
@@ -107,7 +109,15 @@ class ManagerFragment : PreferenceFragmentCompat() {
         setupDigitalAssistantClickListener()
         setupThemePreference()
         setupLibraryPreference()
+        setupUpdaterPreference()
         setupLinkPreferences()
+    }
+
+    private fun setupTilePreference() {
+        findPreference<Preference>(Constants.ADD_TILE_SHORTCUT_PREF_KEY)?.setOnPreferenceClickListener {
+            TileManager(requireContext()).requestAddTile()
+            true
+        }
     }
 
     private fun setupShortcutsActivityPreferences() {
@@ -116,13 +126,6 @@ class ManagerFragment : PreferenceFragmentCompat() {
                 viewModel.toggleActivityVisibility(activityClass, newValue as Boolean)
                 true
             }
-        }
-    }
-
-    private fun setupTilePreference() {
-        findPreference<Preference>(Constants.ADD_TILE_SHORTCUT_PREF_KEY)?.setOnPreferenceClickListener {
-            TileManager(requireContext()).requestAddTile()
-            true
         }
     }
 
@@ -146,6 +149,11 @@ class ManagerFragment : PreferenceFragmentCompat() {
             startActivity(intent)
             true
         }
+    }
+
+    private fun setupUpdaterPreference() {
+        findPreference<UpdaterPreference>(Constants.UPDATER_PREF_KEY)?.fragmentManager =
+            childFragmentManager
     }
 
     private fun setupLinkPreferences() {

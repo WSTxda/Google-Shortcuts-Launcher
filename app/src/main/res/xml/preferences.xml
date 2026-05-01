@@ -325,7 +325,7 @@
 
     <com.wstxda.gsl.preference.UpdaterPreference
         android:icon="@drawable/ic_shortcut_default"
-        android:key="version"
+        android:key="updater"
         android:summary="@string/pref_version_number"
         android:title="@string/app_name"
         app:allowDividerAbove="false"

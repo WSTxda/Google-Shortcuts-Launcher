@@ -26,7 +26,13 @@ object Constants {
     // -------------------------------------------------------------------------
 
     const val THEME_PREF_KEY = "select_theme"
+
+    // -------------------------------------------------------------------------
+    // Preferences keys — about
+    // -------------------------------------------------------------------------
+
     const val LIBRARY_PREF_KEY = "library"
+    const val UPDATER_PREF_KEY = "updater"
 
     // -------------------------------------------------------------------------
     // Theme values
@@ -41,7 +47,8 @@ object Constants {
     // -------------------------------------------------------------------------
 
     const val DIGITAL_ASSISTANT_DIALOG = "DigitalAssistantSetupDialog"
-    const val FREE_ANDROID_WARN_DIALOG = "free_android_warn_dialog"
+    const val FREE_ANDROID_WARN_DIALOG = "FreeAndroidWarnDialog"
+    const val UPDATER_DIALOG = "UpdaterDialog"
 
     // -------------------------------------------------------------------------
     // SharedPreferences
@@ -60,8 +67,14 @@ object Constants {
     // Updater GitHub API
     // -------------------------------------------------------------------------
 
-    const val GITHUB_RELEASE_URL = "https://api.github.com/repos/WSTxda/Google-Shortcuts-Launcher/releases/latest"
-    const val GITHUB_RELEASE_PAGE_URL = "https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest"
+    const val GITHUB_TITLE = "title"
+    const val GITHUB_VERSION = "version"
+    const val GITHUB_CHANGELOG = "changelog"
+    const val GITHUB_DOWNLOAD_URL = "download_url"
+    const val GITHUB_PAGE_URL = "page_url"
+
+    const val GITHUB_API_URL = "https://api.github.com/repos/WSTxda/Google-Shortcuts-Launcher/releases/latest"
+    const val GITHUB_RELEASE_URL = "https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest"
 
     // -------------------------------------------------------------------------
     // Storage URI patch

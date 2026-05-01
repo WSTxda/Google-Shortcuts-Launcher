@@ -11,6 +11,10 @@
     <color name="ic_launcher_background_incognito">#101214</color>
     <color name="ic_launcher_background_scanner">#303234</color>
 
+    <!--app divider-->
+
+    <color name="divider_color">#1F000000</color>
+
     <!--material colors-->
 
     <color name="md_theme_primary">#435E91</color>

@@ -94,12 +94,12 @@
     <string name="theme_dark">مظلم</string>
 
     <string name="update_checker_button">التحقق من التحديثات</string>
-    <string name="update_checker_download_button">تحميل</string>
+    <string name="updater_download_button">تحميل</string>
 
-    <string name="update_checker_no_update">لا يوجد تحديث متاح</string>
-    <string name="update_checker_update_available">تحديث جديد متاح: %s</string>
-    <string name="update_checker_no_internet">لا يوجد اتصال بالإنترنت</string>
-    <string name="update_checker_generic_error">حدث خطأ ما. الرجاء المحاولة لاحقاً</string>
+    <string name="updater_no_update_message">لا يوجد تحديث متاح</string>
+    <string name="updater_update_available_message">تحديث جديد متاح: %s</string>
+    <string name="updater_no_internet_message">لا يوجد اتصال بالإنترنت</string>
+    <string name="updater_generic_error_message">حدث خطأ ما. الرجاء المحاولة لاحقاً</string>
 
     <string name="digital_assistant_setup_title">تطبيق المساعد الرقمي الافتراضي</string>
     <string name="digital_assistant_setup_message">في الإعدادات، حدد <b>مشغّل اختصارات Google</b> كتطبيق مساعد رقمي افتراضي لتشغيل الاختصار الذي حددته بسرعة باستخدام إيماءات الجهاز والأزرار والمزيد…</string>

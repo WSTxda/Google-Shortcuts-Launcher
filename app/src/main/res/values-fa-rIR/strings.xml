@@ -94,12 +94,12 @@
     <string name="theme_dark">تیره</string>
 
     <string name="update_checker_button">بررسی به‌روزرسانی‌ها</string>
-    <string name="update_checker_download_button">دانلود</string>
+    <string name="updater_download_button">دانلود</string>
 
-    <string name="update_checker_no_update">به‌روزرسانی در دسترس نیست</string>
-    <string name="update_checker_update_available">به‌روزرسانی جدید در دسترس است: %s</string>
-    <string name="update_checker_no_internet">اتصال به اینترنت وجود ندارد</string>
-    <string name="update_checker_generic_error">مشکلی پیش آمد. لطفاً بعداً دوباره امتحان کنید</string>
+    <string name="updater_no_update_message">به‌روزرسانی در دسترس نیست</string>
+    <string name="updater_update_available_message">به‌روزرسانی جدید در دسترس است: %s</string>
+    <string name="updater_no_internet_message">اتصال به اینترنت وجود ندارد</string>
+    <string name="updater_generic_error_message">مشکلی پیش آمد. لطفاً بعداً دوباره امتحان کنید</string>
 
     <string name="digital_assistant_setup_title">برنامه دستیار دیجیتال پیش‌فرض</string>
     <string name="digital_assistant_setup_message">در تنظیمات، <b>راه‌انداز میانبرهای گوگل</b> را به‌عنوان برنامه دستیار دیجیتال پیش‌فرض خود انتخاب کنید تا میانبر انتخابی خود را با استفاده از حرکات دستگاه، دکمه‌ها و موارد دیگر به‌سرعت راه‌اندازی کنید…</string>

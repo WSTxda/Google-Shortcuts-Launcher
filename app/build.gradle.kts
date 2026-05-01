@@ -51,4 +51,6 @@ dependencies {
     implementation(libs.androidx.navigation)
     implementation(libs.google.material)
     implementation(libs.aboutlibraries.view)
+    implementation(libs.markdown.core)
+    implementation(libs.markdown.linkify)
 }

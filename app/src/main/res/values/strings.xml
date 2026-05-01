@@ -95,13 +95,15 @@
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
 
-    <string name="update_checker_button">Check updates</string>
-    <string name="update_checker_download_button">Download</string>
+    <string name="updater_title">New update available!</string>
+    <string name="updater_version">Version %s</string>
 
-    <string name="update_checker_no_update">No update available</string>
-    <string name="update_checker_update_available">New update available: %s</string>
-    <string name="update_checker_no_internet">No internet connection</string>
-    <string name="update_checker_generic_error">Something went wrong. Please try again later</string>
+    <string name="updater_download_button">Download</string>
+    <string name="updater_github_button">Open in GitHub</string>
+
+    <string name="updater_no_update_message">No update available</string>
+    <string name="updater_no_internet_message">No internet connection</string>
+    <string name="updater_generic_error_message">Something went wrong. Please try again later</string>
 
     <string name="digital_assistant_setup_title">Default digital assistant app</string>
     <string name="digital_assistant_setup_message">In the settings, select <b>Google Shortcuts Launcher</b> as your default digital assistant app to quickly launch your selected shortcut using device gestures, buttons and more…</string>

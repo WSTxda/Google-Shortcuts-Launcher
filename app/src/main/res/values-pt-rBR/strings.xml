@@ -94,12 +94,12 @@
     <string name="theme_dark">Escuro</string>
 
     <string name="update_checker_button">Verificar atualizações</string>
-    <string name="update_checker_download_button">Baixar</string>
+    <string name="updater_download_button">Baixar</string>
 
-    <string name="update_checker_no_update">Nenhuma atualização disponível</string>
-    <string name="update_checker_update_available">Nova atualização disponível: %s</string>
-    <string name="update_checker_no_internet">Sem conexão com a internet</string>
-    <string name="update_checker_generic_error">Algo deu errado. Tente novamente mais tarde</string>
+    <string name="updater_no_update_message">Nenhuma atualização disponível</string>
+    <string name="updater_update_available_message">Nova atualização disponível: %s</string>
+    <string name="updater_no_internet_message">Sem conexão com a internet</string>
+    <string name="updater_generic_error_message">Algo deu errado. Tente novamente mais tarde</string>
 
     <string name="digital_assistant_setup_title">Aplicativo de assistente digital padrão</string>
     <string name="digital_assistant_setup_message">Nas configurações, selecione o <b>Atalhos do Google</b> como o aplicativo de assistente digital padrão para iniciar rapidamente o atalho selecionado usando gestos do dispositivo, botões e muito mais…</string>
