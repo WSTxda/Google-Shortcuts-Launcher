@@ -1,9 +1,46 @@
 <resources>
 
+    <!--app names-->
+
     <string name="app_name">راه‌انداز میانبرهای گوگل</string>
     <string name="app_manager">مدیر</string>
     <string name="app_manager_shortcuts">مدیریت میانبرها</string>
     <string name="app_library">کتابخانه</string>
+
+    <!--shortcuts names-->
+
+    <string name="assistant">دستیار</string>
+    <string name="collections">مجموعه‌ها</string>
+    <string name="explore_shortcut">کاوش</string>
+    <string name="files">فایل‌ها</string>
+    <string name="finance">امور مالی</string>
+    <string name="flight_shortcut">پروازها</string>
+    <string name="games">بازی‌ها</string>
+    <string name="history_shortcut">تاریخچه</string>
+    <string name="hotel_shortcut">هتل‌ها</string>
+    <string name="incognito">ناشناس</string>
+    <string name="lens">لنز</string>
+    <string name="music_search">جستجوی موسیقی</string>
+    <string name="password_manager">گذرواژه‌ها</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="scanner">اسکنر</string>
+    <string name="search">جستجو</string>
+    <string name="settings_shortcut">تنظیمات</string>
+    <string name="shopping">خرید</string>
+    <string name="travel">سفرها</string>
+    <string name="weather">آب‌وهوا</string>
+    <!--games shortcuts-->
+    <string name="cricket">کریکت</string>
+    <string name="minesweeper">مین‌روب</string>
+    <string name="pacman">پک-من</string>
+    <string name="snake">مار</string>
+    <string name="solitaire">بازی ورق</string>
+
+    <!--preferences-->
+
+    <string name="pref_category_shortcuts_settings">تنظیمات میانبرها</string>
+    <string name="pref_category_other">دیگر</string>
+    <string name="pref_category_about">درباره</string>
 
     <string name="pref_expandable_search">میانبرهای جستجو</string>
     <string name="pref_expandable_manager">میانبرهای مدیران</string>
@@ -11,13 +48,17 @@
     <string name="pref_expandable_games">میانبرهای بازی</string>
     <string name="pref_expandable_others">میانبرهای دیگر</string>
 
-    <string name="pref_category_shortcuts_settings">تنظیمات میانبرها</string>
-    <string name="pref_category_other">دیگر</string>
-    <string name="pref_category_about">درباره</string>
-
-    <string name="pref_version">نسخه</string>
     <string name="pref_developer">توسعه‌دهنده</string>
     <string name="pref_source_code">مخزن کد منبع</string>
+    <string name="pref_version_number">نسخه %s</string>
+
+    <string name="pref_used_library">کتابخانه‌ها</string>
+    <string name="pref_used_library_summary">مجوزهای منبع باز</string>
+
+    <string name="pref_license">مجوز</string>
+    <string name="pref_license_gnu">GNU General Public License v3.0</string>
+
+    <string name="pref_theme">تم</string>
 
     <string name="pref_shortcut_enabled">میانبر راه‌انداز فعال‌شد</string>
     <string name="pref_shortcut_disabled">میانبر راه‌انداز غیرفعال‌شد</string>
@@ -31,87 +72,68 @@
     <string name="pref_show_manager">نمایش مدیر در لانچر</string>
     <string name="pref_show_manager_summary">برای دسترسی به مدیر در حالت پنهان، کاشی میانبر را در پنل تنظیمات سریع فشار دهید</string>
 
-    <string name="pref_version_number">نسخه %s</string>
-
-    <string name="pref_tile_shortcut">میانبر کاشی تنظیمات سریع</string>
-
-    <string name="pref_theme">تم</string>
-
     <string name="pref_digital_assistant_shortcut">میانبر دستیار دیجیتال</string>
-
-    <string name="pref_add_shortcut_tile">افزودن کاشی میانبر در پنل تنظیمات سریع</string>
 
     <string name="pref_setup_digital_assistant">راه‌اندازی دستیار دیجیتال</string>
     <string name="pref_setup_digital_assistant_summary">تنظیم راه‌انداز میانبرهای گوگل به عنوان برنامه دستیار دیجیتال پیش‌فرض</string>
 
-    <string name="pref_used_library">کتابخانه‌ها</string>
-    <string name="pref_used_library_summary">مجوزهای منبع باز</string>
+    <string name="pref_tile_shortcut">میانبر کاشی تنظیمات سریع</string>
+    <string name="pref_add_shortcut_tile">افزودن کاشی میانبر در پنل تنظیمات سریع</string>
 
-    <string name="password_manager">گذرواژه‌ها</string>
-    <string name="music_search">جستجوی موسیقی</string>
-    <string name="weather">آب‌وهوا</string>
-    <string name="games">بازی‌ها</string>
-    <string name="assistant">دستیار</string>
-    <string name="lens">لنز</string>
-    <string name="quick_share">Quick Share</string>
-    <string name="files">فایل‌ها</string>
-    <string name="incognito">ناشناس</string>
-    <string name="search">جستجو</string>
-    <string name="collections">مجموعه‌ها</string>
-    <string name="shopping">خرید</string>
-    <string name="travel">سفرها</string>
-    <string name="finance">امور مالی</string>
-    <string name="scanner">اسکنر</string>
-
-    <string name="cricket">کریکت</string>
-    <string name="minesweeper">مین‌روب</string>
-    <string name="pacman">پک-من</string>
-    <string name="snake">مار</string>
-    <string name="solitaire">بازی ورق</string>
-
-    <string name="history_shortcut">تاریخچه</string>
-    <string name="settings_shortcut">تنظیمات</string>
-    <string name="explore_shortcut">کاوش</string>
-    <string name="flight_shortcut">پروازها</string>
-    <string name="hotel_shortcut">هتل‌ها</string>
-
-    <string name="google_not_found">فعالیت یافت نشد. لطفاً برنامه گوگل را نصب یا فعال کنید</string>
-    <string name="play_games_not_found">فعالیت یافت نشد. لطفاً بازی‌های گوگل پلی را نصب یا فعال کنید</string>
-    <string name="play_services_not_found">فعالیت یافت نشد. لطفاً Google Play Services را نصب یا فعال کنید</string>
-    <string name="play_store_not_found">فعالیت یافت نشد. لطفاً فروشگاه گوگل پلی را نصب یا فعال کنید</string>
-    <string name="browser_not_found">مرورگری پیدا نشد، لطفا مرورگر خود را نصب یا فعال کنید</string>
-    <string name="game_manager_not_found">مدیر بازی در این دستگاه پشتیبانی نمی شود</string>
-    <string name="files_not_found">فایل‌ها در این دستگاه پشتیبانی نمی‌شوند</string>
-    <string name="root_access_error">ابتدا مجوز ریشه را اعطا کنید</string>
-
-    <string name="tile_added_success">با موفقیت به تنظیمات سریع اضافه شد</string>
-    <string name="tile_already_added">قبلاً به تنظیمات سریع اضافه شده است</string>
+    <!--theme selector-->
 
     <string name="theme_select">انتخاب تم</string>
-
+    <!--themes modes-->
     <string name="theme_system">پیش‌فرض سیستم</string>
     <string name="theme_light">روشن</string>
     <string name="theme_dark">تیره</string>
 
-    <string name="update_checker_button">بررسی به‌روزرسانی‌ها</string>
-    <string name="updater_download_button">دانلود</string>
+    <!--update checker-->
 
+    <string name="updater_title">به‌روزرسانی جدید در دسترس است!</string>
+    <string name="updater_version">نسخه %s</string>
     <string name="updater_no_update_message">به‌روزرسانی در دسترس نیست</string>
-    <string name="updater_update_available_message">به‌روزرسانی جدید در دسترس است: %s</string>
     <string name="updater_no_internet_message">اتصال به اینترنت وجود ندارد</string>
     <string name="updater_generic_error_message">مشکلی پیش آمد. لطفاً بعداً دوباره امتحان کنید</string>
+    <string name="updater_download_button">دانلود</string>
+    <string name="updater_github_button">باز کردن در گیت‌هاب</string>
+
+    <!--setup digital assistant dialog-->
 
     <string name="digital_assistant_setup_title">برنامه دستیار دیجیتال پیش‌فرض</string>
     <string name="digital_assistant_setup_message">در تنظیمات، <b>راه‌انداز میانبرهای گوگل</b> را به‌عنوان برنامه دستیار دیجیتال پیش‌فرض خود انتخاب کنید تا میانبر انتخابی خود را با استفاده از حرکات دستگاه، دکمه‌ها و موارد دیگر به‌سرعت راه‌اندازی کنید…</string>
     <string name="digital_assistant_setup_button">تنظیم به‌عنوان پیش‌فرض</string>
+
+    <!--free android warn dialog-->
 
     <string name="free_android_warn_title">اطلاعات مهم</string>
     <string name="free_android_warn_message">گوگل اعلام کرده است که از سال ۲۰۲۶/۲۰۲۷، تمام برنامه‌های موجود در دستگاه‌های Android دارای گواهی، نیازمند ارسال مشخصات هویت شخصی توسعه‌دهنده مستقیماً به گوگل خواهند بود. از آنجایی که توسعه‌دهندگان این برنامه با این الزام موافق نیستند، این برنامه پس از آن زمان دیگر روی دستگاه‌های Android دارای گواهی کار نخواهد کرد.</string>
     <string name="free_android_warn_link"><u>اطلاعات بیشتر</u></string>
     <string name="free_android_warn_solution_button">راه‌حل</string>
 
+    <!--shortcut actions-->
+
     <string name="shortcut_open">باز کردن میانبر</string>
     <string name="shortcut_select">انتخاب میانبر</string>
     <string name="shortcut_disabled">امکان اجرا وجود ندارد. ابتدا این میانبر را در مدیر فعال کنید</string>
     <string name="shortcut_invalid">میانبر انتخاب‌شده نامعتبر است</string>
+
+    <!--shortcut open errors-->
+
+    <string name="google_not_found">فعالیت یافت نشد. لطفاً برنامه گوگل را نصب یا فعال کنید</string>
+    <string name="play_services_not_found">فعالیت یافت نشد. لطفاً Google Play Services را نصب یا فعال کنید</string>
+    <string name="play_games_not_found">فعالیت یافت نشد. لطفاً بازی‌های گوگل پلی را نصب یا فعال کنید</string>
+    <string name="play_store_not_found">فعالیت یافت نشد. لطفاً فروشگاه گوگل پلی را نصب یا فعال کنید</string>
+    <string name="browser_not_found">مرورگری پیدا نشد، لطفا مرورگر خود را نصب یا فعال کنید</string>
+    <string name="game_manager_not_found">مدیر بازی در این دستگاه پشتیبانی نمی شود</string>
+    <string name="files_not_found">فایل‌ها در این دستگاه پشتیبانی نمی‌شوند</string>
+
+    <!--app quick settings tile-->
+
+    <string name="tile_added_success">با موفقیت به تنظیمات سریع اضافه شد</string>
+    <string name="tile_already_added">قبلاً به تنظیمات سریع اضافه شده است</string>
+
+    <!--root permission-->
+
+    <string name="root_access_warning">ابتدا مجوز ریشه را اعطا کنید</string>
 </resources>

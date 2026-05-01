@@ -1,9 +1,46 @@
 <resources>
 
+    <!--app names-->
+
     <string name="app_name">Google Shortcuts Launcher</string>
     <string name="app_manager">Manager</string>
     <string name="app_manager_shortcuts">Shortcuts manager</string>
     <string name="app_library">Library</string>
+
+    <!--shortcuts names-->
+
+    <string name="assistant">Assistant</string>
+    <string name="collections">Collections</string>
+    <string name="explore_shortcut">Explore</string>
+    <string name="files">Files</string>
+    <string name="finance">Finances</string>
+    <string name="flight_shortcut">Flights</string>
+    <string name="games">Games</string>
+    <string name="history_shortcut">History</string>
+    <string name="hotel_shortcut">Hotels</string>
+    <string name="incognito">Incognito</string>
+    <string name="lens">Lens</string>
+    <string name="music_search">Music search</string>
+    <string name="password_manager">Passwords</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="scanner">Scanner</string>
+    <string name="search">Search</string>
+    <string name="settings_shortcut">Settings</string>
+    <string name="shopping">Shopping</string>
+    <string name="travel">Travels</string>
+    <string name="weather">Weather</string>
+    <!--games shortcuts-->
+    <string name="cricket">Cricket</string>
+    <string name="minesweeper">Minesweeper</string>
+    <string name="pacman">PAC-MAN</string>
+    <string name="snake">Snake</string>
+    <string name="solitaire">Solitaire</string>
+
+    <!--preferences-->
+
+    <string name="pref_category_shortcuts_settings">Shortcuts settings</string>
+    <string name="pref_category_other">Others</string>
+    <string name="pref_category_about">About</string>
 
     <string name="pref_expandable_search">Search shortcuts</string>
     <string name="pref_expandable_manager">Managers shortcuts</string>
@@ -11,15 +48,20 @@
     <string name="pref_expandable_games">Games shortcuts</string>
     <string name="pref_expandable_others">Others shortcuts</string>
 
-    <string name="pref_category_shortcuts_settings">Shortcuts settings</string>
-    <string name="pref_category_other">Others</string>
-    <string name="pref_category_about">About</string>
-
     <string name="pref_wstxda" translatable="false">WSTxda</string>
     <string name="pref_github" translatable="false">GitHub</string>
-    <string name="pref_version">Version</string>
+
     <string name="pref_developer">Developer</string>
     <string name="pref_source_code">Source code repository</string>
+    <string name="pref_version_number">Version %s</string>
+
+    <string name="pref_used_library">Libraries</string>
+    <string name="pref_used_library_summary">Open source licenses</string>
+
+    <string name="pref_license">License</string>
+    <string name="pref_license_gnu">GNU General Public License v3.0</string>
+
+    <string name="pref_theme">Theme</string>
 
     <string name="pref_shortcut_enabled">Shortcut launcher enabled</string>
     <string name="pref_shortcut_disabled">Shortcut launcher disabled</string>
@@ -33,49 +75,53 @@
     <string name="pref_show_manager">Show manager in launcher</string>
     <string name="pref_show_manager_summary">To access manager when hidden, press the shortcut qs tile in quick settings panel</string>
 
-    <string name="pref_version_number">Version %s</string>
-
-    <string name="pref_add_shortcut_tile">Add shortcut tile in quick settings panel</string>
-
-    <string name="pref_theme">Theme</string>
-
     <string name="pref_digital_assistant_shortcut">Digital assistant shortcut</string>
-
-    <string name="pref_tile_shortcut">Quick settings tile shortcut</string>
 
     <string name="pref_setup_digital_assistant">Setup digital assistant</string>
     <string name="pref_setup_digital_assistant_summary">Set Google Shortcuts Launcher as default digital assistant app</string>
 
-    <string name="pref_used_library">Libraries</string>
-    <string name="pref_used_library_summary">Open source licenses</string>
+    <string name="pref_tile_shortcut">Quick settings tile shortcut</string>
+    <string name="pref_add_shortcut_tile">Add shortcut tile in quick settings panel</string>
 
-    <string name="password_manager">Passwords</string>
-    <string name="music_search">Music search</string>
-    <string name="weather">Weather</string>
-    <string name="games">Games</string>
-    <string name="assistant">Assistant</string>
-    <string name="lens">Lens</string>
-    <string name="quick_share">Quick Share</string>
-    <string name="files">Files</string>
-    <string name="incognito">Incognito</string>
-    <string name="search">Search</string>
-    <string name="collections">Collections</string>
-    <string name="shopping">Shopping</string>
-    <string name="travel">Travels</string>
-    <string name="finance">Finances</string>
-    <string name="scanner">Scanner</string>
+    <!--theme selector-->
 
-    <string name="cricket">Cricket</string>
-    <string name="minesweeper">Minesweeper</string>
-    <string name="pacman">PAC-MAN</string>
-    <string name="snake">Snake</string>
-    <string name="solitaire">Solitaire</string>
+    <string name="theme_select">Select theme</string>
+    <!--themes modes-->
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
 
-    <string name="history_shortcut">History</string>
-    <string name="settings_shortcut">Settings</string>
-    <string name="explore_shortcut">Explore</string>
-    <string name="flight_shortcut">Flights</string>
-    <string name="hotel_shortcut">Hotels</string>
+    <!--update checker-->
+
+    <string name="updater_title">New update available!</string>
+    <string name="updater_version">Version %s</string>
+    <string name="updater_no_update_message">No update available</string>
+    <string name="updater_no_internet_message">No internet connection</string>
+    <string name="updater_generic_error_message">Something went wrong. Please try again later</string>
+    <string name="updater_download_button">Download</string>
+    <string name="updater_github_button">Open in GitHub</string>
+
+    <!--setup digital assistant dialog-->
+
+    <string name="digital_assistant_setup_title">Default digital assistant app</string>
+    <string name="digital_assistant_setup_message">In the settings, select <b>Google Shortcuts Launcher</b> as your default digital assistant app to quickly launch your selected shortcut using device gestures, buttons and more…</string>
+    <string name="digital_assistant_setup_button">Set as default</string>
+
+    <!--free android warn dialog-->
+
+    <string name="free_android_warn_title">Important information</string>
+    <string name="free_android_warn_message">Google has announced that, starting in 2026/2027, all apps on certified Android devices will require the developer to submit personal identity details directly to Google. Since the developers of this app do not agree to this requirement, this app will no longer work on certified Android devices after that time.</string>
+    <string name="free_android_warn_link"><u>More info</u></string>
+    <string name="free_android_warn_solution_button">Solution</string>
+
+    <!--shortcut actions-->
+
+    <string name="shortcut_open">Open shortcut</string>
+    <string name="shortcut_select">Select shortcut</string>
+    <string name="shortcut_disabled">Unable to launch, enable this shortcut in manager first</string>
+    <string name="shortcut_invalid">Invalid shortcut selected</string>
+
+    <!--shortcut open errors-->
 
     <string name="google_not_found">Activity not found. Please install or enable Google App</string>
     <string name="play_services_not_found">Activity not found. Please install or enable Google Play Services</string>
@@ -84,38 +130,13 @@
     <string name="browser_not_found">No browser found, Please install or enable your browser</string>
     <string name="game_manager_not_found">Game manager not supported in this device</string>
     <string name="files_not_found">Files not supported in this device</string>
-    <string name="root_access_error">Grant root permission first</string>
+
+    <!--app quick settings tile-->
 
     <string name="tile_added_success">Successfully added to quick settings</string>
     <string name="tile_already_added">Already added to quick settings</string>
 
-    <string name="theme_select">Select theme</string>
+    <!--root permission-->
 
-    <string name="theme_system">System default</string>
-    <string name="theme_light">Light</string>
-    <string name="theme_dark">Dark</string>
-
-    <string name="updater_title">New update available!</string>
-    <string name="updater_version">Version %s</string>
-
-    <string name="updater_download_button">Download</string>
-    <string name="updater_github_button">Open in GitHub</string>
-
-    <string name="updater_no_update_message">No update available</string>
-    <string name="updater_no_internet_message">No internet connection</string>
-    <string name="updater_generic_error_message">Something went wrong. Please try again later</string>
-
-    <string name="digital_assistant_setup_title">Default digital assistant app</string>
-    <string name="digital_assistant_setup_message">In the settings, select <b>Google Shortcuts Launcher</b> as your default digital assistant app to quickly launch your selected shortcut using device gestures, buttons and more…</string>
-    <string name="digital_assistant_setup_button">Set as default</string>
-
-    <string name="free_android_warn_title">Important information</string>
-    <string name="free_android_warn_message">Google has announced that, starting in 2026/2027, all apps on certified Android devices will require the developer to submit personal identity details directly to Google. Since the developers of this app do not agree to this requirement, this app will no longer work on certified Android devices after that time.</string>
-    <string name="free_android_warn_link"><u>More info</u></string>
-    <string name="free_android_warn_solution_button">Solution</string>
-
-    <string name="shortcut_open">Open shortcut</string>
-    <string name="shortcut_select">Select shortcut</string>
-    <string name="shortcut_disabled">Unable to launch, enable this shortcut in manager first</string>
-    <string name="shortcut_invalid">Invalid shortcut selected</string>
+    <string name="root_access_warning">Grant root permission first</string>
 </resources>

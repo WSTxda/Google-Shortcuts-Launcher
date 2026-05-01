@@ -39,7 +39,7 @@ class PasswordManagerShortcut : ShortcutsActivity() {
                 showToast(R.string.play_services_not_found)
             }
         } else {
-            showToast(R.string.root_access_error)
+            showToast(R.string.root_access_warning)
         }
     }
 

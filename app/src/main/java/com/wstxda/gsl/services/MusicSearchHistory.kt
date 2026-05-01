@@ -41,7 +41,7 @@ class MusicSearchHistory : ShortcutsActivity() {
                 showToast(R.string.google_not_found)
             }
         } else {
-            showToast(R.string.root_access_error)
+            showToast(R.string.root_access_warning)
         }
     }
 

@@ -1,9 +1,46 @@
 <resources>
 
+    <!--app names-->
+
     <string name="app_name">Skróty Google</string>
     <string name="app_manager">Menedżer</string>
     <string name="app_manager_shortcuts">Menedżer skrótów</string>
     <string name="app_library">Biblioteka</string>
+
+    <!--shortcuts names-->
+
+    <string name="assistant">Asystent</string>
+    <string name="collections">Kolekcje</string>
+    <string name="explore_shortcut">Odkrywaj</string>
+    <string name="files">Pliki</string>
+    <string name="finance">Finanse</string>
+    <string name="flight_shortcut">Loty</string>
+    <string name="games">Gry</string>
+    <string name="history_shortcut">Historia</string>
+    <string name="hotel_shortcut">Hotele</string>
+    <string name="incognito">Incognito</string>
+    <string name="lens">Obiektyw</string>
+    <string name="music_search">Wyszukiwanie muzyki</string>
+    <string name="password_manager">Hasła</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="scanner">Skaner</string>
+    <string name="search">Szukaj</string>
+    <string name="settings_shortcut">Ustawienia</string>
+    <string name="shopping">Zakupy</string>
+    <string name="travel">Podróże</string>
+    <string name="weather">Pogoda</string>
+    <!--games shortcuts-->
+    <string name="cricket">Krykiet</string>
+    <string name="minesweeper">Saper</string>
+    <string name="pacman">PAC-MAN</string>
+    <string name="snake">Wąż</string>
+    <string name="solitaire">Pasjans</string>
+
+    <!--preferences-->
+
+    <string name="pref_category_shortcuts_settings">Ustawienia skrótów</string>
+    <string name="pref_category_other">Inne</string>
+    <string name="pref_category_about">Informacje</string>
 
     <string name="pref_expandable_search">Skróty wyszukiwania</string>
     <string name="pref_expandable_manager">Skróty menedżera</string>
@@ -11,13 +48,17 @@
     <string name="pref_expandable_games">Skróty gier</string>
     <string name="pref_expandable_others">Inne skróty</string>
 
-    <string name="pref_category_shortcuts_settings">Ustawienia skrótów</string>
-    <string name="pref_category_other">Inne</string>
-    <string name="pref_category_about">Informacje</string>
-
-    <string name="pref_version">Wersja</string>
     <string name="pref_developer">Programista</string>
     <string name="pref_source_code">Repozytorium kodu źródłowego</string>
+    <string name="pref_version_number">Wersja %s</string>
+
+    <string name="pref_used_library">Biblioteki</string>
+    <string name="pref_used_library_summary">Licencje open source</string>
+
+    <string name="pref_license">Licencja</string>
+    <string name="pref_license_gnu">GNU General Public License v3.0</string>
+
+    <string name="pref_theme">Motyw</string>
 
     <string name="pref_shortcut_enabled">Launcher skrótów włączony</string>
     <string name="pref_shortcut_disabled">Launcher skrótów wyłączony</string>
@@ -31,87 +72,68 @@
     <string name="pref_show_manager">Pokaż menedżera w launcherze</string>
     <string name="pref_show_manager_summary">Aby uzyskać dostęp do menedżera, gdy jest ukryty, naciśnij kafelek skrótu w panelu szybkich ustawień</string>
 
-    <string name="pref_version_number">Wersja %s</string>
-
-    <string name="pref_add_shortcut_tile">Dodaj kafelek skrótu w panelu szybkich ustawień</string>
-
-    <string name="pref_theme">Motyw</string>
-
     <string name="pref_digital_assistant_shortcut">Skrót asystenta cyfrowego</string>
-
-    <string name="pref_tile_shortcut">Skrót kafelka szybkich ustawień</string>
 
     <string name="pref_setup_digital_assistant">Skonfiguruj asystenta cyfrowego</string>
     <string name="pref_setup_digital_assistant_summary">Ustaw Skróty Google jako domyślną aplikację asystenta cyfrowego</string>
 
-    <string name="pref_used_library">Biblioteki</string>
-    <string name="pref_used_library_summary">Licencje open source</string>
+    <string name="pref_tile_shortcut">Skrót kafelka szybkich ustawień</string>
+    <string name="pref_add_shortcut_tile">Dodaj kafelek skrótu w panelu szybkich ustawień</string>
 
-    <string name="password_manager">Hasła</string>
-    <string name="music_search">Wyszukiwanie muzyki</string>
-    <string name="weather">Pogoda</string>
-    <string name="games">Gry</string>
-    <string name="assistant">Asystent</string>
-    <string name="lens">Obiektyw</string>
-    <string name="quick_share">Quick Share</string>
-    <string name="files">Pliki</string>
-    <string name="incognito">Incognito</string>
-    <string name="search">Szukaj</string>
-    <string name="collections">Kolekcje</string>
-    <string name="shopping">Zakupy</string>
-    <string name="travel">Podróże</string>
-    <string name="finance">Finanse</string>
-    <string name="scanner">Skaner</string>
-
-    <string name="cricket">Krykiet</string>
-    <string name="minesweeper">Saper</string>
-    <string name="pacman">PAC-MAN</string>
-    <string name="snake">Wąż</string>
-    <string name="solitaire">Pasjans</string>
-
-    <string name="history_shortcut">Historia</string>
-    <string name="settings_shortcut">Ustawienia</string>
-    <string name="explore_shortcut">Odkrywaj</string>
-    <string name="flight_shortcut">Loty</string>
-    <string name="hotel_shortcut">Hotele</string>
-
-    <string name="google_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz aplikację Google</string>
-    <string name="play_games_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz Gry Google Play</string>
-    <string name="play_services_not_found">Aktywność nie znaleziona. Zainstaluj lub włącz Google Play Services</string>
-    <string name="play_store_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz Sklep Google Play</string>
-    <string name="browser_not_found">Nie znaleziono przeglądarki. Zainstaluj lub włącz przeglądarkę</string>
-    <string name="game_manager_not_found">Menedżer gier nie jest obsługiwany przez to urządzenie</string>
-    <string name="files_not_found">Pliki nieobsługiwane na tym urządzeniu</string>
-    <string name="root_access_error">Najpierw nadaj uprawnienia root</string>
-
-    <string name="tile_added_success">Pomyślnie dodano do szybkich ustawień</string>
-    <string name="tile_already_added">Dodano już do szybkich ustawień</string>
+    <!--theme selector-->
 
     <string name="theme_select">Wybierz motyw</string>
-
+    <!--themes modes-->
     <string name="theme_system">Domyślny systemowy</string>
     <string name="theme_light">Jasny</string>
     <string name="theme_dark">Ciemny</string>
 
-    <string name="update_checker_button">Sprawdź aktualizacje</string>
-    <string name="updater_download_button">Pobierz</string>
+    <!--update checker-->
 
+    <string name="updater_title">Dostępna nowa aktualizacja!</string>
+    <string name="updater_version">Wersja %s</string>
     <string name="updater_no_update_message">Brak dostępnych aktualizacji</string>
-    <string name="updater_update_available_message">Dostępna nowa aktualizacja: %s</string>
     <string name="updater_no_internet_message">Brak połączenia z internetem</string>
     <string name="updater_generic_error_message">Coś poszło nie tak. Spróbuj ponownie później</string>
+    <string name="updater_download_button">Pobierz</string>
+    <string name="updater_github_button">Otwórz w GitHub</string>
+
+    <!--setup digital assistant dialog-->
 
     <string name="digital_assistant_setup_title">Domyślna aplikacja asystenta cyfrowego</string>
     <string name="digital_assistant_setup_message">W ustawieniach wybierz <b>Skróty Google</b> jako domyślną aplikację asystenta cyfrowego, aby szybko uruchamiać wybrany skrót za pomocą gestów, przycisków urządzenia i nie tylko…</string>
     <string name="digital_assistant_setup_button">Ustaw jako domyślne</string>
+
+    <!--free android warn dialog-->
 
     <string name="free_android_warn_title">Ważna informacja</string>
     <string name="free_android_warn_message">Google ogłosiło, że począwszy od 2026/2027 roku, wszystkie aplikacje na certyfikowanych urządzeniach z systemem Android będą wymagać od deweloperów przesłania danych osobowych bezpośrednio do Google. Ponieważ deweloperzy tej aplikacji nie zgadzają się z tym wymogiem, aplikacja przestanie działać na certyfikowanych urządzeniach z systemem Android po tym czasie.</string>
     <string name="free_android_warn_link"><u>Więcej informacji</u></string>
     <string name="free_android_warn_solution_button">Rozwiązanie</string>
 
+    <!--shortcut actions-->
+
     <string name="shortcut_open">Otwórz skrót</string>
     <string name="shortcut_select">Wybierz skrót</string>
     <string name="shortcut_disabled">Nie można uruchomić. Najpierw włącz ten skrót w menedżerze</string>
     <string name="shortcut_invalid">Wybrano nieprawidłowy skrót</string>
+
+    <!--shortcut open errors-->
+
+    <string name="google_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz aplikację Google</string>
+    <string name="play_services_not_found">Aktywność nie znaleziona. Zainstaluj lub włącz Google Play Services</string>
+    <string name="play_games_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz Gry Google Play</string>
+    <string name="play_store_not_found">Nie znaleziono aktywności. Zainstaluj lub włącz Sklep Google Play</string>
+    <string name="browser_not_found">Nie znaleziono przeglądarki. Zainstaluj lub włącz przeglądarkę</string>
+    <string name="game_manager_not_found">Menedżer gier nie jest obsługiwany przez to urządzenie</string>
+    <string name="files_not_found">Pliki nieobsługiwane na tym urządzeniu</string>
+
+    <!--app quick settings tile-->
+
+    <string name="tile_added_success">Pomyślnie dodano do szybkich ustawień</string>
+    <string name="tile_already_added">Dodano już do szybkich ustawień</string>
+
+    <!--root permission-->
+
+    <string name="root_access_warning">Najpierw nadaj uprawnienia root</string>
 </resources>

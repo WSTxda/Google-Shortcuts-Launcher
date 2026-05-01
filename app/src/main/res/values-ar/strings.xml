@@ -1,9 +1,46 @@
 <resources>
 
+    <!--app names-->
+
     <string name="app_name">مشغّل اختصارات Google</string>
     <string name="app_manager">المدير</string>
     <string name="app_manager_shortcuts">إدارة الاختصارات</string>
     <string name="app_library">المكتبة</string>
+
+    <!--shortcuts names-->
+
+    <string name="assistant">المساعد</string>
+    <string name="collections">المجموعات</string>
+    <string name="explore_shortcut">استكشاف</string>
+    <string name="files">الملفات</string>
+    <string name="finance">الشؤون المالية</string>
+    <string name="flight_shortcut">رحلات الطيران</string>
+    <string name="games">الألعاب</string>
+    <string name="history_shortcut">السجلّ</string>
+    <string name="hotel_shortcut">الفنادق</string>
+    <string name="incognito">متخفٍ</string>
+    <string name="lens">Lens</string>
+    <string name="music_search">البحث عن الموسيقى</string>
+    <string name="password_manager">كلمات المرور</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="scanner">ماسح ضوئي</string>
+    <string name="search">بحث</string>
+    <string name="settings_shortcut">الإعدادات</string>
+    <string name="shopping">التسوّق</string>
+    <string name="travel">السفر</string>
+    <string name="weather">الطقس</string>
+    <!--games shortcuts-->
+    <string name="cricket">كريكيت</string>
+    <string name="minesweeper">كاسحة الألغام</string>
+    <string name="pacman">باك مان</string>
+    <string name="snake">ثعبان</string>
+    <string name="solitaire">سوليتير</string>
+
+    <!--preferences-->
+
+    <string name="pref_category_shortcuts_settings">إعدادات الاختصارات</string>
+    <string name="pref_category_other">أخرى</string>
+    <string name="pref_category_about">حول</string>
 
     <string name="pref_expandable_search">اختصارات البحث</string>
     <string name="pref_expandable_manager">اختصارات المدير</string>
@@ -11,13 +48,17 @@
     <string name="pref_expandable_games">اختصارات الألعاب</string>
     <string name="pref_expandable_others">اختصارات أخرى</string>
 
-    <string name="pref_category_shortcuts_settings">إعدادات الاختصارات</string>
-    <string name="pref_category_other">أخرى</string>
-    <string name="pref_category_about">حول</string>
-
-    <string name="pref_version">الإصدار</string>
     <string name="pref_developer">المطور</string>
     <string name="pref_source_code">مستودع الكود المصدري</string>
+    <string name="pref_version_number">الإصدار %s</string>
+
+    <string name="pref_used_library">المكتبات</string>
+    <string name="pref_used_library_summary">تراخيص المصدر المفتوح</string>
+
+    <string name="pref_license">الترخيص</string>
+    <string name="pref_license_gnu">GNU General Public License v3.0</string>
+
+    <string name="pref_theme">السمة</string>
 
     <string name="pref_shortcut_enabled">تم تفعيل مشغّل الاختصارات</string>
     <string name="pref_shortcut_disabled">تم تعطيل مشغّل الاختصارات</string>
@@ -31,49 +72,53 @@
     <string name="pref_show_manager">إظهار المدير في المشغّل</string>
     <string name="pref_show_manager_summary">للوصول إلى المدير عند إخفائه، اضغط على مربع الاختصار في لوحة الإعدادات السريعة</string>
 
-    <string name="pref_version_number">الإصدار %s</string>
-
-    <string name="pref_add_shortcut_tile">إضافة مربع اختصار في لوحة الإعدادات السريعة</string>
-
-    <string name="pref_theme">السمة</string>
-
     <string name="pref_digital_assistant_shortcut">اختصار المساعد الرقمي</string>
-
-    <string name="pref_tile_shortcut">اختصار مربع الإعدادات السريعة</string>
 
     <string name="pref_setup_digital_assistant">إعداد المساعد الرقمي</string>
     <string name="pref_setup_digital_assistant_summary">تعيين مشغّل اختصارات Google كتطبيق مساعد رقمي افتراضي</string>
 
-    <string name="pref_used_library">المكتبات</string>
-    <string name="pref_used_library_summary">تراخيص المصدر المفتوح</string>
+    <string name="pref_tile_shortcut">اختصار مربع الإعدادات السريعة</string>
+    <string name="pref_add_shortcut_tile">إضافة مربع اختصار في لوحة الإعدادات السريعة</string>
 
-    <string name="password_manager">كلمات المرور</string>
-    <string name="music_search">البحث عن الموسيقى</string>
-    <string name="weather">الطقس</string>
-    <string name="games">الألعاب</string>
-    <string name="assistant">المساعد</string>
-    <string name="lens">Lens</string>
-    <string name="quick_share">Quick Share</string>
-    <string name="files">الملفات</string>
-    <string name="incognito">متخفٍ</string>
-    <string name="search">بحث</string>
-    <string name="collections">المجموعات</string>
-    <string name="shopping">التسوّق</string>
-    <string name="travel">السفر</string>
-    <string name="finance">الشؤون المالية</string>
-    <string name="scanner">ماسح ضوئي</string>
+    <!--theme selector-->
 
-    <string name="cricket">كريكيت</string>
-    <string name="minesweeper">كاسحة الألغام</string>
-    <string name="pacman">باك مان</string>
-    <string name="snake">ثعبان</string>
-    <string name="solitaire">سوليتير</string>
+    <string name="theme_select">اختر السمة</string>
+    <!--themes modes-->
+    <string name="theme_system">افتراضي</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">مظلم</string>
 
-    <string name="history_shortcut">السجلّ</string>
-    <string name="settings_shortcut">الإعدادات</string>
-    <string name="explore_shortcut">استكشاف</string>
-    <string name="flight_shortcut">رحلات الطيران</string>
-    <string name="hotel_shortcut">الفنادق</string>
+    <!--update checker-->
+
+    <string name="updater_title">تحديث جديد متاح!</string>
+    <string name="updater_version">الإصدار %s</string>
+    <string name="updater_no_update_message">لا يوجد تحديث متاح</string>
+    <string name="updater_no_internet_message">لا يوجد اتصال بالإنترنت</string>
+    <string name="updater_generic_error_message">حدث خطأ ما. الرجاء المحاولة لاحقاً</string>
+    <string name="updater_download_button">تحميل</string>
+    <string name="updater_github_button">فتح في GitHub</string>
+
+    <!--setup digital assistant dialog-->
+
+    <string name="digital_assistant_setup_title">تطبيق المساعد الرقمي الافتراضي</string>
+    <string name="digital_assistant_setup_message">في الإعدادات، حدد <b>مشغّل اختصارات Google</b> كتطبيق مساعد رقمي افتراضي لتشغيل الاختصار الذي حددته بسرعة باستخدام إيماءات الجهاز والأزرار والمزيد…</string>
+    <string name="digital_assistant_setup_button">تعيين كافتراضي</string>
+
+    <!--free android warn dialog-->
+
+    <string name="free_android_warn_title">معلومات مهمة</string>
+    <string name="free_android_warn_message">أعلنت Google أنه اعتبارًا من 2026/2027، ستلزم جميع التطبيقات على أجهزة Android المعتمدة المطورَ بتقديم بيانات هويته الشخصية مباشرةً إلى Google. نظرًا لأن مطوري هذا التطبيق لا يوافقون على هذا الشرط، فلن يعمل هذا التطبيق على أجهزة Android المعتمدة بعد ذلك الوقت.</string>
+    <string name="free_android_warn_link"><u>مزيد من المعلومات</u></string>
+    <string name="free_android_warn_solution_button">الحل</string>
+
+    <!--shortcut actions-->
+
+    <string name="shortcut_open">فتح الاختصار</string>
+    <string name="shortcut_select">اختر اختصار</string>
+    <string name="shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولاً في المدير</string>
+    <string name="shortcut_invalid">تم اختيار اختصار غير صالح</string>
+
+    <!--shortcut open errors-->
 
     <string name="google_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل تطبيق Google</string>
     <string name="play_services_not_found">النشاط غير موجود. الرجاء تثبيت أو تفعيل خدمات Google Play</string>
@@ -82,36 +127,13 @@
     <string name="browser_not_found">لم يتم العثور على متصفح، الرجاء تثبيت أو تفعيل المتصفح</string>
     <string name="game_manager_not_found">مدير الألعاب غير مدعوم على هذا الجهاز</string>
     <string name="files_not_found">الملفات غير مدعومة على هذا الجهاز</string>
-    <string name="root_access_error">امنح صلاحية الروت أولاً</string>
+
+    <!--app quick settings tile-->
 
     <string name="tile_added_success">تمت الإضافة إلى الإعدادات السريعة بنجاح</string>
     <string name="tile_already_added">موجود بالفعل في الإعدادات السريعة</string>
 
-    <string name="theme_select">اختر السمة</string>
+    <!--root permission-->
 
-    <string name="theme_system">افتراضي</string>
-    <string name="theme_light">فاتح</string>
-    <string name="theme_dark">مظلم</string>
-
-    <string name="update_checker_button">التحقق من التحديثات</string>
-    <string name="updater_download_button">تحميل</string>
-
-    <string name="updater_no_update_message">لا يوجد تحديث متاح</string>
-    <string name="updater_update_available_message">تحديث جديد متاح: %s</string>
-    <string name="updater_no_internet_message">لا يوجد اتصال بالإنترنت</string>
-    <string name="updater_generic_error_message">حدث خطأ ما. الرجاء المحاولة لاحقاً</string>
-
-    <string name="digital_assistant_setup_title">تطبيق المساعد الرقمي الافتراضي</string>
-    <string name="digital_assistant_setup_message">في الإعدادات، حدد <b>مشغّل اختصارات Google</b> كتطبيق مساعد رقمي افتراضي لتشغيل الاختصار الذي حددته بسرعة باستخدام إيماءات الجهاز والأزرار والمزيد…</string>
-    <string name="digital_assistant_setup_button">تعيين كافتراضي</string>
-
-    <string name="free_android_warn_title">معلومات مهمة</string>
-    <string name="free_android_warn_message">أعلنت Google أنه اعتبارًا من 2026/2027، ستلزم جميع التطبيقات على أجهزة Android المعتمدة المطورَ بتقديم بيانات هويته الشخصية مباشرةً إلى Google. نظرًا لأن مطوري هذا التطبيق لا يوافقون على هذا الشرط، فلن يعمل هذا التطبيق على أجهزة Android المعتمدة بعد ذلك الوقت.</string>
-    <string name="free_android_warn_link"><u>مزيد من المعلومات</u></string>
-    <string name="free_android_warn_solution_button">الحل</string>
-
-    <string name="shortcut_open">فتح الاختصار</string>
-    <string name="shortcut_select">اختر اختصار</string>
-    <string name="shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولاً في المدير</string>
-    <string name="shortcut_invalid">تم اختيار اختصار غير صالح</string>
+    <string name="root_access_warning">امنح صلاحية الروت أولاً</string>
 </resources>

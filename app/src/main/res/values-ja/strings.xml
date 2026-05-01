@@ -1,9 +1,46 @@
 <resources>
 
+    <!--app names-->
+
     <string name="app_name">Google ショートカットランチャー</string>
     <string name="app_manager">マネージャー</string>
     <string name="app_manager_shortcuts">ショートカットマネージャー</string>
     <string name="app_library">ライブラリ</string>
+
+    <!--shortcuts names-->
+
+    <string name="assistant">アシスタント</string>
+    <string name="collections">コレクション</string>
+    <string name="explore_shortcut">発見</string>
+    <string name="files">ファイル</string>
+    <string name="finance">ファイナンス</string>
+    <string name="flight_shortcut">フライト</string>
+    <string name="games">ゲーム</string>
+    <string name="history_shortcut">履歴</string>
+    <string name="hotel_shortcut">ホテル</string>
+    <string name="incognito">シークレット</string>
+    <string name="lens">レンズ</string>
+    <string name="music_search">音楽を検索</string>
+    <string name="password_manager">パスワード</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="scanner">スキャナー</string>
+    <string name="search">検索</string>
+    <string name="settings_shortcut">設定</string>
+    <string name="shopping">ショッピング</string>
+    <string name="travel">トラベル</string>
+    <string name="weather">天気</string>
+    <!--games shortcuts-->
+    <string name="cricket">クリケット</string>
+    <string name="minesweeper">マインスイーパ</string>
+    <string name="pacman">PAC-MAN</string>
+    <string name="snake">ヘビ</string>
+    <string name="solitaire">ソリティア</string>
+
+    <!--preferences-->
+
+    <string name="pref_category_shortcuts_settings">ショートカットの設定</string>
+    <string name="pref_category_other">その他</string>
+    <string name="pref_category_about">アプリについて</string>
 
     <string name="pref_expandable_search">検索ショートカット</string>
     <string name="pref_expandable_manager">マネージャーのショートカット</string>
@@ -11,13 +48,17 @@
     <string name="pref_expandable_games">ゲームのショートカット</string>
     <string name="pref_expandable_others">その他のショートカット</string>
 
-    <string name="pref_category_shortcuts_settings">ショートカットの設定</string>
-    <string name="pref_category_other">その他</string>
-    <string name="pref_category_about">アプリについて</string>
-
-    <string name="pref_version">バージョン</string>
     <string name="pref_developer">開発者</string>
     <string name="pref_source_code">ソースコードのリポジトリ</string>
+    <string name="pref_version_number">バージョン %s</string>
+
+    <string name="pref_used_library">ライブラリ</string>
+    <string name="pref_used_library_summary">オープンソースライセンス</string>
+
+    <string name="pref_license">ライセンス</string>
+    <string name="pref_license_gnu">GNU General Public License v3.0</string>
+
+    <string name="pref_theme">テーマ</string>
 
     <string name="pref_shortcut_enabled">ショートカットランチャーは有効化されています。</string>
     <string name="pref_shortcut_disabled">ショートカットランチャーは無効化されています。</string>
@@ -31,87 +72,68 @@
     <string name="pref_show_manager">ランチャーにマネージャーを表示</string>
     <string name="pref_show_manager_summary">非表示のときにマネージャーにアクセスするには、クイック設定パネルのショートカットQSタイルを押します</string>
 
-    <string name="pref_version_number">バージョン %s</string>
-
-    <string name="pref_add_shortcut_tile">クイック設定パネルにショートカットタイルを追加</string>
-
-    <string name="pref_theme">テーマ</string>
-
     <string name="pref_digital_assistant_shortcut">デジタルアシスタントのショートカット</string>
-
-    <string name="pref_tile_shortcut">クイック設定タイルのショートカット</string>
 
     <string name="pref_setup_digital_assistant">デジタルアシスタントの設定</string>
     <string name="pref_setup_digital_assistant_summary">Google ショートカットランチャーをデフォルトのデジタルアシスタントアプリとして設定する</string>
 
-    <string name="pref_used_library">ライブラリ</string>
-    <string name="pref_used_library_summary">オープンソースライセンス</string>
+    <string name="pref_tile_shortcut">クイック設定タイルのショートカット</string>
+    <string name="pref_add_shortcut_tile">クイック設定パネルにショートカットタイルを追加</string>
 
-    <string name="password_manager">パスワード</string>
-    <string name="music_search">音楽を検索</string>
-    <string name="weather">天気</string>
-    <string name="games">ゲーム</string>
-    <string name="assistant">アシスタント</string>
-    <string name="lens">レンズ</string>
-    <string name="quick_share">Quick Share</string>
-    <string name="files">ファイル</string>
-    <string name="incognito">シークレット</string>
-    <string name="search">検索</string>
-    <string name="collections">コレクション</string>
-    <string name="shopping">ショッピング</string>
-    <string name="travel">トラベル</string>
-    <string name="finance">ファイナンス</string>
-    <string name="scanner">スキャナー</string>
-
-    <string name="cricket">クリケット</string>
-    <string name="minesweeper">マインスイーパ</string>
-    <string name="pacman">PAC-MAN</string>
-    <string name="snake">ヘビ</string>
-    <string name="solitaire">ソリティア</string>
-
-    <string name="history_shortcut">履歴</string>
-    <string name="settings_shortcut">設定</string>
-    <string name="explore_shortcut">発見</string>
-    <string name="flight_shortcut">フライト</string>
-    <string name="hotel_shortcut">ホテル</string>
-
-    <string name="google_not_found">アクティビティが見つかりません。Google アプリをインストールするか有効化してください。</string>
-    <string name="play_games_not_found">アクティビティが見つかりません。Google Play Games をインストールするか有効化してください。</string>
-    <string name="play_services_not_found">アクティビティが見つかりません。Google Play サービスをインストールまたは有効にしてください</string>
-    <string name="play_store_not_found">アクティビティが見つかりません。Google Play ストアをインストールするか有効化してください。</string>
-    <string name="browser_not_found">ブラウザが見つかりません。ブラウザをインストールするか有効化してください。</string>
-    <string name="game_manager_not_found">このデバイスではゲームマネージャーに非対応です。</string>
-    <string name="files_not_found">このデバイスでサポートされていないファイル</string>
-    <string name="root_access_error">最初に root 権限を許可してください</string>
-
-    <string name="tile_added_success">クイック設定に正常に追加されました</string>
-    <string name="tile_already_added">クイック設定にすでに追加されています</string>
+    <!--theme selector-->
 
     <string name="theme_select">テーマを選択</string>
-
+    <!--themes modes-->
     <string name="theme_system">システムのデフォルト</string>
     <string name="theme_light">ライト</string>
     <string name="theme_dark">ダーク</string>
 
-    <string name="update_checker_button">アップデートを確認</string>
-    <string name="updater_download_button">ダウンロード</string>
+    <!--update checker-->
 
+    <string name="updater_title">新しいアップデートが利用可能です！</string>
+    <string name="updater_version">バージョン %s</string>
     <string name="updater_no_update_message">利用可能なアップデートはありません</string>
-    <string name="updater_update_available_message">新しいアップデートが利用可能です: %s</string>
     <string name="updater_no_internet_message">インターネット接続がありません</string>
     <string name="updater_generic_error_message">何か問題が発生しました。後でもう一度お試しください</string>
+    <string name="updater_download_button">ダウンロード</string>
+    <string name="updater_github_button">GitHubで開く</string>
+
+    <!--setup digital assistant dialog-->
 
     <string name="digital_assistant_setup_title">デフォルトのデジタルアシスタントアプリ</string>
     <string name="digital_assistant_setup_message">設定で <b>Google ショートカットランチャー</b> をデフォルトのデジタルアシスタントアプリとして選択すると、デバイスのジェスチャーやボタンなどを使用して、選択したショートカットをすばやく起動できます…</string>
     <string name="digital_assistant_setup_button">デフォルトとして設定</string>
+
+    <!--free android warn dialog-->
 
     <string name="free_android_warn_title">重要なお知らせ</string>
     <string name="free_android_warn_message">Googleは2026/2027年より、認定Androidデバイス上のすべてのアプリについて、開発者が個人の身元情報をGoogleに直接提出することを義務付けると発表しました。このアプリの開発者はこの要件に同意しないため、それ以降、このアプリは認定Androidデバイスで動作しなくなります。</string>
     <string name="free_android_warn_link"><u>詳細情報</u></string>
     <string name="free_android_warn_solution_button">解決策</string>
 
+    <!--shortcut actions-->
+
     <string name="shortcut_open">ショートカットを開く</string>
     <string name="shortcut_select">ショートカットを選択</string>
     <string name="shortcut_disabled">起動できません。先にマネージャーでこのショートカットを有効にしてください</string>
     <string name="shortcut_invalid">無効なショートカットが選択されました</string>
+
+    <!--shortcut open errors-->
+
+    <string name="google_not_found">アクティビティが見つかりません。Google アプリをインストールするか有効化してください。</string>
+    <string name="play_services_not_found">アクティビティが見つかりません。Google Play サービスをインストールまたは有効にしてください</string>
+    <string name="play_games_not_found">アクティビティが見つかりません。Google Play Games をインストールするか有効化してください。</string>
+    <string name="play_store_not_found">アクティビティが見つかりません。Google Play ストアをインストールするか有効化してください。</string>
+    <string name="browser_not_found">ブラウザが見つかりません。ブラウザをインストールするか有効化してください。</string>
+    <string name="game_manager_not_found">このデバイスではゲームマネージャーに非対応です。</string>
+    <string name="files_not_found">このデバイスでサポートされていないファイル</string>
+
+    <!--app quick settings tile-->
+
+    <string name="tile_added_success">クイック設定に正常に追加されました</string>
+    <string name="tile_already_added">クイック設定にすでに追加されています</string>
+
+    <!--root permission-->
+
+    <string name="root_access_warning">最初に root 権限を許可してください</string>
 </resources>

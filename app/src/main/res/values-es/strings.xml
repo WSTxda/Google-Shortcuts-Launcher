@@ -1,9 +1,46 @@
 <resources>
 
+    <!--app names-->
+
     <string name="app_name">Atajos de Google</string>
     <string name="app_manager">Gestor</string>
     <string name="app_manager_shortcuts">Gestor de atajos</string>
     <string name="app_library">Biblioteca</string>
+
+    <!--shortcuts names-->
+
+    <string name="assistant">Asistente</string>
+    <string name="collections">Colecciones</string>
+    <string name="explore_shortcut">Explorar</string>
+    <string name="files">Archivos</string>
+    <string name="finance">Finanzas</string>
+    <string name="flight_shortcut">Vuelos</string>
+    <string name="games">Juegos</string>
+    <string name="history_shortcut">Historial</string>
+    <string name="hotel_shortcut">Hoteles</string>
+    <string name="incognito">Incógnito</string>
+    <string name="lens">Lens</string>
+    <string name="music_search">Buscar música</string>
+    <string name="password_manager">Contraseñas</string>
+    <string name="quick_share">Quick Share</string>
+    <string name="scanner">Escáner</string>
+    <string name="search">Buscar</string>
+    <string name="settings_shortcut">Ajustes</string>
+    <string name="shopping">Shopping</string>
+    <string name="travel">Viajes</string>
+    <string name="weather">Tiempo</string>
+    <!--games shortcuts-->
+    <string name="cricket">Críquet</string>
+    <string name="minesweeper">Buscaminas</string>
+    <string name="pacman">PAC-MAN</string>
+    <string name="snake">Snake</string>
+    <string name="solitaire">Solitario</string>
+
+    <!--preferences-->
+
+    <string name="pref_category_shortcuts_settings">Configuración de atajos</string>
+    <string name="pref_category_other">Otros</string>
+    <string name="pref_category_about">Acerca de</string>
 
     <string name="pref_expandable_search">Atajos de búsqueda</string>
     <string name="pref_expandable_manager">Atajos de gestores</string>
@@ -11,13 +48,17 @@
     <string name="pref_expandable_games">Atajos de juegos</string>
     <string name="pref_expandable_others">Otros atajos</string>
 
-    <string name="pref_category_shortcuts_settings">Configuración de atajos</string>
-    <string name="pref_category_other">Otros</string>
-    <string name="pref_category_about">Acerca de</string>
-
-    <string name="pref_version">Versión</string>
     <string name="pref_developer">Desarrollador</string>
     <string name="pref_source_code">Repositorio con el código fuente</string>
+    <string name="pref_version_number">Versión %s</string>
+
+    <string name="pref_used_library">Bibliotecas</string>
+    <string name="pref_used_library_summary">Licencias de código abierto</string>
+
+    <string name="pref_license">Licencia</string>
+    <string name="pref_license_gnu">GNU General Public License v3.0</string>
+
+    <string name="pref_theme">Tema</string>
 
     <string name="pref_shortcut_enabled">Atajo en el lanzador activado</string>
     <string name="pref_shortcut_disabled">Atajo en el lanzador desactivado</string>
@@ -31,87 +72,68 @@
     <string name="pref_show_manager">Mostrar gestor en lanzador</string>
     <string name="pref_show_manager_summary">Para acceder a gestor cuando esté oculta, presione el atajo en el panel de configuración rápida</string>
 
-    <string name="pref_version_number">Versión %s</string>
-
-    <string name="pref_add_shortcut_tile">Añadir atajo al panel de configuración rápida</string>
-
-    <string name="pref_theme">Tema</string>
-
     <string name="pref_digital_assistant_shortcut">Acceso directo al asistente digital</string>
-
-    <string name="pref_tile_shortcut">Atajo del panel de configuración rápida</string>
 
     <string name="pref_setup_digital_assistant">Configurar asistente digital</string>
     <string name="pref_setup_digital_assistant_summary">Establecer Atajos de Google como la aplicación de asistente digital predeterminada</string>
 
-    <string name="pref_used_library">Bibliotecas</string>
-    <string name="pref_used_library_summary">Licencias de código abierto</string>
+    <string name="pref_tile_shortcut">Atajo del panel de configuración rápida</string>
+    <string name="pref_add_shortcut_tile">Añadir atajo al panel de configuración rápida</string>
 
-    <string name="password_manager">Contraseñas</string>
-    <string name="music_search">Buscar música</string>
-    <string name="weather">Tiempo</string>
-    <string name="games">Juegos</string>
-    <string name="assistant">Asistente</string>
-    <string name="lens">Lens</string>
-    <string name="quick_share">Quick Share</string>
-    <string name="files">Archivos</string>
-    <string name="incognito">Incógnito</string>
-    <string name="search">Buscar</string>
-    <string name="collections">Colecciones</string>
-    <string name="shopping">Shopping</string>
-    <string name="travel">Viajes</string>
-    <string name="finance">Finanzas</string>
-    <string name="scanner">Escáner</string>
-
-    <string name="cricket">Críquet</string>
-    <string name="minesweeper">Buscaminas</string>
-    <string name="pacman">PAC-MAN</string>
-    <string name="snake">Snake</string>
-    <string name="solitaire">Solitario</string>
-
-    <string name="history_shortcut">Historial</string>
-    <string name="settings_shortcut">Ajustes</string>
-    <string name="explore_shortcut">Explorar</string>
-    <string name="flight_shortcut">Vuelos</string>
-    <string name="hotel_shortcut">Hoteles</string>
-
-    <string name="google_not_found">Actividad no encontrada. Instale o active Google App</string>
-    <string name="play_games_not_found">Actividad no encontrada. Instale o active Google Play Games</string>
-    <string name="play_services_not_found">Actividad no encontrada. Por favor, instale o active Google Play Services</string>
-    <string name="play_store_not_found">Actividad no encontrada. Instale o active Google Play Store</string>
-    <string name="browser_not_found">Navegador no encontrado. Instale o active su navegador</string>
-    <string name="game_manager_not_found">El administrador de juegos no es compatible con este dispositivo</string>
-    <string name="files_not_found">Archivos no compatibles con este dispositivo</string>
-    <string name="root_access_error">Conceder primero el permiso de root</string>
-
-    <string name="tile_added_success">Añadido con éxito a las configuración rápida</string>
-    <string name="tile_already_added">Ya está añadido a las configuración rápida</string>
+    <!--theme selector-->
 
     <string name="theme_select">Seleccionar tema</string>
-
+    <!--themes modes-->
     <string name="theme_system">Predeterminado del sistema</string>
     <string name="theme_light">Claro</string>
     <string name="theme_dark">Oscuro</string>
 
-    <string name="update_checker_button">Comprobar actualizaciones</string>
-    <string name="updater_download_button">Descargar</string>
+    <!--update checker-->
 
+    <string name="updater_title">¡Nueva actualización disponible!</string>
+    <string name="updater_version">Versión %s</string>
     <string name="updater_no_update_message">No hay actualizaciones disponibles</string>
-    <string name="updater_update_available_message">Nueva actualización disponible: %s</string>
     <string name="updater_no_internet_message">Sin conexión a internet</string>
     <string name="updater_generic_error_message">Algo salió mal. Por favor, intenta de nuevo más tarde</string>
+    <string name="updater_download_button">Descargar</string>
+    <string name="updater_github_button">Abrir en GitHub</string>
+
+    <!--setup digital assistant dialog-->
 
     <string name="digital_assistant_setup_title">Aplicación de asistente digital predeterminada</string>
     <string name="digital_assistant_setup_message">En los ajustes, selecciona <b>Atajos de Google</b> como tu aplicación de asistente digital predeterminada para iniciar rápidamente el atajo seleccionado mediante gestos del dispositivo, botones y más…</string>
     <string name="digital_assistant_setup_button">Establecer como predeterminado</string>
+
+    <!--free android warn dialog-->
 
     <string name="free_android_warn_title">Información importante</string>
     <string name="free_android_warn_message">Google ha anunciado que, a partir de 2026/2027, todas las aplicaciones en dispositivos Android certificados requerirán que el desarrollador envíe datos de identidad personal directamente a Google. Dado que los desarrolladores de esta aplicación no están de acuerdo con este requisito, esta aplicación dejará de funcionar en dispositivos Android certificados después de esa fecha.</string>
     <string name="free_android_warn_link"><u>Más información</u></string>
     <string name="free_android_warn_solution_button">Solución</string>
 
+    <!--shortcut actions-->
+
     <string name="shortcut_open">Abrir atajo</string>
     <string name="shortcut_select">Seleccionar acceso directo</string>
     <string name="shortcut_disabled">No se puede iniciar. activa este atajo en el gestor primero</string>
     <string name="shortcut_invalid">Acceso directo seleccionado no válido</string>
+
+    <!--shortcut open errors-->
+
+    <string name="google_not_found">Actividad no encontrada. Instale o active Google App</string>
+    <string name="play_services_not_found">Actividad no encontrada. Por favor, instale o active Google Play Services</string>
+    <string name="play_games_not_found">Actividad no encontrada. Instale o active Google Play Games</string>
+    <string name="play_store_not_found">Actividad no encontrada. Instale o active Google Play Store</string>
+    <string name="browser_not_found">Navegador no encontrado. Instale o active su navegador</string>
+    <string name="game_manager_not_found">El administrador de juegos no es compatible con este dispositivo</string>
+    <string name="files_not_found">Archivos no compatibles con este dispositivo</string>
+
+    <!--app quick settings tile-->
+
+    <string name="tile_added_success">Añadido con éxito a las configuración rápida</string>
+    <string name="tile_already_added">Ya está añadido a las configuración rápida</string>
+
+    <!--root permission-->
+
+    <string name="root_access_warning">Conceder primero el permiso de root</string>
 </resources>
