@@ -105,6 +105,11 @@
     <string name="digital_assistant_setup_message">En los ajustes, selecciona <b>Atajos de Google</b> como tu aplicación de asistente digital predeterminada para iniciar rápidamente el atajo seleccionado mediante gestos del dispositivo, botones y más…</string>
     <string name="digital_assistant_setup_button">Establecer como predeterminado</string>
 
+    <string name="free_android_warn_title">Información importante</string>
+    <string name="free_android_warn_message">Google ha anunciado que, a partir de 2026/2027, todas las aplicaciones en dispositivos Android certificados requerirán que el desarrollador envíe datos de identidad personal directamente a Google. Dado que los desarrolladores de esta aplicación no están de acuerdo con este requisito, esta aplicación dejará de funcionar en dispositivos Android certificados después de esa fecha.</string>
+    <string name="free_android_warn_link"><u>Más información</u></string>
+    <string name="free_android_warn_solution_button">Solución</string>
+
     <string name="shortcut_open">Abrir atajo</string>
     <string name="shortcut_select">Seleccionar acceso directo</string>
     <string name="shortcut_disabled">No se puede iniciar. activa este atajo en el gestor primero</string>

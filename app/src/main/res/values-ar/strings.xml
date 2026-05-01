@@ -105,6 +105,11 @@
     <string name="digital_assistant_setup_message">في الإعدادات، حدد <b>مشغّل اختصارات Google</b> كتطبيق مساعد رقمي افتراضي لتشغيل الاختصار الذي حددته بسرعة باستخدام إيماءات الجهاز والأزرار والمزيد…</string>
     <string name="digital_assistant_setup_button">تعيين كافتراضي</string>
 
+    <string name="free_android_warn_title">معلومات مهمة</string>
+    <string name="free_android_warn_message">أعلنت Google أنه اعتبارًا من 2026/2027، ستلزم جميع التطبيقات على أجهزة Android المعتمدة المطورَ بتقديم بيانات هويته الشخصية مباشرةً إلى Google. نظرًا لأن مطوري هذا التطبيق لا يوافقون على هذا الشرط، فلن يعمل هذا التطبيق على أجهزة Android المعتمدة بعد ذلك الوقت.</string>
+    <string name="free_android_warn_link"><u>مزيد من المعلومات</u></string>
+    <string name="free_android_warn_solution_button">الحل</string>
+
     <string name="shortcut_open">فتح الاختصار</string>
     <string name="shortcut_select">اختر اختصار</string>
     <string name="shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولاً في المدير</string>

@@ -105,6 +105,11 @@
     <string name="digital_assistant_setup_message">Nas configurações, selecione o <b>Atalhos do Google</b> como o aplicativo de assistente digital padrão para iniciar rapidamente o atalho selecionado usando gestos do dispositivo, botões e muito mais…</string>
     <string name="digital_assistant_setup_button">Definir como padrão</string>
 
+    <string name="free_android_warn_title">Informação importante</string>
+    <string name="free_android_warn_message">O Google anunciou que, a partir de 2026/2027, todos os aplicativos em dispositivos Android certificados exigirão que o desenvolvedor envie dados de identidade pessoal diretamente ao Google. Como os desenvolvedores deste aplicativo não concordam com esse requisito, este aplicativo não funcionará mais em dispositivos Android certificados após esse período.</string>
+    <string name="free_android_warn_link"><u>Mais informações</u></string>
+    <string name="free_android_warn_solution_button">Solução</string>
+
     <string name="shortcut_open">Abrir atalho</string>
     <string name="shortcut_select">Selecionar atalho</string>
     <string name="shortcut_disabled">Não foi possível iniciar, habilite este atalho no gerenciador primeiro</string>

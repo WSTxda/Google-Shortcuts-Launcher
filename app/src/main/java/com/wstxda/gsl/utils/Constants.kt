@@ -41,12 +41,14 @@ object Constants {
     // -------------------------------------------------------------------------
 
     const val DIGITAL_ASSISTANT_DIALOG = "DigitalAssistantSetupDialog"
+    const val FREE_ANDROID_WARN_DIALOG = "free_android_warn_dialog"
 
     // -------------------------------------------------------------------------
     // SharedPreferences
     // -------------------------------------------------------------------------
 
     const val IS_ASSIST_SETUP_DONE = "is_assist_setup_done"
+    const val IS_WARN_DISMISSED = "is_warn_dismissed"
 
     // -------------------------------------------------------------------------
     // Logs tags

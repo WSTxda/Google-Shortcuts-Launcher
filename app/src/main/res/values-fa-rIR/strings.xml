@@ -105,6 +105,11 @@
     <string name="digital_assistant_setup_message">در تنظیمات، <b>راه‌انداز میانبرهای گوگل</b> را به‌عنوان برنامه دستیار دیجیتال پیش‌فرض خود انتخاب کنید تا میانبر انتخابی خود را با استفاده از حرکات دستگاه، دکمه‌ها و موارد دیگر به‌سرعت راه‌اندازی کنید…</string>
     <string name="digital_assistant_setup_button">تنظیم به‌عنوان پیش‌فرض</string>
 
+    <string name="free_android_warn_title">اطلاعات مهم</string>
+    <string name="free_android_warn_message">گوگل اعلام کرده است که از سال ۲۰۲۶/۲۰۲۷، تمام برنامه‌های موجود در دستگاه‌های Android دارای گواهی، نیازمند ارسال مشخصات هویت شخصی توسعه‌دهنده مستقیماً به گوگل خواهند بود. از آنجایی که توسعه‌دهندگان این برنامه با این الزام موافق نیستند، این برنامه پس از آن زمان دیگر روی دستگاه‌های Android دارای گواهی کار نخواهد کرد.</string>
+    <string name="free_android_warn_link"><u>اطلاعات بیشتر</u></string>
+    <string name="free_android_warn_solution_button">راه‌حل</string>
+
     <string name="shortcut_open">باز کردن میانبر</string>
     <string name="shortcut_select">انتخاب میانبر</string>
     <string name="shortcut_disabled">امکان اجرا وجود ندارد. ابتدا این میانبر را در مدیر فعال کنید</string>

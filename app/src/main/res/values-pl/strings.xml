@@ -105,6 +105,11 @@
     <string name="digital_assistant_setup_message">W ustawieniach wybierz <b>Skróty Google</b> jako domyślną aplikację asystenta cyfrowego, aby szybko uruchamiać wybrany skrót za pomocą gestów, przycisków urządzenia i nie tylko…</string>
     <string name="digital_assistant_setup_button">Ustaw jako domyślne</string>
 
+    <string name="free_android_warn_title">Ważna informacja</string>
+    <string name="free_android_warn_message">Google ogłosiło, że począwszy od 2026/2027 roku, wszystkie aplikacje na certyfikowanych urządzeniach z systemem Android będą wymagać od deweloperów przesłania danych osobowych bezpośrednio do Google. Ponieważ deweloperzy tej aplikacji nie zgadzają się z tym wymogiem, aplikacja przestanie działać na certyfikowanych urządzeniach z systemem Android po tym czasie.</string>
+    <string name="free_android_warn_link"><u>Więcej informacji</u></string>
+    <string name="free_android_warn_solution_button">Rozwiązanie</string>
+
     <string name="shortcut_open">Otwórz skrót</string>
     <string name="shortcut_select">Wybierz skrót</string>
     <string name="shortcut_disabled">Nie można uruchomić. Najpierw włącz ten skrót w menedżerze</string>

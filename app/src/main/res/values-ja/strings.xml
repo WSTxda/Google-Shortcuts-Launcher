@@ -105,6 +105,11 @@
     <string name="digital_assistant_setup_message">設定で <b>Google ショートカットランチャー</b> をデフォルトのデジタルアシスタントアプリとして選択すると、デバイスのジェスチャーやボタンなどを使用して、選択したショートカットをすばやく起動できます…</string>
     <string name="digital_assistant_setup_button">デフォルトとして設定</string>
 
+    <string name="free_android_warn_title">重要なお知らせ</string>
+    <string name="free_android_warn_message">Googleは2026/2027年より、認定Androidデバイス上のすべてのアプリについて、開発者が個人の身元情報をGoogleに直接提出することを義務付けると発表しました。このアプリの開発者はこの要件に同意しないため、それ以降、このアプリは認定Androidデバイスで動作しなくなります。</string>
+    <string name="free_android_warn_link"><u>詳細情報</u></string>
+    <string name="free_android_warn_solution_button">解決策</string>
+
     <string name="shortcut_open">ショートカットを開く</string>
     <string name="shortcut_select">ショートカットを選択</string>
     <string name="shortcut_disabled">起動できません。先にマネージャーでこのショートカットを有効にしてください</string>
