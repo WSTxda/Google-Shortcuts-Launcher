@@ -31,8 +31,9 @@ class UpdaterBottomSheet : BaseBottomSheet<DialogUpdaterBinding>() {
     companion object {
         fun show(fragmentManager: FragmentManager, release: ReleaseInfo) {
             if (fragmentManager.findFragmentByTag(Constants.UPDATER_DIALOG) != null) return
+
             UpdaterBottomSheet().apply {
-                arguments = bundleOf(
+                @Suppress("DEPRECATION") arguments = bundleOf(
                     Constants.GITHUB_TITLE to release.title,
                     Constants.GITHUB_VERSION to release.version,
                     Constants.GITHUB_CHANGELOG to release.changelog,
@@ -46,8 +47,9 @@ class UpdaterBottomSheet : BaseBottomSheet<DialogUpdaterBinding>() {
     override val topDivider: MaterialDivider get() = binding.dividerTop
     override val bottomDivider: MaterialDivider get() = binding.dividerBottom
     override val scrollView: NestedScrollView get() = binding.scrollView
-    override val titleTextView: TextView get() = binding.updaterTitle
+    override val titleTextView: TextView get() = binding.dialogTitle
     override val titleResId: Int get() = R.string.updater_title
+    override val defaultExpanded: Boolean = true
 
     private var downloadedFile: File? = null
     private var downloadJob: Job? = null
@@ -78,41 +80,44 @@ class UpdaterBottomSheet : BaseBottomSheet<DialogUpdaterBinding>() {
         val markwon = Markwon.builder(requireContext()).usePlugin(LinkifyPlugin.create()).build()
         val displayTitle =
             args.getString(Constants.GITHUB_TITLE) ?: args.getString(Constants.GITHUB_VERSION)
-        binding.updaterVersion.text = getString(R.string.updater_version, displayTitle)
+
+        binding.dialogChipVersion.text = getString(R.string.updater_version, displayTitle)
         markwon.setMarkdown(
-            binding.updaterChangelog, args.getString(Constants.GITHUB_CHANGELOG).orEmpty()
+            binding.dialogChangelog, args.getString(Constants.GITHUB_CHANGELOG).orEmpty()
         )
     }
 
     private fun setupGithubButton(args: Bundle) {
-        binding.githubButton.setOnClickListener {
+        binding.dialogButtonNegative.text = getString(R.string.updater_github_button)
+        binding.dialogButtonNegative.setOnClickListener {
             openUrl(args.getString(Constants.GITHUB_PAGE_URL).orEmpty())
         }
     }
 
     private fun setupDownloadButton(args: Bundle) {
-        binding.downloadButton.setOnClickListener {
+        binding.dialogButtonPositive.text = getString(R.string.updater_download_button)
+        binding.dialogButtonPositive.setOnClickListener {
             val file = downloadedFile
             when {
                 file != null -> requestInstallOrPermission(file)
                 downloadJob?.isActive != true -> startDownload(
-                    url = args.getString(Constants.GITHUB_DOWNLOAD_URL).orEmpty(),
-                    version = args.getString(Constants.GITHUB_VERSION).orEmpty()
+                    url = args.getString(Constants.GITHUB_DOWNLOAD_URL).orEmpty()
                 )
             }
         }
     }
 
-    private fun startDownload(url: String, version: String) {
+    private fun startDownload(url: String) {
+        val fileName = url.substringAfterLast('/')
         setDownloadingState(true)
 
         downloadJob = viewLifecycleOwner.lifecycleScope.launch {
             ApkDownloader.download(
                 context = requireContext().applicationContext,
                 url = url,
-                fileName = "update-$version.apk",
+                fileName = fileName,
                 onProgress = { percent ->
-                    binding.downloadProgress.progress = percent
+                    binding.dialogDownloadProgress.progress = percent
                 },
                 onComplete = { file ->
                     downloadedFile = file
@@ -126,9 +131,9 @@ class UpdaterBottomSheet : BaseBottomSheet<DialogUpdaterBinding>() {
     }
 
     private fun setDownloadingState(isDownloading: Boolean) {
-        binding.downloadProgress.isVisible = isDownloading
-        binding.downloadButton.isEnabled = !isDownloading
-        binding.githubButton.isEnabled = !isDownloading
+        binding.dialogDownloadProgress.isVisible = isDownloading
+        binding.dialogButtonPositive.isEnabled = !isDownloading
+        binding.dialogButtonNegative.isEnabled = !isDownloading
     }
 
     private fun requestInstallOrPermission(file: File) {

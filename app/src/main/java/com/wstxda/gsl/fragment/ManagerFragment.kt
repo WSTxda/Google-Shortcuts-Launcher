@@ -43,7 +43,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
     }
 
     private val shortcuts = mapOf(
-        // Apps
+        // apps
         "assistant_shortcut" to AssistantShortcut::class.java,
         "collections_shortcut" to CollectionsShortcut::class.java,
         "files_shortcut" to FilesShortcut::class.java,
@@ -60,7 +60,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
         "travel_shortcut" to TravelShortcut::class.java,
         "weather_shortcut" to WeatherShortcut::class.java,
         "manager_activity" to ManagerActivity::class.java,
-        // Games
+        // games
         "cricket_shortcut" to CricketShortcut::class.java,
         "minesweeper_shortcut" to MinesweeperShortcut::class.java,
         "pacman_shortcut" to PacmanShortcut::class.java,
