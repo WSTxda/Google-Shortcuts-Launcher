@@ -33,7 +33,8 @@ class UpdaterBottomSheet : BaseBottomSheet<DialogUpdaterBinding>() {
             if (fragmentManager.findFragmentByTag(Constants.UPDATER_DIALOG) != null) return
 
             UpdaterBottomSheet().apply {
-                @Suppress("DEPRECATION") arguments = bundleOf(
+                @Suppress("DEPRECATION")
+                arguments = bundleOf(
                     Constants.GITHUB_TITLE to release.title,
                     Constants.GITHUB_VERSION to release.version,
                     Constants.GITHUB_CHANGELOG to release.changelog,
