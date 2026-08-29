@@ -7,6 +7,7 @@ import com.wstxda.gsl.activity.ShortcutsActivity
 import com.wstxda.gsl.logic.launchShortcuts
 
 class SolitaireShortcut : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         launchShortcuts(listOf(createSolitaireIntent()), R.string.play_games_not_found)
     }

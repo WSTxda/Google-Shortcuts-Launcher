@@ -7,6 +7,7 @@ import com.wstxda.gsl.activity.ShortcutsActivity
 import com.wstxda.gsl.logic.launchShortcuts
 
 class WeatherShortcut : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         launchShortcuts(
             listOf(

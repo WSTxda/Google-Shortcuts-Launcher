@@ -6,6 +6,7 @@ import com.wstxda.gsl.logic.launchShortcuts
 import com.wstxda.gsl.utils.IntentsFactory
 
 class MusicSearchShortcut : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         launchShortcuts(listOf(IntentsFactory.createMusicSearchIntent()), R.string.google_not_found)
     }

@@ -7,6 +7,7 @@ import com.wstxda.gsl.logic.launchShortcuts
 import com.wstxda.gsl.utils.Constants
 
 class FilesShortcut : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         launchShortcuts(
             listOf(

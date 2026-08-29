@@ -8,6 +8,7 @@ import com.wstxda.gsl.logic.launchShortcuts
 import com.wstxda.gsl.logic.showToast
 
 class ScannerShortcut : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         if (!launchShortcuts(createBarcodeIntent())) {
             showToast(R.string.play_services_not_found)

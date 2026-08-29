@@ -7,6 +7,7 @@ import com.wstxda.gsl.activity.ShortcutsActivity
 import com.wstxda.gsl.logic.launchShortcuts
 
 class MinesweeperShortcut : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         launchShortcuts(listOf(createMinesweeperIntent()), R.string.play_games_not_found)
     }

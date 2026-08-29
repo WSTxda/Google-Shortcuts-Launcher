@@ -1,9 +1,9 @@
 # versions.toml
 [versions]
-agp = "9.2.1"
+agp = "9.3.2"
 preference = "1.2.1"
-appcompat = "1.7.1"
-navigation = "2.9.8"
+appcompat = "1.8.0"
+navigation = "2.10.0"
 material = "1.14.0"
 #noinspection NewerVersionAvailable
 aboutLibraries = "14.2.1"

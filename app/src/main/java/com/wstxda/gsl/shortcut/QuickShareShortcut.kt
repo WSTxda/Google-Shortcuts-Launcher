@@ -7,6 +7,7 @@ import com.wstxda.gsl.logic.launchShortcuts
 import com.wstxda.gsl.utils.ShortcutsIntents
 
 class QuickShareShortcut : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         val intents = ShortcutsIntents.quickShareIntents.map { (pkg, cls) ->
             Intent().apply {

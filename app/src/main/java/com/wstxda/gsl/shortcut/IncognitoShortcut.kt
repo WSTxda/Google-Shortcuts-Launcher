@@ -7,6 +7,7 @@ import com.wstxda.gsl.logic.launchShortcuts
 import com.wstxda.gsl.utils.ShortcutsIntents
 
 class IncognitoShortcut : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         val intents = ShortcutsIntents.incognitoBrowserIntents.map { (pkg, cls) ->
             Intent().apply {

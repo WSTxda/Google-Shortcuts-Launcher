@@ -8,6 +8,7 @@ import com.wstxda.gsl.logic.launchShortcutsHistory
 import com.wstxda.gsl.logic.showToast
 
 class LensShortcut : ShortcutsActivity() {
+
     override fun onCreateInternal() {
         if (!launchShortcutsHistory(createLensIntent())) {
             showToast(R.string.google_not_found)
