@@ -97,18 +97,10 @@ Access real-time local weather updates along with a full weekly forecast.
 
 ### Download
 
-[<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/GitHub.svg"
-      alt='Get it on GitHub'
-      height="80">](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest)
-[<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/Telegram.svg"
-      alt='Get it on Telegram'
-      height="80">](https://t.me/WSTprojects)
+[<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/GitHub.svg" salt='Get it on GitHub' height="80">](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest)
+[<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/Telegram.svg" alt='Get it on Telegram' height="80">](https://t.me/WSTprojects)
 
 ### Donate
 
-[<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/PayPal.svg"
-      alt='Donate with PayPal'
-      height="80">](https://bit.ly/2lV0E6u)
-[<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/BMC.svg"
-      alt='Donate with BMC'
-      height="80">](https://www.buymeacoffee.com/wstxda)
+[<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/PayPal.svg" alt="Donate with PayPal" height="80">](https://www.paypal.com/donate/?cmd=_donations&business=wstxda@gmail.com&currency_code=USD)
+[<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/BMC.svg" alt="Donate with Buy Me a Coffee" height="80">](https://www.buymeacoffee.com/wstxda)
