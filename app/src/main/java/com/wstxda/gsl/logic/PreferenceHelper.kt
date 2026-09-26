@@ -2,6 +2,7 @@ package com.wstxda.gsl.logic
 
 import android.content.Context
 import androidx.preference.PreferenceManager
+import com.wstxda.gsl.utils.Constants
 
 class PreferenceHelper(context: Context) {
 
@@ -12,4 +13,8 @@ class PreferenceHelper(context: Context) {
 
     fun getString(key: String, defaultValue: String? = null): String? =
         preferences.getString(key, defaultValue)
+
+    fun getShortcutLaunchDelayMillis(): Long =
+        getString(Constants.SHORTCUT_LAUNCH_DELAY_PREF_KEY)?.toLongOrNull()
+            ?.coerceIn(0L, Constants.SHORTCUT_LAUNCH_DELAY_MAX_MS.toLong()) ?: 0L
 }

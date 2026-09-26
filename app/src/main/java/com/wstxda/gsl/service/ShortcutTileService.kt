@@ -1,11 +1,11 @@
 package com.wstxda.gsl.service
 
-import android.content.Intent
+import android.content.ComponentName
+import android.content.pm.PackageManager
 import android.service.quicksettings.Tile
 import androidx.core.graphics.drawable.IconCompat
 import com.wstxda.gsl.R
 import com.wstxda.gsl.logic.PreferenceHelper
-import com.wstxda.gsl.logic.launchShortcuts
 import com.wstxda.gsl.logic.showToast
 import com.wstxda.gsl.ui.utils.ShortcutResourcesManager
 import com.wstxda.gsl.utils.Constants
@@ -25,8 +25,8 @@ class ShortcutTileService : BaseTileService() {
             return
         }
 
-        val validationIntent = Intent(this, activityClass)
-        if (!launchShortcuts(validationIntent)) {
+        val component = ComponentName(this, activityClass)
+        if (packageManager.getComponentEnabledSetting(component) == PackageManager.COMPONENT_ENABLED_STATE_DISABLED) {
             showToast(R.string.shortcut_disabled)
             return
         }

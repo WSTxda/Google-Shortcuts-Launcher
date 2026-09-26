@@ -18,6 +18,7 @@ object Constants {
 
     const val SHORTCUT_ADD_TILE_PREF_KEY = "shortcut_add_tile"
     const val SHORTCUT_TILE_PREF_KEY = "shortcut_tile"
+    const val SHORTCUT_LAUNCH_DELAY_PREF_KEY = "shortcut_launch_delay"
     const val DEVICE_GAME_MANAGER_PREF_KEY = "device_game_manager"
     const val SHORTCUT_ROOT_MODE_PREF_KEY = "shortcut_root_mode"
 
@@ -33,6 +34,13 @@ object Constants {
 
     const val LIBRARY_PREF_KEY = "library"
     const val UPDATER_PREF_KEY = "updater"
+
+    // -------------------------------------------------------------------------
+    // Shortcut launch delay
+    // -------------------------------------------------------------------------
+
+    const val SHORTCUT_LAUNCH_DELAY_MAX_MS = 1000
+    const val SHORTCUT_LAUNCH_DELAY_STEP_MS = 100
 
     // -------------------------------------------------------------------------
     // Theme values
@@ -56,6 +64,9 @@ object Constants {
 
     const val IS_ASSIST_SETUP_DONE = "is_assist_setup_done"
     const val IS_WARN_DISMISSED = "is_warn_dismissed"
+
+    const val STATE_LAUNCH_AT = "shortcut_launch_at"
+    const val STATE_LAUNCH_STARTED = "shortcut_launch_started"
 
     // -------------------------------------------------------------------------
     // Logs tags

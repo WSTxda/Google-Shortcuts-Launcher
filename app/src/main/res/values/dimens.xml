@@ -1,0 +1,4 @@
+<resources>
+
+    <dimen name="preference_slider_horizontal_spacing">8dp</dimen>
+</resources>

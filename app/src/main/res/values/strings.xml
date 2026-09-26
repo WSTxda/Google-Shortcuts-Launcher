@@ -83,6 +83,10 @@
     <string name="pref_tile_shortcut">Quick settings tile shortcut</string>
     <string name="pref_add_shortcut_tile">Add shortcut tile in quick settings panel</string>
 
+    <string name="pref_shortcut_launch_delay">Launch delay</string>
+    <string name="shortcut_launch_delay_none">No delay</string>
+    <string name="shortcut_launch_delay_value">%1$d ms</string>
+
     <!--theme selector-->
 
     <string name="theme_select">Select theme</string>

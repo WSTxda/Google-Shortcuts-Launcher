@@ -255,6 +255,13 @@
         app:dialogTitle="@string/shortcut_select"
         app:useSimpleSummaryProvider="true" />
 
+    <com.wstxda.gsl.preference.ShortcutLaunchDelayPreference
+        android:defaultValue="100"
+        android:icon="@drawable/ic_timer"
+        android:key="shortcut_launch_delay"
+        android:summary="@string/shortcut_launch_delay_none"
+        android:title="@string/pref_shortcut_launch_delay" />
+
     <SwitchPreferenceCompat
         android:defaultValue="false"
         android:dependency="games_shortcut"
