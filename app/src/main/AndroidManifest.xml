@@ -41,7 +41,8 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_manager"
             android:label="@string/app_manager"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -68,7 +69,8 @@
             android:configChanges="screenSize|keyboard|keyboardHidden"
             android:exported="false"
             android:launchMode="singleTop"
-            android:theme="@style/AppTheme.Library" />
+            android:theme="@style/AppTheme.Library"
+            android:windowSoftInputMode="adjustResize" />
 
         <!--shortcuts activity's-->
 
@@ -427,6 +429,7 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+
             <meta-data
                 android:name="android.service.quicksettings.INACTIVE_TILE"
                 android:value="true" />
