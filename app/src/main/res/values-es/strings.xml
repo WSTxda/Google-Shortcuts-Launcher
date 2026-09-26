@@ -80,6 +80,10 @@
     <string name="pref_tile_shortcut">Atajo del panel de configuración rápida</string>
     <string name="pref_add_shortcut_tile">Añadir atajo al panel de configuración rápida</string>
 
+    <string name="pref_shortcut_launch_delay">Retraso de apertura</string>
+    <string name="shortcut_launch_delay_none">Sin retraso</string>
+    <string name="shortcut_launch_delay_value">%1$d ms</string>
+
     <!--theme selector-->
 
     <string name="theme_select">Seleccionar tema</string>

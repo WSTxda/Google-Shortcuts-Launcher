@@ -80,6 +80,10 @@
     <string name="pref_tile_shortcut">اختصار مربع الإعدادات السريعة</string>
     <string name="pref_add_shortcut_tile">إضافة مربع اختصار في لوحة الإعدادات السريعة</string>
 
+    <string name="pref_shortcut_launch_delay">تأخير الفتح</string>
+    <string name="shortcut_launch_delay_none">بدون تأخير</string>
+    <string name="shortcut_launch_delay_value">%1$d مللي ثانية</string>
+
     <!--theme selector-->
 
     <string name="theme_select">اختر السمة</string>

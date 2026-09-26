@@ -80,6 +80,10 @@
     <string name="pref_tile_shortcut">クイック設定タイルのショートカット</string>
     <string name="pref_add_shortcut_tile">クイック設定パネルにショートカットタイルを追加</string>
 
+    <string name="pref_shortcut_launch_delay">起動の遅延</string>
+    <string name="shortcut_launch_delay_none">遅延なし</string>
+    <string name="shortcut_launch_delay_value">%1$d ミリ秒</string>
+
     <!--theme selector-->
 
     <string name="theme_select">テーマを選択</string>

@@ -80,6 +80,10 @@
     <string name="pref_tile_shortcut">میانبر کاشی تنظیمات سریع</string>
     <string name="pref_add_shortcut_tile">افزودن کاشی میانبر در پنل تنظیمات سریع</string>
 
+    <string name="pref_shortcut_launch_delay">تأخیر در باز کردن</string>
+    <string name="shortcut_launch_delay_none">بدون تأخیر</string>
+    <string name="shortcut_launch_delay_value">%1$d میلی‌ثانیه</string>
+
     <!--theme selector-->
 
     <string name="theme_select">انتخاب تم</string>
