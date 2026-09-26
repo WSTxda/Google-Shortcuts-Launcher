@@ -10,7 +10,7 @@ on:
 jobs:
   build_debug_apk:
     name: Build Debug APK
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
 
     steps:
       - name: Checkout Repository
