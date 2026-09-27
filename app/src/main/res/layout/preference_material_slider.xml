@@ -7,7 +7,10 @@
     android:layout_marginEnd="?attr/listPreferredItemPaddingEnd"
     android:layout_marginBottom="2dp"
     android:background="@drawable/preference_background_middle"
-    android:padding="16dp">
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@android:id/icon"

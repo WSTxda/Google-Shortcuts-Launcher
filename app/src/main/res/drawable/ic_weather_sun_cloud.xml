@@ -9,6 +9,6 @@
         android:color="#FFFFFFFF"
         android:offset="0.0" />
     <item
-        android:color="#FFFFFAF1"
+        android:color="#F2FFF294"
         android:offset="1.0" />
 </gradient>
