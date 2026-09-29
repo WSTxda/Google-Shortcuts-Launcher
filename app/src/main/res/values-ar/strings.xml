@@ -6,6 +6,7 @@
     <string name="app_manager">المدير</string>
     <string name="app_manager_shortcuts">إدارة الاختصارات</string>
     <string name="app_library">المكتبة</string>
+    <string name="app_shizuku_setup">إعداد Shizuku</string>
 
     <!--shortcuts names-->
 
@@ -65,10 +66,6 @@
 
     <string name="pref_device_game_manager">مدير الألعاب بالجهاز</string>
     <string name="pref_device_game_manager_summary">استخدم مدير الألعاب بالجهاز لتشغيل الألعاب بدلًا من مجلد ألعاب Google Play</string>
-
-    <string name="pref_shortcut_root_mode">استخدام صلاحيات الروت للاختصارات</string>
-    <string name="pref_shortcut_root_mode_summary">استخدم صلاحيات الروت لفتح الأنشطة غير المصدرة أو التي يتعذر الوصول إليها في اختصارات معينة</string>
-
     <string name="pref_show_manager">إظهار المدير في المشغّل</string>
     <string name="pref_show_manager_summary">للوصول إلى المدير عند إخفائه، اضغط على مربع الاختصار في لوحة الإعدادات السريعة</string>
 
@@ -137,7 +134,18 @@
     <string name="tile_added_success">تمت الإضافة إلى الإعدادات السريعة بنجاح</string>
     <string name="tile_already_added">موجود بالفعل في الإعدادات السريعة</string>
 
-    <!--root permission-->
+    <!--shizuku setup-->
 
-    <string name="root_access_warning">امنح صَلاحِيَة الروت أولاً</string>
+    <string name="shizuku_info_message">يتيح Shizuku لبعض الاختصارات فتح أنشطة لا تكون متاحة عادةً للتطبيقات الأخرى.</string>
+    <string name="shizuku_start_title">تشغيل Shizuku</string>
+    <string name="shizuku_start_message">ثبّت الخدمة وشغّلها على الجهاز</string>
+    <string name="shizuku_unsupported_message">حدّث Shizuku للمتابعة</string>
+    <string name="shizuku_permission_title">منح الوصول</string>
+    <string name="shizuku_permission_message">اسمح لـ مشغّل اختصارات Google باستخدام Shizuku</string>
+    <string name="shizuku_install">تثبيت</string>
+    <string name="shizuku_open">فتح</string>
+    <string name="shizuku_ready">جاهز</string>
+    <string name="shizuku_grant_access">منح الوصول</string>
+    <string name="shizuku_granted">تم المنح</string>
+    <string name="shizuku_continue">متابعة</string>
 </resources>

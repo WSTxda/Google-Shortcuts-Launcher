@@ -54,7 +54,7 @@ Identify music playing nearby with a single tap.
 
 #### Google Password Manager  
 Securely access your saved credentials to manage passwords, monitor their security with Password Checkup, and view your Passkeys.
-> (ROOT) Google Play Services or Web Browser
+> Shizuku and Google Play Services
 
 #### Google Play Collections
 Organize your apps by theme and show personalized recommendations, helping you discover new content and pick up where you left off in games, videos, music, and more.
@@ -93,7 +93,7 @@ Access real-time local weather updates along with a full weekly forecast.
 
 > [!NOTE]  
 > **Required Apps:** The Google app, Google Chrome, Google Play Services, Google Play and Google Play Games must be installed on your device for most shortcuts to function properly.  
-> **Root Access:** Some features require a rooted device for full functionality.
+> **Shizuku:** Some shortcuts use Shizuku to open non-exported activities.
 
 ### Download
 

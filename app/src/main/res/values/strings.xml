@@ -6,6 +6,7 @@
     <string name="app_manager">Manager</string>
     <string name="app_manager_shortcuts">Shortcuts manager</string>
     <string name="app_library">Library</string>
+    <string name="app_shizuku_setup">Set up Shizuku</string>
 
     <!--shortcuts names-->
 
@@ -68,9 +69,6 @@
 
     <string name="pref_device_game_manager">Device game manager</string>
     <string name="pref_device_game_manager_summary">Use the device game manager to launch games instead of the Google Play Games folder</string>
-
-    <string name="pref_shortcut_root_mode">Use root for shortcuts</string>
-    <string name="pref_shortcut_root_mode_summary">Use root access to open non-exported or otherwise inaccessible activities in certain shortcuts</string>
 
     <string name="pref_show_manager">Show manager in launcher</string>
     <string name="pref_show_manager_summary">To access manager when hidden, press the shortcut qs tile in quick settings panel</string>
@@ -140,7 +138,18 @@
     <string name="tile_added_success">Successfully added to quick settings</string>
     <string name="tile_already_added">Already added to quick settings</string>
 
-    <!--root permission-->
+    <!--shizuku setup-->
 
-    <string name="root_access_warning">Grant root permission first</string>
+    <string name="shizuku_info_message">Shizuku allows some shortcuts to open activities that are normally unavailable to other apps.</string>
+    <string name="shizuku_start_title">Start Shizuku</string>
+    <string name="shizuku_start_message">Install and start the service on your device</string>
+    <string name="shizuku_unsupported_message">Update Shizuku to continue</string>
+    <string name="shizuku_permission_title">Grant access</string>
+    <string name="shizuku_permission_message">Allow Google Shortcuts Launcher to use Shizuku</string>
+    <string name="shizuku_install">Install</string>
+    <string name="shizuku_open">Open</string>
+    <string name="shizuku_ready">Ready</string>
+    <string name="shizuku_grant_access">Grant access</string>
+    <string name="shizuku_granted">Granted</string>
+    <string name="shizuku_continue">Continue</string>
 </resources>

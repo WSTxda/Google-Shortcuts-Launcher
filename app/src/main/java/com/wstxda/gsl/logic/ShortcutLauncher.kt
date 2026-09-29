@@ -1,8 +1,10 @@
 package com.wstxda.gsl.logic
 
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
+import com.wstxda.gsl.activity.ShizukuSetupActivity
 
 fun Context.launchShortcuts(intents: List<Intent>, errorMessageResId: Int): Boolean {
     intents.forEach { intent ->
@@ -25,6 +27,10 @@ fun Context.launchShortcutsHistory(intent: Intent): Boolean = runCatching {
     startActivity(intent)
     true
 }.getOrElse { false }
+
+fun Context.launchShizukuShortcut(component: ComponentName, errorMessageResId: Int) {
+    startActivity(ShizukuSetupActivity.createIntent(this, component, errorMessageResId))
+}
 
 fun Context.showToast(messageResId: Int) {
     Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show()

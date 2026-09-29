@@ -1,52 +1,20 @@
 package com.wstxda.gsl.shortcut
 
-import android.content.Intent
-import androidx.core.net.toUri
-import androidx.lifecycle.lifecycleScope
+import android.content.ComponentName
 import com.wstxda.gsl.R
 import com.wstxda.gsl.activity.ShortcutsActivity
-import com.wstxda.gsl.logic.PreferenceHelper
-import com.wstxda.gsl.logic.isRootAvailable
-import com.wstxda.gsl.logic.launchRootActivity
-import com.wstxda.gsl.logic.launchShortcuts
-import com.wstxda.gsl.logic.showToast
-import com.wstxda.gsl.utils.Constants
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import com.wstxda.gsl.logic.launchShizukuShortcut
 
 class PasswordManagerShortcut : ShortcutsActivity() {
-    private val preferences by lazy { PreferenceHelper(this) }
 
     override fun onCreateInternal() {
-        lifecycleScope.launch {
-            when {
-                preferences.getBoolean(Constants.SHORTCUT_ROOT_MODE_PREF_KEY) -> handleRootMode()
-                else -> launchPasswordManagerBrowser()
-            }
-        }
+        launchShizukuShortcut(
+            createPasswordManagerIntent(), R.string.play_services_not_found
+        )
     }
 
-    private suspend fun handleRootMode() {
-        if (withContext(Dispatchers.IO) {isRootAvailable() }) {
-            val success = withContext(Dispatchers.IO) {
-                launchRootActivity(
-                    "com.google.android.gms",
-                    "com.google.android.gms.credential.manager.PasswordManagerActivity"
-                )
-            }
-            if (!success) {
-                showToast(R.string.play_services_not_found)
-            }
-        } else {
-            showToast(R.string.root_access_warning)
-        }
-    }
-
-    private fun launchPasswordManagerBrowser() {
-        launchShortcuts(listOf(createBrowserIntent()), R.string.browser_not_found)
-    }
-
-    private fun createBrowserIntent(): Intent =
-        Intent(Intent.ACTION_VIEW, "https://passwords.google.com".toUri())
+    private fun createPasswordManagerIntent() = ComponentName(
+        "com.google.android.gms",
+        "com.google.android.gms.credential.manager.PasswordManagerActivity"
+    )
 }

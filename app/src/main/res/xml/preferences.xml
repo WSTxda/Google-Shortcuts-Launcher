@@ -267,17 +267,9 @@
         android:dependency="games_shortcut"
         android:icon="@drawable/ic_games"
         android:key="device_game_manager"
-        android:layout="@layout/preference_material_middle"
+        android:layout="@layout/preference_material_bottom"
         android:summary="@string/pref_device_game_manager_summary"
         android:title="@string/pref_device_game_manager" />
-
-    <SwitchPreferenceCompat
-        android:defaultValue="false"
-        android:icon="@drawable/ic_root"
-        android:key="shortcut_root_mode"
-        android:layout="@layout/preference_material_bottom"
-        android:summary="@string/pref_shortcut_root_mode_summary"
-        android:title="@string/pref_shortcut_root_mode" />
 
     <PreferenceCategory
         android:layout="@layout/preference_material_category"

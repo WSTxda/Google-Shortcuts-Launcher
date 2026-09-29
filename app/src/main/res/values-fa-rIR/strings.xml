@@ -6,6 +6,7 @@
     <string name="app_manager">مدیر</string>
     <string name="app_manager_shortcuts">مدیریت میانبرها</string>
     <string name="app_library">کتابخانه</string>
+    <string name="app_shizuku_setup">راه‌اندازی Shizuku</string>
 
     <!--shortcuts names-->
 
@@ -65,9 +66,6 @@
 
     <string name="pref_device_game_manager">مدیر بازی دستگاه</string>
     <string name="pref_device_game_manager_summary">برای راه‌اندازی بازی‌ها از مدیر بازی دستگاه به جای پوشه Google Play Games استفاده کنید</string>
-
-    <string name="pref_shortcut_root_mode">استفاده از روت برای میانبرها</string>
-    <string name="pref_shortcut_root_mode_summary">برای باز کردن فعالیت‌های غیرقابل دسترسی یا غیرصادر شده در میانبرهای خاص از دسترسی روت استفاده کنید</string>
 
     <string name="pref_show_manager">نمایش مدیر در لانچر</string>
     <string name="pref_show_manager_summary">برای دسترسی به مدیر در حالت پنهان، کاشی میانبر را در پنل تنظیمات سریع فشار دهید</string>
@@ -137,7 +135,18 @@
     <string name="tile_added_success">با موفقیت به تنظیمات سریع اضافه شد</string>
     <string name="tile_already_added">قبلاً به تنظیمات سریع اضافه شده است</string>
 
-    <!--root permission-->
+    <!--shizuku setup-->
 
-    <string name="root_access_warning">ابتدا مجوز ریشه را اعطا کنید</string>
+    <string name="shizuku_info_message">Shizuku به برخی میانبرها اجازه می‌دهد فعالیت‌هایی را باز کنند که معمولاً برای برنامه‌های دیگر در دسترس نیستند.</string>
+    <string name="shizuku_start_title">Shizuku را اجرا کنید</string>
+    <string name="shizuku_start_message">سرویس را روی دستگاه نصب و اجرا کنید</string>
+    <string name="shizuku_unsupported_message">برای ادامه Shizuku را به‌روزرسانی کنید</string>
+    <string name="shizuku_permission_title">اعطای دسترسی</string>
+    <string name="shizuku_permission_message">به راه‌انداز میانبرهای گوگل اجازه دهید از Shizuku استفاده کند</string>
+    <string name="shizuku_install">نصب</string>
+    <string name="shizuku_open">باز کردن</string>
+    <string name="shizuku_ready">آماده</string>
+    <string name="shizuku_grant_access">اعطای دسترسی</string>
+    <string name="shizuku_granted">اعطا شد</string>
+    <string name="shizuku_continue">ادامه</string>
 </resources>

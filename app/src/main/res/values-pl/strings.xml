@@ -6,6 +6,7 @@
     <string name="app_manager">Menedżer</string>
     <string name="app_manager_shortcuts">Menedżer skrótów</string>
     <string name="app_library">Biblioteka</string>
+    <string name="app_shizuku_setup">Skonfiguruj Shizuku</string>
 
     <!--shortcuts names-->
 
@@ -65,9 +66,6 @@
 
     <string name="pref_device_game_manager">Menedżer gier urządzenia</string>
     <string name="pref_device_game_manager_summary">Używaj menedżera gier na urządzeniu do uruchamiania gier zamiast korzystać z Gier Google Play</string>
-
-    <string name="pref_shortcut_root_mode">Użyj roota dla skrótów</string>
-    <string name="pref_shortcut_root_mode_summary">Użyj dostępu do roota, aby otwierać nieeksportowane lub w inny sposób niedostępne działania w niektórych skrótach</string>
 
     <string name="pref_show_manager">Pokaż menedżera w launcherze</string>
     <string name="pref_show_manager_summary">Aby uzyskać dostęp do menedżera, gdy jest ukryty, naciśnij kafelek skrótu w panelu szybkich ustawień</string>
@@ -137,7 +135,18 @@
     <string name="tile_added_success">Pomyślnie dodano do szybkich ustawień</string>
     <string name="tile_already_added">Dodano już do szybkich ustawień</string>
 
-    <!--root permission-->
+    <!--shizuku setup-->
 
-    <string name="root_access_warning">Najpierw nadaj uprawnienia root</string>
+    <string name="shizuku_info_message">Shizuku umożliwia niektórym skrótom otwieranie aktywności, które zwykle nie są dostępne dla innych aplikacji.</string>
+    <string name="shizuku_start_title">Uruchom Shizuku</string>
+    <string name="shizuku_start_message">Zainstaluj i uruchom usługę na urządzeniu</string>
+    <string name="shizuku_unsupported_message">Zaktualizuj Shizuku, aby kontynuować</string>
+    <string name="shizuku_permission_title">Przyznaj dostęp</string>
+    <string name="shizuku_permission_message">Zezwól aplikacji Skróty Google na korzystanie z Shizuku</string>
+    <string name="shizuku_install">Zainstaluj</string>
+    <string name="shizuku_open">Otwórz</string>
+    <string name="shizuku_ready">Gotowe</string>
+    <string name="shizuku_grant_access">Przyznaj dostęp</string>
+    <string name="shizuku_granted">Przyznano</string>
+    <string name="shizuku_continue">Kontynuuj</string>
 </resources>

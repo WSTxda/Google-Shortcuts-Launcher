@@ -6,6 +6,7 @@
     <string name="app_manager">Gestor</string>
     <string name="app_manager_shortcuts">Gestor de atajos</string>
     <string name="app_library">Biblioteca</string>
+    <string name="app_shizuku_setup">Configurar Shizuku</string>
 
     <!--shortcuts names-->
 
@@ -65,9 +66,6 @@
 
     <string name="pref_device_game_manager">Administrador de juegos del dispositivo</string>
     <string name="pref_device_game_manager_summary">Utiliza el administrador de juegos del dispositivo para iniciar juegos en lugar de la carpeta de Google Play Games</string>
-
-    <string name="pref_shortcut_root_mode">Utilice root para los atajos</string>
-    <string name="pref_shortcut_root_mode_summary">Utilice el acceso root para abrir actividades no exportadas o inaccesibles en ciertos atajos</string>
 
     <string name="pref_show_manager">Mostrar gestor en lanzador</string>
     <string name="pref_show_manager_summary">Para acceder a gestor cuando esté oculta, presione el atajo en el panel de configuración rápida</string>
@@ -137,7 +135,18 @@
     <string name="tile_added_success">Añadido con éxito a las configuración rápida</string>
     <string name="tile_already_added">Ya está añadido a las configuración rápida</string>
 
-    <!--root permission-->
+    <!--shizuku setup-->
 
-    <string name="root_access_warning">Conceder primero el permiso de root</string>
+    <string name="shizuku_info_message">Shizuku permite que algunos accesos directos abran actividades que normalmente no están disponibles para otras aplicaciones.</string>
+    <string name="shizuku_start_title">Inicia Shizuku</string>
+    <string name="shizuku_start_message">Instala e inicia el servicio en el dispositivo</string>
+    <string name="shizuku_unsupported_message">Actualiza Shizuku para continuar</string>
+    <string name="shizuku_permission_title">Concede acceso</string>
+    <string name="shizuku_permission_message">Permite que Atajos de Google use Shizuku</string>
+    <string name="shizuku_install">Instalar</string>
+    <string name="shizuku_open">Abrir</string>
+    <string name="shizuku_ready">Listo</string>
+    <string name="shizuku_grant_access">Conceder acceso</string>
+    <string name="shizuku_granted">Concedido</string>
+    <string name="shizuku_continue">Continuar</string>
 </resources>

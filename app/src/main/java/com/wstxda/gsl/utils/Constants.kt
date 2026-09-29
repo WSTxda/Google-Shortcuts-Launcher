@@ -20,7 +20,6 @@ object Constants {
     const val SHORTCUT_TILE_PREF_KEY = "shortcut_tile"
     const val SHORTCUT_LAUNCH_DELAY_PREF_KEY = "shortcut_launch_delay"
     const val DEVICE_GAME_MANAGER_PREF_KEY = "device_game_manager"
-    const val SHORTCUT_ROOT_MODE_PREF_KEY = "shortcut_root_mode"
 
     // -------------------------------------------------------------------------
     // Preferences keys — others
@@ -67,12 +66,22 @@ object Constants {
 
     const val STATE_LAUNCH_AT = "shortcut_launch_at"
     const val STATE_LAUNCH_STARTED = "shortcut_launch_started"
+    const val STATE_SHIZUKU_SETUP_SHOWN = "shizuku_setup_shown"
+    const val STATE_SHIZUKU_LAUNCH_STARTED = "shizuku_launch_started"
+    const val STATE_SHIZUKU_PERMISSION_INVALIDATED = "shizuku_permission_invalidated"
 
     // -------------------------------------------------------------------------
-    // Logs tags
+    // Shizuku
     // -------------------------------------------------------------------------
 
-    const val ROOT_CHECKER = "RootChecker"
+    const val SHIZUKU_PACKAGE = "moe.shizuku.privileged.api"
+    const val SHIZUKU_PERMISSION_REQUEST_CODE = 1
+    const val SHIZUKU_SERVICE_PROCESS = "shizuku"
+    const val SHIZUKU_SERVICE_TAG = "gsl_shizuku"
+    const val SHIZUKU_SERVICE_VERSION = 1
+    const val EXTRA_SHIZUKU_TARGET_COMPONENT = "shizuku_target_component"
+    const val EXTRA_SHIZUKU_ERROR_MESSAGE = "shizuku_error_message"
+    const val SHIZUKU_DOWNLOAD_URL = "https://shizuku.rikka.app/download/"
 
     // -------------------------------------------------------------------------
     // Updater GitHub API

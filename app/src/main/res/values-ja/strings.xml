@@ -6,6 +6,7 @@
     <string name="app_manager">マネージャー</string>
     <string name="app_manager_shortcuts">ショートカットマネージャー</string>
     <string name="app_library">ライブラリ</string>
+    <string name="app_shizuku_setup">Shizuku を設定</string>
 
     <!--shortcuts names-->
 
@@ -65,9 +66,6 @@
 
     <string name="pref_device_game_manager">デバイスのゲームマネージャー</string>
     <string name="pref_device_game_manager_summary">Google ゲームフォルダの代わりにデバイス内のゲーム マネージャーを使用してゲームを起動します。</string>
-
-    <string name="pref_shortcut_root_mode">ショートカットにroot権限を使用</string>
-    <string name="pref_shortcut_root_mode_summary">ルートアクセスを使用して、特定のショートカットでエクスポートされていない、またはその他のアクセスできないアクティビティを開きます</string>
 
     <string name="pref_show_manager">ランチャーにマネージャーを表示</string>
     <string name="pref_show_manager_summary">非表示のときにマネージャーにアクセスするには、クイック設定パネルのショートカットQSタイルを押します</string>
@@ -137,7 +135,18 @@
     <string name="tile_added_success">クイック設定に正常に追加されました</string>
     <string name="tile_already_added">クイック設定にすでに追加されています</string>
 
-    <!--root permission-->
+    <!--shizuku setup-->
 
-    <string name="root_access_warning">最初に root 権限を許可してください</string>
+    <string name="shizuku_info_message">Shizuku を使用すると、一部のショートカットから通常は他のアプリが利用できないアクティビティを開けます。</string>
+    <string name="shizuku_start_title">Shizuku を起動</string>
+    <string name="shizuku_start_message">デバイスにインストールしてサービスを起動します。</string>
+    <string name="shizuku_unsupported_message">続行するには Shizuku を更新してください。</string>
+    <string name="shizuku_permission_title">アクセスを許可</string>
+    <string name="shizuku_permission_message">Google ショートカットランチャー に Shizuku の使用を許可します。</string>
+    <string name="shizuku_install">インストール</string>
+    <string name="shizuku_open">開く</string>
+    <string name="shizuku_ready">準備完了</string>
+    <string name="shizuku_grant_access">アクセスを許可</string>
+    <string name="shizuku_granted">許可済み</string>
+    <string name="shizuku_continue">続行</string>
 </resources>
