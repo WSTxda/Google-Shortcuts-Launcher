@@ -9,7 +9,7 @@ object IntentsFactory {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK
         }
 
-    fun createSearchIntent(): Intent = Intent("android.search.action.GLOBAL_SEARCH").apply {
+    fun createSearchIntent(): Intent = Intent("android.intent.action.SEARCH_LONG_PRESS").apply {
         flags = Intent.FLAG_ACTIVITY_NEW_TASK
     }
 }
