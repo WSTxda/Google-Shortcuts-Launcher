@@ -440,21 +440,101 @@
             android:noHistory="true"
             android:theme="@style/AppTheme.Transparent" />
 
-        <!--shortcut quick settings tile service-->
+        <!--shortcut quick settings tile services-->
 
         <service
-            android:name=".service.ShortcutTileService"
+            android:name=".service.tile.AssistantTileService"
             android:exported="true"
-            android:icon="@drawable/ic_shortcut_default"
-            android:label="@string/shortcut_open"
+            android:icon="@drawable/ic_shortcut_assistant"
+            android:label="@string/assistant"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
-
             <meta-data
-                android:name="android.service.quicksettings.INACTIVE_TILE"
-                android:value="true" />
+                android:name="android.service.quicksettings.TILE_CATEGORY"
+                android:value="android.service.quicksettings.CATEGORY_UTILITIES" />
+        </service>
+
+        <service
+            android:name=".service.tile.GamesTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_shortcut_games"
+            android:label="@string/games"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TILE_CATEGORY"
+                android:value="android.service.quicksettings.CATEGORY_UTILITIES" />
+        </service>
+
+        <service
+            android:name=".service.tile.LensTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_shortcut_lens"
+            android:label="@string/lens"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TILE_CATEGORY"
+                android:value="android.service.quicksettings.CATEGORY_UTILITIES" />
+        </service>
+
+        <service
+            android:name=".service.tile.MusicSearchTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_shortcut_music_search"
+            android:label="@string/music_search"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TILE_CATEGORY"
+                android:value="android.service.quicksettings.CATEGORY_UTILITIES" />
+        </service>
+
+        <service
+            android:name=".service.tile.QuickShareTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_shortcut_quick_share"
+            android:label="@string/quick_share"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TILE_CATEGORY"
+                android:value="android.service.quicksettings.CATEGORY_UTILITIES" />
+        </service>
+
+        <service
+            android:name=".service.tile.ScannerTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_shortcut_scanner"
+            android:label="@string/scanner"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TILE_CATEGORY"
+                android:value="android.service.quicksettings.CATEGORY_UTILITIES" />
+        </service>
+
+        <service
+            android:name=".service.tile.SearchTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_shortcut_search"
+            android:label="@string/search"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
             <meta-data
                 android:name="android.service.quicksettings.TILE_CATEGORY"
                 android:value="android.service.quicksettings.CATEGORY_UTILITIES" />

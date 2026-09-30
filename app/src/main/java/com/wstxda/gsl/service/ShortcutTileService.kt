@@ -1,49 +1,103 @@
 package com.wstxda.gsl.service
 
+import android.annotation.SuppressLint
+import android.app.PendingIntent
 import android.content.ComponentName
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.drawable.Icon
+import android.os.Build
 import android.service.quicksettings.Tile
-import androidx.core.graphics.drawable.IconCompat
+import android.service.quicksettings.TileService
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 import com.wstxda.gsl.R
+import com.wstxda.gsl.activity.ShortcutsActivity
 import com.wstxda.gsl.logic.PreferenceHelper
 import com.wstxda.gsl.logic.showToast
-import com.wstxda.gsl.ui.utils.ShortcutResourcesManager
-import com.wstxda.gsl.utils.Constants
-import com.wstxda.gsl.utils.ShortcutsMap.shortcuts
 
-class ShortcutTileService : BaseTileService() {
+abstract class ShortcutTileService : TileService() {
 
-    private val preferenceHelper by lazy { PreferenceHelper(applicationContext) }
-    private val resourcesManager by lazy { ShortcutResourcesManager(applicationContext) }
+    @get:StringRes
+    protected abstract val titleRes: Int
+
+    @get:StringRes
+    protected abstract val subtitleRes: Int
+
+    @get:DrawableRes
+    protected abstract val iconRes: Int
+
+    protected abstract val targetActivity: Class<out ShortcutsActivity>
+    protected abstract val tilePreferenceKey: String
+
+    private val preferences by lazy { PreferenceHelper(applicationContext) }
+
+    override fun onStartListening() {
+        super.onStartListening()
+        updateTile()
+    }
 
     override fun onClick() {
-        val key = preferenceHelper.getString(Constants.SHORTCUT_TILE_PREF_KEY, null) ?: return
-        val activityClass = shortcuts[key]
+        super.onClick()
 
-        if (activityClass == null) {
-            showToast(R.string.shortcut_invalid)
-            return
-        }
-
-        val component = ComponentName(this, activityClass)
-        if (packageManager.getComponentEnabledSetting(component) == PackageManager.COMPONENT_ENABLED_STATE_DISABLED) {
+        if (!isTargetEnabled()) {
             showToast(R.string.shortcut_disabled)
             return
         }
 
-        startActivityAndCollapse(activityClass)
+        launchActivityAndCollapse(Intent(this, targetActivity))
     }
 
-    override fun updateTile() {
-        val key = preferenceHelper.getString(Constants.SHORTCUT_TILE_PREF_KEY, null)
-        val iconRes = resourcesManager.getShortcutIcon(key)
-        val label = resourcesManager.getShortcutName(key)
+    override fun onTileAdded() {
+        super.onTileAdded()
+        preferences.setBoolean(tilePreferenceKey, true)
+        updateTile()
+    }
 
-        setTileState(
-            state = Tile.STATE_INACTIVE,
-            label = label,
-            subtitle = getString(R.string.shortcut_open),
-            icon = IconCompat.createWithResource(this, iconRes).toIcon(this)
-        )
+    override fun onTileRemoved() {
+        preferences.setBoolean(tilePreferenceKey, false)
+        super.onTileRemoved()
+    }
+
+    private fun updateTile() {
+        val tile = qsTile ?: return
+        val title = getText(titleRes)
+
+        tile.state = Tile.STATE_INACTIVE
+        tile.label = title
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            tile.subtitle = getText(subtitleRes)
+        }
+        tile.icon = Icon.createWithResource(this, iconRes)
+        tile.contentDescription = title
+        tile.updateTile()
+    }
+
+    private fun isTargetEnabled(): Boolean {
+        return when (packageManager.getComponentEnabledSetting(
+            ComponentName(
+                this, targetActivity
+            )
+        )) {
+            PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.COMPONENT_ENABLED_STATE_DISABLED_USER, PackageManager.COMPONENT_ENABLED_STATE_DISABLED_UNTIL_USED -> false
+
+            else -> true
+        }
+    }
+
+    @SuppressLint("StartActivityAndCollapseDeprecated")
+    private fun launchActivityAndCollapse(intent: Intent) {
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+            val pendingIntent = PendingIntent.getActivity(
+                this,
+                0,
+                intent,
+                PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT,
+            )
+            startActivityAndCollapse(pendingIntent)
+        } else {
+            @Suppress("DEPRECATION") startActivityAndCollapse(intent)
+        }
     }
 }

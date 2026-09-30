@@ -1,12 +1,6 @@
 <androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <Preference
-        android:icon="@drawable/ic_add"
-        android:key="shortcut_add_tile"
-        android:layout="@layout/preference_material_tile"
-        android:title="@string/pref_add_shortcut_tile" />
-
     <com.wstxda.gsl.preference.ExpandablePreference
         android:title="@string/pref_expandable_search"
         app:allowDividerAbove="false"
@@ -217,6 +211,69 @@
             android:title="@string/weather" />
     </com.wstxda.gsl.preference.ExpandablePreference>
 
+    <com.wstxda.gsl.preference.ExpandablePreference
+        android:key="shortcut_tiles"
+        android:title="@string/pref_expandable_tiles"
+        app:allowDividerAbove="false"
+        app:isExpanded="false">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_shortcut_assistant"
+            android:key="tile_assistant"
+            android:layout="@layout/preference_material_top"
+            android:summary="@string/start_assistant"
+            android:title="@string/assistant" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_shortcut_games"
+            android:key="tile_games"
+            android:layout="@layout/preference_material_middle"
+            android:summary="@string/open_games"
+            android:title="@string/games" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_shortcut_lens"
+            android:key="tile_lens"
+            android:layout="@layout/preference_material_middle"
+            android:summary="@string/search"
+            android:title="@string/lens" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_shortcut_music_search"
+            android:key="tile_music_search"
+            android:layout="@layout/preference_material_middle"
+            android:summary="@string/identify_music"
+            android:title="@string/music_search" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_shortcut_quick_share"
+            android:key="tile_quick_share"
+            android:layout="@layout/preference_material_middle"
+            android:summary="@string/share_files"
+            android:title="@string/quick_share" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_shortcut_scanner"
+            android:key="tile_scanner"
+            android:layout="@layout/preference_material_middle"
+            android:summary="@string/scan_code"
+            android:title="@string/scanner" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_shortcut_search"
+            android:key="tile_search"
+            android:layout="@layout/preference_material_bottom"
+            android:summary="@string/google_search"
+            android:title="@string/search" />
+    </com.wstxda.gsl.preference.ExpandablePreference>
+
     <PreferenceCategory
         android:layout="@layout/preference_material_category"
         android:title="@string/pref_category_shortcuts_settings"
@@ -239,18 +296,6 @@
         android:key="digital_assistant_shortcut"
         android:layout="@layout/preference_material_top"
         android:title="@string/pref_digital_assistant_shortcut"
-        app:dialogIcon="@drawable/ic_shortcut"
-        app:dialogTitle="@string/shortcut_select"
-        app:useSimpleSummaryProvider="true" />
-
-    <ListPreference
-        android:defaultValue="music_search_shortcut"
-        android:entries="@array/shortcut_entries"
-        android:entryValues="@array/shortcut_values"
-        android:icon="@drawable/ic_tiles"
-        android:key="shortcut_tile"
-        android:layout="@layout/preference_material_middle"
-        android:title="@string/pref_tile_shortcut"
         app:dialogIcon="@drawable/ic_shortcut"
         app:dialogTitle="@string/shortcut_select"
         app:useSimpleSummaryProvider="true" />

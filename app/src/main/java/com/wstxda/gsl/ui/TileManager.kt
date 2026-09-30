@@ -6,51 +6,66 @@ import android.content.ComponentName
 import android.content.Context
 import android.graphics.drawable.Icon
 import android.os.Build
+import android.service.quicksettings.TileService
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.wstxda.gsl.R
-import com.wstxda.gsl.service.ShortcutTileService
-import java.util.concurrent.Executors
-import java.util.function.Consumer
 
 class TileManager(private val context: Context) {
 
-    fun requestAddTile() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            val tileServiceComponent = ComponentName(context, ShortcutTileService::class.java)
-            val executor = Executors.newSingleThreadExecutor()
-            val resultCallback = Consumer<Int> { result ->
-                try {
-                    (context as? Activity)?.findViewById<View>(android.R.id.content)
-                        ?.let { rootView ->
-                            val message = when (result) {
-                                StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ADDED -> context.getString(
-                                    R.string.tile_added_success
-                                )
+    fun requestAddTile(
+        serviceClass: Class<out TileService>,
+        onResult: (Boolean) -> Unit,
+    ) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+            onResult(false)
+            return
+        }
 
-                                StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ALREADY_ADDED -> context.getString(
-                                    R.string.tile_already_added
-                                )
+        val component = ComponentName(context, serviceClass)
+        val serviceInfo = runCatching {
+            @Suppress("DEPRECATION") context.packageManager.getServiceInfo(component, 0)
+        }.getOrElse {
+            onResult(false)
+            return
+        }
+        val statusBarManager = context.getSystemService(StatusBarManager::class.java)
+        if (statusBarManager == null) {
+            onResult(false)
+            return
+        }
 
-                                else -> ""
-                            }
-                            if (message.isNotEmpty()) showSnackBar(rootView, message)
-                        }
-                } finally {
-                    executor.shutdown()
+        val iconRes = serviceInfo.icon.takeIf { it != 0 } ?: context.applicationInfo.icon
+        runCatching {
+            statusBarManager.requestAddTileService(
+                component,
+                serviceInfo.loadLabel(context.packageManager),
+                Icon.createWithResource(context, iconRes),
+                context.mainExecutor,
+            ) { result ->
+                val added = when (result) {
+                    StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ADDED -> {
+                        showSnackBar(R.string.tile_added_success)
+                        true
+                    }
+
+                    StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ALREADY_ADDED -> {
+                        showSnackBar(R.string.tile_already_added)
+                        true
+                    }
+
+                    else -> false
                 }
+                onResult(added)
             }
-            context.getSystemService(StatusBarManager::class.java)?.requestAddTileService(
-                tileServiceComponent,
-                context.getString(R.string.shortcut_open),
-                Icon.createWithResource(context, R.drawable.ic_shortcut_default),
-                executor,
-                resultCallback
-            )
+        }.onFailure {
+            onResult(false)
         }
     }
 
-    private fun showSnackBar(view: View, message: String) {
-        Snackbar.make(view, message, Snackbar.LENGTH_SHORT).show()
+    private fun showSnackBar(messageRes: Int) {
+        (context as? Activity)?.findViewById<View>(android.R.id.content)?.let { rootView ->
+            Snackbar.make(rootView, messageRes, Snackbar.LENGTH_SHORT).show()
+        }
     }
 }

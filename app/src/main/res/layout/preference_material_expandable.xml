@@ -41,7 +41,7 @@
         app:layout_constraintStart_toEndOf="@android:id/icon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="@string/pref_expandable_search" />
+        tools:text="@string/pref_expandable_tiles" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@android:id/summary"
@@ -56,13 +56,13 @@
         app:layout_constraintEnd_toEndOf="@android:id/title"
         app:layout_constraintStart_toStartOf="@android:id/title"
         app:layout_constraintTop_toBottomOf="@android:id/title"
-        tools:text="@string/music_search"
+        tools:text="@string/pref_expandable_tiles"
         tools:visibility="gone" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/expanded_indicator"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         android:src="@drawable/ic_arrow_circle"

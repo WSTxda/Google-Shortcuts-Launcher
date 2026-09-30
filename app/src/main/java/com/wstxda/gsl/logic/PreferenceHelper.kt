@@ -3,6 +3,7 @@ package com.wstxda.gsl.logic
 import android.content.Context
 import androidx.preference.PreferenceManager
 import com.wstxda.gsl.utils.Constants
+import androidx.core.content.edit
 
 class PreferenceHelper(context: Context) {
 
@@ -13,6 +14,10 @@ class PreferenceHelper(context: Context) {
 
     fun getString(key: String, defaultValue: String? = null): String? =
         preferences.getString(key, defaultValue)
+
+    fun setBoolean(key: String, value: Boolean) {
+        preferences.edit { putBoolean(key, value) }
+    }
 
     fun getShortcutLaunchDelayMillis(): Long =
         getString(Constants.SHORTCUT_LAUNCH_DELAY_PREF_KEY)?.toLongOrNull()

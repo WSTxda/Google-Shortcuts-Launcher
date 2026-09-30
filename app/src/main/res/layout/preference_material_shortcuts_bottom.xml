@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="?attr/listPreferredItemPaddingStart"
     android:layout_marginEnd="?attr/listPreferredItemPaddingEnd"
-    android:layout_marginBottom="4dp"
+    android:layout_marginBottom="12dp"
     android:background="@drawable/preference_background_bottom"
     android:clickable="true"
     android:focusable="true"

@@ -48,6 +48,7 @@
     <string name="pref_expandable_shopping">Atalhos de compras</string>
     <string name="pref_expandable_games">Atalhos de jogos</string>
     <string name="pref_expandable_others">Outros atalhos</string>
+    <string name="pref_expandable_tiles">Atalhos das configurações rápidas</string>
 
     <string name="pref_developer">Desenvolvedor</string>
     <string name="pref_source_code">Repositório com o código fonte</string>
@@ -74,9 +75,6 @@
 
     <string name="pref_setup_digital_assistant">Configurar assistente digital</string>
     <string name="pref_setup_digital_assistant_summary">Definir Atalhos do Google como aplicativo de assistente digital padrão</string>
-
-    <string name="pref_tile_shortcut">Atalho do painel de configurações rápidas</string>
-    <string name="pref_add_shortcut_tile">Adicionar atalho ao painel de configurações rápidas</string>
 
     <string name="pref_shortcut_launch_delay">Atraso de abertura</string>
     <string name="shortcut_launch_delay_none">Sem atraso</string>
@@ -115,7 +113,13 @@
 
     <!--shortcut actions-->
 
-    <string name="shortcut_open">Abrir atalho</string>
+    <string name="start_assistant">Iniciar assistente</string>
+    <string name="open_games">Abrir jogos</string>
+    <string name="identify_music">Identificar música</string>
+    <string name="share_files">Compartilhar arquivos</string>
+    <string name="scan_code">Escanear código</string>
+    <string name="google_search">Pesquisa do Google</string>
+
     <string name="shortcut_select">Selecionar atalho</string>
     <string name="shortcut_disabled">Não foi possível iniciar, habilite este atalho no gerenciador primeiro</string>
     <string name="shortcut_invalid">Atalho selecionado inválido</string>
@@ -134,6 +138,7 @@
 
     <string name="tile_added_success">Adicionado com sucesso às configurações rápidas</string>
     <string name="tile_already_added">Já adicionado às configurações rápidas</string>
+    <string name="tile_remove_from_panel">Remova este atalho pelo painel de configurações rápidas</string>
 
     <!--shizuku setup-->
 

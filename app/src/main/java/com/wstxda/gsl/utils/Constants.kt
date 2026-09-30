@@ -16,8 +16,14 @@ object Constants {
     // Preferences keys — shortcuts settings
     // -------------------------------------------------------------------------
 
-    const val SHORTCUT_ADD_TILE_PREF_KEY = "shortcut_add_tile"
-    const val SHORTCUT_TILE_PREF_KEY = "shortcut_tile"
+    const val SHORTCUT_TILES_PREF_KEY = "shortcut_tiles"
+    const val TILE_ASSISTANT_PREF_KEY = "tile_assistant"
+    const val TILE_GAMES_PREF_KEY = "tile_games"
+    const val TILE_LENS_PREF_KEY = "tile_lens"
+    const val TILE_MUSIC_SEARCH_PREF_KEY = "tile_music_search"
+    const val TILE_QUICK_SHARE_PREF_KEY = "tile_quick_share"
+    const val TILE_SCANNER_PREF_KEY = "tile_scanner"
+    const val TILE_SEARCH_PREF_KEY = "tile_search"
     const val SHORTCUT_LAUNCH_DELAY_PREF_KEY = "shortcut_launch_delay"
     const val DEVICE_GAME_MANAGER_PREF_KEY = "device_game_manager"
 
@@ -74,7 +80,7 @@ object Constants {
     // Shizuku
     // -------------------------------------------------------------------------
 
-    const val SHIZUKU_PACKAGE = "moe.shizuku.privileged.api"
+    const val SHIZUKU_PACKAGE = "moe.shizuku.privileged.api, "
     const val SHIZUKU_PERMISSION_REQUEST_CODE = 1
     const val SHIZUKU_SERVICE_PROCESS = "shizuku"
     const val SHIZUKU_SERVICE_TAG = "gsl_shizuku"

@@ -48,6 +48,7 @@
     <string name="pref_expandable_shopping">Shopping shortcuts</string>
     <string name="pref_expandable_games">Games shortcuts</string>
     <string name="pref_expandable_others">Others shortcuts</string>
+    <string name="pref_expandable_tiles">Quick settings shortcuts</string>
 
     <string name="pref_wstxda" translatable="false">WSTxda</string>
     <string name="pref_github" translatable="false">GitHub</string>
@@ -77,9 +78,6 @@
 
     <string name="pref_setup_digital_assistant">Setup digital assistant</string>
     <string name="pref_setup_digital_assistant_summary">Set Google Shortcuts Launcher as default digital assistant app</string>
-
-    <string name="pref_tile_shortcut">Quick settings tile shortcut</string>
-    <string name="pref_add_shortcut_tile">Add shortcut tile in quick settings panel</string>
 
     <string name="pref_shortcut_launch_delay">Launch delay</string>
     <string name="shortcut_launch_delay_none">No delay</string>
@@ -118,7 +116,13 @@
 
     <!--shortcut actions-->
 
-    <string name="shortcut_open">Open shortcut</string>
+    <string name="start_assistant">Start assistant</string>
+    <string name="open_games">Open games</string>
+    <string name="identify_music">Identify music</string>
+    <string name="share_files">Share files</string>
+    <string name="scan_code">Scan code</string>
+    <string name="google_search">Google Search</string>
+
     <string name="shortcut_select">Select shortcut</string>
     <string name="shortcut_disabled">Unable to launch, enable this shortcut in manager first</string>
     <string name="shortcut_invalid">Invalid shortcut selected</string>
@@ -137,6 +141,7 @@
 
     <string name="tile_added_success">Successfully added to quick settings</string>
     <string name="tile_already_added">Already added to quick settings</string>
+    <string name="tile_remove_from_panel">Remove this shortcut from the quick settings panel</string>
 
     <!--shizuku setup-->
 

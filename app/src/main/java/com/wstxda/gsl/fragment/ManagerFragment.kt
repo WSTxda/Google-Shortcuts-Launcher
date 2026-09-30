@@ -3,24 +3,29 @@ package com.wstxda.gsl.fragment
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.service.quicksettings.TileService
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.net.toUri
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import androidx.preference.CheckBoxPreference
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
+import com.google.android.material.snackbar.Snackbar
 import com.wstxda.gsl.R
 import com.wstxda.gsl.activity.LibraryActivity
 import com.wstxda.gsl.activity.ManagerActivity
+import com.wstxda.gsl.logic.PreferenceHelper
 import com.wstxda.gsl.preference.DigitalAssistantPreference
 import com.wstxda.gsl.preference.UpdaterPreference
+import com.wstxda.gsl.service.tile.*
 import com.wstxda.gsl.shortcut.*
 import com.wstxda.gsl.shortcut.games.*
-import com.wstxda.gsl.ui.component.DigitalAssistantSetupDialog
 import com.wstxda.gsl.ui.TileManager
+import com.wstxda.gsl.ui.component.DigitalAssistantSetupDialog
 import com.wstxda.gsl.utils.Constants
 import com.wstxda.gsl.viewmodel.ManagerViewModel
 import kotlinx.coroutines.launch
@@ -31,6 +36,8 @@ class ManagerFragment : PreferenceFragmentCompat() {
         ViewModelProvider.AndroidViewModelFactory.getInstance(requireActivity().application)
     }
     private val digitalAssistantPreference by lazy { DigitalAssistantPreference(this) }
+    private val preferenceHelper by lazy { PreferenceHelper(requireContext().applicationContext) }
+    private val tileManager by lazy { TileManager(requireContext()) }
     private val digitalAssistantLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
@@ -68,6 +75,16 @@ class ManagerFragment : PreferenceFragmentCompat() {
         "solitaire_shortcut" to SolitaireShortcut::class.java
     )
 
+    private val tiles: Map<String, Class<out TileService>> = mapOf(
+        Constants.TILE_ASSISTANT_PREF_KEY to AssistantTileService::class.java,
+        Constants.TILE_GAMES_PREF_KEY to GamesTileService::class.java,
+        Constants.TILE_LENS_PREF_KEY to LensTileService::class.java,
+        Constants.TILE_MUSIC_SEARCH_PREF_KEY to MusicSearchTileService::class.java,
+        Constants.TILE_QUICK_SHARE_PREF_KEY to QuickShareTileService::class.java,
+        Constants.TILE_SCANNER_PREF_KEY to ScannerTileService::class.java,
+        Constants.TILE_SEARCH_PREF_KEY to SearchTileService::class.java
+    )
+
     private val links = mapOf(
         "developer" to "https://github.com/WSTxda",
         "github_repository" to "https://github.com/WSTxda/Google-Shortcuts-Launcher",
@@ -78,7 +95,6 @@ class ManagerFragment : PreferenceFragmentCompat() {
         setPreferencesFromResource(R.xml.preferences, rootKey)
         observeViewModel()
         setupInitialVisibility()
-        setupLibraryPreference()
         setupPreferences()
     }
 
@@ -91,6 +107,7 @@ class ManagerFragment : PreferenceFragmentCompat() {
 
     override fun onResume() {
         super.onResume()
+        refreshTilePreferences()
         viewLifecycleOwner.lifecycleScope.launch {
             val isDone = digitalAssistantPreference.checkDigitalAssistSetupStatus()
             viewModel.setAssistSetupDone(isDone)
@@ -99,14 +116,13 @@ class ManagerFragment : PreferenceFragmentCompat() {
     }
 
     private fun setupInitialVisibility() {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
-            findPreference<Preference>(Constants.SHORTCUT_ADD_TILE_PREF_KEY)?.isVisible = false
-        }
+        findPreference<Preference>(Constants.SHORTCUT_TILES_PREF_KEY)?.isVisible =
+            Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
     }
 
     private fun setupPreferences() {
         setupShortcutsActivityPreferences()
-        setupTilePreference()
+        setupTilePreferences()
         setupDigitalAssistantClickListener()
         setupThemePreference()
         setupLibraryPreference()
@@ -114,10 +130,41 @@ class ManagerFragment : PreferenceFragmentCompat() {
         setupLinkPreferences()
     }
 
-    private fun setupTilePreference() {
-        findPreference<Preference>(Constants.SHORTCUT_ADD_TILE_PREF_KEY)?.setOnPreferenceClickListener {
-            TileManager(requireContext()).requestAddTile()
-            true
+    private fun setupTilePreferences() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
+
+        tiles.forEach { (key, serviceClass) ->
+            findPreference<CheckBoxPreference>(key)?.setOnPreferenceChangeListener { preference, newValue ->
+                if (!(newValue as Boolean)) {
+                    Snackbar.make(
+                        requireView(), R.string.tile_remove_from_panel, Snackbar.LENGTH_SHORT
+                    ).show()
+                    return@setOnPreferenceChangeListener false
+                }
+
+                preference.isEnabled = false
+                tileManager.requestAddTile(serviceClass) { isTileAdded ->
+                    preferenceHelper.setBoolean(key, isTileAdded)
+                    if (!isAdded) return@requestAddTile
+                    updateTilePreference(key, isTileAdded)
+                }
+                false
+            }
+        }
+    }
+
+    private fun refreshTilePreferences() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
+
+        tiles.keys.forEach { key ->
+            updateTilePreference(key, preferenceHelper.getBoolean(key))
+        }
+    }
+
+    private fun updateTilePreference(key: String, isTileAdded: Boolean) {
+        findPreference<CheckBoxPreference>(key)?.apply {
+            isEnabled = true
+            isChecked = isTileAdded
         }
     }
 

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- components theme styles -->
 
@@ -28,5 +28,10 @@
 
     <style name="Theme.Component.BottomSheet.Modal" parent="@style/Widget.Material3.BottomSheet">
         <item name="backgroundTint">?attr/colorSurfaceContainer</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.CompoundButton.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox" tools:override="true">
+        <item name="android:minWidth">-1000dp</item>
+        <item name="android:minHeight">-1000dp</item>
     </style>
 </resources>

@@ -48,6 +48,7 @@
     <string name="pref_expandable_shopping">اختصارات التسوّق</string>
     <string name="pref_expandable_games">اختصارات الألعاب</string>
     <string name="pref_expandable_others">اختصارات أخرى</string>
+    <string name="pref_expandable_tiles">اختصارات الإعدادات السريعة</string>
 
     <string name="pref_developer">المطور</string>
     <string name="pref_source_code">مستودع الكود المصدري</string>
@@ -73,9 +74,6 @@
 
     <string name="pref_setup_digital_assistant">إعداد المساعد الرقمي</string>
     <string name="pref_setup_digital_assistant_summary">تعيين مشغّل اختصارات Google كتطبيق مساعد رقمي افتراضي</string>
-
-    <string name="pref_tile_shortcut">اختصار مربع الإعدادات السريعة</string>
-    <string name="pref_add_shortcut_tile">إضافة مربع اختصار في لوحة الإعدادات السريعة</string>
 
     <string name="pref_shortcut_launch_delay">تأخير الفتح</string>
     <string name="shortcut_launch_delay_none">بدون تأخير</string>
@@ -114,7 +112,13 @@
 
     <!--shortcut actions-->
 
-    <string name="shortcut_open">فتح الاختصار</string>
+    <string name="start_assistant">بدء المساعد</string>
+    <string name="open_games">فتح الألعاب</string>
+    <string name="identify_music">التعرّف على الموسيقى</string>
+    <string name="share_files">مشاركة الملفات</string>
+    <string name="scan_code">مسح رمز</string>
+    <string name="google_search">بحث Google</string>
+
     <string name="shortcut_select">اختر اختصار</string>
     <string name="shortcut_disabled">يتعذر التشغيل، فعّل هذا الاختصار أولًا في المدير</string>
     <string name="shortcut_invalid">تم اختيار اختصار غير صالح</string>
@@ -133,6 +137,7 @@
 
     <string name="tile_added_success">تمت الإضافة إلى الإعدادات السريعة بنجاح</string>
     <string name="tile_already_added">موجود بالفعل في الإعدادات السريعة</string>
+    <string name="tile_remove_from_panel">أزل هذا الاختصار من لوحة الإعدادات السريعة</string>
 
     <!--shizuku setup-->
 
