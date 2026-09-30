@@ -50,7 +50,6 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/shizuku_message_start"
-                        style="?attr/textAppearanceBodyMedium"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -106,12 +105,12 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/shizuku_title_permission"
-                        style="?attr/textAppearanceTitleMedium"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:ellipsize="marquee"
                         android:maxLines="2"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/shizuku_icon_permission"
                         app:layout_constraintTop_toTopOf="parent"
@@ -119,12 +118,12 @@
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/shizuku_message_permission"
-                        style="?attr/textAppearanceBodyMedium"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:ellipsize="marquee"
                         android:maxLines="10"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
                         android:textColor="?android:textColorSecondary"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@id/shizuku_title_permission"
@@ -159,8 +158,8 @@
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/shizuku_info_icon"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:importantForAccessibility="no"
                 android:src="@drawable/ic_info"
@@ -170,11 +169,13 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/shizuku_info_message"
-                style="?attr/textAppearanceBodySmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textColor="?attr/colorOnSurfaceVariant"
+                android:ellipsize="marquee"
+                android:maxLines="10"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="?android:textColorSecondary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

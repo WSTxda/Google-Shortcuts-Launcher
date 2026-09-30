@@ -35,6 +35,7 @@
         <item name="snackbarStyle">@style/Theme.Component.Material.Snackbar</item>
         <item name="materialAlertDialogTheme">@style/Theme.Component.Material.AlertDialog</item>
         <item name="switchPreferenceCompatStyle">@style/Theme.Component.Material.SwitchPreferenceCompat</item>
+        <item name="checkBoxPreferenceStyle"></item>
         <!--fixes some UI issues on MIUI/HyperOS devices -->
         <item name="android:forceDarkAllowed" tools:targetApi="Q">false</item>
         <!--app bars colors-->

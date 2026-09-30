@@ -6,7 +6,11 @@
     <color name="ic_launcher_background_share">#276BFD</color>
     <color name="ic_launcher_background_manager">#5F6368</color>
     <color name="ic_launcher_background_incognito">#101214</color>
-    <color name="ic_launcher_background_scanner">#303234</color>
+    <color name="ic_launcher_background_solitaire">#136330</color>
+    <color name="ic_launcher_background_cricket">#1875D1</color>
+    <color name="ic_launcher_background_mines">#FD6D5C</color>
+    <color name="ic_launcher_background_pacman">#2E4DFA</color>
+    <color name="ic_launcher_background_snake">#109B80</color>
 
     <!--app divider-->
 
