@@ -1,4 +1,5 @@
-# Google Shortcuts Launcher  
+# Google Shortcuts Launcher
+
 Easily access essential Google apps features directly from your launcher app drawer.
 
 [![GitHub Actions Status](https://img.shields.io/github/actions/workflow/status/WSTxda/Google-Shortcuts-Launcher/.github%2Fworkflows%2Fandroid.yml?style=for-the-badge&logo=github-actions&labelColor=21262D&color=3FB950)](https://github.com/WSTxda/Google-Shortcuts-Launcher/actions)
@@ -9,10 +10,10 @@ Easily access essential Google apps features directly from your launcher app dra
 
 ![Banner](https://raw.githubusercontent.com/WSTxda/Google-Shortcuts-Launcher/main/images/Banner.svg)
 
-**Google Shortcuts Launcher** provides a seamless way to integrate powerful Google services into your daily workflow. With just a tap, you can quickly access a variety of shortcuts designed to enhance usability and simplify your interaction with core Google features.
+Google Shortcuts Launcher provides a seamless way to integrate powerful Google services into your daily workflow. With just a tap, you can quickly access a variety of shortcuts designed to enhance usability and simplify your interaction with core Google features.
 
 <details>
-  <summary>Screenshots</summary>
+  <summary><h3>Screenshots</h3></summary>
 
 ![Screenshot](https://raw.githubusercontent.com/WSTxda/Google-Shortcuts-Launcher/main/images/Screenshots.png)
 
@@ -89,16 +90,18 @@ Plan, manage, and track your trips with ease. Quickly view flight details, hotel
 Access real-time local weather updates along with a full weekly forecast.  
 > Google App or Web Browser
 
----
+## Requirements
 
 > [!NOTE]  
 > **Required Apps:** The Google app, Google Chrome, Google Play Services, Google Play and Google Play Games must be installed on your device for most shortcuts to function properly.  
 > **Shizuku:** Some shortcuts use Shizuku to open non-exported activities.
 
-### Download
+## Download
 
 [<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/GitHub.svg" salt='Get it on GitHub' height="80">](https://github.com/WSTxda/Google-Shortcuts-Launcher/releases/latest)
 [<img src="https://raw.githubusercontent.com/WSTxda/WSTxda/main/images/Telegram.svg" alt='Get it on Telegram' height="80">](https://t.me/WSTprojects)
+
+## Development
 
 ### Donate
 
